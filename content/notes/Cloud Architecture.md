@@ -1,7 +1,6 @@
 ---
 title: "Cloud Architecture"
 date: "2022-02-08
-tags:
 ---
 
 # Cloud Architecture
