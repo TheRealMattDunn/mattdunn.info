@@ -1,8 +1,9 @@
-22202202081405
-
-Status: #idea
-
-Tags: [[Cloud Architecture]]
+---
+title: "Data Lifecycle"
+date: "2022-02-08
+tags:
+- Cloud Architecture
+---
 
 # Data Lifecycle
 

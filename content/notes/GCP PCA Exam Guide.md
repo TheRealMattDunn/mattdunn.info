@@ -1,8 +1,9 @@
-22202202081224
-
-Status: #idea
-
-Tags: [[Cloud Architecture]]
+---
+title: "GCP PCA Exam Guide"
+date: "2022-02-08
+tags:
+- Cloud Architecture
+---
 
 # GCP PCA Exam Guide
 
