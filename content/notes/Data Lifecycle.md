@@ -7,7 +7,7 @@ tags:
 
 # Data Lifecycle
 
-![Data Lifecycle](/files/data_lifecycle.svg)
+![data_lifecycle](files/data_lifecycle.svg)
 
 ## Ingest
 
@@ -85,4 +85,4 @@ tags:
 
 # References
 
-- [Google Cloud Certified Professional Cloud Architect](</notes/Google Cloud Certified Professional Cloud Architect.md>)
+- [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)]
