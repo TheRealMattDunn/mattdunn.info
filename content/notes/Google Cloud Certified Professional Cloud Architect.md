@@ -7,4 +7,6 @@ tags:
 
 # Google Cloud Certified Professional Cloud Architect
 
-# References
+- [GCP PCA Exam Guide](</notes/GCP PCA Exam Guide.md>)
+- [Cloud Architecture](</notes/Cloud Architecture.md>)
+- [Data Lifecycle](</notes/Data Lifecycle.md>)

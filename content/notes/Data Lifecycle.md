@@ -85,4 +85,4 @@ tags:
 
 # References
 
-- [Google Cloud Certified Professional Cloud Architect](<./Google Cloud Certified Professional Cloud Architect.md>)
+- [Google Cloud Certified Professional Cloud Architect](</notes/Google Cloud Certified Professional Cloud Architect.md>)
