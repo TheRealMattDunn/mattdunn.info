@@ -1,6 +1,6 @@
 ---
 title: "Google Cloud Certified Professional Cloud Architect"
-date: "2022-02-08
+date: "2022-02-08"
 tags:
 - cloud architecture
 ---

@@ -1,6 +1,6 @@
 ---
 title: "GCP PCA Exam Guide"
-date: "2022-02-08
+date: "2022-02-08"
 tags:
 - cloud architecture
 ---
