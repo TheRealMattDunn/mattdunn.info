@@ -3,5 +3,6 @@ public
 resources
 .idea
 content/.obsidian
+content/*.code-workspace
 data/linkIndex.yaml
 data/contentIndex.yaml

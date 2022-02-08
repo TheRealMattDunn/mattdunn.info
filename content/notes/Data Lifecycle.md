@@ -7,7 +7,7 @@ tags:
 
 # Data Lifecycle
 
-![[data_lifecycle.svg]]
+![Data Lifecycle](/files/data_lifecycle.svg)
 
 ## Ingest
 

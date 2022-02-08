@@ -5,6 +5,8 @@ date: "2022-02-08"
 
 # mattdunn.info
 
+Welcome to mattdunn.info! This site serves as a repository for my learning notes, which, beginning in January 2022, I am attempting to write using the [Zettelkasten method](https://en.wikipedia.org/wiki/Zettelkasten).
+
 ## What I'm Learning
 
-- 2022-02-07 [Google Cloud Certified Professional Cloud Architect](<./Google Cloud Certified Professional Cloud Architect.md>)
+- 2022-02-07 [Google Cloud Certified Professional Cloud Architect](</notes/Google Cloud Certified Professional Cloud Architect.md>)
