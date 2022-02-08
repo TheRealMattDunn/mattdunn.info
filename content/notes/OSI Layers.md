@@ -7,7 +7,7 @@ tags:
 
 # OSI Layers
 
-![osi_layers](files/osi_layers.svg)
+![osi_layers](/files/osi_layers.svg)
 
 # References
 
