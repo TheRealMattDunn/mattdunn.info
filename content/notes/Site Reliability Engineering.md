@@ -7,9 +7,7 @@ tags:
 
 # Site Reliability Engineering
 
-````ad-quote
-SRE is what happens when a software engineer is tasked with what used to be called operations.
-````
+> SRE is what happens when a software engineer is tasked with what used to be called operations.
 
 ![sli_slo_sla](files/sli_slo_sla.svg)
 
