@@ -24,5 +24,5 @@ PCA's need to:
 
 # References
 
-[[Google Cloud Certified Professional Cloud Architect]]
-[Professional Cloud Architect Certification Exam Guide](https://cloud.google.com/certification/guides/professional-cloud-architect)
+- [Google Cloud Certified Professional Cloud Architect](<./Google Cloud Certified Professional Cloud Architect.md>)
+- [Professional Cloud Architect Certification Exam Guide](https://cloud.google.com/certification/guides/professional-cloud-architect)
