@@ -13,75 +13,75 @@ tags:
 
 ### Stream
 
-- [[Cloud Pub/Sub]]
+- Cloud Pub/Sub
 
 ### Batch
 
-- [[Cloud Storage]]
-	- [[Storage Transfer Service]] - moving large amounts of data from on-prem
-- [[BigQuery]]
-	- [[BigQuery Transfer Service]] - moving from SaaS e.g. YouTube, Google Ads
-- [[Big Data]] (e.g. PBs)
-	- [[Storage Transfer Appliance]]
+- Cloud Storage
+	- Storage Transfer Service - moving large amounts of data from on-prem
+- BigQuery
+	- BigQuery Transfer Service - moving from SaaS e.g. YouTube, Google Ads
+- Big Data (e.g. PBs)
+	- Storage Transfer Appliance
 
 ### Application
 
-- [[Cloud Logging]]
-- [[Cloud Pub/Sub]]
-- [[Cloud SQL]]
-- [[Cloud Firestore]] - noSQL
-- [[Bigtable]] - large amounts of noSQL
-- [[Cloud Spanner]] - large amounts of structured data
+- Cloud Logging
+- Cloud Pub/Sub
+- Cloud SQL
+- Cloud Firestore - noSQL
+- Bigtable - large amounts of noSQL
+- Cloud Spanner - large amounts of structured data
 
 ## Storage
 
 ### Objects
 
-- [[Cloud Storage]]
-- [[Cloud Storage for Firebase]]
+- Cloud Storage
+- Cloud Storage for Firebase
 
 ### Databases
 
 - SQL
-	- [[Cloud SQL]]
-	- [[Cloud Spanner]]
+	- Cloud SQL
+	- Cloud Spanner
 - noSQL
-	- [[Bigtable]]
-	- [[Cloud Firestore]]
+	- Bigtable
+	- Cloud Firestore
 
 ### Warehouse
 
-- [[BigQuery]]
+- BigQuery
 
 ## Process / Analyse
 
 ### Compute
 
-- [[Compute Engine]]
-- [[Google Kubernetes Engine]]
-- [[App Engine]]
+- Compute Engine
+- Google Kubernetes Engine
+- App Engine
 
 ### Large Scale
 
-- [[Dataproc]] - Hadoop, Spark etc.
-- [[Dataflow]] - Apache Beam
-- [[Dataprep]]
+- Dataproc - Hadoop, Spark etc.
+- Dataflow - Apache Beam
+- Dataprep
 
 ### Analyse
 
-- [[BigQuery]] - PBs of data analysis at speed
+- BigQuery - PBs of data analysis at speed
 
 ## Explore / Visualize
 
 ### Science
 
-- [[Cloud Datalab]] - Jupyter notebooks
+- Cloud Datalab - Jupyter notebooks
 
 ### Visualize
 
-- [[BigQuery BI]]
-- [[Cloud Data Studio]]
-- [[Looker]]
+- BigQuery BI
+- Cloud Data Studio
+- Looker
 
 # References
 

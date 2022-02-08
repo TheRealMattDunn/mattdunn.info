@@ -1,6 +1,5 @@
-baseURL = "https://quartz.jzhao.xyz/"
-languageCode = "en-us"
-googleAnalytics = "G-XYFD95KB4J"
+baseURL = "https://mattdunn.info/"
+languageCode = "en-gb"
 pygmentsUseClasses = true
 relativeURLs = true
 disablePathToLower = true
