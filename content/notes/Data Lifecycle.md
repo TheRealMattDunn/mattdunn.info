@@ -5,8 +5,6 @@ tags:
 - cloud architecture
 ---
 
-# Data Lifecycle
-
 ![data_lifecycle](/files/data_lifecycle.svg)
 
 ## Ingest

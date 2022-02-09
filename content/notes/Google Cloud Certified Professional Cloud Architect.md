@@ -5,8 +5,6 @@ tags:
 - cloud architecture
 ---
 
-# Google Cloud Certified Professional Cloud Architect
-
 ## Key Fundamentals To Know
 
 - Distributed systems

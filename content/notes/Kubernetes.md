@@ -5,8 +5,6 @@ tags:
 - kubernetes
 ---
 
-# Kubernetes
-
 Objects:
 - Pod
 - ReplicaSet

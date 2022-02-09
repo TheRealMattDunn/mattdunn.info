@@ -5,8 +5,6 @@ tags:
 - cloud architecture
 ---
 
-# GCP PCA Exam Guide
-
 PCA's need to:
 - Design and plan cloud solution architectures
 	- Business focussed

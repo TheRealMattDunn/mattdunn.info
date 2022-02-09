@@ -3,8 +3,6 @@ title: "Cloud Architecture"
 date: "2022-02-08"
 ---
 
-# Cloud Architecture
-
 For Google:
 - Enable orgs to leverage GCP technologies
 

@@ -5,13 +5,13 @@ tags:
 - kubernetes
 ---
 
-# Kubernetes Jobs
 - For running batch workloads
 - Each Job spins up one or more Pods to process the work
 - Can be run in serial or parallel
 	- Often pulling work items from a queue
 
 ### Parallel Patterns
+
 - Queue with Pod per work item
 	- Use to process all work items at once
 	- Set `.spec.completions` to the number of work items
@@ -28,6 +28,7 @@ tags:
 	- Use when creating multiple Jobs based on a single template (e.g. with scripted variable substitution in the YAML)
 	- Set `.spec.completions` to 1
 	- Set `.spec.parallelism` to 1
+
 # References
 
 - [Official documentation](https://kubernetes.io/docs/concepts/workloads/controllers/job/)

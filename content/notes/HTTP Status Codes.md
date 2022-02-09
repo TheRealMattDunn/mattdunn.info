@@ -6,8 +6,6 @@ tags:
 - http
 ---
 
-# HTTP Status Codes
-
 ## 100s - Information
 
 - 100 Continue
