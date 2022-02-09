@@ -3,6 +3,7 @@ title: "GCP PCA Exam Guide"
 date: "2022-02-08"
 tags:
 - cloud architecture
+- gcp
 ---
 
 PCA's need to:

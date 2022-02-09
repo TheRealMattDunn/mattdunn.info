@@ -15,5 +15,3 @@ Objects:
 - CronJob
 - Service
 - Ingress
-
-# References

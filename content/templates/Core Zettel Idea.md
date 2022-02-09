@@ -5,6 +5,4 @@ tags:
 - example
 ---
 
-# {{title}}
-
 # References
