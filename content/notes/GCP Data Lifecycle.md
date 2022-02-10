@@ -1,5 +1,5 @@
 ---
-title: "Data Lifecycle"
+title: "GCP Data Lifecycle"
 date: "2022-02-08"
 tags:
 - cloud architecture

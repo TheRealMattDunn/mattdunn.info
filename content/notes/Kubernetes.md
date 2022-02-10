@@ -5,7 +5,7 @@ tags:
 - kubernetes
 ---
 
-Objects:
+## Objects
 - Pod
 - ReplicaSet
 - Deployment
@@ -15,3 +15,6 @@ Objects:
 - CronJob
 - Service
 - Ingress
+
+## GKE
+- [GKE Cluster Autoscaling](notes/GKE%20Cluster%20Autoscaling.md)
