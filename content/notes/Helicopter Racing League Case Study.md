@@ -1,0 +1,108 @@
+ ---
+title: "Helicopter Racing League Case Study"
+date: "2022-02-11"
+tags:
+- gcp
+- cloud architecture
+---
+
+## Overview
+
+- **Global** sports league for helicopter racing
+- **World championship** and **regional** events
+	- *Need to cater for global and regional traffic*
+	- *Points of presence in many regions – close to end users*
+	- *CDN*
+- Offers **paid service** to stream races with **live telemetry** and **predictions throughout**
+	- *Uptime important*
+	- *Real-time analytics*
+- Wish to migrate to a **new platform**
+	- *Currently on AWS or Azure - Storage Transfer Service*
+- Increase use of **AI/ML** services
+- More serving of **real time** and **recorded** content **closer to users** in **emerging markets**
+
+## Existing Technical Environment
+
+- **Public cloud**-first company
+- Video recorded/edited at racetracks
+- Encoding and transcoding performed **in the cloud**
+	- *VMs*
+- **Enterprise connectivity** and local compute in **truck mounted DCs**
+	- *Mobile DCs - dedicated interconnect not an option*
+- Race prediction service hosted on cloud
+- Content stored in **object storage**
+	- *Migration – Storage Transfer Service*
+- Video **encoding/transcoding** performed on **VMs** for each job
+	- *Lift/shift with Migrate for Compute Engine*
+	- *GPUs*
+	- *Machine types:*
+		- *Tau T2D (option for scale-out architecture, no GPU support)*
+		- *C2, C2D (ultra-high performance, no GPU support)*
+		- *A2 (optimized for GCP usage)*
+	- *Transcoder API – managed service*
+- Race predictions via **TensorFlow** models running on **VMs**
+	- *Lift/shift with Migrate for Compute Engine*
+	- *TPUs - Tensor Processing Unit, built for TensorFlow*
+	- *Vertex AI*
+
+## Business Requirements
+
+- Expand predictive capabilities
+- **Reduce latency** in emerging markets
+	- *Cloud CDN*
+	- *Global Load Balancing*
+	- *Regional Managed Instance Groups (MIGs)*
+	- *Regional Cloud Storage buckets*
+- **Expose models** to partners
+	- *Private connectivity – VPN*
+	- *API Gateway / Apigee*
+- Increase predictive capabilities (race results, mechanical failures, crowd sentiment)
+	- *Previous race results – batch data analysis*
+	- *Sentiment analysis:*
+		- *Natural Language API – predefined categories inc. sentiment analysis*
+		- *AutoML Natural Language – custom categories*
+		- *Vertex AI*
+- Increase **telemetry** and **insights**
+	- *IoT core*
+	- *Bigtable, Dataflow, BigQuery, Looker*
+- **Measure engagement** with new predictions
+	- *Cloud Firestore*
+	- *AI/ML models - Vertex AI*
+- Enhance global availability and **quality of broadcasts**
+	- *Higher quality video encoding - high spec VMs (Tau , GPUs*
+- Increase number of **concurrent viewers**
+	- *Increase capacity*
+	- *Dynamic horizontal scaling – Autoscaling Groups*
+- Minimize operational **complexity**
+	- *Managed services where possible*
+	- *Reduce number of platforms*
+- Ensure regulatory **compliance**
+- New revenue streams e.g., merchandise
+	- *Online store – SaaS*
+	- *Cloud Run, App Engine, Firestore*
+
+## Technical Requirements
+
+- Maintain/increase **prediction throughput/accuracy**
+	- *TPUs, Vertex AI*
+- Reduce viewer **latency**
+	- *Content closter to viewers*
+	- *Multi-regional GCS buckets*
+	- *Cloud CDN*
+	- *Global Load Balancers*
+- Increase transcoding **performance**
+	- *Vertical and horizontal scaling*
+	- *Transcoder API – batch processing*
+- **Real-time analytics** of viewer consumption
+- Data mart – processing large volumes of race data
+	- *AutoML Vision*
+	- *Vertex AI*
+	- *BigQuery ML*
+
+## Potential Solution Design
+
+ ![Helicopter racing league design](/files/helicopter_racing_league_design.svg)
+
+# References
+
+- [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)
