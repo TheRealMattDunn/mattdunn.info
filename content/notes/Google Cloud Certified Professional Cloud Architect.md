@@ -29,6 +29,6 @@ tags:
 ## Case Studies
 
 - [EHR Healthcare](notes/EHR%20Healthcare%20Case%20Study.md)
-- Helicopter Racing League
+- [Helicopter Racing League](notes/Helicopter%20Racing%20League%20Case%20Study.md)
 - Mountkirk Games
 - Terramearth
