@@ -6,6 +6,9 @@ tags:
 - cloud architecture
 ---
 
+> Non-italicised points represent notes taken from Google's official case study documentation, with keywords highlighted in **bold**.
+> Points in *italics* represent additional insights and possible solutions.
+
 ## Overview
 
 - **Global** sports league for helicopter racing
@@ -106,3 +109,4 @@ tags:
 # References
 
 - [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)
+- [Helicopter Racing League case study overview](https://services.google.com/fh/files/blogs/master_case_study_helicopter_racing_league.pdf)
