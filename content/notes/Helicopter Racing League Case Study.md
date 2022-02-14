@@ -1,9 +1,10 @@
- ---
+---
 title: "Helicopter Racing League Case Study"
 date: "2022-02-11"
 tags:
 - gcp
 - cloud architecture
+- case study
 ---
 
 > Non-italicised points represent notes taken from Google's official case study documentation, with keywords highlighted in **bold**.
@@ -108,5 +109,5 @@ tags:
 
 # References
 
-- [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)
 - [Helicopter Racing League case study overview](https://services.google.com/fh/files/blogs/master_case_study_helicopter_racing_league.pdf)
+- [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)

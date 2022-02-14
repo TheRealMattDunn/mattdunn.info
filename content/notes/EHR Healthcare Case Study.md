@@ -4,6 +4,7 @@ date: "2022-02-09"
 tags:
 - gcp
 - cloud architecture
+- case study
 ---
 
 > Non-italicised points represent notes taken from Google's official case study documentation, with keywords highlighted in **bold**.
@@ -152,5 +153,5 @@ tags:
 
 # References
 
-- [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)
 - [EHR Healthcare case study overview](https://services.google.com/fh/files/blogs/master_case_study_ehr_healthcare.pdf)
+- [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)
