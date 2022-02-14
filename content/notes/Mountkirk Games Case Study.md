@@ -58,10 +58,12 @@ tags:
 	- *Caching with Cloud Memorystore*
 - Optimize for **dynamic scaling**
 	- *GKE node and pod horizontal autoscaling*
-	- *Spanner doesn't autoscale - need to implement custom solution, e.g.:*
+	- *Spanner doesn't autoscale – need to implement custom solution, e.g.,*
 		- *Cloud monitoring (CPU), Pub/Sub, Cloud Functions*
 - Use **managed services** and pool resources
 	- *GKE autopilot not an option, as GPUs required*
+	- *Pooled resources: shared project for management and analytics*
+		- *Log buckets, BigQuery, Anthos*
 - Minimize costs
 
 ## Technical Requirements
@@ -72,7 +74,7 @@ tags:
 	- *Streaming data*
 - Game activity **logs** stored in **structured files** for **analysis**
 	- *Import to BigQuery from Logging*
-	- *Store logs in GCS - load as BigQuery external table*
+	- *Store logs in GCS – load as BigQuery external table*
 - Render graphics service-side via **GPUs** for multi-platform support
 	- *GPU support in GKE (but no autopilot)*
 - Eventual migration of legacy games to platform
