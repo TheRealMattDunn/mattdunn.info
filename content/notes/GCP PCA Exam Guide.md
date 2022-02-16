@@ -16,7 +16,7 @@ PCA's need to:
 - Manage and configure solution infrastructure
 	- Network topologies
 	- Data storage
-	- Compute - data processing
+	- Compute—data processing
 - Design for security and compliance
 - Analysing and optimizing technical and business processes
 - Managing implementation

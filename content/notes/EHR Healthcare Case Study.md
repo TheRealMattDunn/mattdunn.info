@@ -89,7 +89,7 @@ tags:
 - **Reduce latency** to end users:
 	- *Premium network tier*
 	- *Multi-zonal / regional resources*
-	- *Anthos to place clusters in multiple-regions – multi-cluster ingress*
+	- *Anthos to place clusters in multiple-regions—multi-cluster ingress*
 	- *Global load balancing*
 	- *Cloud CDN*
 - Ensure **compliance**:
@@ -138,9 +138,9 @@ tags:
 		- *Use managed services where possible*
 - **Outages** caused by:
 	- Misconfigurations
-		- *Automate where possible – CI/CD*
+		- *Automate where possible—CI/CD*
 		- *Infrastructure as code e.g., Terraform*
-		- *Kubernetes – roll-back unstable releases*
+		- *Kubernetes—roll-back unstable releases*
 		- *Anthos Config Management for guardrails and best practice policies across all clusters*
 	- Inadequate capacity
 		- *Autoscaling*

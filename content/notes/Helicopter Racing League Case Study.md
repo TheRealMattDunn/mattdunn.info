@@ -15,7 +15,7 @@ tags:
 - **Global** sports league for helicopter racing
 - **World championship** and **regional** events
 	- *Need to cater for global and regional traffic*
-	- *Points of presence in many regions – close to end users*
+	- *Points of presence in many regions—close to end users*
 	- *CDN*
 - Offers **paid service** to stream races with **live telemetry** and **predictions throughout**
 	- *Uptime important*
@@ -32,10 +32,10 @@ tags:
 - Encoding and transcoding performed **in the cloud**
 	- *VMs*
 - **Enterprise connectivity** and local compute in **truck mounted DCs**
-	- *Mobile DCs - dedicated interconnect not an option*
+	- *Mobile DCs—dedicated interconnect not an option*
 - Race prediction service hosted on cloud
 - Content stored in **object storage**
-	- *Migration – Storage Transfer Service*
+	- *Migration—Storage Transfer Service*
 - Video **encoding/transcoding** performed on **VMs** for each job
 	- *Lift/shift with Migrate for Compute Engine*
 	- *GPUs*
@@ -43,10 +43,10 @@ tags:
 		- *Tau T2D (option for scale-out architecture, no GPU support)*
 		- *C2, C2D (ultra-high performance, no GPU support)*
 		- *A2 (optimized for GCP usage)*
-	- *Transcoder API – managed service*
+	- *Transcoder API—managed service*
 - Race predictions via **TensorFlow** models running on **VMs**
 	- *Lift/shift with Migrate for Compute Engine*
-	- *TPUs - Tensor Processing Unit, built for TensorFlow*
+	- *TPUs—Tensor Processing Unit, built for TensorFlow*
 	- *Vertex AI*
 
 ## Business Requirements
@@ -61,28 +61,28 @@ tags:
 	- *Private connectivity – VPN*
 	- *API Gateway / Apigee*
 - Increase predictive capabilities (race results, mechanical failures, crowd sentiment)
-	- *Previous race results – batch data analysis*
+	- *Previous race results—batch data analysis*
 	- *Sentiment analysis:*
-		- *Natural Language API – predefined categories inc. sentiment analysis*
-		- *AutoML Natural Language – custom categories*
+		- *Natural Language API—predefined categories inc. sentiment analysis*
+		- *AutoML Natural Language—custom categories*
 		- *Vertex AI*
 - Increase **telemetry** and **insights**
 	- *IoT core*
 	- *Bigtable, Dataflow, BigQuery, Looker*
 - **Measure engagement** with new predictions
 	- *Cloud Firestore*
-	- *AI/ML models - Vertex AI*
+	- *AI/ML models—Vertex AI*
 - Enhance global availability and **quality of broadcasts**
-	- *Higher quality video encoding - high spec VMs (Tau , GPUs*
+	- *Higher quality video encoding—high spec VMs (Tau , GPUs*
 - Increase number of **concurrent viewers**
 	- *Increase capacity*
-	- *Dynamic horizontal scaling – Autoscaling Groups*
+	- *Dynamic horizontal scaling—Autoscaling Groups*
 - Minimize operational **complexity**
 	- *Managed services where possible*
 	- *Reduce number of platforms*
 - Ensure regulatory **compliance**
 - New revenue streams e.g., merchandise
-	- *Online store – SaaS*
+	- *Online store—SaaS*
 	- *Cloud Run, App Engine, Firestore*
 
 ## Technical Requirements
@@ -96,9 +96,9 @@ tags:
 	- *Global Load Balancers*
 - Increase transcoding **performance**
 	- *Vertical and horizontal scaling*
-	- *Transcoder API – batch processing*
+	- *Transcoder API—batch processing*
 - **Real-time analytics** of viewer consumption
-- Data mart – processing large volumes of race data
+- Data mart—processing large volumes of race data
 	- *AutoML Vision*
 	- *Vertex AI*
 	- *BigQuery ML*

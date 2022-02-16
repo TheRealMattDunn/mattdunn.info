@@ -15,9 +15,9 @@ tags:
 ### Batch
 
 - Cloud Storage
-	- Storage Transfer Service – moving large amounts of data from on-prem
+	- Storage Transfer Service—moving large amounts of data from on-prem
 - BigQuery
-	- BigQuery Transfer Service – moving from SaaS e.g., YouTube, Google Ads
+	- BigQuery Transfer Service—moving from SaaS e.g., YouTube, Google Ads
 - Big Data (e.g., PBs)
 	- Storage Transfer Appliance
 
@@ -26,9 +26,9 @@ tags:
 - Cloud Logging
 - Cloud Pub/Sub
 - Cloud SQL
-- Cloud Firestore - noSQL
-- Bigtable - large amounts of noSQL
-- Cloud Spanner – large amounts of structured data
+- Cloud Firestore—noSQL
+- Bigtable—large amounts of noSQL
+- Cloud Spanner—large amounts of structured data
 
 ## Storage
 
@@ -60,19 +60,19 @@ tags:
 
 ### Large Scale
 
-- Dataproc - Hadoop, Spark etc.
-- Dataflow – Apache Beam
+- Dataproc—Hadoop, Spark etc.
+- Dataflow—Apache Beam
 - Dataprep
 
 ### Analyse
 
-- BigQuery - PBs of data analysis at speed
+- BigQuery—PBs of data analysis at speed
 
 ## Explore / Visualize
 
 ### Science
 
-- Cloud Datalab - Jupyter notebooks
+- Cloud Datalab—Jupyter notebooks
 
 ### Visualize
 

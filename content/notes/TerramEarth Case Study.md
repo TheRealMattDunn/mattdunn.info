@@ -14,7 +14,7 @@ tags:
 - Manufacturer of heavy equipment for mining and agriculture
 - **500** dealers/service centres in **100** countries
 - **2 million vehicles** in operation with **20% annual growth**
-	- *Big data - 2.4 million vehicles next year*
+	- *Big data—2.4 million vehicles next year*
 - **Telemetry** from vehicles:
 	- Small subset collected in **real-time** for fleet management
 		- *Steaming via: IoT Core, Pub/Sub/ Cloud Dataflow, BigQuery/Bigtable*
@@ -63,7 +63,7 @@ tags:
 ## Executive Statement
 
 - Focus on customer
-- Customer service - minimize downtime
+- Customer service—minimize downtime
 - Want best-in-class fleet management for customers
 - Improve operations of dealerships
 - 5-year plan:

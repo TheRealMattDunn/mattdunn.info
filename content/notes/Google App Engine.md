@@ -1,0 +1,46 @@
+---
+title: "Google App Engine"
+date: "2022-02-16"
+tags:
+- gcp
+- compute
+- serverless
+---
+
+## Overview
+
+- PaaS serverless
+- Regional
+- No server management/config
+- Comes in two flavours:
+	- App Engine Standard—first generation
+	- App Engine Flex—second generation
+
+## App Engine Standard
+
+- Instantaneous scaling
+	- Scales to zero
+- Runtimes:
+	- Python 3
+	- Java 11
+	- Node.js
+	- PHP 7
+	- Ruby
+	- Go 1.12+
+
+## App Engine Flex
+
+- Containerized apps
+- Best for consistent traffic—gradual scaling
+- Runtimes:
+	- Python 2.7/3.6
+	- Java 8
+	- PHP 5/7
+	- Ruby
+	- Go
+	- .Net
+	- Custom runtimes
+
+## References
+
+- [GCP Compute Services](notes/GCP%20Compute%20Services.md)
