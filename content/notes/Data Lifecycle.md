@@ -5,7 +5,7 @@ tags:
 - cloud architecture
 ---
 
-## General Lifecycle Flow
+## The Data Lifecycle
 
 ![data_lifecycle](/files/data_lifecycle.svg)
 
