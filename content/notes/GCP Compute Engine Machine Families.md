@@ -21,5 +21,3 @@ tags:
 - GPUs supported on:
 	- N1
 	- A2
-
-# References

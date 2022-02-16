@@ -71,6 +71,10 @@ tags:
 	- Increase autonomous vehicle capabilities
 	- Path to **move legacy systems to cloud**
 
+## Potential Solution Design
+
+![Terramearth design](files/terramearth_design.svg)
+
 # References
 
 - [TerramEarth case study overview](https://services.google.com/fh/files/blogs/master_case_study_terramearth.pdf)

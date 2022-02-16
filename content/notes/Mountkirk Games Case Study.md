@@ -92,7 +92,7 @@ tags:
 
 ## Potential Solution Design
 
-![mountkirk_games_design](/files/mountkirk_games_design.svg)
+![Mountkirk Games design](/files/mountkirk_games_design.svg)
 
 # References
 
