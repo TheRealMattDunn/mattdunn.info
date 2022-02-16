@@ -6,6 +6,7 @@ tags:
 ---
 
 ## Objects
+
 - Pod
 - ReplicaSet
 - Deployment
@@ -15,6 +16,3 @@ tags:
 - CronJob
 - Service
 - Ingress
-
-## GKE
-- [GKE Cluster Autoscaling](notes/GKE%20Cluster%20Autoscaling.md)

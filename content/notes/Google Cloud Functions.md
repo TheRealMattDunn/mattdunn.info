@@ -19,7 +19,7 @@ tags:
 	- Audit logs
 	- Cloud Scheduler
 - The glue between services—both in and outside GCP
-- Good for streaming data as IoT
+- Good for streaming data and IoT
 
 # References
 

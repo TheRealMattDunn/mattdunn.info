@@ -14,7 +14,7 @@ tags:
 - No server management/config
 - Comes in two flavours:
 	- App Engine Standard—first generation
-	- App Engine Flex—second generation
+	- App Engine Flexible—second generation
 
 ## App Engine Standard
 
@@ -28,7 +28,7 @@ tags:
 	- Ruby
 	- Go 1.12+
 
-## App Engine Flex
+## App Engine Flexible
 
 - Containerized apps
 - Best for consistent traffic—gradual scaling
