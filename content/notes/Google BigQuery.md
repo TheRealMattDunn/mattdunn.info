@@ -22,4 +22,4 @@ tags:
 # References
 
 - [GCP Big Data Services](notes/GCP%20Big%20Data%20Services.md)
- - [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
+- [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)

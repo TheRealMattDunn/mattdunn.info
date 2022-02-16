@@ -18,5 +18,3 @@ tags:
 ## Data Processing Decision Tree
 
 ![gcp_data_processing_decision_tree](/files/gcp_data_processing_decision_tree.svg)
-
-# References
