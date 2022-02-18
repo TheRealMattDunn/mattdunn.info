@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes Jobs"
+title: "Job"
 date: "2022-02-09"
 tags:
 - kubernetes
