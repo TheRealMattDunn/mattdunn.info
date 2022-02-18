@@ -37,6 +37,21 @@ tags:
 - Unmanaged Instance Groups:
 	- Load balance against any group of VMs
 
+## Images
+
+### Custom Images
+
+- Created from: source disks, images, snapshots, images stored in [Cloud Storage](notes/Google%20Cloud%20Storage.md)
+- Used to create VM instances
+- Virtual disk import tool: import boot disk images from existing systems
+- Stored in [Cloud Storage](notes/Google%20Cloud%20Storage.md)—zonal or regional
+- Can group into families
+- Image status:
+	- ACTIVE—image can be used as normal
+	- DEPRECATED—can still be used, but marked as deprecated
+	- OBSOLETE—can no longer be used
+	- DELETED—can no longer be used
+
 ## References
 
 - [GCP Compute Services](notes/GCP%20Compute%20Services.md)
