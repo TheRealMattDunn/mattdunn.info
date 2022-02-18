@@ -15,7 +15,11 @@ tags:
 - [Job](notes/Job.md)
 - CronJob
 - Service
-- Ingress
+- [Ingress](notes/Ingress.md)
 - [ConfigMap](notes/ConfigMap.md)
 - Secret
 - [HorizontalPodAutoscaler](notes/HorizontalPodAutoscaler.md)
+
+# References
+
+- [Google Kubernetes Engine](notes/Google%20Kubernetes%20Engine.md)

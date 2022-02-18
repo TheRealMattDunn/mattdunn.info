@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-Google hosted service to load balance requests across GKE clusters and regions. The `MultiClusterIngress` Kubernetes resource is a controller for External HTTP(S) Load Balancers.
+Google hosted service to load balance requests across GKE clusters and regions. The MultiClusterIngress Kubernetes resource is a controller for External HTTP(S) Load Balancers.
 
 ### Multi Cluster Use Cases
 
@@ -34,7 +34,7 @@ Google hosted service to load balance requests across GKE clusters and regions. 
 
 ## Requirements
 
-- `HttpLoadBalancing` add-on enabled (default)
+- HttpLoadBalancing add-on enabled (default)
 - VPC-native clusters
 - Workload Identity enabled
 
@@ -46,8 +46,8 @@ Google hosted service to load balance requests across GKE clusters and regions. 
 - HTTPS requires a pre-allocated static IP (not ephemeral)
 - Quotas (can request increase):
 	- 15 clusters per project
-	- 50 `MultiClusterIngress` resources per cluster
-	- 100 `MultiClusterService` resources per cluster
+	- 50 MultiClusterIngress resources per cluster
+	- 100 MultiClusterService resources per cluster
 
 ## How it Works
 
@@ -58,7 +58,7 @@ Google hosted service to load balance requests across GKE clusters and regions. 
 - Multi Cluster Ingress Controller
 	- Google managed
 	- Programs external HTTP(S) Load Balancer using [NEGs](notes/NEGs.md)
-	- Configures Pods across clusters as backends
+	- Configures [Pods](notes/Pod.md) across clusters as backends
 	- NEGs track Pod endpoints dynamically
 		- LB has correct set of healthy backends
 	- Ensures the LB is in sync with Deployments etc.
@@ -69,21 +69,21 @@ Google hosted service to load balance requests across GKE clusters and regions. 
 
 ![Multi Cluster Ingress architecture](/files/multi_cluster_ingress_architecture.svg)
 
-## `MultiClusterService` and `MultiClusterIngress` Resources
+## MultiClusterService and MultiClusterIngress Resources
 
 - Only present in the config cluster
 
-### `MultiClusterService`
+### MultiClusterService
 
-- Similar to `Service` but behaves differently
-- Generates `Services` in the target fleet clusters
+- Similar to Service but behaves differently
+- Generates Services in the target fleet clusters
 	- These create NEGs to track target Pods
 
-### `MultiClusterIngress`
+### MultiClusterIngress
 
-- Behaves similarly to regular `Ingress`
+- Behaves similarly to regular [Ingress](notes/Ingress.md)
 	- Similar spec
-- Targets `MultiClusterService` resources rather than `Services`
+- Targets MultiClusterService resources rather than Services
 
 ## Namespaces
 
@@ -91,19 +91,19 @@ Google hosted service to load balance requests across GKE clusters and regions. 
 	- MCI can target Pods in namespace across all clusters
 	- Teams need to reserve namespaces to ensure no mismatch
 - All namespaces need to be created in the config cluster
-	- `MultiClusterServices` and `MultiClusterIngresses` are deployed into a namespace, and can only target pods in the same namespace
+	- MultiClusterServices and MultiClusterIngresses are deployed into a namespace, and can only target pods in the same namespace
 
 ## Config Cluster Design
 
 - Single cluster
 	- Must be HA (regional)
-	- Can't access API to update `MultiClusterService` or `MultiClusterIngress` resources if down
+	- Can't access API to update MultiClusterService or MultiClusterIngress resources if down
 - Doesn't have to be dedicated
 	- But maybe it should be? Prevents CPU/Mem contention, and provides isolation
 - Can change which cluster is the current config cluster (e.g., for maintenance)
-	- Need to ensure `MultiClusterService` and `MultiClusterIngress` resources are identical when switching
+	- Need to ensure MultiClusterService and MultiClusterIngress resources are identical when switching
 	- Pattern: blue/green cluster updates
-		- CI/CD applies `MultiClusterService` and `MultiClusterIngress` resources to both blue and green clusters
+		- CI/CD applies MultiClusterService and MultiClusterIngress resources to both blue and green clusters
 		- Seamless switch-over
 
 # References
