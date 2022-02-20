@@ -108,4 +108,4 @@ Google hosted service to load balance requests across GKE clusters and regions. 
 
 # References
 
-- [Anthos](notes/Anthos.md)
+- [Google Anthos](notes/Google%20Anthos.md)
