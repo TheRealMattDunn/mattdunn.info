@@ -1,0 +1,25 @@
+---
+title: "Google Cloud Firestore"
+date: "2022-02-20"
+tags:
+- gcp
+- data
+- databases
+---
+
+## Overview
+
+- Document store
+- Live synchronization and offline mode
+	- Multi-user, collaborative apps
+- Supports Datastore DBs and APIs (previous generation of Firestore)
+- Use-case:
+	- Live asset/activity tracking
+	- Real-time analytics
+	- Media/product catalogues
+	- Social user profiles
+	- Gaming leaderboards
+
+# References
+
+- [GCP Services](notes/GCP%20Services.md)
