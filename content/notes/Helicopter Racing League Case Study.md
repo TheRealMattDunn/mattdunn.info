@@ -39,7 +39,7 @@ tags:
 - Video **encoding/transcoding** performed on **VMs** for each job
 	- *Lift/shift with Migrate for Compute Engine*
 	- *GPUs*
-	- *Machine types:*
+	- *[Machine types:](notes/GCP%20Compute%20Engine%20Machine%20Families)*
 		- *Tau T2D (option for scale-out architecture, no GPU support)*
 		- *C2, C2D (ultra-high performance, no GPU support)*
 		- *A2 (optimized for GCP usage)*
@@ -47,16 +47,16 @@ tags:
 - Race predictions via **TensorFlow** models running on **VMs**
 	- *Lift/shift with Migrate for Compute Engine*
 	- *TPUs—Tensor Processing Unit, built for TensorFlow*
-	- *Vertex AI*
+	- *[Vertex AI](notes/Google%20Vertex%20AI.md)*
 
 ## Business Requirements
 
 - Expand predictive capabilities
 - **Reduce latency** in emerging markets
 	- *Cloud CDN*
-	- *Global Load Balancing*
+	- *[Global Load Balancing](notes/GCP%20Load%20Balancers.md)*
 	- *Regional Managed Instance Groups (MIGs)*
-	- *Regional Cloud Storage buckets*
+	- *Regional [Cloud Storage buckets](notes/Google%20Cloud%20Storage.md)*
 - **Expose models** to partners
 	- *Private connectivity – VPN*
 	- *API Gateway / Apigee*
@@ -67,23 +67,23 @@ tags:
 		- *AutoML Natural Language—custom categories*
 		- *Vertex AI*
 - Increase **telemetry** and **insights**
-	- *IoT core*
-	- *Bigtable, Dataflow, BigQuery, Looker*
+	- *[IoT Core](notes/Google%20Cloud%20IoT%20Core.md)*
+	- *[Bigtable](notes/Google%20Cloud%20Bigtable.md), [Dataflow](notes/Google%20Cloud%20Dataflow.md), [BigQuery](notes/Google%20BigQuery.md), Looker*
 - **Measure engagement** with new predictions
-	- *Cloud Firestore*
+	- *[Cloud Firestore](notes/Google%20Cloud%20Firestore.md)*
 	- *AI/ML models—Vertex AI*
 - Enhance global availability and **quality of broadcasts**
-	- *Higher quality video encoding—high spec VMs (Tau , GPUs*
+	- *Higher quality video encoding—high spec VMs (Tau, GPUs)*
 - Increase number of **concurrent viewers**
 	- *Increase capacity*
-	- *Dynamic horizontal scaling—Autoscaling Groups*
+	- *Dynamic horizontal scaling—[Autoscaling Groups](notes/Google%20Compute%20Autoscaling.md)*
 - Minimize operational **complexity**
 	- *Managed services where possible*
 	- *Reduce number of platforms*
 - Ensure regulatory **compliance**
 - New revenue streams e.g., merchandise
 	- *Online store—SaaS*
-	- *Cloud Run, App Engine, Firestore*
+	- *[Cloud Run](notes/Google%20Cloud%20Run.md), [App Engine](notes/Google%20App%20Engine.md), [Firestore](notes/Google%20Cloud%20Firestore.md)*
 
 ## Technical Requirements
 

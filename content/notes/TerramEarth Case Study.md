@@ -17,8 +17,9 @@ tags:
 	- *Big data—2.4 million vehicles next year*
 - **Telemetry** from vehicles:
 	- Small subset collected in **real-time** for fleet management
-		- *Steaming via: IoT Core, Pub/Sub/ Cloud Dataflow, BigQuery/Bigtable*
+		- *Steaming via: [Cloud IoT Core](notes/Google%20Cloud%20IoT%20Core.md), [Pub/Sub](notes/Google%20Cloud%20Pub%20Sub.md)/[Dataflow](notes/Google%20Cloud%20Dataflow.md), [BigQuery](notes/Google%20BigQuery.md)/[Bigtable](notes/Google%20Cloud%20Bigtable.md)*
 	- Remainder uploaded as compressed **batch** files daily upon return to base: **200 to 500 MB/day = 1 PB/day total**
+		- *Batch—[Cloud Storage](notes/Google%20Cloud%20Storage.md), BigQuery*
 
 ## Existing Technical Environment
 
@@ -27,37 +28,55 @@ tags:
 - Sensor data collected from **manufacturing plants** and sent to **private DCs**
 	- **Legacy** inventory and logistics management systems
 	- DCs have multiple **network interconnects** with GCP
+		- *Cloud interconnect—10 Gbps minimum*
 - **Web frontend** for dealers and customers:
 	- Runs in GCP
 	- Stock management
 	- Analytics
+		- *[App Engine](notes/Google%20App%20Engine.md) or [Cloud Run](notes/Google%20Cloud%20Run.md)*
 
 ## Business Requirements
 
 - **Predict** vehicle malfunction to ship parts to dealerships for just-in-time repair
+	- *[BigQuery](notes/Google%20BigQuery.md) ML (SQL)*
+	- *Auto ML Tables (business users)*
+	- *[Vertex AI](notes/Google%20Vertex%20AI.md) (data scientists)*
 - **Decrease** cloud ops costs
 - Adjust to **seasonality**
+	- *[Compute Autoscaling](notes/Google%20Compute%20Autoscaling.md)*
+	- *Prefer serverless—IoT Core, Pub/Sub, Cloud Storage, Dataflow, BigQuery, AppEngine/Cloud Run*
 - **Increase speed/reliability** of dev workflow
+	- *SRE*
+	- *CI/CD*
 - **Remote** developers
 	- Productivity
+		- *Cloud Code*
 	- Code/data security
+		- *IAM*
 - Platform for custom **API** services for dealers/partners
+	- *Apigee*
 
 ## Technical Requirements
 
 - **HTTP API abstraction layer** for legacy systems
 	- Insulate for gradual move into cloud
 - Modernize **CI/CD** pipelines
+	- *Cloud Build*
+	- *Container Registry*
 - **Container**-based apps
+	- *Cloud Run / [GKE](notes/Google%20Kubernetes%20Engine.md)*
+	- *Prefer Cloud Run to App Engine*
 - Allow developers to run **experiments**
 	- Security
 	- Governance
+		- *Sandbox projects*
 - Self-service portal for internal/partner developers to:
 	- **Create new projects**
 	- Request resources for **analytics** jobs
 	- **Centrally** manage access to **API** endpoints
 - Cloud-native solutions for **keys/secret management**
 	- Optimize for **identity**-based access
+		- *KMS, Secret Manager*
 - Improve/standardize tools for apps/network monitoring/troubleshooting
 
 ## Executive Statement
@@ -70,6 +89,7 @@ tags:
 	- Create partner ecosystem of new products via **access to data**
 	- Increase autonomous vehicle capabilities
 	- Path to **move legacy systems to cloud**
+		- *Migrate for Compute Engine, Migrate For Anthos*
 
 ## Potential Solution Design
 

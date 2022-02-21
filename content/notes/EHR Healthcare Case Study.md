@@ -26,7 +26,7 @@ tags:
 - Growing rapidly:
 	- *Need to scale*
 	- *Autoscaling Groups*
-	- *Kubernetes autoscaling (pods, nodes)*
+	- *Kubernetes autoscaling (pods, [node pools](notes/GKE%20Cluster%20Autoscaling.md))*
 - DR plan required
 - Need to update **continuous deployment** processes:
 	- *Update software faster*
@@ -38,20 +38,20 @@ tags:
 - Lease on DC about to expire
 - **Web-based customer-facing** applications
 	- Many already **containerized** to run on **Kubernetes**:
-		- *GKE*
-		- *Anthos for hybrid-cloud use cases, and to manage multiple clusters centrally*
+		- *[Google Kubernetes Engine](notes/Google%20Kubernetes%20Engine.md)*
+		- *[Anthos](notes/Google%20Anthos.md) for hybrid-cloud use cases, and to manage multiple clusters centrally*
 		- *Google Container Registry*
 - **SQL** and **noSQL** DBs:
 	- MySQL
-		- *Lift/shift to Cloud SQL*
+		- *Lift/shift to [Cloud SQL](notes/Google%20Cloud%20SQL.md)*
 	- MS SQL Server
 		- *Lift/shift to Cloud SQL*
-		- *Provision specific version in GCE (if not available in Cloud SQL)*
+		- *Provision specific version in [Compute Engine](notes/Google%20Compute%20Engine.md) (if not available in Cloud SQL)*
 	- Redis
-		- *Lift/shift to Memorystore*
+		- *Lift/shift to [Memorystore](notes/Google%20Cloud%20Memorystore.md)*
 		- *Deploy Redis Enterprise from marketplace*
 	- MongoDB
-		- *ETL to Firestore*
+		- *ETL to [Firestore](notes/Google%20Cloud%20Firestore.md)*
 		- *Deploy MongoDB Atlas from marketplace*
 		- *Manual build on GCE/GKE*
 - **Legacy file and API integrations** with insurance providers **on-prem**:
@@ -66,7 +66,7 @@ tags:
 		- *Move to GCP Operations Suite*
 	- Alerts via **email** often **ignored**
 		- *Reduce frequency*
-		- *Move from email to SMS, Slack, PagerDuty, Pub/Sub etc.*
+		- *Move from email to SMS, Slack, PagerDuty, [Pub/Sub](notes/Google%20Cloud%20Pub%20Sub.md) etc.*
 		- *Alerting policies*
 
 ## Business Requirements
@@ -75,22 +75,22 @@ tags:
 	- *Common APIs*
 	- *API management - Apigee*
 	- *SaaS admin portal*
-		- *Deploy to App Engine or Cloud Run (preferred due to containers) if traffic low*
+		- *Deploy to [App Engine](notes/Google%20App%20Engine.md) or [Cloud Run](notes/Google%20Cloud%20Run.md) (preferred due to containers) if traffic low*
 - **99.9% availability** for customer-facing applications:
 	- *Multi-zonal / regional resources*
 - **Centralized** visibility of applications, with **proactive monitoring and alerting**:
 	- *GCP Operations*
 	- *Central logging/monitoring project for all subprojects*
 - Gain **insights** into healthcare trends:
-	- *AI/ML*
-	- *BigQuery*
+	- *[Vertex AI](notes/Google%20Vertex%20AI.md)*
+	- *[BigQuery](notes/Google%20BigQuery.md)*
 	- *BigQuery BI*
 	- *Looker*
 - **Reduce latency** to end users:
 	- *Premium network tier*
 	- *Multi-zonal / regional resources*
-	- *Anthos to place clusters in multiple-regions—multi-cluster ingress*
-	- *Global load balancing*
+	- *Anthos to place clusters in multiple-regions—[Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)
+	- *[Global load balancing](notes/GCP%20Load%20Balancers.md)*
 	- *Cloud CDN*
 - Ensure **compliance**:
 	- *HIPAA*
@@ -125,8 +125,8 @@ tags:
 - Create **interfaces** to ingest and **process data** from new providers
 	- *APIs: Apigee*
 	- *Pub/Sub*
-	- *Dataproc*
-	- *Dataflow*
+	- *[Dataproc](notes/Google%20Cloud%20Dataproc.md)
+	- *[Dataflow](notes/Google%20Cloud%20Dataflow.md)*
 
 ## Executive Statement
 
@@ -140,10 +140,10 @@ tags:
 	- Misconfigurations
 		- *Automate where possible—CI/CD*
 		- *Infrastructure as code e.g., Terraform*
-		- *Kubernetes—roll-back unstable releases*
+		- *[Kubernetes](notes/Kubernetes.md)—roll-back unstable releases*
 		- *Anthos Config Management for guardrails and best practice policies across all clusters*
 	- Inadequate capacity
-		- *Autoscaling*
+		- *[Autoscaling](notes/Google%20Compute%20Autoscaling.md)*
 	- Inconsistent monitoring
 		- *Consolidate onto GCP Operations*
 
