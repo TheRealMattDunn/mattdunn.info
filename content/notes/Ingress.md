@@ -12,7 +12,7 @@ tags:
 ## GKE Ingress
 
 - Implementation of the Kubernetes Ingress resource in GKE
-- Backed by the [HTTP(S) Load Balancer](notes/GCP%20Load%20Balancers.md)
+- Backed by the [HTTP(S) Load Balancer](notes/GCP%20Load%20Balancing.md)
 	- Internal of external
 
 # References

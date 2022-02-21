@@ -45,6 +45,19 @@ tags:
 
 ![gcp_database_decision_tree](/files/gcp_database_decision_tree.svg)
 
+## Networking
+
+### External Networking
+
+- [Cloud Domains](notes/Google%20Cloud%20Domains.md)
+- [Cloud DNS](notes/Google%20Cloud%20DNS.md)
+- [Static IP Addresses](notes/Google%20Cloud%20Static%20IP%20Addresses.md)
+- [Load Balancing](notes/GCP%20Load%20Balancing.md)
+
+### Internal Networking
+
+- [Network Endpoint Groups](notes/GCP%20Network%20Endpoint%20Groups.md)
+
 ## Big Data
 
 - [Cloud IoT Core](notes/Google%20Cloud%20IoT%20Core.md)

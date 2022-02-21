@@ -29,7 +29,7 @@ tags:
 		- *[Google Anthos](notes/Google%20Anthos.md) for common config management and service mesh capabilities*
 		- *[Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)*
 	- Wish to **scale** rapidly based on **demand**
-	- Usage of **[global load balancers](notes/GCP%20Load%20Balancers.md)** to route players to the closest regional arena
+	- Usage of **[global load balancers](notes/GCP%20Load%20Balancing.md)** to route players to the closest regional arena
 	- Usage of a **multi-region [Cloud Spanner](notes/Google%20Cloud%20Spanner.md)** cluster to keep global leaderboard in sync
 		- *Streaming data*
 

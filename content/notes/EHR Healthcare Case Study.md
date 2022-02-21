@@ -90,7 +90,7 @@ tags:
 	- *Premium network tier*
 	- *Multi-zonal / regional resources*
 	- *Anthos to place clusters in multiple-regions—[Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)
-	- *[Global load balancing](notes/GCP%20Load%20Balancers.md)*
+	- *[Global load balancing](notes/GCP%20Load%20Balancing.md)*
 	- *Cloud CDN*
 - Ensure **compliance**:
 	- *HIPAA*

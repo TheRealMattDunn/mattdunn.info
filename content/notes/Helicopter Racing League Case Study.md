@@ -54,7 +54,7 @@ tags:
 - Expand predictive capabilities
 - **Reduce latency** in emerging markets
 	- *Cloud CDN*
-	- *[Global Load Balancing](notes/GCP%20Load%20Balancers.md)*
+	- *[Global Load Balancing](notes/GCP%20Load%20Balancing.md)*
 	- *Regional Managed Instance Groups (MIGs)*
 	- *Regional [Cloud Storage buckets](notes/Google%20Cloud%20Storage.md)*
 - **Expose models** to partners

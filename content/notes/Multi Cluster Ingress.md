@@ -57,7 +57,7 @@ Google hosted service to load balance requests across GKE clusters and regions. 
 	- Requests served by GFEs go to the closest cluster via Google backbone
 - Multi Cluster Ingress Controller
 	- Google managed
-	- Programs external HTTP(S) Load Balancer using [NEGs](notes/NEGs.md)
+	- Programs external HTTP(S) Load Balancer using [GCP Network Endpoint Groups](notes/GCP%20Network%20Endpoint%20Groups.md)
 	- Configures [Pods](notes/Pod.md) across clusters as backends
 	- NEGs track Pod endpoints dynamically
 		- LB has correct set of healthy backends
