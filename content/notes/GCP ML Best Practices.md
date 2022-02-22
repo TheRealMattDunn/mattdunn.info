@@ -17,16 +17,16 @@ tags:
 
 - Prepare a good amount of training data
 	- More accurate models
-- Store tabular data in [BigQuery](notes/Google%20BigQuery.md)
-- Store unstructured data in [Cloud Storage](notes/Google%20Cloud%20Storage.md)
+- Store tabular data in [BigQuery](notes/BigQuery.md)
+- Store unstructured data in [Cloud Storage](notes/Cloud%20Storage.md)
 
 ## Processing
 
 - Use TensorFlow Extended for TensorFlow projects
-- Process tabular data [BigQuery](notes/Google%20BigQuery.md)
+- Process tabular data [BigQuery](notes/BigQuery.md)
 - Process unstructured data with:
-	- [Dataflow](notes/Google%20Cloud%20Dataflow.md)—General use cases, Apache Bean
-	- [Dataproc](notes/Google%20Cloud%20Dataproc.md)—Apache Hadoop or Spark use cases
+	- [Dataflow](notes/Dataflow.md)—General use cases, Apache Bean
+	- [Dataproc](notes/Dataproc.md)—Apache Hadoop or Spark use cases
 - Link data to model with managed datasets
 
 ## Production

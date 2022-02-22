@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Static IP Addresses"
+title: "GCP Static IP Addresses"
 date: "2022-02-21"
 tags:
 - gcp
@@ -13,7 +13,7 @@ tags:
 ### Regional
 
 - Can attach to zonal and regional resources, e.g.:
-	- [Compute Engine VMs](notes/Google%20Compute%20Engine.md)
+	- [Compute Engine VMs](notes/Compute%20Engine.md)
 	- [Network Load Balancers](notes/GCP%20Load%20Balancing.md)
 - Supports IPv4
 

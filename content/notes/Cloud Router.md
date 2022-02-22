@@ -1,5 +1,5 @@
 ---
-title: "GCP Cloud Router"
+title: "Cloud Router"
 date: "2022-02-22"
 tags:
 - gcp

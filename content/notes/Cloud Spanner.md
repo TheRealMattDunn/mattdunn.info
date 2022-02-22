@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Spanner"
+title: "Cloud Spanner"
 date: "2022-02-20"
 tags:
 - gcp

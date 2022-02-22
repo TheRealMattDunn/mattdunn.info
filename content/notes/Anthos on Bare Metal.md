@@ -51,4 +51,4 @@ tags:
 
 # References
 
-- [Google Anthos](notes/Google%20Anthos.md)
+- [Anthos](notes/Anthos.md)

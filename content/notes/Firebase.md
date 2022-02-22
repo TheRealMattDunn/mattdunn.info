@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Firebase"
+title: "Firebase"
 date: "2022-02-20"
 tags:
 - gcp

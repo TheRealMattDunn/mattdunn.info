@@ -56,7 +56,7 @@ tags:
 	- *Cloud CDN*
 	- *[Global Load Balancing](notes/GCP%20Load%20Balancing.md)*
 	- *Regional Managed Instance Groups (MIGs)*
-	- *Regional [Cloud Storage buckets](notes/Google%20Cloud%20Storage.md)*
+	- *Regional [Cloud Storage](notes/Cloud%20Storage.md) buckets*
 - **Expose models** to partners
 	- *Private connectivity – VPN*
 	- *API Gateway / Apigee*
@@ -67,23 +67,23 @@ tags:
 		- *AutoML Natural Language—custom categories*
 		- *Vertex AI*
 - Increase **telemetry** and **insights**
-	- *[IoT Core](notes/Google%20Cloud%20IoT%20Core.md)*
-	- *[Bigtable](notes/Google%20Cloud%20Bigtable.md), [Dataflow](notes/Google%20Cloud%20Dataflow.md), [BigQuery](notes/Google%20BigQuery.md), Looker*
+	- *[IoT Core](notes/IoT%20Core.md)*
+	- *[Cloud Bigtable](notes/Cloud%20Bigtable.md), [Dataflow](notes/Dataflow.md), [BigQuery](notes/BigQuery.md), Looker*
 - **Measure engagement** with new predictions
-	- *[Cloud Firestore](notes/Google%20Cloud%20Firestore.md)*
+	- *[Cloud Firestore](notes/Cloud%20Firestore.md)*
 	- *AI/ML models—Vertex AI*
 - Enhance global availability and **quality of broadcasts**
 	- *Higher quality video encoding—high spec VMs (Tau, GPUs)*
 - Increase number of **concurrent viewers**
 	- *Increase capacity*
-	- *Dynamic horizontal scaling—[Autoscaling Groups](notes/Google%20Compute%20Autoscaling.md)*
+	- *Dynamic horizontal scaling—[Autoscaling Groups](notes/GCP%20Compute%20Autoscaling.md)*
 - Minimize operational **complexity**
 	- *Managed services where possible*
 	- *Reduce number of platforms*
 - Ensure regulatory **compliance**
 - New revenue streams e.g., merchandise
 	- *Online store—SaaS*
-	- *[Cloud Run](notes/Google%20Cloud%20Run.md), [App Engine](notes/Google%20App%20Engine.md), [Firestore](notes/Google%20Cloud%20Firestore.md)*
+	- *[Cloud Run](notes/Cloud%20Run.md), [App Engine](notes/App%20Engine.md), [Cloud Firestore](notes/Cloud%20Firestore.md)*
 
 ## Technical Requirements
 

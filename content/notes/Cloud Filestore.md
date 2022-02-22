@@ -1,5 +1,5 @@
 ---
-title: "GCP Filestore"
+title: "Cloud Filestore"
 date: "2022-02-18"
 tags:
 - gcp

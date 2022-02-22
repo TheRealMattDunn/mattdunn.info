@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Dataflow"
+title: "Dataflow"
 date: "2022-02-16"
 tags:
 - gcp

@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Functions"
+title: "Cloud Functions"
 date: "2022-02-16"
 tags:
 - gcp

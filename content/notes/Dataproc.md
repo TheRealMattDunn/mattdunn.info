@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Dataproc"
+title: "Dataproc"
 date: "2022-02-16"
 tags:
 - gcp

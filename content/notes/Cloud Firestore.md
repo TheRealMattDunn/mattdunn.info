@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Firestore"
+title: "Cloud Firestore"
 date: "2022-02-20"
 tags:
 - gcp

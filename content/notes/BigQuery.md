@@ -1,5 +1,5 @@
 ---
-title: "Google BigQuery"
+title: "BigQuery"
 date: "2022-02-16"
 tags:
 - gcp

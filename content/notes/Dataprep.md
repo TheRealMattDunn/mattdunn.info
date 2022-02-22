@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Dataprep"
+title: "Dataprep"
 date: "2022-02-16"
 tags:
 - gcp
@@ -14,9 +14,9 @@ tags:
 - Prediction of next transformation
 - Transformation functions, e.g., join, union, aggregate, merge, pivot
 - Inputs: CSV, JSON, relational data
-	- From: [Google Cloud Storage](notes/Google%20Cloud%20Storage.md), [BigQuery](notes/Google%20BigQuery.md), direct upload
+	- From: [Cloud Storage](notes/Cloud%20Storage.md), [BigQuery](notes/BigQuery.md), direct upload
 - Outputs:
-	- To: [BigQuery](notes/Google%20BigQuery.md), [Dataflow](notes/Google%20Cloud%20Dataflow.md), file
+	- To: [BigQuery](notes/BigQuery.md), [Dataflow](notes/Dataflow.md), file
 
 # References
 

@@ -1,5 +1,5 @@
 ---
-title: "Google Compute Autoscaling"
+title: "GCP Compute Autoscaling"
 date: "2022-02-20"
 tags:
 - gcp

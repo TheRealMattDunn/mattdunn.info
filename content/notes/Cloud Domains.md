@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Domains"
+title: "Cloud Domains"
 date: "2022-02-21"
 tags:
 - gcp

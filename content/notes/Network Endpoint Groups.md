@@ -1,5 +1,5 @@
 ---
-title: "GCP Network Endpoint Groups"
+title: "Network Endpoint Groups"
 date: "2022-02-10"
 tags:
 - gcp
@@ -7,7 +7,7 @@ tags:
 - networking
 ---
 
-## Network Endpoint Groups
+## Overview
 
 - Collections of IPs or IP and port comninations in a single subnet
 

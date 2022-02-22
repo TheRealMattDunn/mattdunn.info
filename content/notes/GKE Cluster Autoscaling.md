@@ -17,5 +17,5 @@ Clusters can be prevented from scaling down, and deleting nodes due to:
 
 # References
 
-- [Google Kubernetes Engine](notes/Google%20Kubernetes%20Engine.md)
+- [Kubernetes Engine](notes/Kubernetes%20Engine.md)
 - [Cluster autoscaler documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-autoscaler)

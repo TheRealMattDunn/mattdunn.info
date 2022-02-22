@@ -1,5 +1,5 @@
 ---
-title: "GCP Cloud VPN"
+title: "Cloud VPN"
 date: "2022-02-22"
 tags:
 - gcp

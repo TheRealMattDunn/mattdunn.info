@@ -10,7 +10,7 @@ tags:
 ## Overview
 
 - Fastest block storage solution
-- Attached directly to [Google Compute Engine](notes/Google%20Compute%20Engine.md) VMs
+- Attached directly to [Compute Engine](notes/Compute%20Engine.md) VMs
 - Zonal
 - 375 GB disks
 	- Expandable to 3, 6 or 9 TBs—combined into a single logical volume

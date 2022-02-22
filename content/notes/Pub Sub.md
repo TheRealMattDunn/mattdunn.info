@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Pub/Sub"
+title: "Pub/Sub"
 date: "2022-02-16"
 tags:
 - gcp

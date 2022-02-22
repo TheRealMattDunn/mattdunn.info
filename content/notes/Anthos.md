@@ -16,7 +16,7 @@ tags:
 - Supports:
 	- GKE clusters
 	- Cloud Run
-	- [GCE](notes/Google%20Compute%20Engine.md) VMs
+	- [Compute Engine](notes/Compute%20Engine.md) VMs
 - Migrate for Anthos—migrate legacy workloads to containers
 - Anthos Config Management
 	- Policy enforcement
@@ -47,7 +47,7 @@ tags:
 
 ## Components
 
-- [GKE](notes/Google%20Kubernetes%20Engine.md)
+- [GKE](notes/Kubernetes%20Engine.md)
 - [Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)
 
 # References

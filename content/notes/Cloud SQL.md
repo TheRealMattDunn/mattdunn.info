@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud SQL"
+title: "Cloud SQL"
 date: "2022-02-20"
 tags:
 - gcp

@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud IoT Core"
+title: "IoT Core"
 date: "2022-02-16"
 tags:
 - gcp
@@ -23,7 +23,7 @@ tags:
 
 ### Protocol Bridge
 
-- Incoming telemetry data to [Pub/Sub](notes/Google%20Cloud%20Pub%20Sub.md)
+- Incoming telemetry data to [Pub/Sub](notes/Pub%20Sub.md)
 - HTTPS or MQTT
 - Two-way comms
 - Updates on and offline

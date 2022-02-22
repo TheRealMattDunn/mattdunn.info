@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Bigtable"
+title: "Cloud Bigtable"
 date: "2022-02-20"
 tags:
 - gcp

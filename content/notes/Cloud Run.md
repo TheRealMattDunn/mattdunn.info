@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Run"
+title: "Cloud Run"
 date: "2022-02-16"
 tags:
 - gcp
