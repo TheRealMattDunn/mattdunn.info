@@ -53,9 +53,14 @@ tags:
 - [Cloud DNS](notes/Google%20Cloud%20DNS.md)
 - [Static IP Addresses](notes/Google%20Cloud%20Static%20IP%20Addresses.md)
 - [Load Balancing](notes/GCP%20Load%20Balancing.md)
+- [Cloud CDN](notes/Google%20Cloud%20CDN.md)
 
 ### Internal Networking
 
+- [VPCs](notes/GCP%20VPCs.md)
+- [Cloud Interconnect](notes/GCP%20Cloud%20Interconnect.md)
+- [Cloud VPN](notes/GCP%20Cloud%20VPN.md)
+- [Cloud Router](notes/GCP%20Cloud%20Router.md)
 - [Network Endpoint Groups](notes/GCP%20Network%20Endpoint%20Groups.md)
 
 ## Big Data

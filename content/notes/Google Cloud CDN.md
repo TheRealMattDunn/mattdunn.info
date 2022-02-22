@@ -18,6 +18,15 @@ tags:
 	- [Cloud Storage](notes/Google%20Cloud%20Storage.md)
 	- (Custom origins not allowed)
 
+## CDN Interconnect
+
+- Low latency connectivity to certain CDN providers, with lower egress fees
+	- Akami, Verizon, Cloudflare, Fastly
+- Pull and push cache fills
+- Best for:
+	- High volume egress—lower costs
+	- Frequent content updates—lower latency
+
 # References
 
 - [GCP Services](notes/GCP%20Services.md)

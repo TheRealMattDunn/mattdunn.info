@@ -37,3 +37,7 @@ tags:
 ### Internal
 
 ![Internal load balancing decision tree](/files/gcp_internal_load_balancing_decision_tree.svg)
+
+# References
+
+- [GCP Services](notes/GCP%20Services.md)
