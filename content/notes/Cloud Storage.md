@@ -28,6 +28,35 @@ tags:
 | Coldline | Data accessed once per quarter      |
 | Archive  | Data accessed once per year or less |
 
+## Versioning
+
+Get the current versioning state:
+
+````
+gsutil versioning get gs://<BUCKET_NAME>
+````
+
+Enable versioning:
+
+````
+gsutil versioning set on gs://<BUCKET_NAME>
+````
+
+Upon deleting a file—version still exists. To view:
+
+````
+gsutil ls -a gs://<BUCKET_NAME>/<FOLDER>
+````
+
+Version format: `gs://<BUCKT_NAME>/<FILE_PATH>#<GENERATION_NUM>`
+
+Restore a version:
+
+````
+# Can also use cp here
+gsutil mv gs://<BUCKT_NAME>/<FILE_PATH>#<GENERATION_NUM> gs://<BUCKT_NAME>/<FILE_PATH>
+````
+
 # References
 
 - [GCP Object and File Storage](notes/GCP%20Object%20and%20File%20Storage.md)
