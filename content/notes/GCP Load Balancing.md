@@ -21,7 +21,7 @@ tags:
 - Backends in one region
 - Compliance use case—traffic stays within region
 
-### Global Lad Balancing
+### Global Load Balancing
 
 - IPv4 and IPv6
 - Multi-region failover
