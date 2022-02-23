@@ -55,7 +55,7 @@ tags:
 
 ## Big Data
 
-- [Cloud IoT Core](notes/IoT%20Core.md)
+- [IoT Core](notes/IoT%20Core.md)
 - [Pub/Sub](notes/Pub%20Sub.md)
 - [BigQuery](notes/BigQuery.md)
 - [Dataprep](notes/Dataprep.md)

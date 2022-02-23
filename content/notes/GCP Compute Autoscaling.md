@@ -20,4 +20,4 @@ tags:
 
 # References
 
-- [notes/GCP Compute Services](notes/GCP%20Compute%20Services)
+- [GCP Services](notes/GCP%20Services.md)

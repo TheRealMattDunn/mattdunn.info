@@ -39,7 +39,7 @@ tags:
 - Video **encoding/transcoding** performed on **VMs** for each job
 	- *Lift/shift with Migrate for Compute Engine*
 	- *GPUs*
-	- *[Machine types:](notes/GCP%20Compute%20Engine%20Machine%20Families)*
+	- *Machine types:*
 		- *Tau T2D (option for scale-out architecture, no GPU support)*
 		- *C2, C2D (ultra-high performance, no GPU support)*
 		- *A2 (optimized for GCP usage)*

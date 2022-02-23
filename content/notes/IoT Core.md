@@ -30,4 +30,4 @@ tags:
 
 # References
 
-= [GCP Big Data Services](notes/GCP%20Big%20Data%20Services.md)
+- [GCP Services](notes/GCP%20Services.md)

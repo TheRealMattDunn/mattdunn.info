@@ -10,7 +10,7 @@ tags:
 
 - Highly configurable
 - Zonal
-- Choice of [machine types:](notes/GCP%20Compute%20Engine%20Machine%20Families.md)
+- Choice of machine types:
 	- General purpose
 	- Compute optimized
 	- Memory optimized
@@ -73,4 +73,4 @@ tags:
 ## References
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
-- [GCP Compute Services](notes/GCP%20Compute%20Services.md)
+- [GCP Services](notes/GCP%20Services.md)
