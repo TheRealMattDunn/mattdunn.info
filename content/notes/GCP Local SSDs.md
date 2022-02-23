@@ -22,4 +22,5 @@ tags:
 
 # References
 
-- [GCP Object and File Storage](notes/GCP%20Object%20and%20File%20Storage.md)
+- [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
+- [GCP Services](notes/GCP%20Services.md)

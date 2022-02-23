@@ -28,16 +28,7 @@ tags:
 - Connects clients to closest region for lower latency
 	- Backends distributed across regions
 
-## Load Balancing Decision Trees
-
-### External
-
-![External load balancing decision tree](/files/gcp_external_load_balancing_decision_tree.svg)
-
-### Internal
-
-![Internal load balancing decision tree](/files/gcp_internal_load_balancing_decision_tree.svg)
-
 # References
 
+- [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
 - [GCP Services](notes/GCP%20Services.md)

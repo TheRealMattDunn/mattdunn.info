@@ -23,4 +23,5 @@ tags:
 
 # References
 
+- [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
 - [GCP Compute Services](notes/GCP%20Compute%20Services.md)

@@ -6,9 +6,11 @@ tags:
 - gcp
 ---
 
-## Compute
+## Decision Trees
 
-![gcp_compute_services](/files/gcp_compute_services.svg)
+- [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
+
+## Compute
 
 - [Compute Engine](notes/Compute%20Engine.md)
 - [Kubernetes Engine (GKE)](notes/Kubernetes%20Engine.md)
@@ -16,20 +18,12 @@ tags:
 - [Cloud Run](notes/Cloud%20Run.md)
 - [Cloud Functions](notes/Cloud%20Functions.md)
 
-### Compute Decision Tree
-
-![Google compute decision tree](/files/google_compute_decision_tree.svg)
-
 ## Storage
 
 - [Local SSDs](notes/GCP%20Local%20SSDs.md)
 - [Persistent Disks](notes/GCP%20Persistent%20Disks.md)
 - [Cloud Filestore](notes/Cloud%20Filestore.md)
 - [Cloud Storage](notes/Cloud%20Storage.md)
-
-### Storage Decision Tree
-
-![GCP storage decision tree](/files/gcp_storage_decision_tree.svg)
 
 ## Databases
 
@@ -40,10 +34,6 @@ tags:
 - [Firebase](notes/Firebase.md)
 - [Memorystore](notes/Memorystore.md)
 - Datastream
-
-### Database Decision Tree
-
-![gcp_database_decision_tree](/files/gcp_database_decision_tree.svg)
 
 ## Networking
 
@@ -72,10 +62,23 @@ tags:
 - [Dataproc](notes/Dataproc.md)
 - [Dataflow](notes/Dataflow.md)
 
-### Big Data Processing Decision Tree
-
-![gcp_data_processing_decision_tree](/files/gcp_data_processing_decision_tree.svg)
-
 ## AI/ML
 
 - [Vertex AI](notes/Google%20Vertex%20AI.md)
+
+## Security
+
+- [Cloud IAM](notes/Cloud%20IAM.md)
+- [GCP Resource Manager](notes/GCP%20Resource%20Manager.md)
+- [Google Cloud Identity](notes/Google%20Cloud%20Identity.md)
+- [Identity Aware Proxy](notes/Identity%20Aware%20Proxy.md)
+- [Cloud Security Command Center](notes/Cloud%20Security%20Command%20Center.md)
+- [Web Security Scanner](notes/Web%20Security%20Scanner.md)
+- [Cloud Armor](notes/Cloud%20Armor.md)
+- [Event Threat Detection](notes/Event%20Threat%20Detection.md)
+- [Cloud Data Loss Prevention](notes/Cloud%20Data%20Loss%20Prevention.md)
+- [Cloud KMS](notes/Cloud%20KMS.md)
+	- [CMEK and CSEK](notes/GCP%20CMEK%20and%20CSEK.md)
+- [Cloud HSM](notes/Cloud%20HSM.md)
+- [Cloud EKM](notes/Cloud%20EKM.md)
+- [Secret Manager](notes/Secret%20Manager.md)
