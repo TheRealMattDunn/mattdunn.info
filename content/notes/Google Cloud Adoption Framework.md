@@ -70,7 +70,7 @@ tags:
 
 ## The Cloud Maturity Scale
 
-![cloud_maturity_scale](files/cloud_maturity_scale.svg)
+![cloud_maturity_scale](/files/cloud_maturity_scale.svg)
 
 ## Epics
 
