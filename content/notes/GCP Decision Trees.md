@@ -32,7 +32,7 @@ tags:
 
 #### Internal
 
-![gcp_internal_load_balancing_decision_tree](files/gcp_internal_load_balancing_decision_tree.svg)
+![gcp_internal_load_balancing_decision_tree](/files/gcp_internal_load_balancing_decision_tree.svg)
 
 ### Big Data
 
@@ -40,7 +40,7 @@ tags:
 
 ### Key Management
 
-![gcp_key_management_decision_tree](files/gcp_key_management_decision_tree.svg)
+![gcp_key_management_decision_tree](/files/gcp_key_management_decision_tree.svg)
 
 # References
 
