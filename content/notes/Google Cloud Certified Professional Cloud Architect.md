@@ -25,6 +25,7 @@ tags:
   - [HTTP Status Codes](notes/HTTP%20Status%20Codes.md)
 - [Site Reliability Engineering](notes/Site%20Reliability%20Engineering.md)
 	- SLIs, SLOs and SLAs
+- [Google Cloud Adoption Framework](notes/Google%20Cloud%20Adoption%20Framework.md)
 
 ## Case Studies
 
