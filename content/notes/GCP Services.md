@@ -84,6 +84,14 @@ tags:
 - [Cloud EKM](notes/Cloud%20EKM.md)
 - [Secret Manager](notes/Secret%20Manager.md)
 
-## Other
+## Operations
+
+- [Cloud Monitoring](notes/Cloud%20Monitoring.md)
+- [Cloud Logging](notes/Cloud%20Logging.md)
+- [Cloud Debugger](notes/Cloud%20Debugger.md)
+- [Cloud Trace](notes/Cloud%20Trace.md)
+- [Cloud Profiler](notes/Cloud%20Profiler.md)
+
+## CI/CD
 
 - [Cloud Build](notes/Cloud%20Build.md)
