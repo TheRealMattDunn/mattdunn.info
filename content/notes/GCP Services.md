@@ -44,6 +44,7 @@ tags:
 - [Static IP Addresses](notes/GCP%20Static%20IP%20Addresses.md)
 - [Load Balancing](notes/GCP%20Load%20Balancing.md)
 - [Cloud CDN](notes/Cloud%20CDN.md)
+- [Cloud NAT](notes/Cloud%20NAT.md)
 
 ### Internal Networking
 

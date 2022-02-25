@@ -12,7 +12,7 @@ tags:
 - Analyse logs from Cloud Logging in near real-time
 	- [VPCs](notes/GCP%20VPCs.md) flow logs
 	- Firewall logs
-	- Cloud NAT logs
+	- [Cloud NAT](notes/Cloud%20NAT.md) logs
 	- [DNS](notes/Cloud%20DNS.md) logs
 	- Linux system logs
 - 25+ rules, e.g.:
