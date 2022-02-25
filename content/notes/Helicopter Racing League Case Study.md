@@ -47,7 +47,7 @@ tags:
 - Race predictions via **TensorFlow** models running on **VMs**
 	- *Lift/shift with Migrate for Compute Engine*
 	- *TPUs—Tensor Processing Unit, built for TensorFlow*
-	- *[Vertex AI](notes/Google%20Vertex%20AI.md)*
+	- *[Vertex AI](notes/Vertex%20AI.md)*
 
 ## Business Requirements
 

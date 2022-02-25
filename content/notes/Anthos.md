@@ -50,6 +50,13 @@ tags:
 - [GKE](notes/Kubernetes%20Engine.md)
 - [Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)
 
+## Supported Versions
+
+- Versions indicated by [semver](https://semver.org/) numbering: x.y.z
+- Quarterly major/minor releases
+- Monthly path releases
+- Google support previous an n–2 releases
+
 # References
 
 - [Kubernetes](notes/Kubernetes.md)

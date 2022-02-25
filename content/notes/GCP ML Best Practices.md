@@ -38,4 +38,4 @@ tags:
 
 # References
 
-- [Google Vertex AI](notes/Google%20Vertex%20AI.md)
+- [Vertex AI](notes/Vertex%20AI.md)

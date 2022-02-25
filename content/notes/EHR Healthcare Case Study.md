@@ -82,7 +82,7 @@ tags:
 	- *GCP Operations*
 	- *Central logging/monitoring project for all subprojects*
 - Gain **insights** into healthcare trends:
-	- *[Vertex AI](notes/Google%20Vertex%20AI.md)*
+	- *[Vertex AI](notes/Vertex%20AI.md)*
 	- *[BigQuery](notes/BigQuery.md)*
 	- *BigQuery BI*
 	- *Looker*

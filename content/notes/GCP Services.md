@@ -64,13 +64,13 @@ tags:
 
 ## AI/ML
 
-- [Vertex AI](notes/Google%20Vertex%20AI.md)
+- [Vertex AI](notes/Vertex%20AI.md)
 
 ## Security
 
 - [Cloud IAM](notes/Cloud%20IAM.md)
 - [GCP Resource Manager](notes/GCP%20Resource%20Manager.md)
-- [Google Cloud Identity](notes/Google%20Cloud%20Identity.md)
+- [Cloud Identity](notes/Cloud%20Identity.md)
 - [Identity Aware Proxy](notes/Identity%20Aware%20Proxy.md)
 - [Cloud Security Command Center](notes/Cloud%20Security%20Command%20Center.md)
 - [Web Security Scanner](notes/Web%20Security%20Scanner.md)
@@ -82,3 +82,7 @@ tags:
 - [Cloud HSM](notes/Cloud%20HSM.md)
 - [Cloud EKM](notes/Cloud%20EKM.md)
 - [Secret Manager](notes/Secret%20Manager.md)
+
+## Other
+
+- [Cloud Build](notes/Cloud%20Build.md)

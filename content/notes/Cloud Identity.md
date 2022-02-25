@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Identity"
+title: "Cloud Identity"
 date: "2022-02-22"
 tags:
 - gcp

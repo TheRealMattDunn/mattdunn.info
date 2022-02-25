@@ -40,7 +40,7 @@ tags:
 - **Predict** vehicle malfunction to ship parts to dealerships for just-in-time repair
 	- *[BigQuery](notes/BigQuery.md) ML (SQL)*
 	- *Auto ML Tables (business users)*
-	- *[Vertex AI](notes/Google%20Vertex%20AI.md) (data scientists)*
+	- *[Vertex AI](notes/Vertex%20AI.md) (data scientists)*
 - **Decrease** cloud ops costs
 - Adjust to **seasonality**
 	- *[Compute Autoscaling](notes/GCP%20Compute%20Autoscaling.md)*
