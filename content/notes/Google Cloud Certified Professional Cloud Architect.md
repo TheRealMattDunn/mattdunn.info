@@ -8,6 +8,8 @@ tags:
 
 ## Key Fundamentals To Know
 
+- [Cloud Architecture](notes/Cloud%20Architecture.md)
+- [GCP Services](notes/GCP%20Services.md)
 - Distributed systems
 - [OSI Layers](notes/OSI%20Layers.md)
 - TCP/IP
@@ -26,6 +28,8 @@ tags:
 - [Site Reliability Engineering](notes/Site%20Reliability%20Engineering.md)
 	- SLIs, SLOs and SLAs
 - [Google Cloud Adoption Framework](notes/Google%20Cloud%20Adoption%20Framework.md)
+- [GCP Data Migration](notes/GCP%20Data%20Migration.md)
+- [GCP Application Migration](notes/GCP%20Application%20Migration.md)
 
 ## Case Studies
 

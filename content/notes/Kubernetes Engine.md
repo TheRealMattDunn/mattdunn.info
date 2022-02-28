@@ -15,6 +15,7 @@ tags:
 	- Autopilot—fully managed
 - Auto-repair and upgrade
 - [Autoscaling](notes/GKE%20Cluster%20Autoscaling.md)
+- Containerize legacy apps and migrate using [Migrate for Anthos and GKE](notes/Migrate%20for%20Anthos%20and%20GKE.md)
 
 ## Clusters
 

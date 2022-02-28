@@ -4,6 +4,7 @@ date: "2022-02-10"
 tags:
 - kubernetes
 - gke
+- anthos
 - gcp
 - cloud
 ---
@@ -49,6 +50,7 @@ tags:
 
 - [GKE](notes/Kubernetes%20Engine.md)
 - [Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)
+- [Migrate for Anthos and GKE](notes/Migrate%20for%20Anthos%20and%20GKE.md)]
 
 ## Supported Versions
 

@@ -17,6 +17,7 @@ tags:
 - [App Engine](notes/App%20Engine.md)
 - [Cloud Run](notes/Cloud%20Run.md)
 - [Cloud Functions](notes/Cloud%20Functions.md)
+- [VMware Engine](notes/VMware%20Engine.md)
 
 ## Storage
 
