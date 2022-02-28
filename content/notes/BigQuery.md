@@ -18,6 +18,10 @@ tags:
 - ML and BI
 - Real-time analytics
 - Automatic replication, 7 day storage of changes
+- BigQuery Slots
+	- Up-front purchase of processing capacity
+	- Flat-rate pricing
+	- Useful for CapEx optimisation model
 
 # References
 

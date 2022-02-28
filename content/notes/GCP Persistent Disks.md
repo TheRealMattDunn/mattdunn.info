@@ -10,9 +10,10 @@ tags:
 ## Overview
 
 - Disks independent of [Compute Engine](notes/Compute%20Engine.md) instance
-- Data available ofter VM is shutdown
+- Data available after VM is shutdown
 - Durable—data distributed across physical disks (99.9999%)
 - Secure—encrypted at rest and transit
+- Can attach to multiple Compute Engine instances in read-only mode
 
 ### Zonal Vs Regional Persistent Disks
 

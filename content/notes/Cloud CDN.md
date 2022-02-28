@@ -9,12 +9,13 @@ tags:
 ## Overview
 
 - Serve content closer to users
+- Suitable for frequently accessed data
 - Works with [external HTTP(S) load balancers](notes/GCP%20Load%20Balancing.md)
 - HTTP caching—controlled with cache control header, or automatic caching of static content
 - Sources:
 	- Instance groups
 	- Zonal [NEGs](notes/Network%20Endpoint%20Groups.md)
-	- Serverless NEGs (e.g. [App Engine](notes/App%20Engine.md), [Cloud Functions](notes/Cloud%20Functions.md))
+	- Serverless NEGs (e.g., [App Engine](notes/App%20Engine.md), [Cloud Functions](notes/Cloud%20Functions.md))
 	- [Cloud Storage](notes/Cloud%20Storage.md)
 	- (Custom origins not allowed)
 

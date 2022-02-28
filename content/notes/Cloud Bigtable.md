@@ -13,7 +13,8 @@ tags:
 - Key-value store
 - High read/write rates, low latency
 - Tables stored in instances
-	- Up to four nodes in different zones
+	- Zonal resource
+	- Regional replication—up to four nodes in different zones, primary-primary replication
 - Use cases:
 	- Time-series data
 	- Marketing/financial data

@@ -9,10 +9,16 @@ tags:
 
 ## Overview
 
+- Object storage
+	- Not suitable for file-based storage applications
 - Infinitely scalable
 - Highly durable (99.9999999%—eleven 9s)
 - Unstructured data—images, videos etc.
-- Data stored in buckets—regional or multi-regional
+- Data stored in buckets
+- Regional, dual-regional or multi-regional
+	- Instant redundancy within a single region
+	- Asynchronous redundancy between dual or multi-regions
+	- Use to optimize latency and bandwidth considerations for users
 - Folder structure
 - Object versioning—mutable files
 - Permissions: bucket or object level

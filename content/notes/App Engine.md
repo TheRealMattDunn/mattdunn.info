@@ -18,8 +18,8 @@ tags:
 
 ## App Engine Standard
 
-- Instantaneous scaling
-	- Scales to zero
+- Instantaneous scale-up
+	- Scales down to zero—15 minute scale down period (paid for)
 - Runtimes:
 	- Python 3
 	- Java 11
@@ -31,6 +31,7 @@ tags:
 ## App Engine Flexible
 
 - Containerized apps
+	- Deploy from Dockerfile or Container Registry/Artifact Registry
 - Best for consistent traffic—gradual scaling
 - Runtimes:
 	- Python 2.7/3.6

@@ -18,7 +18,7 @@ tags:
 	- Firewall rules
 	- Routes
 - VPCs—global
-- Subnets—regional
+- Subnets—regional, can span multiple zones within a region
 - Options:
 	- Shared VPC
 	- VPC peering—services available across different VPCs in different orgs and projects

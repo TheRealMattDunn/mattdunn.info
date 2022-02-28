@@ -16,6 +16,7 @@ tags:
 - Knative-based
 - Any language/library/binary
 - Autoscaling from zero
+- Priced down to 100ms
 
 # References
 

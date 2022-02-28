@@ -9,10 +9,10 @@ tags:
 
 ## Overview
 
+- Streaming analytics service
+- Transform and enrich data in stream and batch modes with a single model
 - Serverless—managed service, horizontal scaling
-- Batch and streaming with a single model
-	- Often not the case
-- Apache Beam
+- Apache Beam-based
 	- Open source
 	- Beam SDK—Java, Python, Go (not currently supported)
 	- Dataflow is the backend for the Beam API
