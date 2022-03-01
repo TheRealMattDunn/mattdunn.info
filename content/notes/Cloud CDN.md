@@ -27,7 +27,3 @@ tags:
 - Best for:
 	- High volume egress—lower costs
 	- Frequent content updates—lower latency
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

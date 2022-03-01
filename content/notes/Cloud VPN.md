@@ -15,7 +15,3 @@ tags:
 	- Use dynamic routing and BGP
 	- Apply secure firewall rules
 	- Use strong pre-shared keys
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

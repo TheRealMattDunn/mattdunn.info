@@ -29,8 +29,4 @@ tags:
 - Active for 24 hrs
 - Output sent to target's environment
 - Conditional log points (all languages)
-- Canarying (Java, Python, NodeJS)
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)
+- Canarying (Java, Python, NodeJS)—test log point against a subset of instances

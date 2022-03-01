@@ -23,8 +23,3 @@ tags:
 - Customer specifies contents of key material
 - Keys stored on-prem, or in external service
 - Compatibale with [Cloud Storage](notes/Cloud%20Storage.md) and [Compute Engine](notes/Compute%20Engine.md)
-
-# References
-
-- [Cloud KMS](notes/Cloud%20KMS.md)
-- [GCP Services](notes/GCP%20Services.md)

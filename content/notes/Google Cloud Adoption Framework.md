@@ -82,4 +82,3 @@ tags:
 # References
 
 - [Google Cloud Adoption Framework Whitepaper](https://services.google.com/fh/files/misc/google_cloud_adoption_framework_whitepaper.pdf)
-- [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)

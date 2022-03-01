@@ -26,4 +26,3 @@ tags:
 # References
 
 - [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
-- [GCP Services](notes/GCP%20Services.md)

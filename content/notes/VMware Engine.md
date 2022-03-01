@@ -14,7 +14,3 @@ tags:
 	- Scale on demand—reduce CapEx
 	- Disaster recovery
 	- High performance applications
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

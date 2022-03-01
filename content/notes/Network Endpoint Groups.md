@@ -9,8 +9,4 @@ tags:
 
 ## Overview
 
-- Collections of IPs or IP and port comninations in a single subnet
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)
+- Collections of IPs or IP and port combinations in a single subnet

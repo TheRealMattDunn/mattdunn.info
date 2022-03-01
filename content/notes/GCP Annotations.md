@@ -11,7 +11,7 @@ tags:
 - For compliance purposes
 - Adds business context to assets
 - Adds additional layer of security
-- Applied in the Cloud Security Command Center (CSCC)
+- Applied in the [Cloud Security Command Center](notes/Cloud%20Security%20Command%20Center.md)
 	- CSCC also works with labels and network tags
 - Organization, project, or resource level
 
@@ -33,7 +33,3 @@ tags:
 ## Flow Chart
 
 ![Flow chart](/files/annotations.svg)
-
-# References
-
-- [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)

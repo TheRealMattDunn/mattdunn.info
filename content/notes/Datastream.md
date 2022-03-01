@@ -10,7 +10,3 @@ tags:
 
 - Serverless change data capture (CDC) and replication service
 - Synchronize data across databases and applications
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

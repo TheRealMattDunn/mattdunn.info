@@ -7,7 +7,7 @@ tags:
 
 ## Overview
 
-- Fundamental Kubernetes workload abstraction
+- Fundamental [Kubernetes](notes/Kubernetes.md) workload abstraction
 - Groups of containers
 
 ## Requests and Limits
@@ -18,7 +18,3 @@ tags:
 	- Used by the kube-scheduler to decide which node to place Pod on
 - Limits:
 	- Enforced limit by kubelet
-
-# References
-
-- [Kubernetes](notes/Kubernetes.md)

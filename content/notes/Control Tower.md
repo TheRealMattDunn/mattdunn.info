@@ -46,7 +46,3 @@ tags:
 - Infrastructure-as-code
 - Example:
 	- A user without permission to manually create EC2 instances can create them using predefined approved templates from the Service Catalog
-
-# References
-
-- [AWS Services](notes/AWS%20Services.md)

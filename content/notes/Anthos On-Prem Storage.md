@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-- Block/file storage is exposed to Anthos clusters via the Container Storage Interface (CSI)
+- Block/file storage is exposed to [Anthos](notes/Anthos.md) clusters via the Container Storage Interface (CSI)
 - This is required for PersistentVolumes on [Anthos on Bare Metal](notes/Anthos%20on%20Bare%20Metal.md) (and VMware—although the choice here might be easier)
 - Google partners have developed CSI drivers that have been verified against Anthos:
 	- Dell EMC
@@ -20,7 +20,3 @@ tags:
 	- Pure Storage
 	- Robin.io
 	- VMware
-
-# References
-
-- [Anthos on Bare Metal](notes/Anthos%20on%20Bare%20Metal.md)

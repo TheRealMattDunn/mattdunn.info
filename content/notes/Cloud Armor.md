@@ -19,8 +19,3 @@ tags:
 - Preview changes
 - Configure WAG rules to reduce false positives
 - Reference named IP lists published by CDN partners, e.g., Fastly, Cloudflare etc.
-
-# References
-
-- [Cloud Security Command Center](notes/Cloud%20Security%20Command%20Center.md)
-- [GCP Services](notes/GCP%20Services.md)

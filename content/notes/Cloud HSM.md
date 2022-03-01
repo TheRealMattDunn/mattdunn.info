@@ -15,7 +15,3 @@ tags:
 - Keys non-exportable
 - Tamper resistant, with evidence of tamper
 - Horizontal autoscaling
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

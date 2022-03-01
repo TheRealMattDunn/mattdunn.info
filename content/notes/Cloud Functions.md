@@ -13,10 +13,10 @@ tags:
 - Event driven
 - Triggers:
 	- HTTP
-	- Cloud Storage
-	- Cloud Pub/Sub
-	- Cloud Firestore
-	- Audit logs
+	- [Cloud Storage](notes/Cloud%20Storage.md)
+	- [Pub Sub](notes/Pub%20Sub.md)
+	- [Cloud Firestore](notes/Cloud%20Firestore.md)
+	- [Audit logs](notes/Cloud%20Logging.md)
 	- Cloud Scheduler
 - The glue between services—both in and outside GCP
 - Good for streaming data and IoT
@@ -24,4 +24,3 @@ tags:
 # References
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
-- [GCP Services](notes/GCP%20Services.md)

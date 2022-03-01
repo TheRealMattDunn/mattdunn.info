@@ -27,7 +27,3 @@ tags:
 - HTTPS or MQTT
 - Two-way comms
 - Updates on and offline
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

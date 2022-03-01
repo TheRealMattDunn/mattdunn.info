@@ -14,8 +14,3 @@ tags:
 - Fit assessment tool—determine which VMs are suitable for migration
 - Console, API or CRD-based API
 - Option to migrate to Autopilot clusters or Cloud Run
-
-# References
-
-- [Anthos](notes/Anthos.md)
-- [Kubernetes Engine](notes/Kubernetes%20Engine.md)

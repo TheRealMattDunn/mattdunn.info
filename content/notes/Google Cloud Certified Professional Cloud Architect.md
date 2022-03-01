@@ -8,8 +8,11 @@ tags:
 
 ## Key Fundamentals To Know
 
+- [GCP PCA Exam Guide](notes/GCP%20PCA%20Exam%20Guide.md)
 - [Cloud Architecture](notes/Cloud%20Architecture.md)
 - [GCP Services](notes/GCP%20Services.md)
+- [Data Lifecycle](notes/Data%20Lifecycle.md)
+- [GCP Data Lifecycle](notes/GCP%20Data%20Lifecycle.md)
 - Distributed systems
 - [OSI Layers](notes/OSI%20Layers.md)
 - TCP/IP
@@ -30,6 +33,8 @@ tags:
 - [Google Cloud Adoption Framework](notes/Google%20Cloud%20Adoption%20Framework.md)
 - [GCP Data Migration](notes/GCP%20Data%20Migration.md)
 - [GCP Application Migration](notes/GCP%20Application%20Migration.md)
+- [Compliance](notes/Compliance.md)
+- [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
 
 ## Case Studies
 

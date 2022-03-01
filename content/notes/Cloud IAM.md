@@ -56,7 +56,3 @@ tags:
 ## Policies
 
 ![gcp_iam_policies](/files/gcp_iam_policies.svg)
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

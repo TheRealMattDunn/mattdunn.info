@@ -16,7 +16,3 @@ tags:
 	- External load balancers—HTTPS
 	- Internal load balancers—HTTP/S
 - Works with [App Engine](notes/App%20Engine.md), [Compute Engine](notes/Compute%20Engine.md), [Kubernetes Engine](notes/Kubernetes%20Engine.md), [Cloud Run](notes/Cloud%20Run.md) and on-prem
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

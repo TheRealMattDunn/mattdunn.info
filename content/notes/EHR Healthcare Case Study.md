@@ -154,4 +154,3 @@ tags:
 # References
 
 - [EHR Healthcare case study overview](https://services.google.com/fh/files/blogs/master_case_study_ehr_healthcare.pdf)
-- [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)

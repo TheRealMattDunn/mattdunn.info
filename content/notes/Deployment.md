@@ -9,7 +9,3 @@ tags:
 
 - Best for stateless apps
 	- i.e. uses ReadOnlyMany or ReadWriteMany volumes only
-
-# References
-
-- [Kubernetes](notes/Kubernetes.md)

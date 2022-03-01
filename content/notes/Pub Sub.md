@@ -16,7 +16,3 @@ tags:
 - Push and pull modes
 - Exactly once processing
 - Messages can be ordered and filtered
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

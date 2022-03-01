@@ -18,8 +18,3 @@ tags:
 	- [BigQuery](notes/BigQuery.md)
 	- Images
 - Export to [CSCC](notes/Cloud%20Security%20Command%20Center.md), Data Catalog or external SIEMs
-
-# References
-
-- [Cloud Security Command Center](notes/Cloud%20Security%20Command%20Center.md)
-- [GCP Services](notes/GCP%20Services.md)

@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-- Install Anthos clusters directly on your own hardware
+- Install [Anthos](notes/Anthos.md) clusters directly on your own hardware
 	- Use of specialized hardware
 - Use existing data centres
 	- Anthos manages app deployment and health
@@ -48,7 +48,3 @@ tags:
 
 - Connect—component which associates Anthos on Bare Metal clusters with GCP
 	- Allows health of clusters to be visiable in Cloud Console
-
-# References
-
-- [Anthos](notes/Anthos.md)

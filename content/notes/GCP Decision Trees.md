@@ -41,7 +41,3 @@ tags:
 ### Key Management
 
 ![gcp_key_management_decision_tree](/files/gcp_key_management_decision_tree.svg)
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

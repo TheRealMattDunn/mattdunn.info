@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-Google hosted service to load balance requests across GKE clusters and regions. The MultiClusterIngress Kubernetes resource is a controller for External HTTP(S) Load Balancers.
+Google hosted service to load balance requests across [Kubernetes Engine](notes/Kubernetes%20Engine.md) clusters and regions. The MultiClusterIngress [Kubernetes](notes/Kubernetes.md) resource is a controller for [External HTTP(S) Load Balancers](notes/GCP%20Load%20Balancing.md).
 
 ### Multi Cluster Use Cases
 
@@ -105,7 +105,3 @@ Google hosted service to load balance requests across GKE clusters and regions. 
 	- Pattern: blue/green cluster updates
 		- CI/CD applies MultiClusterService and MultiClusterIngress resources to both blue and green clusters
 		- Seamless switch-over
-
-# References
-
-- [Anthos](notes/Anthos.md)

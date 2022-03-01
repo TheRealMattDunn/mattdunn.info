@@ -12,7 +12,7 @@ tags:
 ## Overview
 
 - "Write once, run anywhere"
-- [Kubernetes](notes/Kubernetes.md) on GCP, AWS, Azure and on-prem (VMware and bare-metal)
+- [Kubernetes](notes/Kubernetes.md) on GCP, AWS, Azure and on-prem (VMware and [bare metal](notes/Anthos%20on%20Bare%20Metal.md))
 	- Google managed control plane
 - Supports:
 	- GKE clusters
@@ -58,7 +58,3 @@ tags:
 - Quarterly major/minor releases
 - Monthly path releases
 - Google support previous an n–2 releases
-
-# References
-
-- [Kubernetes](notes/Kubernetes.md)

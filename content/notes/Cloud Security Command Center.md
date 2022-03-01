@@ -22,7 +22,3 @@ tags:
 | [Cloud Data Loss Prevention](notes/Cloud%20Data%20Loss%20Prevention.md) | Container Threat Detection                                    |
 | Anomaly detection                                                       | Continuous exports to [Pub/Sub](notes/Pub%20Sub.md)           |
 | Foseti security integration (OSS tool)                                  |                                                               |
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

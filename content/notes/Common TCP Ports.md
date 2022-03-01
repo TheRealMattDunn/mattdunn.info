@@ -14,7 +14,3 @@ tags:
 - 25 SMTP
 - 53 DNS
 - 3306 MySQL
-
-# References
-
-- [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)

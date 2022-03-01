@@ -97,7 +97,3 @@ tags:
 - One account per workload—as much isolation as possible
 - Strict approval
 - Extremely limited access
-
-# References
-
-- [AWS Services](notes/AWS%20Services.md)

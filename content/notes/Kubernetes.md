@@ -19,7 +19,3 @@ tags:
 - [ConfigMap](notes/ConfigMap.md)
 - Secret
 - [HorizontalPodAutoscaler](notes/HorizontalPodAutoscaler.md)
-
-# References
-
-- [Kubernetes Engine](notes/Kubernetes%20Engine.md)

@@ -19,7 +19,3 @@ tags:
 
 - Constrains on resources—guardrails
 - Keep the organization in compliance
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

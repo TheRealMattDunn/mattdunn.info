@@ -11,7 +11,7 @@ tags:
 - Software defined
 	- No hardware—reacts instantly, handles spikes with no warm-up
 - Layer 4 and layer 7
-- Integrates with Cloud CDN
+- Integrates with [Cloud CDN](notes/Cloud%20CDN.md)
 
 ### Regional Load Balancing
 
@@ -31,4 +31,3 @@ tags:
 # References
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
-- [GCP Services](notes/GCP%20Services.md)

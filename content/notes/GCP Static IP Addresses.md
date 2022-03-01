@@ -24,7 +24,3 @@ tags:
 	- [Global Load Balancers](notes/GCP%20Load%20Balancing.md) (HTTP(S), SSL, TCP proxies)
 - Can't assign to regional/zonal resources
 - Supports IPv4 and IPv6
-
-# References
-
- - [GCP Services](notes/GCP%20Services.md)

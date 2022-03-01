@@ -14,7 +14,3 @@ tags:
 - Detect bottlenecks
 - Automatic alerts for large changes in latency
 - API available for any source
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

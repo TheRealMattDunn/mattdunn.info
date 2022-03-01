@@ -81,7 +81,3 @@ tags:
 - Types:
 	- Counter—number of log entries matching query
 	- Distribution—Statistical distribution of extracted log values into histogram buckets
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

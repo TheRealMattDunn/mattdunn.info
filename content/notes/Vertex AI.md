@@ -48,7 +48,3 @@ tags:
 - Faster to train models than GPUs
 	- 27x faster
 	- 38% cheaper
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

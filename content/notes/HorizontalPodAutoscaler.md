@@ -13,7 +13,3 @@ tags:
 	- External metrics—e.g., from monitoring or [Pub/Sub](notes/Pub%20Sub.md)
 - Should be applied to the Deployment rather than the ReplicaSet
 	- Otherwise would be removed during rolling updates
-
-# References
-
-- [Kubernetes](notes/Kubernetes.md)

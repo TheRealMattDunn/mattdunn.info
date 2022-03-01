@@ -13,6 +13,7 @@ tags:
 - Live synchronization and offline mode
 	- Multi-user, collaborative apps
 - Supports Datastore DBs and APIs (previous generation of Firestore)
+- Unlimited capacity
 - Use-case:
 	- Live asset/activity tracking
 	- Real-time analytics
@@ -23,4 +24,3 @@ tags:
 # References
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
-- [GCP Services](notes/GCP%20Services.md)

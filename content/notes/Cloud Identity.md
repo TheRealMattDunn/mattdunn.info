@@ -16,7 +16,3 @@ tags:
 - MF4
 - Device security with endpoint management
 - Context-aware access—no need for VPN
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

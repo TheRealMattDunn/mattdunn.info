@@ -16,7 +16,3 @@ tags:
 	- Keys never cached or stored in GCP
 	- Access control
 	- Centralised key management
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

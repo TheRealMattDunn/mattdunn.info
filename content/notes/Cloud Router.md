@@ -15,7 +15,3 @@ tags:
 - Links external network to [VPC](notes/GCP%20VPCs.md) via BGP
 - Automatically learns subnets in VPC—announces to on-prem network
 - Works with router appliances for high performance
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

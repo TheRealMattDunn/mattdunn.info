@@ -10,6 +10,7 @@ tags:
 
 # Overview
 
+- Managed [Kubernetes](notes/Kubernetes.md) clusters
 - Two modes:
 	- Standard—total control
 	- Autopilot—fully managed
@@ -47,7 +48,7 @@ tags:
 
 ## Operations
 
-- Integrated with Cloud Monitoring and Logging
+- Integrated with [Cloud Monitoring](notes/Cloud%20Monitoring.md) and [Cloud Logging](notes/Cloud%20Logging.md)
 - Metrics:
 	- System metrics—low-level, e.g., CPU, memory
 	- Workload metrics—exposed by the workloads in the cluster
@@ -55,5 +56,3 @@ tags:
 # References
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
-- [Kubernetes](notes/Kubernetes.md)
-- [GCP Services](notes/GCP%20Services.md)

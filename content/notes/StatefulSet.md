@@ -9,7 +9,3 @@ tags:
 
 - Each [Pod](notes/Pod.md) receives and unique ID and hostname
 - Stateful data stored in a PVC associated with each instance
-
-# References
-
-- [Kubernetes](notes/Kubernetes.md)

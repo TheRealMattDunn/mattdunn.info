@@ -41,8 +41,4 @@ tags:
 ## Integration
 
 - Cloud Monitoring API
-- Export to BigQuery or external tools via Service Account authentication e.g., Grafana
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)
+- Export to [BigQuery](notes/BigQuery.md) or external tools via Service Account authentication e.g., Grafana

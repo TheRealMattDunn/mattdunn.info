@@ -13,7 +13,3 @@ tags:
 - Allow [SCPs](notes/Service%20Control%20Policies.md) to be applied to multiple accounts
 - Best practice:
 	- Group accounts by permission/policy requirements, rather than corporate structure
-
-# References
-
-- [AWS Services](notes/AWS%20Services.md)

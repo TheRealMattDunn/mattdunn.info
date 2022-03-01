@@ -11,7 +11,7 @@ tags:
 
 - Large analytical/operational workloads
 - Key-value store
-- High read/write rates, low latency
+- High read/write rates, low latency—<10 ms read/write operations
 - Tables stored in instances
 	- Zonal resource
 	- Regional replication—up to four nodes in different zones, primary-primary replication
@@ -23,4 +23,3 @@ tags:
 # References
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
-- [GCP Services](notes/GCP%20Services.md)

@@ -13,13 +13,9 @@ tags:
 - Public and private DNS zones
 - Features:
 	- Access managed via IAM
-	- Integrated with Logging
+	- Integrated with [Cloud Logging](notes/Cloud%20Logging.md)
 	- DNS peering and forwarding
 	- Anycast:
 		- Multiple machines sharing IP
 		- User routed to the closest machine
 	- DNSSEC
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

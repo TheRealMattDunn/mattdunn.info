@@ -43,7 +43,3 @@ tags:
 - 503 Unavailable
 - 504 Gateway timeout
 - 511 Network authentication required
-
-# References
-
-- [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)

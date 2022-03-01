@@ -15,7 +15,3 @@ tags:
 - Control which AWS APIs are accessible
 	- Allowlist/denylist
 - Invisible to users in the child accounts
-
-# References
-
-- [AWS Services](notes/AWS%20Services.md)

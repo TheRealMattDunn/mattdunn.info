@@ -21,6 +21,3 @@ tags:
 # References
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
-- [Data Lifecycle](notes/Data%20Lifecycle.md)
-- [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
-- [GCP Services](notes/GCP%20Services.md)

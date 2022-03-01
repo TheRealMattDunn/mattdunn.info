@@ -34,7 +34,3 @@ tags:
 - Service level agreements
 - Contractual obligations
 - Penalties if not met
-
-# References
-
-- [Google Cloud Certified Professional Cloud Architect](notes/Google%20Cloud%20Certified%20Professional%20Cloud%20Architect.md)

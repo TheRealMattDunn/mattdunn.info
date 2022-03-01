@@ -30,7 +30,3 @@ tags:
 - Transitive peering not allowed—resources in VPC A, peered with VPC B, can't access resources in other VPCs also peered with B:
 
 ![gcp_vpc_peering](/files/gcp_vpc_peering.svg)
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

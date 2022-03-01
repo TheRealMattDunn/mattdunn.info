@@ -10,6 +10,10 @@ tags:
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
 
+## Fundamentals
+
+- [GCP Annotations](notes/GCP%20Annotations.md)
+
 ## Compute
 
 - [Compute Engine](notes/Compute%20Engine.md)
@@ -18,6 +22,7 @@ tags:
 - [Cloud Run](notes/Cloud%20Run.md)
 - [Cloud Functions](notes/Cloud%20Functions.md)
 - [VMware Engine](notes/VMware%20Engine.md)
+- [GCP Compute Autoscaling](notes/GCP%20Compute%20Autoscaling.md)
 
 ## Storage
 
@@ -34,7 +39,7 @@ tags:
 - [Cloud Firestore](notes/Cloud%20Firestore.md)
 - [Firebase](notes/Firebase.md)
 - [Memorystore](notes/Memorystore.md)
-- Datastream
+- [Datastream](notes/Datastream.md)
 
 ## Networking
 

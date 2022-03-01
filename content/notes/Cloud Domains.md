@@ -14,8 +14,4 @@ tags:
 - Features:
 	- Managed via GCP project—billing
 	- Auto domain verification with other Google services
-	- Access managed via IAM
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)
+	- Access managed via [Cloud IAM](notes/Cloud%20IAM.md)

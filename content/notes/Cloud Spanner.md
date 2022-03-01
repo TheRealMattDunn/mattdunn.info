@@ -11,16 +11,16 @@ tags:
 
 - Relational—SQL
 - 99.999% availability (5 nines)
-- Unlimited scale
+- Unlimited scale and capacity
 - For each instance, define:
 	- Configuration
 	- Compute capacity
 - Auto sharding
 - External consistency
 - Backup/restore, point-in-time recovery (PITR)
+- Global replication—highest availability
 - Use query parameters to increase efficiency and reduce cost
 
 # References
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
-- [GCP Services](notes/GCP%20Services.md)

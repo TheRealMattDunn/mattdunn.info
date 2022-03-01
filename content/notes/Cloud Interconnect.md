@@ -18,7 +18,3 @@ tags:
 | 50 Mbps – 50 Gbps capacities                       | 50 Mbps – 50 Gbps capacities                       |
 | Traffic not encrypted (application layer optional) | Traffic not encrypted (application layer optional) |
 | [Cloud VPN](notes/Cloud%20VPN.md) not supported    | Cloud VPN not supported                            |
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

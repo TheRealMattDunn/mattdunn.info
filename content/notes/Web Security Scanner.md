@@ -21,8 +21,3 @@ tags:
 	- Mixed content (HTTP + HTTPS)
 	- Insecure JavaScript libraries
 	- Readable passwords
-
-# References
-
-- [Cloud Security Command Center](notes/Cloud%20Security%20Command%20Center.md)
-- [GCP Services](notes/GCP%20Services.md)

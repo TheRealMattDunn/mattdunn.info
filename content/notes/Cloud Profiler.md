@@ -16,7 +16,3 @@ tags:
 - Profiles exportable
 - Available for [Compute Engine](notes/Compute%20Engine.md), [App Engine](notes/App%20Engine.md), [Kubernetes Engine](notes/Kubernetes%20Engine.md) and [Dataproc](notes/Dataproc.md)
 - External apps available via agent
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

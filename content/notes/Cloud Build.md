@@ -13,7 +13,3 @@ tags:
 - Initially has the Cloud Build Service Account role
 	- Can grant additional roles in the Cloud Build console, e.g., Cloud Run Admin, Cloud KMS Crypto Key Decrypter, etc.
 	- Can also grant any role in [IAM](notes/Cloud%20IAM.md)
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

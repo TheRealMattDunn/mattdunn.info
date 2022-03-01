@@ -15,7 +15,3 @@ tags:
 - Low latency, high throughput
 - Use cases:
 	- Cached data
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

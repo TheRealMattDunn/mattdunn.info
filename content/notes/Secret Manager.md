@@ -17,7 +17,3 @@ tags:
 	- Limit access with IAM
 	- Use Secret Manager API instead of environment variables
 	- Reference secrets by version number
-
-# References
-
-- [GCP Services](notes/GCP%20Services.md)

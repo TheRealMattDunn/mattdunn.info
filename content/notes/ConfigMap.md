@@ -9,7 +9,3 @@ tags:
 
 - Non-sensitive configuration artifacts
 - Separate configuration from workloads
-
-# References
-
-- [Kubernetes](notes/Kubernetes.md)

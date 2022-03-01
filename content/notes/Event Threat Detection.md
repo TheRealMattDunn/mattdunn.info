@@ -23,8 +23,3 @@ tags:
 	- IAM anomalous grants—roles given to members outside the organization
 	- Brute force SSH
 - Custom rules—run queries on log data exported to BigQuery
-
-# References
-
-- [Cloud Security Command Center](notes/Cloud%20Security%20Command%20Center.md)
-- [GCP Services](notes/GCP%20Services.md)
