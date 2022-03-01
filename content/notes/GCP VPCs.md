@@ -18,12 +18,28 @@ tags:
 	- Firewall rules
 	- Routes
 - VPCs—global
+	- 5 free VPCs per project—can create more, but are chargeable
 - Subnets—regional, can span multiple zones within a region
 - Options:
 	- Shared VPC
 	- VPC peering—services available across different VPCs in different orgs and projects
 	- Bring-your-own IPs
 	- Packet mirroring—traffic analysis in Monitoring
+
+## VPC Network Modes
+
+- Default
+	- One subnet per region
+	- Default firewall rules
+- Auto mode
+	- Default network
+	- One subnet per region—fixed /20 subnets (expandable to /16)
+	- Regional IP allocation
+- Custom mode
+	- No default subnets created
+	- Full control of IP ranges
+	- Regional IP allocation
+	- Expandable to any RFC 1918 size
 
 ## VPC Peering
 

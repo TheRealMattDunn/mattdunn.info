@@ -16,6 +16,10 @@ tags:
 	- Memory optimized
 	- Processor optimized (GPUs)
 - Public or private boot disk images
+- - Live migrations
+- Auto restart
+- Per second billing—minimum of one minute
+	- vCPU and memory billed separately
 
 ## Preemptible VMs
 

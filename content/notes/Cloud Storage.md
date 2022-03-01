@@ -27,12 +27,12 @@ tags:
 
 ## Storage Classes
 
-| Class    | Usage                               |
-| -------- | ----------------------------------- |
-| Standard | Most frequency accessed data        |
-| Nearline | Data accessed once per month        |
-| Coldline | Data accessed once per quarter      |
-| Archive  | Data accessed once per year or less |
+| Class    | Minimum Storage Period | Pricing                        |
+| -------- | ---------------------- | ------------------------------ |
+| Standard | None                   | Based on storage               |
+| Nearline | 30 days                | Based on storage and retrieval |
+| Coldline | 90 days                | Based on storage and retrieval |
+| Archive  | 365 days               | Based on storage and retrieval |
 
 ## Versioning
 
