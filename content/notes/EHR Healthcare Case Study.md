@@ -125,7 +125,7 @@ tags:
 - Create **interfaces** to ingest and **process data** from new providers
 	- *APIs: Apigee*
 	- *Pub/Sub*
-	- *[Dataproc](notes/Dataproc.md)
+	- *[Dataproc](notes/Dataproc.md)*
 	- *[Dataflow](notes/Dataflow.md)*
 
 ## Executive Statement
