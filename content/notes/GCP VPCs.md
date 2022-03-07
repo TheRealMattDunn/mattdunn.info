@@ -46,3 +46,8 @@ tags:
 - Transitive peering not allowed—resources in VPC A, peered with VPC B, can't access resources in other VPCs also peered with B:
 
 ![gcp_vpc_peering](/files/gcp_vpc_peering.svg)
+
+## Shared VPCs
+
+- VPC shared with child *service* projects from central VPC *host* project — hub and spoke networking model
+- Compute Shared VPC Admin role (`roles/compute.xpnAdmin`) — user can view all VPC networks/subnets in service project, regardless of whether all subnets have been shared

@@ -24,6 +24,7 @@ tags:
 - Permissions: bucket or object level
 - Lifecycle management
 	- Rules to move objects between storage classes, or delete
+- [gsutil](notes/gsutil.md) tool
 
 ## Storage Classes
 
@@ -34,34 +35,10 @@ tags:
 | Coldline | 90 days                | Based on storage and retrieval |
 | Archive  | 365 days               | Based on storage and retrieval |
 
-## Versioning
+## Storage Transfer Service
 
-Get the current versioning state:
-
-````
-gsutil versioning get gs://<BUCKET_NAME>
-````
-
-Enable versioning:
-
-````
-gsutil versioning set on gs://<BUCKET_NAME>
-````
-
-Upon deleting a file—version still exists. To view:
-
-````
-gsutil ls -a gs://<BUCKET_NAME>/<FOLDER>
-````
-
-Version format: `gs://<BUCKT_NAME>/<FILE_PATH>#<GENERATION_NUM>`
-
-Restore a version:
-
-````
-# Can also use cp here
-gsutil mv gs://<BUCKT_NAME>/<FILE_PATH>#<GENERATION_NUM> gs://<BUCKT_NAME>/<FILE_PATH>
-````
+- Transfer large amounts of data to Cloud storage — online data
+	- AWS S3, HTTP(S) sources, other Cloud Storage buckets, on-prem (agent-based)
 
 # References
 

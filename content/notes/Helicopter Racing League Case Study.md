@@ -65,7 +65,7 @@ tags:
 	- *Sentiment analysis:*
 		- *Natural Language API—predefined categories inc. sentiment analysis*
 		- *AutoML Natural Language—custom categories*
-		- *Vertex AI*
+		- *Vertex AI—Video Intelligence API*
 - Increase **telemetry** and **insights**
 	- *[IoT Core](notes/IoT%20Core.md)*
 	- *[Cloud Bigtable](notes/Cloud%20Bigtable.md), [Dataflow](notes/Dataflow.md), [BigQuery](notes/BigQuery.md), Looker*
@@ -90,10 +90,11 @@ tags:
 - Maintain/increase **prediction throughput/accuracy**
 	- *TPUs, Vertex AI*
 - Reduce viewer **latency**
-	- *Content closter to viewers*
+	- *Content closer to viewers*
 	- *Multi-regional GCS buckets*
 	- *Cloud CDN*
 	- *Global Load Balancers*
+	- *HSL protocol—HTTP Live Streaming, Apple protocol for on-demand auto/video
 - Increase transcoding **performance**
 	- *Vertical and horizontal scaling*
 	- *Transcoder API—batch processing*

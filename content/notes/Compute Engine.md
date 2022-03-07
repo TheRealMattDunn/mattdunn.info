@@ -16,10 +16,14 @@ tags:
 	- Memory optimized
 	- Processor optimized (GPUs)
 - Public or private boot disk images
-- - Live migrations
+- Live migrations
 - Auto restart
 - Per second billing—minimum of one minute
 	- vCPU and memory billed separately
+
+## Boot Disks
+
+- Set `--no-boot-disk-auto-delete` to keep boot disk data after instance deletion
 
 ## Preemptible VMs
 

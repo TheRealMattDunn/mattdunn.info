@@ -30,6 +30,7 @@ tags:
 - [Persistent Disks](notes/GCP%20Persistent%20Disks.md)
 - [Cloud Filestore](notes/Cloud%20Filestore.md)
 - [Cloud Storage](notes/Cloud%20Storage.md)
+	- [gsutil](notes/gsutil.md)
 
 ## Databases
 
@@ -68,6 +69,7 @@ tags:
 - [Dataprep](notes/Dataprep.md)
 - [Dataproc](notes/Dataproc.md)
 - [Dataflow](notes/Dataflow.md)
+- [Cloud Composer](notes/Cloud%20Composer.md)
 
 ## AI/ML
 
