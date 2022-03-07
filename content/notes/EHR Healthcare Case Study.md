@@ -89,7 +89,7 @@ tags:
 - **Reduce latency** to end users:
 	- *Premium network tier*
 	- *Multi-zonal / regional resources*
-	- *Anthos to place clusters in multiple-regions—[Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)
+	- *Anthos to place clusters in multiple-regions—[Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)*
 	- *[Global load balancing](notes/GCP%20Load%20Balancing.md)*
 	- *Cloud CDN*
 - Ensure **compliance**:
