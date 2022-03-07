@@ -21,7 +21,7 @@ tags:
 		- *GCP is HIPAA compliant*
 		- *Need to protect PII data*
 	- *Multi-national:*
-		- *even more compliance*
+		- *Even more compliance*
 		- *Multi-regional deployments*
 - Growing rapidly:
 	- *Need to scale*
