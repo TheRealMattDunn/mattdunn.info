@@ -21,7 +21,7 @@ tags:
 		- *GCP is HIPAA compliant*
 		- *Need to protect PII data*
 	- *Multi-national:*
-		- *even more compliance*
+		- *Even more compliance*
 		- *Multi-regional deployments*
 - Growing rapidly:
 	- *Need to scale*
@@ -89,7 +89,7 @@ tags:
 - **Reduce latency** to end users:
 	- *Premium network tier*
 	- *Multi-zonal / regional resources*
-	- *Anthos to place clusters in multiple-regions—[Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)
+	- *Anthos to place clusters in multiple-regions—[Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)*
 	- *[Global load balancing](notes/GCP%20Load%20Balancing.md)*
 	- *Cloud CDN*
 - Ensure **compliance**:
@@ -125,7 +125,7 @@ tags:
 - Create **interfaces** to ingest and **process data** from new providers
 	- *APIs: Apigee*
 	- *Pub/Sub*
-	- *[Dataproc](notes/Dataproc.md)
+	- *[Dataproc](notes/Dataproc.md)*
 	- *[Dataflow](notes/Dataflow.md)*
 
 ## Executive Statement
