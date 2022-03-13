@@ -20,7 +20,7 @@ tags:
 	- **Expected to be popular**
 	- **100s** of simultaneous players
 		- *Not a huge number, but sizable*
-	- Games take place in a **geo-specific 'area'**
+	- Games take place in a **geo-specific 'arena'**
 	- **Multiple platforms** and **locations**
 	- Digital **real-time banner** displaying **global** leaderboard
 - Planned architecture:
@@ -76,7 +76,7 @@ tags:
 	- *Import to BigQuery from Logging*
 	- *Store logs in [Cloud Storage](notes/Cloud%20Storage.md)—load as BigQuery external table*
 - Render graphics service-side via **GPUs** for multi-platform support
-	- *GPU support in GKE (but no autopilot)*
+	- *GPU support in GKE (but no Autopilot)*
 - Eventual migration of legacy games to platform
 
 ## Executive Statement
