@@ -94,7 +94,7 @@ tags:
 	- *Multi-regional GCS buckets*
 	- *Cloud CDN*
 	- *Global Load Balancers*
-	- *HSL protocol—HTTP Live Streaming, Apple protocol for on-demand auto/video
+	- *HSL protocol—HTTP Live Streaming, Apple protocol for on-demand auto/video*
 - Increase transcoding **performance**
 	- *Vertical and horizontal scaling*
 	- *Transcoder API—batch processing*
