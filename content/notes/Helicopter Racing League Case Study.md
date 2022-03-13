@@ -42,7 +42,7 @@ tags:
 	- *Machine types:*
 		- *Tau T2D (option for scale-out architecture, no GPU support)*
 		- *C2, C2D (ultra-high performance, no GPU support)*
-		- *A2 (optimized for GCP usage)*
+		- *A2 (optimized for GPU usage)*
 	- *Transcoder API—managed service*
 - Race predictions via **TensorFlow** models running on **VMs**
 	- *Lift/shift with Migrate for Compute Engine*
