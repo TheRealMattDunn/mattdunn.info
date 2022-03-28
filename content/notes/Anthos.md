@@ -52,6 +52,15 @@ tags:
 - [Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)
 - [Migrate for Anthos and GKE](notes/Migrate%20for%20Anthos%20and%20GKE.md)]
 
+## Attached Clusters
+
+- Extend Anthos into Kubernetes clusters running in other environments
+- Single pane of glass view of all clusters
+- Supports Amazon EKS and Azure AKS
+- Support for ACM and ASM
+- Install agent in cluster
+- Ability to see workloads in console UI
+
 ## Supported Versions
 
 - Versions indicated by [semver](https://semver.org/) numbering: x.y.z
