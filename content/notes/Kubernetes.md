@@ -19,3 +19,27 @@ tags:
 - [ConfigMap](notes/ConfigMap.md)
 - Secret
 - [HorizontalPodAutoscaler](notes/HorizontalPodAutoscaler.md)
+
+## Design Patterns
+
+### Foundational
+
+- Health Probe
+- Predictable Demands
+- Automated Placement
+
+### Structural
+
+- Init Container
+- Sidecar
+
+### Behavioural
+
+- Batch Job
+- Stateful Service
+- Service Discovery
+
+### Higher Level
+
+- [Controller](notes/Kubernetes%20Controllers.md)
+- [Operator](notes/Kubernetes%20Operator%20Pattern.md)
