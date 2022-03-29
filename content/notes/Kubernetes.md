@@ -7,7 +7,7 @@ tags:
 
 ## Primitives
 
-![kubernetes_primitives](files/kubernetes_primitives.svg)
+![kubernetes_primitives](/files/kubernetes_primitives.svg)
 
 - [Pod](notes/Pod.md)
 - [DaemonSet](notes/DaemonSet.md)
