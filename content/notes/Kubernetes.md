@@ -5,17 +5,23 @@ tags:
 - kubernetes
 ---
 
-## Resources
+## Primitives
+
+![kubernetes_primitives](files/kubernetes_primitives.svg)
 
 - [Pod](notes/Pod.md)
+- [DaemonSet](notes/DaemonSet.md)
 - ReplicaSet
 - [Deployment](notes/Deployment.md)
 - [StatefulSet](notes/StatefulSet.md)
-- [DaemonSet](notes/DaemonSet.md)
 - [Job](notes/Job.md)
 - CronJob
+- ReplicationController
 - Service
-- [Ingress](notes/Ingress.md)
+- [HorizontalPodAutoscaler](notes/HorizontalPodAutoscaler.md)
+- VerticalPodAutoscaler
+- PodDisruptionBudget
 - [ConfigMap](notes/ConfigMap.md)
 - Secret
-- [HorizontalPodAutoscaler](notes/HorizontalPodAutoscaler.md)
+- PersistentVolmue
+- [Ingress](notes/Ingress.md)
