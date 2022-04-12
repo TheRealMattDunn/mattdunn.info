@@ -2,7 +2,7 @@ baseURL = "https://mattdunn.info/"
 languageCode = "en-gb"
 googleAnalytics = "G-1H2GQTMBV4"
 pygmentsUseClasses = true
-relativeURLs = true
+relativeURLs = false
 disablePathToLower = true
 ignoreFiles = [
     "/content/templates/*",

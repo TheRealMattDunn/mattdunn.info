@@ -3,6 +3,7 @@ enableToc: true
 enableLinkPreview: true
 description: "Matt Dunn's blog and digital garden"
 page_title: "mattdunn.info"
+enableLatex: true
 links:
   - link_name: Github
     link: https://github.com/therealmattdunn
