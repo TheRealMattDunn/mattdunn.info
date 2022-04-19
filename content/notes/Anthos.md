@@ -39,7 +39,7 @@ tags:
 	- A/B tests—traffic splitting, rollbacks
 - Anthos Fleets
 	- Groups of clusters
-	- Normalisation of resources, e.g.,
+	- Normalisation of resources, e.g.
 		- Namespaces
 		- Services
 		- Workload Identity

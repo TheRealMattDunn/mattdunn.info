@@ -15,7 +15,7 @@ tags:
 - Sources:
 	- Instance groups
 	- Zonal [NEGs](notes/Network%20Endpoint%20Groups.md)
-	- Serverless NEGs (e.g., [App Engine](notes/App%20Engine.md), [Cloud Functions](notes/Cloud%20Functions.md))
+	- Serverless NEGs (e.g. [App Engine](notes/App%20Engine.md), [Cloud Functions](notes/Cloud%20Functions.md))
 	- [Cloud Storage](notes/Cloud%20Storage.md)
 	- (Custom origins not allowed)
 

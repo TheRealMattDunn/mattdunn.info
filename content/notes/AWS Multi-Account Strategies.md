@@ -72,7 +72,7 @@ tags:
 
 - Where workloads run
 - Split into non-prod and prod sub-OUs
-- Separate OUs for e.g., PCI-DSS workloads—with associated guardrails
+- Separate OUs for e.g. PCI-DSS workloads—with associated guardrails
 - Limited access—automated deployments
 
 #### Policy Staging OU
@@ -88,7 +88,7 @@ tags:
 
 #### Individual Business Users OU
 
-- User access to shared resources, e.g., S3
+- User access to shared resources, e.g. S3
 
 #### Exceptions OU
 

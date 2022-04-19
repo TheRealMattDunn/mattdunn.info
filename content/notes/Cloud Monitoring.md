@@ -22,7 +22,7 @@ tags:
 
 - Required for monitoring of [Compute Engine](notes/Compute%20Engine.md) and AWS EC2 instances—most monitoring is baked into the GCP services
 - More detailed and granular metrics
-- Can gather metrics from 3rd party apps, e.g., NGINX
+- Can gather metrics from 3rd party apps, e.g. NGINX
 - Monitoring agent: collectd
 - Logging agent: fluentd
 
@@ -30,9 +30,9 @@ tags:
 
 - Types: bool, int64, double, string
 - Kinds:
-	- Gauge—instant in time e.g., CPU usage
+	- Gauge—instant in time e.g. CPU usage
 	- Delta—change in value since last recording
-	- Cumulative—sum over time e.g., sent bytes
+	- Cumulative—sum over time e.g. sent bytes
 - Examples: latency, number SQL records, disk space
 - 1500+ pre-create metrics
 - Custom metrics, define via built in Monitoring API or OpenCensus
@@ -41,4 +41,4 @@ tags:
 ## Integration
 
 - Cloud Monitoring API
-- Export to [BigQuery](notes/BigQuery.md) or external tools via Service Account authentication e.g., Grafana
+- Export to [BigQuery](notes/BigQuery.md) or external tools via Service Account authentication e.g. Grafana

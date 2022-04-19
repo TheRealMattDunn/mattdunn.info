@@ -18,4 +18,4 @@ tags:
 - Allow/deby traffic by IP/CIDR
 - Preview changes
 - Configure WAG rules to reduce false positives
-- Reference named IP lists published by CDN partners, e.g., Fastly, Cloudflare etc.
+- Reference named IP lists published by CDN partners, e.g. Fastly, Cloudflare etc.

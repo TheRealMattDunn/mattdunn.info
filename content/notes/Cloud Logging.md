@@ -33,7 +33,7 @@ tags:
 
 - What/what did what
 - Admin activity logs
-	- User initiated resource configuration e.g., [Compute Engine](notes/Compute%20Engine.md) instance created by user
+	- User initiated resource configuration e.g. [Compute Engine](notes/Compute%20Engine.md) instance created by user
 	- Always enabled
 - System events
 	- Non-user initiated resource configuration
@@ -49,7 +49,7 @@ tags:
 - User logs—software, app logs
 	- Agent required
 - Platform logs
-	- GCP services e.g., Compute Engine startup scripts
+	- GCP services e.g. Compute Engine startup scripts
 - VPC flow logs
 	- Sample of packets sent/received by VPC resources
 	- ~1/10 packets recorded—can't adjust rate

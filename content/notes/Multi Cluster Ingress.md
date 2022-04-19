@@ -100,7 +100,7 @@ Google hosted service to load balance requests across [Kubernetes Engine](notes/
 	- Can't access API to update MultiClusterService or MultiClusterIngress resources if down
 - Doesn't have to be dedicated
 	- But maybe it should be? Prevents CPU/Mem contention, and provides isolation
-- Can change which cluster is the current config cluster (e.g., for maintenance)
+- Can change which cluster is the current config cluster (e.g. for maintenance)
 	- Need to ensure MultiClusterService and MultiClusterIngress resources are identical when switching
 	- Pattern: blue/green cluster updates
 		- CI/CD applies MultiClusterService and MultiClusterIngress resources to both blue and green clusters

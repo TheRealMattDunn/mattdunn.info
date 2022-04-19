@@ -17,15 +17,15 @@ tags:
 
 > Explicitly declare and isolate dependencies
 
-- Bundle dependencies into app via manifest, e.g., Maven
-- Isolate from external dependency leak-in from surrounding system, e.g., Virtualenv
+- Bundle dependencies into app via manifest, e.g. Maven
+- Isolate from external dependency leak-in from surrounding system, e.g. Virtualenv
 	- Never rely on system-wide packages
 
 ## Config
 
 > Store config in the environment, not the codebase
 
-- Everything that varies between environments, e.g., DB credentials
+- Everything that varies between environments, e.g. DB credentials
 - Litmus test: could the app be made open source at any minute without compromising credentials?
 - Don't: simply put config in code, but not checked in—prone to error (could be accidentally checked in), and difficult to maintain
 - Do: store config in env vars
@@ -37,9 +37,9 @@ tags:
 
 > Treat backing services as attached resources
 
-- Any service consumed over the network, e.g., DBs, messaging systems
+- Any service consumed over the network, e.g. DBs, messaging systems
 - No distinction between local and 3rd party resources—all accessed by URLs/credentials stored in config
-- Ability to switch backing services without code changes, e.g., switch from local MySQL to Google [Cloud SQL](notes/Cloud%20SQL.md)
+- Ability to switch backing services without code changes, e.g. switch from local MySQL to Google [Cloud SQL](notes/Cloud%20SQL.md)
 
 ## Build, Release, Run
 
@@ -69,10 +69,10 @@ tags:
 
 > Export services via port binding
 
-- App completely self-contained—doesn't depend on e.g., injection of a webserver
+- App completely self-contained—doesn't depend on e.g. injection of a webserver
 - HTTP exported as a service by binding to a port
-- Done via dependency declaration—add webserver libraries to app e.g., Jetty
-- Also other services apart from HTTP e.g., Redis
+- Done via dependency declaration—add webserver libraries to app e.g. Jetty
+- Also other services apart from HTTP e.g. Redis
 
 ## Concurrency
 

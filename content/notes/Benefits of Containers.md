@@ -39,7 +39,7 @@ tags:
 
 ### Candidates Requiring Investigation
 
-- Dependency on specialized hardware—e.g., GPUs, TPUs
+- Dependency on specialized hardware—e.g. GPUs, TPUs
 - Requirement for elevated privileges
 - COTS software
 

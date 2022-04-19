@@ -38,7 +38,7 @@ tags:
 
 ## Natural Language API
 
-- Text analysis—insights from documents (e.g., emails, social media)
+- Text analysis—insights from documents (e.g. emails, social media)
 - Sentiment analysis
 
 ## Cloud TPU

@@ -50,7 +50,7 @@ tags:
 
 - Integrated with [Cloud Monitoring](notes/Cloud%20Monitoring.md) and [Cloud Logging](notes/Cloud%20Logging.md)
 - Metrics:
-	- System metrics—low-level, e.g., CPU, memory
+	- System metrics—low-level, e.g. CPU, memory
 	- Workload metrics—exposed by the workloads in the cluster
 
 # References

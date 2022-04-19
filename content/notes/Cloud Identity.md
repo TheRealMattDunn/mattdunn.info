@@ -11,7 +11,7 @@ tags:
 - Fully managed identity-as-a-service
 - Each user and group is given a Cloud Identity Account
 	- Allows cloud IAM to manage access
-- Allows federation with other identity providers (e.g., Active Directory)
+- Allows federation with other identity providers (e.g. Active Directory)
 - SSO
 - MF4
 - Device security with endpoint management

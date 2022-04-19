@@ -58,7 +58,7 @@ tags:
 	- *Caching with [Memorystore](notes/Memorystore.md)*
 - Optimize for **dynamic scaling**
 	- *GKE node and pod horizontal autoscaling*
-	- *Spanner doesn't autoscale—need to implement custom solution, e.g.,*
+	- *Spanner doesn't autoscale—need to implement custom solution, e.g.*
 		- *Cloud monitoring (CPU), [Pub/Sub](notes/Pub%20Sub.md), [Cloud Functions](notes/Cloud%20Functions.md)*
 - Use **managed services** and pool resources
 	- *GKE autopilot not an option, as GPUs required*

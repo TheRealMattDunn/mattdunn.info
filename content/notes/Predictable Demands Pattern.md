@@ -26,14 +26,14 @@ tags:
 	- `emptyDir`—ephemeral to Pod
 	- PersistentVolume—long-lived
 	- Type of required volume affects Pod placement—Pod might not be scheduled if no node available
-- Configuration e.g., ConfigMaps, Secrets
+- Configuration e.g. ConfigMaps, Secrets
 
 ### Resource Profiles
 
 - Compute resource requirements
 - Types:
-	- Compressible—can be throttled if container goes over limit, e.g., CPU, network bandwidth
-	- Incompressible—can't be throttled (container killed if goes over limit), e.g., memory
+	- Compressible—can be throttled if container goes over limit, e.g. CPU, network bandwidth
+	- Incompressible—can't be throttled (container killed if goes over limit), e.g. memory
 - Profiles—soft/hard limits:
 	- `requests`—minimum amount of resource required
 	- `limits`—maximum amount of resource permitted

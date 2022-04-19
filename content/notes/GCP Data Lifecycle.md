@@ -17,8 +17,8 @@ tags:
 - [Cloud Storage](notes/Cloud%20Storage.md)
 	- Storage Transfer Service—moving large amounts of data from on-prem
 - [BigQuery](notes/BigQuery.md)
-	- BigQuery Transfer Service—moving from SaaS e.g., YouTube, Google Ads
-- Big Data (e.g., PBs)
+	- BigQuery Transfer Service—moving from SaaS e.g. YouTube, Google Ads
+- Big Data (e.g. PBs)
 	- Storage Transfer Appliance
 
 ### Application

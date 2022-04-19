@@ -10,7 +10,7 @@ tags:
 - Method for packaging, deploying and managing [Kubernetes](notes/Kubernetes.md) applications
 	- i.e., an application that runs in Kubernetes and is managed by the Kubernetes API
 - Uses CRDs to manage applications and components
-- Operators follow Kubernetes principles—e.g., control loop ([Controllers](notes/Kubernetes%20Controllers.md))
+- Operators follow Kubernetes principles—e.g. control loop ([Controllers](notes/Kubernetes%20Controllers.md))
 - Links Controllers to one or more CRDs
 
 ## Examples
@@ -26,7 +26,7 @@ tags:
 ## Arguments Against
 
 - Complexity—more code to maintain
-- Advanced use-cases only—persistent, highly available systems, e.g., distrubuted DB with quorum
+- Advanced use-cases only—persistent, highly available systems, e.g. distrubuted DB with quorum
 - Not for distributed apps which simply talk to a DB
 - Don't use simply for configuration management—use Helm, GitOps etc.
 - Not simply for exposing external systems

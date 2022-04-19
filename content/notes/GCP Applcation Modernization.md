@@ -11,10 +11,10 @@ tags:
 ## Why?
 
 - Business challenges and opportunities
-- Financial inflexibility—legacy licences e.g., Windows, IBM etc.
+- Financial inflexibility—legacy licences e.g. Windows, IBM etc.
 - Improve security posture—old tech, unpatched
 - Retain and attract talented staff
-- Exploit existing systems in new products—e.g., expose APIs to new customers
+- Exploit existing systems in new products—e.g. expose APIs to new customers
 - Avoid just lift-and-shift to cloud—also bring value
 
 ## Challenges
@@ -48,7 +48,7 @@ tags:
 
 ### Take a Holistic Platform View
 
-- Make use of other platform components, e.g., [Pub Sub](notes/Pub%20Sub.md)
+- Make use of other platform components, e.g. [Pub Sub](notes/Pub%20Sub.md)
 - Otherwise it is just IaaS
 - More value
 
@@ -61,10 +61,10 @@ tags:
 
 ### Push the Envelope
 
-- Embrace e.g., event-driven architecture
+- Embrace e.g. event-driven architecture
 - Cost optimize
 - Utilize Kubernetes Resource Model (KRM) to provision infrastructure
-	- Manage services as through they are [Kubernetes](notes/Kubernetes.md) resources, e.g., [Cloud Spanner](notes/Cloud%20Spanner.md) with ~10 lines of YAML
+	- Manage services as through they are [Kubernetes](notes/Kubernetes.md) resources, e.g. [Cloud Spanner](notes/Cloud%20Spanner.md) with ~10 lines of YAML
 
 ### Team Effort
 

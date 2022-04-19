@@ -34,7 +34,7 @@ tags:
 ## Sole Tenant Nodes
 
 - Dedicated server
-- Useful for specific hardware requirements, e.g., for bring your own licence (BYOL) requirements—per processor/core licencing
+- Useful for specific hardware requirements, e.g. for bring your own licence (BYOL) requirements—per processor/core licencing
 
 ## Managed Instance Groups (MIGs)
 

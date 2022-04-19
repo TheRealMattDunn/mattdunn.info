@@ -81,7 +81,7 @@ tags:
 	- *Managed services where possible*
 	- *Reduce number of platforms*
 - Ensure regulatory **compliance**
-- New revenue streams e.g., merchandise
+- New revenue streams e.g. merchandise
 	- *Online store—SaaS*
 	- *[Cloud Run](notes/Cloud%20Run.md), [App Engine](notes/App%20Engine.md), [Cloud Firestore](notes/Cloud%20Firestore.md)*
 

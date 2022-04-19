@@ -35,7 +35,7 @@ tags:
 
 - Centralized and federated access management across all accounts
 - Preconfigured or custom user groups
-- Integrates with third-party ID providers (e.g., Active Directory)
+- Integrates with third-party ID providers (e.g. Active Directory)
 
 ## Service Catalog
 

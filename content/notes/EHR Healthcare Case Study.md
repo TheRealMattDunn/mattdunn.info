@@ -134,12 +134,12 @@ tags:
 	- Training team to manage **disparate systems**
 	- **Multiple environments**
 		- *CapEx and OpEx too high*
-		- *Consolidate to common platform e.g., Anthos*
+		- *Consolidate to common platform e.g. Anthos*
 		- *Use managed services where possible*
 - **Outages** caused by:
 	- Misconfigurations
 		- *Automate where possible—CI/CD*
-		- *Infrastructure as code e.g., Terraform*
+		- *Infrastructure as code e.g. Terraform*
 		- *[Kubernetes](notes/Kubernetes.md)—roll-back unstable releases*
 		- *Anthos Config Management for guardrails and best practice policies across all clusters*
 	- Inadequate capacity
