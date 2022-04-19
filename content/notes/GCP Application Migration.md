@@ -6,6 +6,28 @@ tags:
 - cloud architecture
 ---
 
+## Approaches
+
+### Lift and Shift
+
+- Quick—change of hosting environment
+- Minimal advantage—not utilizing cloud benefits
+
+### Improve and Move
+
+- Modernize during migration—take advantage of cloud capabilities
+- Requires new skills and code changes
+
+### Rip and Replace
+
+- Remove technical debt—take full advantage of cloud features
+- Requires most time/skill investment
+	- Doesn't work for COTS (unless already cloud native)
+
+### Strangler Pattern
+
+- Lift and shift monolith, then break apart into [microservices](notes/Microservices.md) over time
+
 ## Migrate for Compute Engine
 
 - Migrate VMs to [Compute Engine](notes/Compute%20Engine.md)

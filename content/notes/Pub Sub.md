@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-- Global messaging—consistent latency globally
+- Global [message bus](notes/Message%20Buses.md)—consistent latency globally
 - Scalable, durable
 - Topic-based
 - At-least-once model

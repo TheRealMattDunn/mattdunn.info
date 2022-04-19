@@ -24,7 +24,7 @@ tags:
 	- Guardrails
 	- Security in depth
 - Anthos Service Mesh
-	- Managed, observable, secure communications between microservices
+	- Managed, observable, secure communications between [microservices](notes/Microservices.md)
 	- Istio
 	- Control-plane and data-plane
 	- Traffic monitored through a proxy—auto-instrumentation/injection, so no code changes required

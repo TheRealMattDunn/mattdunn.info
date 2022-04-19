@@ -8,6 +8,8 @@ tags:
 
 ### Compute Autoscaling
 
+![GCP Compute Autoscaling](notes/GCP%20Compute%20Autoscaling.md)
+
 | Service                                       | Min instances | Min instances for HA     | How?                                              | Speed                |
 | --------------------------------------------- | ------------- | ------------------------ | ------------------------------------------------- | -------------------- |
 | [Compute Engine](notes/Compute%20Engine.md)   | 1 instance    | 2 instances              | MIG / MIB + load balancer                         | Moderate / better    |
