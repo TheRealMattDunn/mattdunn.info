@@ -13,3 +13,4 @@ tags:
 - [Microservices](notes/Microservices.md)
 - [The Twelve Factor App](notes/The%20Twelve%20Factor%20App.md)
 - [Message Buses](notes/Message%20Buses.md)
+- [Cloud Bigtable Best Practices](notes/Cloud%20Bigtable.md)
