@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Migrate for Compute Engine  Migrate VMs to Compute Engine  Lift and shift Test-clones—pre-migration validation Replicates instance data to GCP in the background—zero interruptions Source environments:  VMware vSphere AWS EC2 Azure VMs Physical servers with supported OSes (e.">
+<meta name=description content="Approaches Lift and Shift  Quick—change of hosting environment Minimal advantage—not utilizing cloud benefits  Improve and Move  Modernize during migration—take advantage of cloud capabilities Requires new skills and code changes  Rip and Replace  Remove technical debt—take full advantage of cloud features Requires most time/skill investment  Doesn&rsquo;t work for COTS (unless already cloud native)    Strangler Pattern  Lift and shift monolith, then break apart into microservices  over time  Migrate for Compute Engine  Migrate VMs to Compute Engine  Lift and shift Test-clones—pre-migration validation Replicates instance data to GCP in the background—zero interruptions Source environments:  VMware vSphere AWS EC2 Azure VMs Physical servers with supported OSes (e.">
 <title>GCP Application Migration</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=/icon.png>
@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.870469cd59a58cb055e09ba94f96a772.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.1d96addebcb9e481f14cbe0ff876d346.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.a0e16d46b4ce1ca6b11d21cf76cf9862.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.47417a0dc65e4cd3c2ae36e8ee3da1d0.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -51,11 +51,45 @@ Last updated April 19, 2022
 <h3>Table of Contents</h3>
 <nav id=TableOfContents>
 <ol>
+<li><a href=#approaches>Approaches</a>
+<ol>
+<li><a href=#lift-and-shift>Lift and Shift</a></li>
+<li><a href=#improve-and-move>Improve and Move</a></li>
+<li><a href=#rip-and-replace>Rip and Replace</a></li>
+<li><a href=#strangler-pattern>Strangler Pattern</a></li>
+</ol>
+</li>
 <li><a href=#migrate-for-compute-engine>Migrate for Compute Engine</a></li>
 <li><a href=#phases>Phases</a></li>
 </ol>
 </nav>
 </aside>
+<h2 id=approaches>Approaches</h2>
+<h3 id=lift-and-shift>Lift and Shift</h3>
+<ul>
+<li>Quick—change of hosting environment</li>
+<li>Minimal advantage—not utilizing cloud benefits</li>
+</ul>
+<h3 id=improve-and-move>Improve and Move</h3>
+<ul>
+<li>Modernize during migration—take advantage of cloud capabilities</li>
+<li>Requires new skills and code changes</li>
+</ul>
+<h3 id=rip-and-replace>Rip and Replace</h3>
+<ul>
+<li>Remove technical debt—take full advantage of cloud features</li>
+<li>Requires most time/skill investment
+<ul>
+<li>Doesn&rsquo;t work for COTS (unless already cloud native)</li>
+</ul>
+</li>
+</ul>
+<h3 id=strangler-pattern>Strangler Pattern</h3>
+<ul>
+<li>Lift and shift monolith, then break apart into
+<a href=/notes/Microservices rel=noopener class=internal-link data-src=/notes/Microservices>microservices
+</a> over time</li>
+</ul>
 <h2 id=migrate-for-compute-engine>Migrate for Compute Engine</h2>
 <ul>
 <li>Migrate VMs to
