@@ -4,6 +4,7 @@ date: "2022-02-08"
 tags:
 - cloud architecture
 - gcp
+- certification
 ---
 
 ## Key Fundamentals To Know
