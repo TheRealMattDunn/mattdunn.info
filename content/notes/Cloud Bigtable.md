@@ -9,6 +9,8 @@ tags:
 
 ## Overview
 
+- Wide-column NoSQL database
+- Single key, multiple column rows
 - Large analytical/operational workloads
 - Key-value store
 - High read/write rates, low latency—<10 ms read/write operations

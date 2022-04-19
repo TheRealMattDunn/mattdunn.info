@@ -10,16 +10,17 @@ tags:
 ## Overview
 
 - Relational—SQL
-- 99.999% availability (5 nines)
-- Unlimited scale and capacity
+- Horizontal scalability, high availability and strong consistency
+	- Unlimited scale and capacity
+	- 99.999% availability (5 nines)—global replication
+	- External consistency
 - For each instance, define:
 	- Configuration
 	- Compute capacity
 - Auto sharding
-- External consistency
 - Backup/restore, point-in-time recovery (PITR)
-- Global replication—highest availability
 - Use query parameters to increase efficiency and reduce cost
+- Use cases: financial sector
 
 # References
 

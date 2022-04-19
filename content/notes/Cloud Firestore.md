@@ -10,9 +10,11 @@ tags:
 ## Overview
 
 - Document store
+- Strong consistency
 - Live synchronization and offline mode
 	- Multi-user, collaborative apps
 - Supports Datastore DBs and APIs (previous generation of Firestore)
+- Mobile SDKs
 - Unlimited capacity
 - Use-case:
 	- Live asset/activity tracking

@@ -16,7 +16,7 @@ tags:
 	- PostreSQL
 - Auto replication (within region), failover, backup, and point-in-time recovery (PITR)—built in HA
 - Auto scales—30 TB max
-- Scales manually to 96 cores / 624 GB RAM
+- Vertcial scales manually to 96 cores / 624 GB RAM
 - Read replicas available
 
 # References
