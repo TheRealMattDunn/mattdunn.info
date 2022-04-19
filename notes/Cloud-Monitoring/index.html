@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.870469cd59a58cb055e09ba94f96a772.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.76c6fcd39e2dd95dcdb4b4c24f70c8f4.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.870469cd59a58cb055e09ba94f96a772.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.1d96addebcb9e481f14cbe0ff876d346.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -79,7 +79,7 @@ Last updated April 19, 2022
 <a href=/notes/Compute-Engine rel=noopener class=internal-link data-src=/notes/Compute-Engine>Compute Engine
 </a> and AWS EC2 instances—most monitoring is baked into the GCP services</li>
 <li>More detailed and granular metrics</li>
-<li>Can gather metrics from 3rd party apps, e.g., NGINX</li>
+<li>Can gather metrics from 3rd party apps, e.g. NGINX</li>
 <li>Monitoring agent: collectd</li>
 <li>Logging agent: fluentd</li>
 </ul>
@@ -88,9 +88,9 @@ Last updated April 19, 2022
 <li>Types: bool, int64, double, string</li>
 <li>Kinds:
 <ul>
-<li>Gauge—instant in time e.g., CPU usage</li>
+<li>Gauge—instant in time e.g. CPU usage</li>
 <li>Delta—change in value since last recording</li>
-<li>Cumulative—sum over time e.g., sent bytes</li>
+<li>Cumulative—sum over time e.g. sent bytes</li>
 </ul>
 </li>
 <li>Examples: latency, number SQL records, disk space</li>
@@ -106,7 +106,7 @@ Last updated April 19, 2022
 <li>Cloud Monitoring API</li>
 <li>Export to
 <a href=/notes/BigQuery rel=noopener class=internal-link data-src=/notes/BigQuery>BigQuery
-</a> or external tools via Service Account authentication e.g., Grafana</li>
+</a> or external tools via Service Account authentication e.g. Grafana</li>
 </ul>
 </article>
 <hr>
