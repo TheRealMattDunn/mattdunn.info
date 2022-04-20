@@ -24,6 +24,8 @@ tags:
 - Permissions: bucket or object level
 - Lifecycle management
 	- Rules to move objects between storage classes, or delete
+- Signed URLs—grant temporary access to specific objects
+- Retention policies, policy locks, object holds—useful for regulated data
 - [gsutil](notes/gsutil.md) tool
 
 ## Storage Classes

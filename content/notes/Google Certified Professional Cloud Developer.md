@@ -14,3 +14,4 @@ tags:
 - [The Twelve Factor App](notes/The%20Twelve%20Factor%20App.md)
 - [Message Buses](notes/Message%20Buses.md)
 - [Cloud Bigtable Best Practices](notes/Cloud%20Bigtable.md)
+- [Operating Applications on Compute Engine](notes/Operating%20Applications%20on%20Compute%20Engine.md)
