@@ -9,12 +9,12 @@ tags:
 
 ## Service Accounts
 
-- Instance runs with Service Account—represents the instance's identity and roles
+- Instance runs with [Service Account](notes/Cloud%20IAM.md)—represents the instance's identity and roles
 - Default Service Account available—has `roles/editor` role
 	- Large attack vector
 	- Best practice: create custom Service Account with granular permissions—least privilege principle
 
-## Deploying to GCE
+## Deploying to [Compute Engine](notes/Compute%20Engine.md)
 
 - Startup script
 	- Supported by both Linux and Windows
