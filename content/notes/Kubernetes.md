@@ -7,7 +7,7 @@ tags:
 
 ## Kubernetes Components
 
-![[files/kubernetes_components.svg]]
+![kubernetes_components](files/kubernetes_components.svg)
 
 ### Control Plane
 
