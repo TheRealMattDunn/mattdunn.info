@@ -70,14 +70,14 @@ tags:
 
 ## The Cloud Maturity Scale
 
-![cloud_maturity_scale](/files/cloud_maturity_scale.svg)
+![cloud_maturity_scale](files/cloud_maturity_scale.svg)
 
 ## Epics
 
 - Epics in coloured segments most important
 - Use as starting point for creating user stories to implement the framework
 
-![google_cloud_adoption_epics](/files/google_cloud_adoption_epics.svg)
+![google_cloud_adoption_epics](files/google_cloud_adoption_epics.svg)
 
 # References
 

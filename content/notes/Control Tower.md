@@ -18,7 +18,7 @@ tags:
 	- Enable Control Tower in desired region with configuration
 	- Creates two additional accounts: Log Archive and Audit
 
-![aws_control_tower_landing_zone](/files/aws_control_tower_landing_zone.svg)
+![aws_control_tower_landing_zone](files/aws_control_tower_landing_zone.svg)
 
 ## Guardrails
 

@@ -32,4 +32,4 @@ tags:
 
 ## Flow Chart
 
-![Flow chart](/files/annotations.svg)
+![Flow chart](files/annotations.svg)

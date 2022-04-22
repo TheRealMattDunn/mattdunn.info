@@ -9,4 +9,4 @@ tags:
 
 ## The AI/ML Lifecycle
 
-![The AI/ML lifecycle](/files/ai_ml_lifecycle.svg)
+![The AI/ML lifecycle](files/ai_ml_lifecycle.svg)

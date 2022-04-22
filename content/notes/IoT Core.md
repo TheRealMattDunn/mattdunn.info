@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-![IoT Core flow](/files/iot_core_flow.svg)
+![IoT Core flow](files/iot_core_flow.svg)
 
 - Fully managed—connect, manage, ingest device data
 - Global

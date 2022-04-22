@@ -106,7 +106,7 @@ tags:
 
 ## Potential Solution Design
 
- ![Helicopter racing league design](/files/helicopter_racing_league_design.svg)
+ ![Helicopter racing league design](files/helicopter_racing_league_design.svg)
 
 # References
 

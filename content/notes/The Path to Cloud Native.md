@@ -7,7 +7,7 @@ tags:
 - design patterns
 ---
 
-![cloud_native_path](/files/path_to_cloud_native.svg)
+![cloud_native_path](files/path_to_cloud_native.svg)
 
 # References
 

@@ -149,7 +149,7 @@ tags:
 
 ## Potential Solution Design
 
-![EHR Healthcare design](/files/ehr_healthcare_design.svg)
+![EHR Healthcare design](files/ehr_healthcare_design.svg)
 
 # References
 

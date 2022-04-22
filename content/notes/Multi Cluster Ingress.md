@@ -67,7 +67,7 @@ Google hosted service to load balance requests across [Kubernetes Engine](notes/
 
 ## Architecture
 
-![Multi Cluster Ingress architecture](/files/multi_cluster_ingress_architecture.svg)
+![Multi Cluster Ingress architecture](files/multi_cluster_ingress_architecture.svg)
 
 ## MultiClusterService and MultiClusterIngress Resources
 

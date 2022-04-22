@@ -17,7 +17,7 @@ tags:
 
 ## Best Practice Design
 
-![aws_example_ou_design](/files/aws_example_ou_design.svg)
+![aws_example_ou_design](files/aws_example_ou_design.svg)
 
 ### Organization Master Account
 

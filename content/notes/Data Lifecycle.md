@@ -7,4 +7,4 @@ tags:
 
 ## The Data Lifecycle
 
-![data_lifecycle](/files/data_lifecycle.svg)
+![data_lifecycle](files/data_lifecycle.svg)

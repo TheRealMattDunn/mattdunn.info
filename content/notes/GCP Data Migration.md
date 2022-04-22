@@ -30,4 +30,4 @@ tags:
 
 ## Big Data Migration Decision Tree
 
-![gcp_big_data_migration_decision_tree](/files/gcp_big_data_migration_decision_tree.svg)
+![gcp_big_data_migration_decision_tree](files/gcp_big_data_migration_decision_tree.svg)

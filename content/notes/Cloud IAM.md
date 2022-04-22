@@ -55,4 +55,4 @@ tags:
 
 ## Policies
 
-![gcp_iam_policies](/files/gcp_iam_policies.svg)
+![gcp_iam_policies](files/gcp_iam_policies.svg)

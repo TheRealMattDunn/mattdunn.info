@@ -93,7 +93,7 @@ tags:
 
 ## Potential Solution Design
 
-![Terramearth design](/files/terramearth_design.svg)
+![Terramearth design](files/terramearth_design.svg)
 
 # References
 
