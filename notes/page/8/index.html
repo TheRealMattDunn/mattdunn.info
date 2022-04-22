@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.c46d6fab18d53d651ffa71ddeebd5095.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.8258cd4d02c2ddaf86e06e3d7472b7bf.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.e652f31798d45b24fdb3af6ec1850a20.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.cae157af0925d6fd0df1bb00dfdeaec4.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,16 +41,6 @@
 <article>
 <h1>All Notes</h1>
 <ul class=section-ul><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Cloud-Functions/>Cloud Functions</a></h3>
-<p>Overview FaaS Event driven Triggers: HTTP Cloud Storage Pub Sub Cloud Firestore Audit logs Cloud Scheduler The glue between services—both in and outside GCP Good for streaming data and IoT References GCP Decision Trees </p>
-</div>
-<p class=meta>
-1 minute read. Last updated April 22, 2022
-</p>
-</div>
-</li><li class=section-li>
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/BigQuery/>BigQuery</a></h3>
@@ -135,6 +125,16 @@
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/GCP-Local-SSDs/>GCP Local SSDs</a></h3>
 <p>Overview Fastest block storage solution Attached directly to Compute Engine VMs Zonal 375 GB disks Expandable to 3, 6 or 9 TBs—combined into a single logical volume IOPs increase with disk size Data encrypted at rest Data lost when VM stops Best for transient data—media rendering, caches, analytics Can survive live migration References GCP Decision Trees </p>
+</div>
+<p class=meta>
+1 minute read. Last updated April 22, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Deployment/>Deployment</a></h3>
+<p>Overview Best for stateless apps i.e. uses ReadOnlyMany or ReadWriteMany volumes only </p>
 </div>
 <p class=meta>
 1 minute read. Last updated April 22, 2022

@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.c46d6fab18d53d651ffa71ddeebd5095.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.8258cd4d02c2ddaf86e06e3d7472b7bf.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.e652f31798d45b24fdb3af6ec1850a20.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.cae157af0925d6fd0df1bb00dfdeaec4.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,16 +41,6 @@
 <article>
 <h1>All Notes</h1>
 <ul class=section-ul><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Control-Tower/>Control Tower</a></h3>
-<p>Overview Automate the setup of new AWS multi-account environments Best practices Managed service Replaces AWS Landing Zone solution Dashboard for monitoring compliance with guardrails across OUs and accounts enrolled in Control Tower ~1 hour setup: Create master account Enable Control Tower in desired region with configuration Creates two additional accounts: Log Archive and Audit Guardrails High-level rules for governance of multi-account environment Implemented with SCPs Preventative guardrails—stop actions, always compliant (except for accounts imported into Control Tower) Detective guardrails—detect noncompliance of resources, notify on issues, can be noncompliant Account Factory Allows creation of new accounts, and enrolment into Control Tower SSO Centralized and federated access management across all accounts Preconfigured or custom user groups Integrates with third-party ID providers (e....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated April 22, 2022
-</p>
-</div>
-</li><li class=section-li>
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/AWS-Services/>AWS Services</a></h3>
@@ -135,6 +125,16 @@
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Cloud-Debugger/>Cloud Debugger</a></h3>
 <p>Overview Debug in real time without stopping/slowing applications Link source code from: Cloud Source Repositories, GitHub, BitBucket, GitLab, locally Code Search—find functions, methods, line numbers Code Share—collaborate on debug sessions IDE integration—IntelliJ, VS Code, Atom Free to use Snapshots Capture application state at line locations Adds &lt;10ms to requests—not noticeable Capture local variables and call stack Conditional snapshots (Java, Python and Go only) Canarying (Java, Python, NodeJS)—test snapshot against a subset of instances Log Points Inject logs into running apps without redeployment Active for 24 hrs Output sent to target&rsquo;s environment Conditional log points (all languages) Canarying (Java, Python, NodeJS)—test log point against a subset of instances </p>
+</div>
+<p class=meta>
+1 minute read. Last updated April 22, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Cloud-Build/>Cloud Build</a></h3>
+<p>Service Account Uses special service account to execute builds—created when Cloud Build API is enabled Email in form of &lt;PROJECT_ID>@cloudbuild....</p>
 </div>
 <p class=meta>
 1 minute read. Last updated April 22, 2022

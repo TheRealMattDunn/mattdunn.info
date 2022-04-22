@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.c46d6fab18d53d651ffa71ddeebd5095.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.8258cd4d02c2ddaf86e06e3d7472b7bf.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.e652f31798d45b24fdb3af6ec1850a20.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.cae157af0925d6fd0df1bb00dfdeaec4.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,16 +41,6 @@
 <article>
 <h1>All Notes</h1>
 <ul class=section-ul><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Data-Lifecycle/>Data Lifecycle</a></h3>
-<p>The Data Lifecycle </p>
-</div>
-<p class=meta>
-1 minute read. Last updated April 22, 2022
-</p>
-</div>
-</li><li class=section-li>
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Compliance/>Compliance</a></h3>
@@ -135,6 +125,16 @@
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Pub-Sub/>Pub/Sub</a></h3>
 <p>Overview Global message bus —consistent latency globally Scalable, durable Topic-based At-least-once model Push and pull modes Exactly once processing Messages can be ordered and filtered </p>
+</div>
+<p class=meta>
+1 minute read. Last updated April 22, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Kubernetes-Engine/>Kubernetes Engine</a></h3>
+<p>Overview Managed Kubernetes clusters Two modes: Standard—total control Autopilot—fully managed Auto-repair and upgrade Autoscaling Containerize legacy apps and migrate using Migrate for Anthos and GKE Clusters At least one control plane and multiple worker nodes Zonal—one control plane node Regional—multiple control plane nodes Can&rsquo;t switch from regional to zonal (or vice versa) once cluster is created Private clusters—VPC native, internal IPs only For HA use multi-zonal node pools Networking Routing options: Routes-based Custom static routes VPC-native Alias IP ranges Scale better Needed for private clusters Pods routable within cluster&rsquo;s VPC, and other networks connected via VPC peering Also generally routable from on-prem via VPN/Interconnect Pod IP addresses reserved before Pods created in the cluster—prevents conflicts Don&rsquo;t consume custom routes quota Can apply firewall rules to Pod IPs Workload Identity Links Kubernetes Service Accounts with GCP Service Accounts—allows access to other GCP resources from within the cluster Operations Integrated with Cloud Monitoring and Cloud Logging Metrics: System metrics—low-level, e....</p>
 </div>
 <p class=meta>
 1 minute read. Last updated April 22, 2022
