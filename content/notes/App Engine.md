@@ -32,7 +32,9 @@ tags:
 
 - Containerized apps
 	- Deploy from Dockerfile or Container Registry/Artifact Registry
-- Best for consistent traffic—gradual scaling
+- Gradual scale up
+	- Best for consistent traffic
+	- Scales down to one replica—useful for background tasks and SSH debugging
 - Runtimes:
 	- Python 2.7/3.6
 	- Java 8
