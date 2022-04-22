@@ -61,6 +61,11 @@ tags:
 - [Cloud Router](notes/Cloud%20Router.md)
 - [Network Endpoint Groups](notes/Network%20Endpoint%20Groups.md)
 
+### APIs and Application Layer
+
+- [Cloud Endpoints](notes/Cloud%20Endpoints.md)
+- [API Gateway](notes/API%20Gateway.md)
+
 ## Big Data
 
 - [IoT Core](notes/IoT%20Core.md)

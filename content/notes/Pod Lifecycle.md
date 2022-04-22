@@ -5,6 +5,8 @@ tags:
 - kubernetes
 ---
 
+## Lifecycle Diagram
+
 ![pod_lifecycle](files/pod_lifecycle.svg)
 
 ## Common Errors

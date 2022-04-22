@@ -6,12 +6,12 @@ tags:
 - moc
 ---
 
+## General
+
 - [Kubernetes Components](notes/Kubernetes%20Components.md)
 - [Pod Lifecycle](notes/Pod%20Lifecycle.md)
 
-## Primitives
-
-![kubernetes_primitives](files/kubernetes_primitives.svg)
+## Kubernetes Primitives
 
 - [Pod](notes/Pod.md)
 - [DaemonSet](notes/DaemonSet.md)
@@ -29,3 +29,7 @@ tags:
 - Secret
 - PersistentVolmue
 - [Ingress](notes/Ingress.md)
+
+### Diagram
+
+![kubernetes_primitives](files/kubernetes_primitives.svg)
