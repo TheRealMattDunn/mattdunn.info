@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.e652f31798d45b24fdb3af6ec1850a20.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.cae157af0925d6fd0df1bb00dfdeaec4.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.c9243704894561cf56585a077d5d6564.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.c67ded658f53066737ab70b0d6522cd6.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,6 +41,26 @@
 <article>
 <h1>Tag: Gcp</h1>
 <ul class=section-ul><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-VPCs/>GCP VPCs</a></h3>
+<p>Overview Global Single VPC for multiple regions No traffic across public internet IPv4, unicast Software defined—instant updates Automatic or custom modes, for creation of: Subnets Firewall rules Routes VPCs—global 5 free VPCs per project—can create more, but are chargeable Subnets—regional, can span multiple zones within a region Options: Shared VPC VPC peering—services available across different VPCs in different orgs and projects Bring-your-own IPs Packet mirroring—traffic analysis in Monitoring VPC Network Modes Default One subnet per region Default firewall rules Auto mode Default network One subnet per region—fixed /20 subnets (expandable to /16) Regional IP allocation Custom mode No default subnets created Full control of IP ranges Regional IP allocation Expandable to any RFC 1918 size VPC Peering Transitive peering not allowed—resources in VPC A, peered with VPC B, can&rsquo;t access resources in other VPCs also peered with B: Shared VPCs VPC shared with child service projects from central VPC host project — hub and spoke networking model Compute Shared VPC Admin role (roles/compute....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated April 22, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Cloud-Bigtable/>Cloud Bigtable</a></h3>
+<p>Overview Wide-column NoSQL database Single key, multiple column rows Large analytical/operational workloads Key-value store High read/write rates, low latency—&lt;10 ms read/write operations Tables stored in instances Zonal resource Regional replication—up to four nodes in different zones, primary-primary replication Use cases: Time-series data Marketing/financial data IoT data General Technical Details Key/value storage—not relational, no joins Transactions supported within single row only Operations atomic at row level Rows sorted by row key in lexicographical big-endian (network) byte order Column families not sorted Columns sorted within column family Storage Model Tables—key/value map Each row contains a single entity—columns store values for each row Single row key—acts as primary key Related columns grouped into column families Columns identified by combination of column family and column qualifier—unique name within column family Each row/column intersection contains multiple cells—timestamped version of data (how the data has changed over time) Sparse—columns can be null No storage used for empty cells Best Practices Tables Store similar datasets in the same table—use a unique row prefix for each dataset Anti-pattern: many small tables—poor performance Column Families Group related columns in the same column family Simplifies filters Reduces redundant data transfers Max ~100 column families—more causes poor performance Use short names—reduces data transferred in requests/responses Garbage collection performed at column family level Store data with different data retentino needs in different column families Reduces storage costs Columns Treat column qualifiers as data—save space by naming with value Create many columns—can scale to millions No space penalty for rows with null values Use sparse rows—not every column should have a value for every row Max 100MB per row Rows 100MB max All information for a single entity should be stored in a single row Atomicity only guaranteed at the row level Store related entities in adjacent rows—faster reads Cells 10MB max Row Keys Design based on queries used to retrieve data Only 1 index, so quries on other fields inefficient—table scan required Most efficient reads via: Row key Row key prefix Range of row keys—start, end Other queries—triggers full table scan Use field promotion to move known fields into row key Store multiple delimited values, e....</p>
+</div>
+<p class=meta>
+4 minute read. Last updated April 22, 2022
+</p>
+</div>
+</li><li class=section-li>
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Cloud-Firestore/>Cloud Firestore</a></h3>
@@ -94,7 +114,7 @@
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/GCP-Services/>GCP Services</a></h3>
-<p>Decision Trees GCP Decision Trees Fundamentals GCP Annotations Compute Compute Engine Kubernetes Engine (GKE) App Engine Cloud Run Cloud Functions VMware Engine GCP Compute Autoscaling Storage Local SSDs Persistent Disks Cloud Filestore Cloud Storage gsutil Databases Cloud SQL Cloud Spanner Cloud Bigtable Cloud Firestore Firebase Memorystore Datastream Networking External Networking Cloud Domains Cloud DNS Static IP Addresses Load Balancing Cloud CDN Cloud NAT Internal Networking VPCs Cloud Interconnect Cloud VPN Cloud Router Network Endpoint Groups Big Data IoT Core Pub/Sub BigQuery Dataprep Dataproc Dataflow Cloud Composer AI/ML Vertex AI Security Cloud IAM GCP Resource Manager Cloud Identity Identity Aware Proxy Cloud Security Command Center Web Security Scanner Cloud Armor Event Threat Detection Cloud Data Loss Prevention Cloud KMS CMEK and CSEK Cloud HSM Cloud EKM Secret Manager Operations Cloud Monitoring Cloud Logging Cloud Debugger Cloud Trace Cloud Profiler CI/CD Cloud Build </p>
+<p>Decision Trees GCP Decision Trees Fundamentals GCP Annotations Compute Compute Engine Kubernetes Engine (GKE) App Engine Cloud Run Cloud Functions VMware Engine GCP Compute Autoscaling Storage Local SSDs Persistent Disks Cloud Filestore Cloud Storage gsutil Databases Cloud SQL Cloud Spanner Cloud Bigtable Cloud Firestore Firebase Memorystore Datastream Networking External Networking Cloud Domains Cloud DNS Static IP Addresses Load Balancing Cloud CDN Cloud NAT Internal Networking VPCs Cloud Interconnect Cloud VPN Cloud Router Network Endpoint Groups APIs and Application Layer Cloud Endpoints API Gateway Big Data IoT Core Pub/Sub BigQuery Dataprep Dataproc Dataflow Cloud Composer AI/ML Vertex AI Security Cloud IAM GCP Resource Manager Cloud Identity Identity Aware Proxy Cloud Security Command Center Web Security Scanner Cloud Armor Event Threat Detection Cloud Data Loss Prevention Cloud KMS CMEK and CSEK Cloud HSM Cloud EKM Secret Manager Operations Cloud Monitoring Cloud Logging Cloud Debugger Cloud Trace Cloud Profiler CI/CD Cloud Build </p>
 </div>
 <p class=meta>
 1 minute read. Last updated April 22, 2022
@@ -115,26 +135,6 @@
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Anthos-on-Bare-Metal/>Anthos on Bare Metal</a></h3>
 <p>Overview Install Anthos clusters directly on your own hardware Use of specialized hardware Use existing data centres Anthos manages app deployment and health More efficient operations Customized security Deployment Models Admin clusters Create, modify, manage and delete user clusters User clusters Run workloads Standalone Single cluster—both and admin and user cluster in one Best for: Edge locations Single teams and workload types Multi-Cluster Admin cluster plus one or more user clusters Best for: Team separation Environment separation Hybrid Admin cluster plus one or more user clusters Admin cluster also runs user workloads Created from pre-existing standalone clusters No security concerns about workloads running on the admin cluster Operating Connect—component which associates Anthos on Bare Metal clusters with GCP Allows health of clusters to be visiable in Cloud Console </p>
-</div>
-<p class=meta>
-1 minute read. Last updated April 22, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Anthos-On-Prem-Storage/>Anthos On-Prem Storage</a></h3>
-<p>Overview Block/file storage is exposed to Anthos clusters via the Container Storage Interface (CSI) This is required for PersistentVolumes on Anthos on Bare Metal (and VMware—although the choice here might be easier) Google partners have developed CSI drivers that have been verified against Anthos: Dell EMC Hitachi HPE NetApp Portworx Pure Storage Robin....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated April 22, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Cloud-Filestore/>Cloud Filestore</a></h3>
-<p>Overview File-based storage NAS Provision in zone—access via VPC using NFSv3 Use case: lift-and-shift migrations Read-only snapshots supported Tiers Tier Capacities Use cases Basic HDD: 1 – 63....</p>
 </div>
 <p class=meta>
 1 minute read. Last updated April 22, 2022
@@ -167,7 +167,7 @@
 <a href=/tags/gcp/page/6/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a>
 </li>
 <li class=page-item>
-<a href=/tags/gcp/page/8/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a>
+<a href=/tags/gcp/page/9/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a>
 </li>
 </ul>
 </article>
