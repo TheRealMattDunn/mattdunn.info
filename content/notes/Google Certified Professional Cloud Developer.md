@@ -29,7 +29,16 @@ tags:
 	- [Cloud Endpoints](notes/Cloud%20Endpoints.md)
 	- [API Gateway](notes/API%20Gateway.md)
 	- [Vertex AI](notes/Vertex%20AI.md)
+	- [Cloud Logging](notes/Cloud%20Logging.md)
+	- [Cloud Monitoring](notes/Cloud%20Monitoring.md)
+	- [Cloud Debugger](notes/Cloud%20Debugger.md)
+	- [Cloud Trace](notes/Cloud%20Trace.md)
+	- [Cloud Security Command Center](notes/Cloud%20Security%20Command%20Center.md)
 - [Microservices](notes/Microservices.md)
 - [The Twelve Factor App](notes/The%20Twelve%20Factor%20App.md)
 - [Message Buses](notes/Message%20Buses.md)
 - [Spinnaker](notes/Spinnaker.md)
+
+## Case Studies
+
+- [HipLocal Case Study](notes/HipLocal%20Case%20Study.md)
