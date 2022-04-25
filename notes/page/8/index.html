@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.c9243704894561cf56585a077d5d6564.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.c67ded658f53066737ab70b0d6522cd6.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.34ab59367a30eb922ea6ac8b2279fac6.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.cd9f26321ab2d2aca0fda4c7edc23d6d.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,21 +43,11 @@
 <ul class=section-ul><li class=section-li>
 <div class=section>
 <div class=desc>
-<h3><a href=https://mattdunn.info/notes/StatefulSet/>StatefulSet</a></h3>
-<p>Overview Each Pod receives and unique ID and hostname Stateful data stored in a PVC associated with each instance </p>
-</div>
-<p class=meta>
-1 minute read. Last updated April 22, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
 <h3><a href=https://mattdunn.info/notes/Pod/>Pod</a></h3>
 <p>Overview Fundamental Kubernetes workload abstraction Groups of containers Requests and Limits Specify requests and limits for each container in the Pod, e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 22, 2022
+1 minute read. Last updated April 25, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -67,7 +57,7 @@
 <p>Overview Exposes Kubernetes services outside the cluster GKE Ingress Implementation of the Kubernetes Ingress resource in GKE Backed by the HTTP(S) Load Balancer Internal of external </p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 22, 2022
+1 minute read. Last updated April 25, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +67,7 @@
 <p>Overview Scales Pods based on metrics CPU, memory, disk usage Custom metrics—internal to the cluster External metrics—e.g. from monitoring or Pub/Sub Should be applied to the Deployment rather than the ReplicaSet Otherwise would be removed during rolling updates </p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 22, 2022
+1 minute read. Last updated April 25, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +77,7 @@
 <p>Overview Disks independent of Compute Engine instance Data available after VM is shutdown Durable—data distributed across physical disks (99....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 22, 2022
+1 minute read. Last updated April 25, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -97,7 +87,7 @@
 <p>Overview Fastest block storage solution Attached directly to Compute Engine VMs Zonal 375 GB disks Expandable to 3, 6 or 9 TBs—combined into a single logical volume IOPs increase with disk size Data encrypted at rest Data lost when VM stops Best for transient data—media rendering, caches, analytics Can survive live migration References GCP Decision Trees </p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 22, 2022
+1 minute read. Last updated April 25, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -107,7 +97,7 @@
 <p>Overview Best for stateless apps i.e. uses ReadOnlyMany or ReadWriteMany volumes only </p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 22, 2022
+1 minute read. Last updated April 25, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -117,7 +107,7 @@
 <p>Overview Used for background tasks—no user intervention Creates one Pod per node Automatically creates a new Pod for each node that is added to the cluster </p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 22, 2022
+1 minute read. Last updated April 25, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -127,7 +117,7 @@
 <p>Overview Non-sensitive configuration artifacts Separate configuration from workloads </p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 22, 2022
+1 minute read. Last updated April 25, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -137,7 +127,17 @@
 <p>Overview File-based storage NAS Provision in zone—access via VPC using NFSv3 Use case: lift-and-shift migrations Read-only snapshots supported Tiers Tier Capacities Use cases Basic HDD: 1 – 63....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 22, 2022
+1 minute read. Last updated April 25, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Anthos-On-Prem-Storage/>Anthos On-Prem Storage</a></h3>
+<p>Overview Block/file storage is exposed to Anthos clusters via the Container Storage Interface (CSI) This is required for PersistentVolumes on Anthos on Bare Metal (and VMware—although the choice here might be easier) Google partners have developed CSI drivers that have been verified against Anthos: Dell EMC Hitachi HPE NetApp Portworx Pure Storage Robin....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated April 25, 2022
 </p>
 </div>
 </li></ul>

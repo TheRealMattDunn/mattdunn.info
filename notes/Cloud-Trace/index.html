@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Overview  Distributed tracing—collects latency data Automatic with App Engine  Standard, Cloud Functions  and Cloud Run  Instrument with App Engine Flex, Compute Engine , Kubernetes Engine  and non-GCP resources Detect bottlenecks Automatic alerts for large changes in latency API available for any source  ">
+<meta name=description content="Overview  Distributed tracing—collects latency data  Detect latencies between components of distributed app   Automatic with App Engine  Standard, Cloud Functions  and Cloud Run  Instrument with App Engine Flex, Compute Engine , Kubernetes Engine  and non-GCP resources  OpenTelemetry or OpenCensus libraries recommended   Detect bottlenecks Automatic alerts for large changes in latency API available for any source  ">
 <title>Cloud Trace</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=/icon.png>
@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.c9243704894561cf56585a077d5d6564.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.c67ded658f53066737ab70b0d6522cd6.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.34ab59367a30eb922ea6ac8b2279fac6.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.cd9f26321ab2d2aca0fda4c7edc23d6d.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,7 +41,7 @@
 <article>
 <h1>Cloud Trace</h1>
 <p class=meta>
-Last updated April 22, 2022
+Last updated April 25, 2022
 </p>
 <ul class=tags>
 <li><a href=https://mattdunn.info/tags/gpc/>Gpc</a></li>
@@ -57,7 +57,11 @@ Last updated April 22, 2022
 </aside>
 <h2 id=overview>Overview</h2>
 <ul>
-<li>Distributed tracing—collects latency data</li>
+<li>Distributed tracing—collects latency data
+<ul>
+<li>Detect latencies between components of distributed app</li>
+</ul>
+</li>
 <li>Automatic with
 <a href=/notes/App-Engine rel=noopener class=internal-link data-src=/notes/App-Engine>App Engine
 </a> Standard,
@@ -69,7 +73,11 @@ Last updated April 22, 2022
 <a href=/notes/Compute-Engine rel=noopener class=internal-link data-src=/notes/Compute-Engine>Compute Engine
 </a>,
 <a href=/notes/Kubernetes-Engine rel=noopener class=internal-link data-src=/notes/Kubernetes-Engine>Kubernetes Engine
-</a> and non-GCP resources</li>
+</a> and non-GCP resources
+<ul>
+<li>OpenTelemetry or OpenCensus libraries recommended</li>
+</ul>
+</li>
 <li>Detect bottlenecks</li>
 <li>Automatic alerts for large changes in latency</li>
 <li>API available for any source</li>
@@ -82,6 +90,9 @@ Last updated April 22, 2022
 <ul class=backlinks>
 <li>
 <a href=/notes/GCP-Services>GCP Services</a>
+</li>
+<li>
+<a href=/notes/Google-Certified-Professional-Cloud-Developer>Google Cloud Certified Professional Cloud Developer</a>
 </li>
 </ul>
 </div>
