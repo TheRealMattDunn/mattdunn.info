@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.85684603917d915eff10954d1831668d.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.86116c9292dae1e47792ba7561322d25.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.902c609b007afc17cc59b3380b571d84.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.a4db6265df6b9fdd50f56e5642b4e5a4.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,6 +41,16 @@
 <article>
 <h1>Tag: Architecture</h1>
 <ul class=section-ul><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Event-Driven-Architecture/>Event Driven Architecture</a></h3>
+<p>Considerations Input Idempotent functions—same output if triggered multiple times Need mechanism to identify duplicate events—key, e.g, for processing payments Event size—sparse vs dense Choose to minimize number of subsequent calls to retrieve more data Balance against message size Large messages increase payload size, and introduce complexity in management of the API contract Output Consider knock-on effects Make every function emit an event, even if there are (currently) no consumers—extensibility Designing Event Driven Applications Create two tables: one for each service; one for each event....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated April 29, 2022
+</p>
+</div>
+</li><li class=section-li>
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Citrix-on-GCP-Design-Patterns/>Citrix on GCP Design Patterns</a></h3>
