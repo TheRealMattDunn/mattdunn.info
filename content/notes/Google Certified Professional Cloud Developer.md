@@ -9,6 +9,10 @@ tags:
 
 ## Key Fundamentals To Know
 
+- [Microservices](notes/Microservices.md)
+- [The Twelve Factor App](notes/The%20Twelve%20Factor%20App.md)
+- [Message Buses](notes/Message%20Buses.md)
+- [SQL Joins](notes/SQL%20Joins.md)
 - [GCP Services](notes/GCP%20Services.md)
 	- [Cloud IAM](notes/Cloud%20IAM.md)
 	- [Cloud Storage](notes/Cloud%20Storage.md)
@@ -34,9 +38,6 @@ tags:
 	- [Cloud Debugger](notes/Cloud%20Debugger.md)
 	- [Cloud Trace](notes/Cloud%20Trace.md)
 	- [Cloud Security Command Center](notes/Cloud%20Security%20Command%20Center.md)
-- [Microservices](notes/Microservices.md)
-- [The Twelve Factor App](notes/The%20Twelve%20Factor%20App.md)
-- [Message Buses](notes/Message%20Buses.md)
 - [Spinnaker](notes/Spinnaker.md)
 
 ## Case Studies
