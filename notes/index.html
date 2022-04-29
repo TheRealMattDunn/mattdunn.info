@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.2e17ff1a7237e25cbcea48be954c8576.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.5035d8faabece1d6e51a4d7f39dd23df.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.85684603917d915eff10954d1831668d.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.86116c9292dae1e47792ba7561322d25.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,21 +43,11 @@
 <ul class=section-ul><li class=section-li>
 <div class=section>
 <div class=desc>
-<h3><a href=https://mattdunn.info/notes/Message-Buses/>Message Buses</a></h3>
-<p>Use Cases Distributing workloads—distribute tasks between workers Asynchronous workflows—e.g. order fulfilment Distributing event notifications—alert other services that something has happened, e....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated April 26, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
 <h3><a href=https://mattdunn.info/notes/Google-Certified-Professional-Cloud-Developer/>Google Cloud Certified Professional Cloud Developer</a></h3>
-<p>Key Fundamentals To Know GCP Services Cloud IAM Cloud Storage Cloud SQL Cloud Bigtable Cloud Bigtable Best Practices Cloud Firestore Compute Engine Operating Applications on Compute Engine GCP Load Balancing Kubernetes Kubernetes Engine Kubernetes Patterns Pub Sub App Engine Cloud Run Cloud Functions Cloud Endpoints API Gateway Vertex AI Cloud Logging Cloud Monitoring Cloud Debugger Cloud Trace Cloud Security Command Center Microservices The Twelve Factor App Message Buses Spinnaker Case Studies HipLocal Case Study </p>
+<p>Key Fundamentals To Know Microservices The Twelve Factor App Message Buses SQL Joins GCP Services Cloud IAM Cloud Storage Cloud SQL Cloud Bigtable Cloud Bigtable Best Practices Cloud Firestore Compute Engine Operating Applications on Compute Engine GCP Load Balancing Kubernetes Kubernetes Engine Kubernetes Patterns Pub Sub App Engine Cloud Run Cloud Functions Cloud Endpoints API Gateway Vertex AI Cloud Logging Cloud Monitoring Cloud Debugger Cloud Trace Cloud Security Command Center Spinnaker Case Studies HipLocal Case Study </p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 26, 2022
+1 minute read. Last updated April 29, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -67,7 +57,7 @@
 <p>Service Accounts Instance runs with Service Account —represents the instance&rsquo;s identity and roles Default Service Account available—has roles/editor role Large attack vector Best practice: create custom Service Account with granular permissions—least privilege principle Deploying to Compute Engine Startup script Supported by both Linux and Windows Define in metadata Or store in Cloud Storage and add metadata key startup-script-url with the value of the GCS URL for the script Instance requires roles/storage....</p>
 </div>
 <p class=meta>
-2 minute read. Last updated April 26, 2022
+2 minute read. Last updated April 29, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +67,7 @@
 <p>Overview Advanced continuous deployment Complex deployment pipelines Stages—high-level actions Tasks—performed sequentially in stages </p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 26, 2022
+1 minute read. Last updated April 29, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +77,7 @@
 <p>Lifecycle Diagram Common Errors ErrImagePull—the container image could not be retrieved from the registry (perhaps incorrect tag?) -ImagePullBackOff—unable to pull the image from the registry....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 26, 2022
+1 minute read. Last updated April 29, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -97,7 +87,7 @@
 <p>Overview Container-based Extensible Service Proxy (ESP) Deployed as sidecar NGINX or Envoy-based NGINX-based ESP Envoy-based ESP </p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 26, 2022
+1 minute read. Last updated April 29, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -107,7 +97,7 @@
 <p>Overview Serverless backends only Authorisation and rate limiting part of OpenAPI spec </p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 26, 2022
+1 minute read. Last updated April 29, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -117,7 +107,17 @@
 <p>Non-italicised points represent notes taken from Google&rsquo;s official case study documentation, with keywords highlighted in bold. Points in italics represent additional insights and possible solutions....</p>
 </div>
 <p class=meta>
-2 minute read. Last updated April 26, 2022
+2 minute read. Last updated April 29, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/SQL-Joins/>SQL Joins</a></h3>
+<p>Example Data 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 select * from TableA; id ---- 1 2 3 4 5 6 7 8 (8 rows) select * from TableB; id ---- 1 2 3 4 5 9 10 11 (8 rows) Inner Join Combines columns, keeping values common to both tables only....</p>
+</div>
+<p class=meta>
+3 minute read. Last updated April 29, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -127,7 +127,7 @@
 <p>Components Citrix Cloud Connector Responsible for communication to/from Citrix cloud Auto-updated/maintained by Citrix Virtual Delivery Agent (VDA) Apps/Desktops running on Windows/Linux VM instances Citrix Gateway (optional) Session brokering, load management, image management, monitoring, cost/capacity management Citrix Workspace Service UI Analytics Service ML—security, performance, user behavioural analytics/reporting Cloud Forward Design Pattern For customers who are “all-in” on GCP Commonly used for new deployments, POCs etc Requires no additional infrastructure Google Deployment Manager templates available, but appear to be no longer maintained Provides HA Creates a Citrix Cloud &ldquo;resource location&rdquo; Hybrid Design Pattern Customer-managed access layer components—advanced use-cases Cloud Migration Design Pattern As per Hybrid Design Pattern, but with legacy workloads on existing on-prem infrastructure Migrate workloads gradually to the cloud </p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 26, 2022
+1 minute read. Last updated April 29, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -137,7 +137,7 @@
 <p>Notes Citrix on GCP Design Patterns </p>
 </div>
 <p class=meta>
-1 minute read. Last updated April 26, 2022
+1 minute read. Last updated April 29, 2022
 </p>
 </div>
 </li></ul>
