@@ -41,5 +41,5 @@ tags:
 
 ## Subscription Types
 
-- Pull—subscriber makes reauest via subscription to check for new messages
+- Pull—subscriber makes request via subscription to check for new messages
 - Push—auto send messages to HTTP endpoint
