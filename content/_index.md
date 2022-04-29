@@ -9,6 +9,7 @@ Welcome to mattdunn.info! This site serves as a repository for my learning notes
 
 ## What I'm Learning
 
+- 2022-04-27 – [AWS Summit London 2022](notes/AWS%20Summit%20London%202022.md)
 - 2022-04-13 – [Google Certified Professional Cloud Developer](notes/Google%20Certified%20Professional%20Cloud%20Developer.md)
 - 2022-03-29 – [Kubernetes Patterns](notes/Kubernetes%20Patterns.md)
 - 2022-02-23 – [AWS Control Tower](notes/Control%20Tower.md)

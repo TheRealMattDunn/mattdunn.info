@@ -18,6 +18,7 @@ tags:
 
 - [Compute Engine](notes/Compute%20Engine.md)
 - [Kubernetes Engine (GKE)](notes/Kubernetes%20Engine.md)
+- [Anthos](notes/Anthos.md)
 - [App Engine](notes/App%20Engine.md)
 - [Cloud Run](notes/Cloud%20Run.md)
 - [Cloud Functions](notes/Cloud%20Functions.md)
