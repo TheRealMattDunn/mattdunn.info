@@ -11,3 +11,4 @@ tags:
 
 - [Event Driven Architecture](notes/Event%20Driven%20Architecture.md)
 - [Continuous Resilience](notes/Continuous%20Resilience.md)
+- [AWS Edge Computing](notes/AWS%20Edge%20Computing.md)
