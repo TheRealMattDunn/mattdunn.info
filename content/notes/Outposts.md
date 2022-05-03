@@ -14,6 +14,30 @@ tags:
 - Rack
 - Fully-managed by AWS
 
+## Available Functionality
+
+### Compute
+
+- [ECS](notes/Elastic%20Container%20Service%20(ECS).md)
+- EKS
+- EC2
+
+### Block and Object Storage
+
+- S3
+- EBS
+- EBS Local Snapshots
+
+### Data
+
+- RDS
+- Elasticache
+- EMR
+
+### Networking
+
+- Application Load Balancer (ALB)
+
 ## Outposts Server
 
 ![outposts_server](files/outposts_server.svg)
