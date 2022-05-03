@@ -25,6 +25,10 @@ tags:
 
 - Optimize infrastructure—bin-packing of applications
 - Optimize licence costs—multiple applications per VM/OS
+- Scalabilty
+- Portability
+- Agility
+- Customers want to leverage same tech on cloud as on-prem—familiarity
 
 ## Container Candidates
 
@@ -47,3 +51,8 @@ tags:
 
 - Low-level networking requirements
 - Desktop apps—RDP, VDI
+
+## Why Containers for Legacy Apps?
+
+- Less risky—fewer code changes
+- Quick—days/weeks
