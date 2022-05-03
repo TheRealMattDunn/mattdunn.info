@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.0845dbeffea714d4e21c2a75d3bb59e9.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.4c59e361e714f8a4f8edcd2e92e67c07.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.8f4ff4f1c4e73a58fc9c13800d33225b.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.242de8cc6cea029c0866c249f2196967.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,6 +43,16 @@
 <ul class=section-ul><li class=section-li>
 <div class=section>
 <div class=desc>
+<h3><a href=https://mattdunn.info/notes/AWS-Application-Modernization-with-A2C/>AWS Application Modernization with A2C</a></h3>
+<p>Modernization Goals Accelerate business transformation Agility Costs Cloud performance Strategies 7 Rs: Refactor Replatform Rehost Repurpose Relocate Refactor Often default, but not always best approach Expensive—cost and time Replatform More cost-effective and faster Gain cloud experience in the process Refactor later Utilize containers Challenges of Containerization Technology Existing build processes—manual Lack of documentation Staff Lack of knowledge Low priority Operations Lack of expertise in containers/cloud Migration Steps Discover Prepare Build Launch Libraries Source code Dockerfile Infrastructure Dependencies e....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 3, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
 <h3><a href=https://mattdunn.info/notes/App2Container-A2C/>App2Container (A2C)</a></h3>
 <p>Overview Migrate legacy apps into containers ASP.NET on IIS/Linux .NET Windows services Java on Linux—Tomcat, JBoss CLI tool—runs locally on instance Portable—on-prem, AWS Automated Scaleable—standard steps for all apps Source code not required—binaries packaged Follows AWS best practices for containerization Process Analysis of app: Dependencies Files Ports Containerizes with Docker Creates Artefacts ECS task definitions Kubernetes manifests CI/CD pipeline—AWS Developer Tools, Jenkins Cloud Formation templates Deploy to AWS Store image in ECR Deploy to ECS/EKS </p>
 </div>
@@ -64,7 +74,7 @@
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Benefits-of-Containers/>Benefits of Containers</a></h3>
-<p>Containers Method of packaging applications and all dependencies Portable Lightweight—doesn&rsquo;t contain entire OS Standardized format VM Downsides Generally an application per VM: bleeding over of dependencies—different apps need different versions of same library Complicated rollout Underutilized hardware—resources required for OS Container Upsides Optimize infrastructure—bin-packing of applications Optimize licence costs—multiple applications per VM/OS Container Candidates Good Candidates Web/logic tiers LAMP, WordPress J2EE middleware—WebSphere, Tomcat, JBoss Low duty-cycle and burst workloads Windows services, console apps Batch jobs Candidates Requiring Investigation Dependency on specialized hardware—e....</p>
+<p>Containers Method of packaging applications and all dependencies Portable Lightweight—doesn&rsquo;t contain entire OS Standardized format VM Downsides Generally an application per VM: bleeding over of dependencies—different apps need different versions of same library Complicated rollout Underutilized hardware—resources required for OS Container Upsides Optimize infrastructure—bin-packing of applications Optimize licence costs—multiple applications per VM/OS Scalabilty Portability Agility Customers want to leverage same tech on cloud as on-prem—familiarity Container Candidates Good Candidates Web/logic tiers LAMP, WordPress J2EE middleware—WebSphere, Tomcat, JBoss Low duty-cycle and burst workloads Windows services, console apps Batch jobs Candidates Requiring Investigation Dependency on specialized hardware—e....</p>
 </div>
 <p class=meta>
 1 minute read. Last updated May 3, 2022
