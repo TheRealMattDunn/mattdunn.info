@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.41bcd2c5a55759418303f0bbf5f234d3.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.f244616dc3f3f39667758ce3fee2079c.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.ebbd034a0280afe20cdd18db66828bac.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.0c8fde69cd06d9d0628166333fd7af20.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,26 +41,6 @@
 <article>
 <h1>All Notes</h1>
 <ul class=section-ul><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Datastream/>Datastream</a></h3>
-<p>Overview Serverless change data capture (CDC) and replication service Synchronize data across databases and applications </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 11, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Cloud-SQL/>Cloud SQL</a></h3>
-<p>Overview Relational database Supports: SQL Server MySQL PostreSQL Auto replication (within region), failover, backup, and point-in-time recovery (PITR)—built in HA Auto scales—30 TB max Vertcial scales manually to 96 cores / 624 GB RAM Read replicas available References GCP Decision Trees </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 11, 2022
-</p>
-</div>
-</li><li class=section-li>
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Cloud-Spanner/>Cloud Spanner</a></h3>
@@ -135,6 +115,26 @@
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Cloud-CDN/>Cloud CDN</a></h3>
 <p>Overview Serve content closer to users Suitable for frequently accessed data Works with external HTTP(S) load balancers HTTP caching—controlled with cache control header, or automatic caching of static content Sources: Instance groups Zonal NEGs Serverless NEGs (e....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 11, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Web-Security-Scanner/>Web Security Scanner</a></h3>
+<p>Overview Detects vulnerabilities in: App Engine Compute Engine Kubernetes Engine Crawler-based—crawls public URLs and IPs not behind firewalls CSCC standard—custom manual scans CSCC premium—managed scans (defaults to weekly) Examples: XSS Flash injection Mixed content (HTTP + HTTPS) Insecure JavaScript libraries Readable passwords </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 11, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Secret-Manager/>Secret Manager</a></h3>
+<p>Overview Store, manage, access secrets as blobs or strings Passwords, API keys, TLS certs etc. Data immutible New versions created with each modification Best practices Principle of least privilege Limit access with IAM Use Secret Manager API instead of environment variables Reference secrets by version number </p>
 </div>
 <p class=meta>
 1 minute read. Last updated May 11, 2022

@@ -1,8 +1,8 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Key Fundamentals To Know   GCP PCA Exam Guide   Cloud Architecture   GCP Services   Data Lifecycle   GCP Data Lifecycle  Distributed systems  OSI Layers  TCP/IP  How it works IPv4 and IPV6 Public vs private RFC1918 addressing SSL/TLS SSH    Common TCP Ports  HTTP/S  URLs and URIs Verbs Caching CORS  HTTP Status Codes     Site Reliability Engineering   SLIs, SLOs and SLAs    Google Cloud Adoption Framework   GCP Data Migration   GCP Application Migration   Compliance   AI ML Lifecycle   Case Studies   EHR Healthcare   Helicopter Racing League   Mountkirk Games   TerramEarth   ">
-<title>Google Cloud Certified Professional Cloud Architect</title>
+<meta name=description content="Overview  Database to map configuration resources to real world remote objects Recommendation: use remote state to allow multiple users to apply updates against the same environment  Reasons for State  Contains metadata, e.">
+<title>Terraform State</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=/icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.41bcd2c5a55759418303f0bbf5f234d3.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.f244616dc3f3f39667758ce3fee2079c.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.ebbd034a0280afe20cdd18db66828bac.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.0c8fde69cd06d9d0628166333fd7af20.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -39,105 +39,44 @@
 </div>
 </header>
 <article>
-<h1>Google Cloud Certified Professional Cloud Architect</h1>
+<h1>Terraform State</h1>
 <p class=meta>
 Last updated May 11, 2022
 </p>
 <ul class=tags>
-<li><a href=https://mattdunn.info/tags/cloud-architecture/>Cloud architecture</a></li>
-<li><a href=https://mattdunn.info/tags/gcp/>Gcp</a></li>
-<li><a href=https://mattdunn.info/tags/certification/>Certification</a></li>
+<li><a href=https://mattdunn.info/tags/example/>Example</a></li>
+<li><a href=https://mattdunn.info/tags/terraform/>Terraform</a></li>
 </ul>
 <aside class=mainTOC>
 <h3>Table of Contents</h3>
 <nav id=TableOfContents>
 <ol>
-<li><a href=#key-fundamentals-to-know>Key Fundamentals To Know</a></li>
-<li><a href=#case-studies>Case Studies</a></li>
+<li><a href=#overview>Overview</a>
+<ol>
+<li><a href=#reasons-for-state>Reasons for State</a></li>
+</ol>
+</li>
 </ol>
 </nav>
 </aside>
-<h2 id=key-fundamentals-to-know>Key Fundamentals To Know</h2>
+<h2 id=overview>Overview</h2>
 <ul>
-<li>
-<a href=/notes/GCP-PCA-Exam-Guide rel=noopener class=internal-link data-src=/notes/GCP-PCA-Exam-Guide>GCP PCA Exam Guide
-</a></li>
-<li>
-<a href=/notes/Cloud-Architecture rel=noopener class=internal-link data-src=/notes/Cloud-Architecture>Cloud Architecture
-</a></li>
-<li>
-<a href=/notes/GCP-Services rel=noopener class=internal-link data-src=/notes/GCP-Services>GCP Services
-</a></li>
-<li>
-<a href=/notes/Data-Lifecycle rel=noopener class=internal-link data-src=/notes/Data-Lifecycle>Data Lifecycle
-</a></li>
-<li>
-<a href=/notes/GCP-Data-Lifecycle rel=noopener class=internal-link data-src=/notes/GCP-Data-Lifecycle>GCP Data Lifecycle
-</a></li>
-<li>Distributed systems</li>
-<li>
-<a href=/notes/OSI-Layers rel=noopener class=internal-link data-src=/notes/OSI-Layers>OSI Layers
-</a></li>
-<li>TCP/IP
+<li>Database to map configuration resources to real world remote objects</li>
+<li>Recommendation: use remote state to allow multiple users to apply updates against the same environment</li>
+</ul>
+<h3 id=reasons-for-state>Reasons for State</h3>
 <ul>
-<li>How it works</li>
-<li>IPv4 and IPV6</li>
-<li>Public vs private RFC1918 addressing</li>
-<li>SSL/TLS</li>
-<li>SSH</li>
+<li>Contains metadata, e.g. resource dependencies
+<ul>
+<li>Required if resource removed from config—Terraform needs to know how to destroy (as no longer present in the config)</li>
 </ul>
 </li>
-<li>
-<a href=/notes/Common-TCP-Ports rel=noopener class=internal-link data-src=/notes/Common-TCP-Ports>Common TCP Ports
-</a></li>
-<li>HTTP/S
+<li>Performance
 <ul>
-<li>URLs and URIs</li>
-<li>Verbs</li>
-<li>Caching</li>
-<li>CORS</li>
-<li>
-<a href=/notes/HTTP-Status-Codes rel=noopener class=internal-link data-src=/notes/HTTP-Status-Codes>HTTP Status Codes
-</a></li>
+<li>Default behaviour—refresh state with every <code>plan</code> and <code>apply</code></li>
+<li>Can disable with <code>-refresh=false</code>—forces state to become single source of truth</li>
 </ul>
 </li>
-<li>
-<a href=/notes/Site-Reliability-Engineering rel=noopener class=internal-link data-src=/notes/Site-Reliability-Engineering>Site Reliability Engineering
-</a>
-<ul>
-<li>SLIs, SLOs and SLAs</li>
-</ul>
-</li>
-<li>
-<a href=/notes/Google-Cloud-Adoption-Framework rel=noopener class=internal-link data-src=/notes/Google-Cloud-Adoption-Framework>Google Cloud Adoption Framework
-</a></li>
-<li>
-<a href=/notes/GCP-Data-Migration rel=noopener class=internal-link data-src=/notes/GCP-Data-Migration>GCP Data Migration
-</a></li>
-<li>
-<a href=/notes/GCP-Application-Migration rel=noopener class=internal-link data-src=/notes/GCP-Application-Migration>GCP Application Migration
-</a></li>
-<li>
-<a href=/notes/Compliance rel=noopener class=internal-link data-src=/notes/Compliance>Compliance
-</a></li>
-<li>
-<a href=/notes/AI-ML-Lifecycle rel=noopener class=internal-link data-src=/notes/AI-ML-Lifecycle>AI ML Lifecycle
-</a></li>
-</ul>
-<h2 id=case-studies>Case Studies</h2>
-<ul>
-<li>
-<a href=/notes/EHR-Healthcare-Case-Study rel=noopener class=internal-link data-src=/notes/EHR-Healthcare-Case-Study>EHR Healthcare
-</a></li>
-<li>
-<a href=/notes/Helicopter-Racing-League-Case-Study rel=noopener class=internal-link data-src=/notes/Helicopter-Racing-League-Case-Study>Helicopter Racing League
-</a></li>
-<li>
-<a href=/notes/Mountkirk-Games-Case-Study rel=noopener class=internal-link data-src=/notes/Mountkirk-Games-Case-Study>Mountkirk Games
-</a></li>
-<li>
-<a href=/notes/TerramEarth-Case-Study rel=noopener class=internal-link data-src=/notes/TerramEarth-Case-Study>TerramEarth
-</a></li>
 </ul>
 </article>
 <hr>
@@ -146,7 +85,7 @@ Last updated May 11, 2022
 <h3>Backlinks</h3>
 <ul class=backlinks>
 <li>
-<a href=/>mattdunn.info</a>
+<a href=/notes/Terraform-Associate>Terraform Associate</a>
 </li>
 </ul>
 </div>
@@ -156,7 +95,7 @@ Last updated May 11, 2022
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://mattdunn.info/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://mattdunn.info/notes/Google-Certified-Professional-Cloud-Architect","https://mattdunn.info",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://mattdunn.info/notes/Terraform-State","https://mattdunn.info",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>
