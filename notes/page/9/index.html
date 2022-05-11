@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.8f4ff4f1c4e73a58fc9c13800d33225b.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.242de8cc6cea029c0866c249f2196967.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.41bcd2c5a55759418303f0bbf5f234d3.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.f244616dc3f3f39667758ce3fee2079c.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,31 +43,11 @@
 <ul class=section-ul><li class=section-li>
 <div class=section>
 <div class=desc>
-<h3><a href=https://mattdunn.info/notes/GCP-Persistent-Disks/>GCP Persistent Disks</a></h3>
-<p>Overview Disks independent of Compute Engine instance Data available after VM is shutdown Durable—data distributed across physical disks (99....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 3, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/GCP-Local-SSDs/>GCP Local SSDs</a></h3>
-<p>Overview Fastest block storage solution Attached directly to Compute Engine VMs Zonal 375 GB disks Expandable to 3, 6 or 9 TBs—combined into a single logical volume IOPs increase with disk size Data encrypted at rest Data lost when VM stops Best for transient data—media rendering, caches, analytics Can survive live migration References GCP Decision Trees </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 3, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
 <h3><a href=https://mattdunn.info/notes/Deployment/>Deployment</a></h3>
 <p>Overview Best for stateless apps i.e. uses ReadOnlyMany or ReadWriteMany volumes only </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 3, 2022
+1 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +57,7 @@
 <p>Overview Used for background tasks—no user intervention Creates one Pod per node Automatically creates a new Pod for each node that is added to the cluster </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 3, 2022
+1 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +67,7 @@
 <p>Overview Non-sensitive configuration artifacts Separate configuration from workloads </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 3, 2022
+1 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -97,7 +77,7 @@
 <p>Overview File-based storage NAS Provision in zone—access via VPC using NFSv3 Use case: lift-and-shift migrations Read-only snapshots supported Tiers Tier Capacities Use cases Basic HDD: 1 – 63....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 3, 2022
+1 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -107,7 +87,7 @@
 <p>Overview Block/file storage is exposed to Anthos clusters via the Container Storage Interface (CSI) This is required for PersistentVolumes on Anthos on Bare Metal (and VMware—although the choice here might be easier) Google partners have developed CSI drivers that have been verified against Anthos: Dell EMC Hitachi HPE NetApp Portworx Pure Storage Robin....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 3, 2022
+1 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -117,7 +97,7 @@
 <p>Overview Install Anthos clusters directly on your own hardware Use of specialized hardware Use existing data centres Anthos manages app deployment and health More efficient operations Customized security Deployment Models Admin clusters Create, modify, manage and delete user clusters User clusters Run workloads Standalone Single cluster—both and admin and user cluster in one Best for: Edge locations Single teams and workload types Multi-Cluster Admin cluster plus one or more user clusters Best for: Team separation Environment separation Hybrid Admin cluster plus one or more user clusters Admin cluster also runs user workloads Created from pre-existing standalone clusters No security concerns about workloads running on the admin cluster Operating Connect—component which associates Anthos on Bare Metal clusters with GCP Allows health of clusters to be visiable in Cloud Console </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 3, 2022
+1 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -127,7 +107,7 @@
 <p>Overview In memory database Redis Memcached Low latency, high throughput Use cases: Cached data </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 3, 2022
+1 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -137,7 +117,27 @@
 <p>Decision Trees GCP Decision Trees Fundamentals GCP Annotations Compute Compute Engine Kubernetes Engine (GKE) Anthos App Engine Cloud Run Cloud Functions VMware Engine GCP Compute Autoscaling Storage Local SSDs Persistent Disks Cloud Filestore Cloud Storage gsutil Databases Cloud SQL Cloud Spanner Cloud Bigtable Cloud Firestore Firebase Memorystore Datastream Networking External Networking Cloud Domains Cloud DNS Static IP Addresses Load Balancing Cloud CDN Cloud NAT Internal Networking VPCs Cloud Interconnect Cloud VPN Cloud Router Network Endpoint Groups APIs and Application Layer Cloud Endpoints API Gateway Big Data IoT Core Pub/Sub BigQuery Dataprep Dataproc Dataflow Cloud Composer AI/ML Vertex AI Security Cloud IAM GCP Resource Manager Cloud Identity Identity Aware Proxy Cloud Security Command Center Web Security Scanner Cloud Armor Event Threat Detection Cloud Data Loss Prevention Cloud KMS CMEK and CSEK Cloud HSM Cloud EKM Secret Manager Operations Cloud Monitoring Cloud Logging Cloud Debugger Cloud Trace Cloud Profiler CI/CD Cloud Build </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 3, 2022
+1 minute read. Last updated May 11, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-Compute-Autoscaling/>GCP Compute Autoscaling</a></h3>
+<p>Compute Autoscaling Service Min instances Min instances for HA How? Speed Compute Engine 1 instance 2 instances MIG / MIB + load balancer Moderate / better GKE Pods 1 Pod 2 Pods (e....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 11, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Firebase/>Firebase</a></h3>
+<p>Overview NoSQL database Store and synchronize data Collaboration amongst users and devices in real time Mobile apps use-case References GCP Decision Trees </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li></ul>

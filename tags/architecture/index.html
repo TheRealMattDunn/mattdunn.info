@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.8f4ff4f1c4e73a58fc9c13800d33225b.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.242de8cc6cea029c0866c249f2196967.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.41bcd2c5a55759418303f0bbf5f234d3.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.f244616dc3f3f39667758ce3fee2079c.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -47,7 +47,7 @@
 <p>Considerations Input Idempotent functions—same output if triggered multiple times Need mechanism to identify duplicate events—key, e.g, for processing payments Event size—sparse vs dense Choose to minimize number of subsequent calls to retrieve more data Balance against message size Large messages increase payload size, and introduce complexity in management of the API contract Output Consider knock-on effects Make every function emit an event, even if there are (currently) no consumers—extensibility Designing Event Driven Applications Create two tables: one for each service; one for each event....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 3, 2022
+1 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -57,7 +57,7 @@
 <p>Components Citrix Cloud Connector Responsible for communication to/from Citrix cloud Auto-updated/maintained by Citrix Virtual Delivery Agent (VDA) Apps/Desktops running on Windows/Linux VM instances Citrix Gateway (optional) Session brokering, load management, image management, monitoring, cost/capacity management Citrix Workspace Service UI Analytics Service ML—security, performance, user behavioural analytics/reporting Cloud Forward Design Pattern For customers who are “all-in” on GCP Commonly used for new deployments, POCs etc Requires no additional infrastructure Google Deployment Manager templates available, but appear to be no longer maintained Provides HA Creates a Citrix Cloud &ldquo;resource location&rdquo; Hybrid Design Pattern Customer-managed access layer components—advanced use-cases Cloud Migration Design Pattern As per Hybrid Design Pattern, but with legacy workloads on existing on-prem infrastructure Migrate workloads gradually to the cloud </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 3, 2022
+1 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -67,7 +67,7 @@
 <p>Overview Loosely coupled services Each microservice communicates via API contract Highly maintainable—Test driven development, automation Independently deployable </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 3, 2022
+1 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +77,7 @@
 <p> References Ibryam, B and Huß, R (2019), Kubernetes Patterns, O&rsquo;Reilly </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 3, 2022
+1 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +87,7 @@
 <p>Why? Business challenges and opportunities Financial inflexibility—legacy licences e.g. Windows, IBM etc. Improve security posture—old tech, unpatched Retain and attract talented staff Exploit existing systems in new products—e....</p>
 </div>
 <p class=meta>
-2 minute read. Last updated May 3, 2022
+2 minute read. Last updated May 11, 2022
 </p>
 </div>
 </li></ul>
