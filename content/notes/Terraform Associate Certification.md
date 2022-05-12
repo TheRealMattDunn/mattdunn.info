@@ -1,5 +1,5 @@
 ---
-title: "Terraform Associate"
+title: "Terraform Associate Certification"
 date: "2022-05-11"
 tags:
 - moc

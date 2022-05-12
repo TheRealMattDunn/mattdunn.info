@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Certified Professional Cloud Developer"
+title: "Google Cloud Certified Professional Cloud Developer Certification"
 date: "2022-04-19"
 tags:
 - development
