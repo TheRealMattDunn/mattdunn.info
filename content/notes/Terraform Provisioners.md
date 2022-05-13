@@ -1,0 +1,52 @@
+---
+title: "Terraform Provisioners"
+date: "2022-05-13"
+tags:
+- terraform
+- iac
+---
+
+## Overview
+
+- Provisioners model actions on the local or remote machines
+- Prepare infrastructure for service
+- Should be used as a last resort
+	- For actions not directly represented in Terraform
+
+## Anti-Patterns
+
+### Pass Data into VMS
+
+- Instead: utilize e.g. `user_data` for AWS EC2, or `metadata` for GCP [Compute Engine](notes/Compute%20Engine.md)
+
+### Running Configuration Management Software
+
+- e.g. Ansible
+- Instead: build custom images outside of Terraform, e.g. with HashiCorp Packer
+
+### Where First-Class Provider Support is Available
+
+- Also, make provisioner user as temporary workaround—support may eventually be available
+	- Raise ticket with provider to support functionality
+
+## Usage
+
+- Built-in provisioners: `file`, `local-exec`, `remote-exec`
+- Placed inside resource blocks, e.g. for compute instances:
+```
+resource "aws_instance" "instance" {
+  #...
+
+  provisioner "local-exec" {
+    command = "echo hello ${self.private_ip}"
+  }
+}
+```
+- Can have multiple per resource
+- Use `self` to reference parent attributes
+- Defaults:
+	- Run on creation-time, not during updates
+	- Failure marks resource as tainted
+		- Change with `on_failure`—`continue` or `fail`
+- Destroy-time: `when = destroy`
+	- Can't run if provisioner removed from config—destroy resource by setting `count = 0` first
