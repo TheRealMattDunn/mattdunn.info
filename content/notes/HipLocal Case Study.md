@@ -75,7 +75,7 @@ tags:
 	- *[Cloud Logging](notes/Cloud%20Logging.md), [Cloud Domains](notes/Cloud%20Domains.md)*
 - Ensure **regulatory compliance** (e.g. GDPR)
 - **Reduce** infrastructure management **time** and **cost**
-	- *IaC, e.g. Terraform*
+	- *IaC, e.g. [Terraform](notes/Terraform.md)*
 	- *Migrate on-prem to GCP*
 - Adopt **Google best practices**:
 	- Workflows/process—**application lifecycle management**

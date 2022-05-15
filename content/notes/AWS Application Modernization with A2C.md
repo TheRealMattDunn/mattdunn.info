@@ -48,11 +48,11 @@ tags:
 
 ## Migration Steps
 
-| Discover     | Prepare                                           | Build      | Launch                   |
-| ------------ | ------------------------------------------------- | ---------- | ------------------------ |
-| Libraries    | Source code                                       | Dockerfile | Infrastructure           |
-| Dependencies | e.g. Remove passwords, DB connection strings etc. | Build      | VPC etc.                 |
-| Networking   |                                                   | CI/CD      | CloudFormation/Terraform |
+| Discover     | Prepare                                           | Build      | Launch                                         |
+| ------------ | ------------------------------------------------- | ---------- | ---------------------------------------------- |
+| Libraries    | Source code                                       | Dockerfile | Infrastructure                                 |
+| Dependencies | e.g. Remove passwords, DB connection strings etc. | Build      | VPC etc.                                       |
+| Networking   |                                                   | CI/CD      | CloudFormation/[Terraform](notes/Terraform.md) |
 
 # References
 

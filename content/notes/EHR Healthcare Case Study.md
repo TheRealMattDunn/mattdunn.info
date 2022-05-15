@@ -139,7 +139,7 @@ tags:
 - **Outages** caused by:
 	- Misconfigurations
 		- *Automate where possible—CI/CD*
-		- *Infrastructure as code e.g. Terraform*
+		- *Infrastructure as code e.g. [Terraform](notes/Terraform.md)*
 		- *[Kubernetes](notes/Kubernetes.md)—roll-back unstable releases*
 		- *Anthos Config Management for guardrails and best practice policies across all clusters*
 	- Inadequate capacity

@@ -1,9 +1,8 @@
 ---
-title: "Terraform Associate Certification"
+title: "Terraform"
 date: "2022-05-11"
 tags:
 - moc
-- certification
 - iac
 - terraform
 ---
