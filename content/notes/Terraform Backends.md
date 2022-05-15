@@ -10,7 +10,7 @@ tags:
 
 - Define where [Terraform State](notes/Terraform%20State.md) snapshots are stored.
 - Options:
-	- Local (default)
+	- Local (default)—stored on local filesystem
 	- Remote—e.g. AWS S3, [GCP Cloud Storage](notes/Cloud%20Storage.md)
 	- Terraform Cloud
 
