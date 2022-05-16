@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Overview  Declared in variable blocks Arguments:  default type  string number bool Complex types: list, set, map, object, tuple any   description validation sensitive nullable    Setting Variables  Presedence:  Environment variables terraform.">
+<meta name=description content="Overview  Declared in variable blocks Arguments:  default  Causes variable to be optional. If omitted, value is set to the default argument   type  string number bool Complex types: list(<TYPE>), set(<TYPE>), map(<TYPE>), object({<ATTR_NAME> = <TYPE>, .">
 <title>Terraform Variables</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=/icon.png>
@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.9208cf06fe62321f80b712588ff7fde2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.18c322b90557d9d436f9f409292fcc4a.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.f0ac8ac20e4bf737a123e149e2b90d23.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.56fe8f0af4f50bb8cb42e0a9bd13c828.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -52,6 +52,7 @@ Last updated May 16, 2022
 <nav id=TableOfContents>
 <ol>
 <li><a href=#overview>Overview</a></li>
+<li><a href=#validation>Validation</a></li>
 <li><a href=#setting-variables>Setting Variables</a></li>
 </ol>
 </nav>
@@ -61,24 +62,86 @@ Last updated May 16, 2022
 <li>Declared in <code>variable</code> blocks</li>
 <li>Arguments:
 <ul>
-<li><code>default</code></li>
+<li><code>default</code>
+<ul>
+<li>Causes variable to be optional.</li>
+<li>If omitted, value is set to the <code>default</code> argument</li>
+</ul>
+</li>
 <li><code>type</code>
 <ul>
 <li><code>string</code></li>
 <li><code>number</code></li>
 <li><code>bool</code></li>
-<li>Complex types: <code>list</code>, <code>set</code>, <code>map</code>, <code>object</code>, <code>tuple</code></li>
+<li>Complex types: <code>list(&lt;TYPE>)</code>, <code>set(&lt;TYPE>)</code>, <code>map(&lt;TYPE>)</code>, <code>object({&lt;ATTR_NAME> = &lt;TYPE>, ...}</code>, <code>tuple([&lt;TYPE>, ...])</code></li>
 <li><code>any</code></li>
 </ul>
 </li>
-<li><code>description</code></li>
-<li><code>validation</code></li>
-<li><code>sensitive</code></li>
-<li><code>nullable</code></li>
+<li><code>description</code>
+<ul>
+<li>Variable documentation</li>
+</ul>
+</li>
+<li><code>validation</code>
+<ul>
+<li>See below</li>
+</ul>
+</li>
+<li><code>sensitive</code>
+<ul>
+<li>Suppresses display of value in the CLI output</li>
+<li>Value still stored in plain text in
+<a href=/notes/Terraform-State rel=noopener class=internal-link data-src=/notes/Terraform-State>state
+</a></li>
+<li>Sent to provider without obfuscation
+<ul>
+<li>Could be disclosed e.g. as part of an ID</li>
 </ul>
 </li>
 </ul>
-<h2 id=setting-variables>Setting Variables</h2>
+</li>
+<li><code>nullable</code>
+<ul>
+<li>Allows/disallows <code>null</code> values</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id=validation>Validation</h2>
+<ul>
+<li>In addition to type constraints.</li>
+<li><code>validation.condition</code> must use value of variable to return <code>true</code> if valid, otherwise <code>false</code></li>
+<li>Must not produce errors
+<ul>
+<li>May use <code>can</code> function to detect errors and return <code>true</code>/<code>false</code></li>
+</ul>
+</li>
+<li>e.g.</li>
+</ul>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>variable &#34;my_id&#34; {
+  type = string
+  
+  validation {
+    condition     = length(var.my_id) &gt; 4 &amp;&amp; substr(var.my_id, 0, 3) == &#34;foo&#34;
+    error_message = &#34;The length of my_id must be greater than 4, starting with foo&#34;
+  }
+}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=setting-variables>Setting Variables</h2>
 <ul>
 <li>Presedence:
 <ul>
