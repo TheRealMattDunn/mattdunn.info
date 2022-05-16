@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Exam Topics   Infrastructure as Code (IAC)   Terraform State   Terraform Providers   Terraform Backends   Terraform Settings   Terraform Provisioners   Terraform Commands   Terraform Debug Logs   ">
+<meta name=description content="Exam Topics   Infrastructure as Code (IAC)   Terraform Commands   Terraform Settings   Terraform State   Terraform Backends   Terraform Providers   Terraform Modules   Terraform Variables   Terraform Provisioners   Terraform Debug Logs   ">
 <title>Terraform</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=/icon.png>
@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.32f25725f37973016aa38c4dadb78383.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.0d879a5b4c2915fb810b24ab036b2968.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.9208cf06fe62321f80b712588ff7fde2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.18c322b90557d9d436f9f409292fcc4a.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,7 +41,7 @@
 <article>
 <h1>Terraform</h1>
 <p class=meta>
-Last updated May 15, 2022
+Last updated May 16, 2022
 </p>
 <ul class=tags>
 <li><a href=https://mattdunn.info/tags/moc/>Moc</a></li>
@@ -62,22 +62,28 @@ Last updated May 15, 2022
 <a href=/notes/Infrastructure-as-Code-IAC rel=noopener class=internal-link data-src=/notes/Infrastructure-as-Code-IAC>Infrastructure as Code (IAC)
 </a></li>
 <li>
-<a href=/notes/Terraform-State rel=noopener class=internal-link data-src=/notes/Terraform-State>Terraform State
-</a></li>
-<li>
-<a href=/notes/Terraform-Providers rel=noopener class=internal-link data-src=/notes/Terraform-Providers>Terraform Providers
-</a></li>
-<li>
-<a href=/notes/Terraform-Backends rel=noopener class=internal-link data-src=/notes/Terraform-Backends>Terraform Backends
+<a href=/notes/Terraform-Commands rel=noopener class=internal-link data-src=/notes/Terraform-Commands>Terraform Commands
 </a></li>
 <li>
 <a href=/notes/Terraform-Settings rel=noopener class=internal-link data-src=/notes/Terraform-Settings>Terraform Settings
 </a></li>
 <li>
-<a href=/notes/Terraform-Provisioners rel=noopener class=internal-link data-src=/notes/Terraform-Provisioners>Terraform Provisioners
+<a href=/notes/Terraform-State rel=noopener class=internal-link data-src=/notes/Terraform-State>Terraform State
 </a></li>
 <li>
-<a href=/notes/Terraform-Commands rel=noopener class=internal-link data-src=/notes/Terraform-Commands>Terraform Commands
+<a href=/notes/Terraform-Backends rel=noopener class=internal-link data-src=/notes/Terraform-Backends>Terraform Backends
+</a></li>
+<li>
+<a href=/notes/Terraform-Providers rel=noopener class=internal-link data-src=/notes/Terraform-Providers>Terraform Providers
+</a></li>
+<li>
+<a href=/notes/Terraform-Modules rel=noopener class=internal-link data-src=/notes/Terraform-Modules>Terraform Modules
+</a></li>
+<li>
+<a href=/notes/Terraform-Variables rel=noopener class=internal-link data-src=/notes/Terraform-Variables>Terraform Variables
+</a></li>
+<li>
+<a href=/notes/Terraform-Provisioners rel=noopener class=internal-link data-src=/notes/Terraform-Provisioners>Terraform Provisioners
 </a></li>
 <li>
 <a href=/notes/Terraform-Debug-Logs rel=noopener class=internal-link data-src=/notes/Terraform-Debug-Logs>Terraform Debug Logs
