@@ -18,3 +18,10 @@ tags:
 - Performance
 	- Default behaviour—refresh state with every `plan` and `apply`
 	- Can disable with `-refresh=false`—forces state to become single source of truth
+
+## State Locking
+
+- Supported by some [backends](notes/Terraform%20Backends.md)
+- Automatically locks state for all write operations
+- Prevents others from acquiring lock and writing to state—prevents corruption
+- Use `force-unlock` command to manually unlock where automatic unlocking fails

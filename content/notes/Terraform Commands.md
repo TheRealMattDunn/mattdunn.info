@@ -12,10 +12,13 @@ tags:
 - `destroy`—destroys all remote objects managed by the config
 - `fmt`—rewrites config files to canonical Terraform format/style
 	- Also flags syntax errors
-- `import`—imports existing remote objects into the [Terraform state](notes/Terraform%20State.md)
+- `force-unlock`—manually unlock the [state](notes/Terraform%20State.md) where automatic unlocking fails
+- `import`—imports existing remote objects into the state
 - `init`—initializes a working directory containing Terraform config files.
 - `plan`—creates an execution plan
 	- Preview changes that Terraform plans to make
+- `refresh`—reads current settings from all managed remote objects and updates state to match
+	- *Deprecated*
 - `state`—advanced state management. Sub-commands:
 	- `list`
 	- `mv`—bind a remote object to a different Terraform address
@@ -26,7 +29,7 @@ tags:
 	- `show`—display the attributes of a single resource in the state
 - `taint`—marks resources as tainted, i.e. damaged
 	- Terraform recreates on next apply
-	- Deprecated—use `terraform apply -replace <resource>` instead
+	- *Deprecated*—use `terraform apply -replace <resource>` instead
 - `validate`—validates config files in the directory
 	- Doesn't access any remote services e.g. remote state, APIs, etc.
 	- Verifies configuration is syntatically valid and internally consistent
