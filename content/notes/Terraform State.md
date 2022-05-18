@@ -25,3 +25,9 @@ tags:
 - Automatically locks state for all write operations
 - Prevents others from acquiring lock and writing to state—prevents corruption
 - Use `force-unlock` command to manually unlock where automatic unlocking fails
+
+## Sensitive Data
+
+- Local state—unencrypted JSON
+- Remote state—may be encrypted at rest (backend specific)
+- Best practice: treat state as sensitive data
