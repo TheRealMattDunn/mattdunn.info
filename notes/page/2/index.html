@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.89fed0c70e9e73ae0c866acca57587f1.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.20a7ecfa55b5e83853a46b12279db26a.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.7626ceb7ecd776f594a1df97a3690b3b.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.e0a023acb9c2fd849ae40dae7e8a5c18.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,81 +43,11 @@
 <ul class=section-ul><li class=section-li>
 <div class=section>
 <div class=desc>
-<h3><a href=https://mattdunn.info/notes/Event-Driven-Architecture/>Event Driven Architecture</a></h3>
-<p>Considerations Input Idempotent functions—same output if triggered multiple times Need mechanism to identify duplicate events—key, e.g, for processing payments Event size—sparse vs dense Choose to minimize number of subsequent calls to retrieve more data Balance against message size Large messages increase payload size, and introduce complexity in management of the API contract Output Consider knock-on effects Make every function emit an event, even if there are (currently) no consumers—extensibility Designing Event Driven Applications Create two tables: one for each service; one for each event....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 18, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Elastic-Container-Service-ECS/>Elastic Container Service (ECS)</a></h3>
-<p>Overview Orchestration for containers Deploy, manage, scale Task Definitions Describes application—cf. Kubernetes manifest JSON file Up to 10 containers Includes ports, data volumes, launch type etc....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 18, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Continuous-Resilience/>Continuous Resilience</a></h3>
-<p>Introduction Cost of downtime: $5,600/min—Gartner Companies don&rsquo;t like fear of outages Results in process and rules (e....</p>
-</div>
-<p class=meta>
-2 minute read. Last updated May 18, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/AWS-Summit-London-2022/>AWS Summit London 2022</a></h3>
-<p>Breakout Sessions Event Driven Architecture Continuous Resilience AWS Application Modernization with A2C AWS Edge Computing </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 18, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/App2Container-A2C/>App2Container (A2C)</a></h3>
-<p>Overview Migrate legacy apps into containers ASP.NET on IIS/Linux .NET Windows services Java on Linux—Tomcat, JBoss CLI tool—runs locally on instance Portable—on-prem, AWS Automated Scaleable—standard steps for all apps Source code not required—binaries packaged Follows AWS best practices for containerization Process Analysis of app: Dependencies Files Ports Containerizes with Docker Creates Artefacts ECS task definitions Kubernetes manifests CI/CD pipeline—AWS Developer Tools, Jenkins Cloud Formation templates Deploy to AWS Store image in ECR Deploy to ECS/EKS </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 18, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/AWS-Edge-Computing/>AWS Edge Computing</a></h3>
-<p>Why? Low latency Local data processing Data residency Use case: Online betting in the US—local regulations for data processing/storage locations AWS Hybrid Cloud Services Local Zones Outposts Wavelength How to Approach Questions to Ask Why can&rsquo;t the workload go in region (i....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 18, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/AWS-Application-Modernization-with-A2C/>AWS Application Modernization with A2C</a></h3>
-<p>Modernization Goals Accelerate business transformation Agility Costs Cloud performance Strategies 7 Rs: Refactor Replatform Rehost Repurpose Relocate Refactor Often default, but not always best approach Expensive—cost and time Replatform More cost-effective and faster Gain cloud experience in the process Refactor later Utilize containers Challenges of Containerization Technology Existing build processes—manual Lack of documentation Staff Lack of knowledge Low priority Operations Lack of expertise in containers/cloud Migration Steps Discover Prepare Build Launch Libraries Source code Dockerfile Infrastructure Dependencies e....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 18, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
 <h3><a href=https://mattdunn.info/notes/Terraform-State/>Terraform State</a></h3>
 <p>Overview Database to map configuration resources to real world remote objects Recommendation: use remote state to allow multiple users to apply updates against the same environment Reasons for State Contains metadata, e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 18, 2022
+1 minute read. Last updated May 19, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -127,17 +57,89 @@
 <p>Overview Allow Terraform to interact with cloud providers, SaaS providers and other APIs Must declare which providers will be used in the config So Terraform can install Configuration Belong in root module Child modules receive config from root module Can use expressions in config arguments, but values must be known at apply-time (e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 18, 2022
+1 minute read. Last updated May 19, 2022
 </p>
 </div>
 </li><li class=section-li>
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Terraform/>Terraform</a></h3>
-<p>Exam Topics Infrastructure as Code (IAC) Terraform Commands Terraform Settings Terraform State Terraform Backends Terraform Providers Terraform Vault Provider Terraform Modules Terraform Variables Terraform Output Values Terraform Provisioners Terraform Debug Logs </p>
+<p>Core Infrastructure as Code (IAC) Commands Settings State Backends Providers Vault Provider Modules Variables Output Values Provisioners Debug Logs Types Resources Data Sources File and Workspace Information Dynamic Blocks Terraform Cloud Terraform Cloud Sentinel </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 18, 2022
+1 minute read. Last updated May 19, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Infrastructure-as-Code-IAC/>Infrastructure as Code (IAC)</a></h3>
+<p>Overview Allows you to define cloud and on-premises resources in human-readable config files Check in to version control Reuse Share Standardized workflow across all cloud vendors Improves: Reliability—removes config drift arising from manual changes Manageability—easy to make changes Lifecycle Day 0—provision/configure initial infrastructure Day 1—OS/app config after initial infrastructure build </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 19, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Terraform-Settings/>Terraform Settings</a></h3>
+<p>Terraform Block 1 2 3 terraform { #... } Sub-elements:
+cloud—configures Terraform Cloud backend—configures the Terraform state backends required_version—constrains the Terraform version Constraints of all child modules must also be satisfied required_providers—specifies providers required by the module Includes address and version constraint </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 19, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Terraform-Provisioners/>Terraform Provisioners</a></h3>
+<p>Overview Provisioners model actions on the local or remote machines Prepare infrastructure for service Should be used as a last resort For actions not directly represented in Terraform Anti-Patterns Pass Data into VMS Instead: utilize e....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 19, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Terraform-Debug-Logs/>Terraform Debug Logs</a></h3>
+<p>Enable Debug Logging Set env var TF_LOG to TRACE, DEBUG, INFO, WARN or ERROR Also TF_LOG_CORE (core Terraform debug logs), TF_LOG_PROVIDER (provider logs) TF_LOG_PATH—append logs to a file </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 19, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Terraform-Commands/>Terraform Commands</a></h3>
+<p>Commands -apply—executes the actions proposed in a Terraform plan
+destroy—destroys all remote objects managed by the config fmt—rewrites config files to canonical Terraform format/style Also flags syntax errors force-unlock—manually unlock the state where automatic unlocking fails import—imports existing remote objects into the state init—initializes a working directory containing Terraform config files....</p>
+</div>
+<p class=meta>
+2 minute read. Last updated May 19, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Terraform-Backends/>Terraform Backends</a></h3>
+<p>Overview Define where Terraform State snapshots are stored. Options: Local (default)—stored on local filesystem Remote—e.g. AWS S3, GCP Cloud Storage Terraform Cloud Configuration 1 2 3 4 5 terraform { backend "remote" { organisation = "example" } } Not every argument required in backend config—partial configuration Supply remaining arguments by: File—supply configuration file (name: *....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 19, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Terraform-Variables/>Terraform Variables</a></h3>
+<p>Overview Declared in variable blocks Arguments: default Causes variable to be optional. If omitted, value is set to the default argument type string number bool Complex types: list(&lt;TYPE>), set(&lt;TYPE>), map(&lt;TYPE>), object({&lt;ATTR_NAME> = &lt;TYPE>, ....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 19, 2022
 </p>
 </div>
 </li></ul>
@@ -167,7 +169,7 @@
 <a href=/notes/page/3/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a>
 </li>
 <li class=page-item>
-<a href=/notes/page/15/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a>
+<a href=/notes/page/16/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a>
 </li>
 </ul>
 </article>
