@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.7626ceb7ecd776f594a1df97a3690b3b.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.e0a023acb9c2fd849ae40dae7e8a5c18.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.8b5991082e1997b0992511923dda5706.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.158b6cf0503b79b8b7ca5a89725de56c.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,31 +43,11 @@
 <ul class=section-ul><li class=section-li>
 <div class=section>
 <div class=desc>
-<h3><a href=https://mattdunn.info/notes/Vertex-AI/>Vertex AI</a></h3>
-<p>Vision API Vision detection Labelling Face / landmark recognition OCR Explicit content tagging Video Intelligence API Annotate videos From GCS, live streams or local videos Contextual info From single frame to entire video Recognise text Track objects Recognise people Translation API 100+ language translation pairs Language detection Basic or advanced versions Advanced—batch requests, Auto ML custom models Text-to-Speech and Speech-to-Text APIs Fast text-to-speech and vice versa Natural Language API Text analysis—insights from documents (e....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 19, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Pub-Sub/>Pub/Sub</a></h3>
-<p>Overview Global message bus —consistent latency globally Scalable, durable Topic-based At-least-once model Push and pull modes Exactly once processing Messages can be ordered and filtered </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 19, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
 <h3><a href=https://mattdunn.info/notes/Kubernetes-Engine/>Kubernetes Engine</a></h3>
 <p>Overview Managed Kubernetes clusters Two modes: Standard—total control Autopilot—fully managed Auto-repair and upgrade Autoscaling Containerize legacy apps and migrate using Migrate for Anthos and GKE Clusters At least one control plane and multiple worker nodes Zonal—one control plane node Regional—multiple control plane nodes Can&rsquo;t switch from regional to zonal (or vice versa) once cluster is created Private clusters—VPC native, internal IPs only For HA use multi-zonal node pools Networking Routing options: Routes-based Custom static routes VPC-native Alias IP ranges Scale better Needed for private clusters Pods routable within cluster&rsquo;s VPC, and other networks connected via VPC peering Also generally routable from on-prem via VPN/Interconnect Pod IP addresses reserved before Pods created in the cluster—prevents conflicts Don&rsquo;t consume custom routes quota Can apply firewall rules to Pod IPs Workload Identity Links Kubernetes Service Accounts with GCP Service Accounts—allows access to other GCP resources from within the cluster Operations Integrated with Cloud Monitoring and Cloud Logging Metrics: System metrics—low-level, e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 19, 2022
+1 minute read. Last updated May 20, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +57,7 @@
 <p>Overview Fully managed—connect, manage, ingest device data Global Device Manager Identity Authentication Configuration Control Protocol Bridge Incoming telemetry data to Pub/Sub HTTPS or MQTT Two-way comms Updates on and offline </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 19, 2022
+1 minute read. Last updated May 20, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +67,7 @@
 <p>Environment Setup Use Jupyter notebooks for development One instance per teammate per project Store prepared data and model in the same project Development Prepare a good amount of training data More accurate models Store tabular data in BigQuery Store unstructured data in Cloud Storage Processing Use TensorFlow Extended for TensorFlow projects Process tabular data BigQuery Process unstructured data with: Dataflow —General use cases, Apache Bean Dataproc —Apache Hadoop or Spark use cases Link data to model with managed datasets Production Specify hardware appropriate for model CPUs vs GPUs Plan for additional inputs to model Enable autoscaling References Vertex AI </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 19, 2022
+1 minute read. Last updated May 20, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -97,7 +77,7 @@
 <p>The AI/ML Lifecycle </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 19, 2022
+1 minute read. Last updated May 20, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -107,7 +87,7 @@
 <p>Overview Map/Reduce—Apache Spark and Hadoop Backed by Zonal VMs Can use preemptible VMs—reduce cost One VM must be non-preemptible References GCP Decision Trees </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 19, 2022
+1 minute read. Last updated May 20, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -117,7 +97,7 @@
 <p>Overview Explore, clean, prepare for analysis and ML Can detect schemas—data types, joins, anomalies Prediction of next transformation Transformation functions, e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 19, 2022
+1 minute read. Last updated May 20, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -127,7 +107,7 @@
 <p>Overview Streaming analytics service Transform and enrich data in stream and batch modes with a single model Serverless—managed service, horizontal scaling Apache Beam-based Open source Beam SDK—Java, Python, Go (not currently supported) Dataflow is the backend for the Beam API References GCP Decision Trees </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 19, 2022
+1 minute read. Last updated May 20, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -137,7 +117,27 @@
 <p>Overview Highly configurable Zonal Choice of machine types: General purpose Compute optimized Memory optimized Processor optimized (GPUs) Public or private boot disk images Live migrations Auto restart Per second billing—minimum of one minute vCPU and memory billed separately Boot Disks Set --no-boot-disk-auto-delete to keep boot disk data after instance deletion Preemptible VMs Can stop at any time Will definitely stop after 24 hrs 60 – 90% cheaper than standard VMs Sole Tenant Nodes Dedicated server Useful for specific hardware requirements, e....</p>
 </div>
 <p class=meta>
-2 minute read. Last updated May 19, 2022
+2 minute read. Last updated May 20, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Cloud-Storage/>Cloud Storage</a></h3>
+<p>Overview Object storage Not suitable for file-based storage applications Infinitely scalable Highly durable (99.9999999%—eleven 9s) Unstructured data—images, videos etc....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 20, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Cloud-Run/>Cloud Run</a></h3>
+<p>Overview Containerized applications Knative-based Any language/library/binary Regional Fully managed PaaS Autoscaling from zero Priced down to 100ms Developing Cloud Run deployments called Services Each change creates a new revision Traffic routing—split traffic between revisions Canary and blue/green deployements Container Requirements Must listen for request on specified port HTTPS, gRPC, Pub/Sub , Cloud Tasks, Cloud Scheduler Must be stateless Must not spawn background tasks References GCP Decision Trees </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 20, 2022
 </p>
 </div>
 </li></ul>
