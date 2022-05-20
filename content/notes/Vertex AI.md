@@ -48,3 +48,8 @@ tags:
 - Faster to train models than GPUs
 	- 27x faster
 	- 38% cheaper
+
+## AutoML
+
+- Create new models using existing ones as a starting point
+- Tune existing models with own data/classifications
