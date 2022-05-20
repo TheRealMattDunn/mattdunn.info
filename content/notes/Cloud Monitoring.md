@@ -41,4 +41,11 @@ tags:
 ## Integration
 
 - Cloud Monitoring API
-- Export to [BigQuery](notes/BigQuery.md) or external tools via Service Account authentication e.g. Grafana
+- Export to [BigQuery](notes/BigQuery.md) or external tools via Service Account authentication, e.g. Grafana
+
+## Uptime Checks
+
+- HTTP GET/POST to application—requires FQDN
+- Looks for successful response
+- Can check for expired SSL certificates
+- Alerts—email, SMS, Slack, PagerDuty, [Pub/Sub](notes/Pub%20Sub.md)

@@ -58,6 +58,8 @@ tags:
 
 ## Log Retention Periods
 
+![gcp_log_retention](files/gcp_log_retention.svg)
+
 - Admin activity, system event, access transparecy
 	- 400 days
 	- Non-chargeable
@@ -66,6 +68,8 @@ tags:
 	- Chargeable
 
 ## Exporting Logs
+
+![gcp_logs_router](files/gcp_logs_router.svg)
 
 1. Create sink—filter/destination pairing
 2. Define filter—filter/exclude logs

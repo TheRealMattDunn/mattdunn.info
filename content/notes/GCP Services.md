@@ -105,6 +105,7 @@ tags:
 - [Cloud Debugger](notes/Cloud%20Debugger.md)
 - [Cloud Trace](notes/Cloud%20Trace.md)
 - [Cloud Profiler](notes/Cloud%20Profiler.md)
+- [Error Reporting](notes/Error%20Reporting.md)
 
 ## CI/CD
 
