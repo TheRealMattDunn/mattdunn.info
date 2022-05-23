@@ -14,7 +14,7 @@ tags:
 ## Solution
 
 - Knowing resource requirements up-front allows:
-	- Kubernetes to intelligently make decisions on Pod placement—more efficient hardware utilization
+	- Kubernetes to intelligently make decisions on [Pod](notes/Pod.md) placement—more efficient hardware utilization
 	- Capacity planning—more cost-effective environments
 
 ### Runtime Dependencies
@@ -26,7 +26,7 @@ tags:
 	- `emptyDir`—ephemeral to Pod
 	- PersistentVolume—long-lived
 	- Type of required volume affects Pod placement—Pod might not be scheduled if no node available
-- Configuration e.g. ConfigMaps, Secrets
+- Configuration e.g. [ConfigMaps](notes/ConfigMap.md), Secrets
 
 ### Resource Profiles
 

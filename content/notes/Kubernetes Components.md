@@ -1,3 +1,10 @@
+---
+title: "Kubernetes Components"
+date: "2022-05-23"
+tags:
+- kubernetes
+---
+
 ## Kubernetes Components
 
 ![kubernetes_components](files/kubernetes_components.svg)
