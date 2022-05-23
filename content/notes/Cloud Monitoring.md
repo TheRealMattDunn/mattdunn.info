@@ -24,7 +24,7 @@ tags:
 - More detailed and granular metrics
 - Can gather metrics from 3rd party apps, e.g. NGINX
 - Monitoring agent: collectd
-- Logging agent: fluentd
+- Logging agent: Fluentd
 
 ## Metrics
 
@@ -33,8 +33,8 @@ tags:
 	- Gauge—instant in time e.g. CPU usage
 	- Delta—change in value since last recording
 	- Cumulative—sum over time e.g. sent bytes
-- Examples: latency, number SQL records, disk space
-- 1500+ pre-create metrics
+- Examples: latency, number of SQL records, disk space
+- 1500+ pre-created metrics
 - Custom metrics, define via built in Monitoring API or OpenCensus
 	- Best practice: use built-in metrics if possible before creating custom metrics
 

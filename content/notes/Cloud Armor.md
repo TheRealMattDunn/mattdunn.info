@@ -15,7 +15,7 @@ tags:
 	- Broken authentication
 	- SQL injection
 	- XSS
-- Allow/deby traffic by IP/CIDR
+- Allow/deny traffic by IP/CIDR
 - Preview changes
-- Configure WAG rules to reduce false positives
+- Configure WAF rules to reduce false positives
 - Reference named IP lists published by CDN partners, e.g. Fastly, Cloudflare etc.

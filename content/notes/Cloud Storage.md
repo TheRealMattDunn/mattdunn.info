@@ -25,6 +25,8 @@ tags:
 - Lifecycle management
 	- Rules to move objects between storage classes, or delete
 - Signed URLs—grant temporary access to specific objects
+	- Programmatically sign strings within application
+	- Or use App Engine App Identity service to sign from within [App Engine](notes/App%20Engine.md)
 - Retention policies, policy locks, object holds—useful for regulated data
 - [gsutil](notes/gsutil.md) tool
 
