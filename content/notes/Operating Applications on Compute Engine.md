@@ -49,7 +49,7 @@ tags:
 
 - First check serial console—startup script errors
 - If startup script stored in Cloud Storage—check instance Service Account has correct read permissions on the bucket/object
-- For instance access issue—check network tags and corresponding firewall rules
+- For instance access issues—check network tags and corresponding firewall rules
 - Issues with Managed Instance Groups:
 	- Template issues—source image doesn't exist? Disk mounted in read/write mode onto multiple instances?
 	- Instances being recreated—health check issues: broken template, health check firewall rule missing
