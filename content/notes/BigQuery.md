@@ -28,3 +28,4 @@ tags:
 # References
 
 - [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
+- [GCP Database Connections](notes/GCP%20Database%20Connections.md)

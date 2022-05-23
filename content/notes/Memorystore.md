@@ -15,3 +15,7 @@ tags:
 - Low latency, high throughput
 - Use cases:
 	- Cached data
+
+## References
+
+- [GCP Database Connections](notes/GCP%20Database%20Connections.md)

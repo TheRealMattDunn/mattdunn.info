@@ -20,6 +20,7 @@ tags:
 	- [Cloud Bigtable](notes/Cloud%20Bigtable.md)
 		- [Cloud Bigtable Best Practices](notes/Cloud%20Bigtable.md)
 	- [Cloud Firestore](notes/Cloud%20Firestore.md)
+	- [Database Connections](notes/GCP%20Database%20Connections.md)
 	- [Compute Engine](notes/Compute%20Engine.md)
 		- [Operating Applications on Compute Engine](notes/Operating%20Applications%20on%20Compute%20Engine.md)
 	- [GCP Load Balancing](notes/GCP%20Load%20Balancing.md)
