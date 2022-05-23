@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Overview  Data warehouse SQL queries Serverless Multi-regional SQL column store Terabytes to petabytes ML and BI Public datasets available Real-time analytics Automatic replication, 7 day storage of changes BigQuery Slots  Up-front purchase of processing capacity Flat-rate pricing Useful for CapEx optimisation model    References   AI ML Lifecycle   GCP Database Connections   ">
+<meta name=description content="Overview  Data warehouse SQL queries Serverless Multi-regional SQL column store Terabytes to petabytes ML and BI Public datasets available Real-time analytics Automatic replication, 7 day storage of changes BigQuery Slots  Up-front purchase of processing capacity Flat-rate pricing Useful for CapEx optimization model    Cloud Monitoring —e.">
 <title>BigQuery</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=/icon.png>
@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.0c2cf5ef22f345f548ac5151e18d77b7.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.f4a248f94e1827b64ff636cc06ccae23.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.e65f119c8f4de34ef5ff888bb9cb5486.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.5820b1d1841ee8e5f29a725eaf3333f0.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -54,6 +54,12 @@ Last updated May 23, 2022
 <nav id=TableOfContents>
 <ol>
 <li><a href=#overview>Overview</a></li>
+<li><a href=#query-jobs>Query Jobs</a>
+<ol>
+<li><a href=#interactive-query-jobs>Interactive Query Jobs</a></li>
+<li><a href=#batch-query-jobs>Batch Query Jobs</a></li>
+</ol>
+</li>
 </ol>
 </nav>
 </aside>
@@ -73,9 +79,26 @@ Last updated May 23, 2022
 <ul>
 <li>Up-front purchase of processing capacity</li>
 <li>Flat-rate pricing</li>
-<li>Useful for CapEx optimisation model</li>
+<li>Useful for CapEx optimization model</li>
 </ul>
 </li>
+<li>
+<a href=/notes/Cloud-Monitoring rel=noopener class=internal-link data-src=/notes/Cloud-Monitoring>Cloud Monitoring
+</a>—e.g. number of jobs running, bytes scanned during a query, distribution of query times</li>
+</ul>
+<h2 id=query-jobs>Query Jobs</h2>
+<h3 id=interactive-query-jobs>Interactive Query Jobs</h3>
+<ul>
+<li>Default</li>
+<li>Query run as soon as possible</li>
+<li>Count towards concurrent rate limit and daily limit</li>
+</ul>
+<h3 id=batch-query-jobs>Batch Query Jobs</h3>
+<ul>
+<li>Queued by BigQuery</li>
+<li>Query started as soon as idle resources available in shared resource pool</li>
+<li>If not started within 24 hours—automatically changed to interactive</li>
+<li>Don&rsquo;t count towards concurrent rate limit</li>
 </ul>
 <h1 id=references>References</h1>
 <ul>

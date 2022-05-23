@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.0c2cf5ef22f345f548ac5151e18d77b7.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.f4a248f94e1827b64ff636cc06ccae23.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.e65f119c8f4de34ef5ff888bb9cb5486.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.5820b1d1841ee8e5f29a725eaf3333f0.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -82,7 +82,7 @@ Last updated May 23, 2022
 <li>More detailed and granular metrics</li>
 <li>Can gather metrics from 3rd party apps, e.g. NGINX</li>
 <li>Monitoring agent: collectd</li>
-<li>Logging agent: fluentd</li>
+<li>Logging agent: Fluentd</li>
 </ul>
 <h2 id=metrics>Metrics</h2>
 <ul>
@@ -94,8 +94,8 @@ Last updated May 23, 2022
 <li>Cumulative—sum over time e.g. sent bytes</li>
 </ul>
 </li>
-<li>Examples: latency, number SQL records, disk space</li>
-<li>1500+ pre-create metrics</li>
+<li>Examples: latency, number of SQL records, disk space</li>
+<li>1500+ pre-created metrics</li>
 <li>Custom metrics, define via built in Monitoring API or OpenCensus
 <ul>
 <li>Best practice: use built-in metrics if possible before creating custom metrics</li>
@@ -124,6 +124,9 @@ Last updated May 23, 2022
 <div class=backlinks-container>
 <h3>Backlinks</h3>
 <ul class=backlinks>
+<li>
+<a href=/notes/BigQuery>BigQuery</a>
+</li>
 <li>
 <a href=/notes/Cloud-Composer>Cloud Composer</a>
 </li>
