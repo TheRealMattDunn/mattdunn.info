@@ -15,8 +15,8 @@ tags:
 - [Kubernetes](notes/Kubernetes.md) on GCP, AWS, Azure and on-prem (VMware and [bare metal](notes/Anthos%20on%20Bare%20Metal.md))
 	- Google managed control plane
 - Supports:
-	- GKE clusters
-	- Cloud Run
+	- [Kubernetes Engine clusters](notes/Kubernetes%20Engine.md)
+	- [Cloud Run](notes/Cloud%20Run.md)
 	- [Compute Engine](notes/Compute%20Engine.md) VMs
 - Migrate for Anthos—migrate legacy workloads to containers
 - Anthos Config Management
