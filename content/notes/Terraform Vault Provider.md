@@ -11,7 +11,7 @@ tags:
 
 ## Overview
 
-- Read, write and configure Vault
+- Read, write and configure [Vault](notes/Vault.md)
 - Best practice: avoid secrets in [Terraform](notes/Terraform.md) config and [state](notes/Terraform%20State.md)
 
 ### Use Cases

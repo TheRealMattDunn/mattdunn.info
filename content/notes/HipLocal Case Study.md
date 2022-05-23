@@ -99,3 +99,7 @@ tags:
 - **Scale** to meet user demands
 	- *MIGs, [GCP Load Balancing](notes/GCP%20Load%20Balancing.md)*
 	- *Migrate to serverless: [App Engine](notes/App%20Engine.md), [Cloud Run](notes/Cloud%20Run.md), [Cloud Functions](notes/Cloud%20Functions.md)*
+
+# References
+
+- [HipLocal case study overview](https://services.google.com/fh/files/blogs/master_case_study_hiplocal.pdf)
