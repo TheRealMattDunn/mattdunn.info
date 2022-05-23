@@ -59,7 +59,7 @@ tags:
 - Max ~100 column families—more causes poor performance
 - Use short names—reduces data transferred in requests/responses
 - Garbage collection performed at column family level
-	- Store data with different data retentino needs in different column families
+	- Store data with different data retention needs in different column families
 	- Reduces storage costs
 
 ### Columns
@@ -84,7 +84,7 @@ tags:
 ### Row Keys
 
 - Design based on queries used to retrieve data
-	- Only 1 index, so quries on other fields inefficient—table scan required
+	- Only 1 index, so queries on other fields inefficient—table scan required
 - Most efficient reads via:
 	- Row key
 	- Row key prefix
@@ -128,15 +128,15 @@ tags:
 - Ideally use shorthand references where possible, e.g. EU rather than Europe, to save space
 - Avoid:
 	- Row keys starting with timestamps—creates hotspots (unbalanced read/writes across nodes)
-	- Row keys with don't group related data together
+	- Row keys which don't group related data together
 	- Sequential numeric IDs
 		- e.g. User IDs—new users more likely to be active—creates hotspots
-		- Better to revers ID—spreads writes across nodes
+		- Better to reverse ID—spreads writes across nodes
 	- Frequently updated IDs
 		- e.g. `device_id#metric`
 		- Overloads nodes
 		- Better to add new row per timestamp
-	- Hashed row keys or raw bytes—can't use natyral sorting order
+	- Hashed row keys or raw bytes—can't use natural sorting order
 
 ## Special Use Cases
 
@@ -144,7 +144,7 @@ tags:
 
 - Include timestamp as part of row key
 	- But not at beginning—creates hotspots
-- Reverse
+	- Reverse
 
 ### Multi-Tenancy
 
