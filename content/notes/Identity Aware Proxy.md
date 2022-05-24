@@ -16,3 +16,16 @@ tags:
 	- External load balancers—HTTPS
 	- Internal load balancers—HTTP/S
 - Works with [App Engine](notes/App%20Engine.md), [Compute Engine](notes/Compute%20Engine.md), [Kubernetes Engine](notes/Kubernetes%20Engine.md), [Cloud Run](notes/Cloud%20Run.md) and on-prem
+
+## Signed Headers
+
+- Secure app with signed headers
+- IAP uses JSON Web Tokens (JWT) to ensure request to app is authorized
+	- App ensures JWT is valid before responding
+	- Additional security check
+- Protects app from:
+	- IAP being accidentally disabled
+	- Misconfigured firewalls
+	- Access from within project
+- GCE and GKE health checks don't include JWT headers
+	- Ensure check is skipped for health check paths

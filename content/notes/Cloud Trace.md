@@ -16,3 +16,6 @@ tags:
 - Detect bottlenecks
 - Automatic alerts for large changes in latency
 - API available for any source
+- Integrates with Zipkin
+	- Applications instrumented with Zipkin
+	- Telemetry sent to Cloud Trace for analysis

@@ -28,6 +28,15 @@ tags:
 - Connects clients to closest region for lower latency
 	- Backends distributed across regions
 
+## HTTP(S) Load Balancer
+
+### Backends
+
+| Backend Config  | Content Type | Backend Types                                                                                                           |
+| --------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| Backend service | Dynamic      | Unmanaged instance groups<br>Managed instance groups<br>[Network Endpoint Groups](notes/Network%20Endpoint%20Groups.md) |
+| Backend bucket  | Static       | [Cloud Storage buckets](notes/Cloud%20Storage.md)                                                                                                                        |
+
 # References
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)

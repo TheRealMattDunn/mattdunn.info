@@ -35,6 +35,22 @@ tags:
 		- UUID Version 1 not suitable
 	- Bit-reverse sequential values
 
+### Parent-Child Relationships
+
+#### Foreign Keys
+
+- Tradition SQL foreign keys relationship
+- Foreign key can be created on any columns
+- Table can have multiple foreign key relationships—as both parent and child
+- Does not imply co-location of tables in storage layer
+
+#### Table Interleaving
+
+- Child table's primary key includes parent table's primary key columns
+- Data locality relationship between tables—parent and child rows physically stored together
+- Improves performance
+- Use-case: scenarios where the child table is frequently fetched with the parent
+
 # References
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)

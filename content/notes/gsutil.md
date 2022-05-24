@@ -52,3 +52,11 @@ Upload many files in parallel:
 ```
 gsutil -m cp <SRC_FILES> gs://<BUCKET_NAME>/<FILE_PATH>
 ```
+
+## Performance Diagnostics
+
+Run a suite of diagnostic tests for a give storage bucket:
+
+```
+gsutil perfdiag gs://<BUCKET_NAME>/<FILE_PATH>
+```

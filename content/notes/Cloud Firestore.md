@@ -16,6 +16,7 @@ tags:
 - Supports Datastore DBs and APIs (previous generation of Firestore)
 - Mobile SDKs
 - Unlimited capacity
+- Supports transactions for atomic writes
 - Use-case:
 	- Live asset/activity tracking
 	- Real-time analytics
