@@ -41,6 +41,14 @@ tags:
 - If not started within 24 hours—automatically changed to interactive
 - Don't count towards concurrent rate limit
 
+## Authorized Views
+
+- Grant specific users access to subsets of data via authorized views
+- Source dataset contains the source data
+- Create separate dataset to container authorized view
+	- Users granted access to authorized view, but not underlying source dataset
+- Authorized view granted access to the source dataset
+
 # References
 
 - [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
