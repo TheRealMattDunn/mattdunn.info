@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.e65f119c8f4de34ef5ff888bb9cb5486.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.5820b1d1841ee8e5f29a725eaf3333f0.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.587d2eac956cc67af34d1dba690b2217.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.8214251392424f788b967407dbb9f2c6.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -47,7 +47,7 @@
 <p>The AI/ML Lifecycle </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 23, 2022
+1 minute read. Last updated May 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -57,7 +57,7 @@
 <p>Overview Map/Reduce—Apache Spark and Hadoop Backed by Zonal VMs Can use preemptible VMs—reduce cost One VM must be non-preemptible References GCP Decision Trees </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 23, 2022
+1 minute read. Last updated May 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -67,7 +67,7 @@
 <p>Overview Explore, clean, prepare for analysis and ML Can detect schemas—data types, joins, anomalies Prediction of next transformation Transformation functions, e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 23, 2022
+1 minute read. Last updated May 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +77,7 @@
 <p>Overview Streaming analytics service Transform and enrich data in stream and batch modes with a single model Serverless—managed service, horizontal scaling Apache Beam-based Open source Beam SDK—Java, Python, Go (not currently supported) Dataflow is the backend for the Beam API References GCP Decision Trees </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 23, 2022
+1 minute read. Last updated May 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +87,7 @@
 <p>Overview Highly configurable Zonal Choice of machine types: General purpose Compute optimized Memory optimized Processor optimized (GPUs) Public or private boot disk images Live migrations Auto restart Per second billing—minimum of one minute vCPU and memory billed separately Boot Disks Set --no-boot-disk-auto-delete to keep boot disk data after instance deletion Preemptible VMs Can stop at any time Will definitely stop after 24 hrs 60 – 90% cheaper than standard VMs Sole Tenant Nodes Dedicated server Useful for specific hardware requirements, e....</p>
 </div>
 <p class=meta>
-2 minute read. Last updated May 23, 2022
+2 minute read. Last updated May 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -97,7 +97,7 @@
 <p>Overview Object storage Not suitable for file-based storage applications Infinitely scalable Highly durable (99.9999999%—eleven 9s) Unstructured data—images, videos etc....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 23, 2022
+1 minute read. Last updated May 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -107,7 +107,7 @@
 <p>Overview Containerized applications Knative-based Any language/library/binary Regional Fully managed PaaS Autoscaling from zero Priced down to 100ms Developing Cloud Run deployments called Services Each change creates a new revision Traffic routing—split traffic between revisions Canary and blue/green deployements Container Requirements Must listen for request on specified port HTTPS, gRPC, Pub/Sub , Cloud Tasks, Cloud Scheduler Must be stateless Must not spawn background tasks References GCP Decision Trees </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 23, 2022
+1 minute read. Last updated May 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -117,7 +117,7 @@
 <p>Overview FaaS Event driven Triggers: HTTP Cloud Storage Pub/Sub Cloud Firestore Audit logs Cloud Scheduler The glue between services—both in and outside GCP Use cases: Data processing Webhooks IoT Developing Event driven Lifecycle of function serves to answer a single request Platform scales to millions of concurrent function instances Event types: HTTP functions—triggered by HTTP requests Background functions—Pub/Sub messages, Cloud Storage events, Firebase events etc....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 23, 2022
+1 minute read. Last updated May 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -127,7 +127,7 @@
 <p>Overview Data warehouse SQL queries Serverless Multi-regional SQL column store Terabytes to petabytes ML and BI Public datasets available Real-time analytics Automatic replication, 7 day storage of changes BigQuery Slots Up-front purchase of processing capacity Flat-rate pricing Useful for CapEx optimization model Cloud Monitoring —e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 23, 2022
+1 minute read. Last updated May 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -137,7 +137,7 @@
 <p>Overview PaaS serverless Regional No server management/config Comes in two flavours: App Engine Standard—first generation App Engine Flexible—second generation App Engine Standard Instantaneous scale-up Scales down to zero—15 minute scale down period (paid for) Runtimes: Python 3 Java 11 Node....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 23, 2022
+1 minute read. Last updated May 24, 2022
 </p>
 </div>
 </li></ul>

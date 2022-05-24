@@ -14,7 +14,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.e65f119c8f4de34ef5ff888bb9cb5486.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.5820b1d1841ee8e5f29a725eaf3333f0.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.587d2eac956cc67af34d1dba690b2217.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.8214251392424f788b967407dbb9f2c6.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,7 +43,7 @@
 <article>
 <h1>gsutil</h1>
 <p class=meta>
-Last updated May 23, 2022
+Last updated May 24, 2022
 </p>
 <ul class=tags>
 <li><a href=https://mattdunn.info/tags/gcp/>Gcp</a></li>
@@ -58,6 +58,7 @@ Last updated May 23, 2022
 <li><a href=#versioning>Versioning</a></li>
 <li><a href=#parallel-composite-uploads>Parallel Composite Uploads</a></li>
 <li><a href=#multi-threaded-uploads>Multi-Threaded Uploads</a></li>
+<li><a href=#performance-diagnostics>Performance Diagnostics</a></li>
 </ol>
 </nav>
 </aside>
@@ -119,6 +120,16 @@ gsutil mv gs://&lt;BUCKT_NAME&gt;/&lt;FILE_PATH&gt;#&lt;GENERATION_NUM&gt; gs://
 </span></code></pre></td>
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>gsutil -m cp &lt;SRC_FILES&gt; gs://&lt;BUCKET_NAME&gt;/&lt;FILE_PATH&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=performance-diagnostics>Performance Diagnostics</h2>
+<p>Run a suite of diagnostic tests for a give storage bucket:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>gsutil perfdiag gs://&lt;BUCKET_NAME&gt;/&lt;FILE_PATH&gt;
 </code></pre></td></tr></table>
 </div>
 </div>
