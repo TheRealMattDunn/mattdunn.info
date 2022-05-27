@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.587d2eac956cc67af34d1dba690b2217.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.ed744fa3ea6e7d326452c7d65dcfcd6a.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.156f7bc478214524776a763355dd7a8d.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.ed3d10867cdcbbfca404d616663b92c8.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,11 +43,21 @@
 <ul class=section-ul><li class=section-li>
 <div class=section>
 <div class=desc>
+<h3><a href=https://mattdunn.info/notes/Aviatrix-Certified-Engineer-Associate/>Aviatrix Certified Engineer Associate</a></h3>
+<p>Exam Content As-A-Service Models AWS Networking AWS Organization Hierarchy AWS VPCs </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 27, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
 <h3><a href=https://mattdunn.info/notes/Error-Reporting/>Error Reporting</a></h3>
 <p>Overview Errors displayed in dashboard Driven by logging Deduplicated—grouped into issues Stack traces and instance counts </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -57,7 +67,7 @@
 <p>Connection Options Cloud Spanner Cloud SQL Cloud Firestore Memorystore Cloud Bigtable BigQuery Client libraries Client libraries Client libraries Direct peer Client libraries Client libraries HTTP API Public IP HTTP API Private access HBase BigQuery UI Private IP Cloud SQL Proxy </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -67,7 +77,7 @@
 <p>Notes Citrix on GCP Design Patterns </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +87,7 @@
 <p>Components Citrix Cloud Connector Responsible for communication to/from Citrix cloud Auto-updated/maintained by Citrix Virtual Delivery Agent (VDA) Apps/Desktops running on Windows/Linux VM instances Citrix Gateway (optional) Session brokering, load management, image management, monitoring, cost/capacity management Citrix Workspace Service UI Analytics Service ML—security, performance, user behavioural analytics/reporting Cloud Forward Design Pattern For customers who are “all-in” on GCP Commonly used for new deployments, POCs etc Requires no additional infrastructure Google Deployment Manager templates available, but appear to be no longer maintained Provides HA Creates a Citrix Cloud &ldquo;resource location&rdquo; Hybrid Design Pattern Customer-managed access layer components—advanced use-cases Cloud Migration Design Pattern As per Hybrid Design Pattern, but with legacy workloads on existing on-prem infrastructure Migrate workloads gradually to the cloud </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +97,7 @@
 <p>Non-italicised points represent notes taken from Google&rsquo;s official case study documentation, with keywords highlighted in bold. Points in italics represent additional insights and possible solutions....</p>
 </div>
 <p class=meta>
-2 minute read. Last updated May 24, 2022
+2 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -97,7 +107,7 @@
 <p>Overview Serverless backends only Authorisation and rate limiting part of OpenAPI spec </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -107,7 +117,7 @@
 <p>Overview Container-based Extensible Service Proxy (ESP) Deployed as sidecar NGINX or Envoy-based NGINX-based ESP Envoy-based ESP </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -117,7 +127,7 @@
 <p>Service Accounts Instance runs with Service Account —represents the instance&rsquo;s identity and roles Default Service Account available—has roles/editor role Large attack vector Best practice: create custom Service Account with granular permissions—least privilege principle Deploying to Compute Engine Startup script Supported by both Linux and Windows Define in metadata Or store in Cloud Storage and add metadata key startup-script-url with the value of the GCS URL for the script Instance requires roles/storage....</p>
 </div>
 <p class=meta>
-2 minute read. Last updated May 24, 2022
+2 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -127,17 +137,7 @@
 <p>Key Fundamentals To Know Microservices The Twelve Factor App Message Buses SQL Joins GCP Services Cloud IAM Cloud Storage Cloud SQL Cloud Bigtable Cloud Bigtable Best Practices Cloud Firestore Database Connections Compute Engine Operating Applications on Compute Engine GCP Load Balancing Kubernetes Kubernetes Engine Kubernetes Patterns Pub Sub App Engine Cloud Run Cloud Functions Cloud Endpoints API Gateway Vertex AI Cloud Logging Cloud Monitoring Cloud Debugger Cloud Trace Cloud Security Command Center Spinnaker Case Studies HipLocal Case Study </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/GCP-Applcation-Modernization/>GCP Applcation Modernization</a></h3>
-<p>Why? Business challenges and opportunities Financial inflexibility—legacy licences e.g. Windows, IBM etc. Improve security posture—old tech, unpatched Retain and attract talented staff Exploit existing systems in new products—e....</p>
-</div>
-<p class=meta>
-2 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li></ul>

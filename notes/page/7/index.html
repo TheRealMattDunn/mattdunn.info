@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.587d2eac956cc67af34d1dba690b2217.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.ed744fa3ea6e7d326452c7d65dcfcd6a.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.156f7bc478214524776a763355dd7a8d.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.ed3d10867cdcbbfca404d616663b92c8.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,51 +43,11 @@
 <ul class=section-ul><li class=section-li>
 <div class=section>
 <div class=desc>
-<h3><a href=https://mattdunn.info/notes/AWS-Multi-Account-Strategies/>AWS Multi-Account Strategies</a></h3>
-<p>Why? Many teams Isolation between workloads Security/compliance controls—resource boundaries Billing separation API limits/throttling Control Tower —orchestration framework for dealing with large numbers of accounts Best Practice Design Organization Master Account No connection to DC Manages OUs and SCPs Consolodated billing Contains minimal resources—no workloads, as these pose a security risk to the OUs and SCPs Foundational OUs Building blocks for lower-level OUs Security OU Accounts: Log archive Record everything happening in the accounts—CloudTrail, single source of truth Limited access—alarm on user login Security break glass Emergency access for security team Security read-only Security audit account, with read-only access to other accounts via cross-account roles Security tooling e....</p>
-</div>
-<p class=meta>
-2 minute read. Last updated May 24, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Cloud-Trace/>Cloud Trace</a></h3>
-<p>Overview Distributed tracing—collects latency data Detect latencies between components of distributed app Automatic with App Engine Standard, Cloud Functions and Cloud Run Instrument with App Engine Flex, Compute Engine , Kubernetes Engine and non-GCP resources OpenTelemetry or OpenCensus libraries recommended Detect bottlenecks Automatic alerts for large changes in latency API available for any source Integrates with Zipkin Applications instrumented with Zipkin Telemetry sent to Cloud Trace for analysis </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 24, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Cloud-Profiler/>Cloud Profiler</a></h3>
-<p>Overview Gather data to make applications more efficient Agent-based—low impact Analyses CPU/memory intensive functions Improve performance and reduce costs 30 day retention of profiles Profiles exportable Available for Compute Engine , App Engine , Kubernetes Engine and Dataproc External apps available via agent </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 24, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Cloud-NAT/>Cloud NAT</a></h3>
-<p>Overview Managed network address translation service Allows resources without external IP addresses to create outbound connections to the internet VPC and region specific—need a Cloud NAT per VPC and per region </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 24, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
 <h3><a href=https://mattdunn.info/notes/Cloud-Monitoring/>Cloud Monitoring</a></h3>
 <p>Overview Collects and visualizes metrics from GCP resources—how well are resources performing? Track SLOs and SLAs Alerting—identify issues as they happen Metrics Scopes Previously known as workspaces Host for monitored projects—multiple projects can be monitored in a Metric Scope, but a project can only be in one Metric Scope Best practice: create a central Metric Scope project—single pane of glass for all projects Monitoring Agents Required for monitoring of Compute Engine and AWS EC2 instances—most monitoring is baked into the GCP services More detailed and granular metrics Can gather metrics from 3rd party apps, e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -97,7 +57,7 @@
 <p>Overview Store, view and interact with logs Export logs Create metrics from logs Log Categories Security logs Audit logs Access Transparency logs—log Google access to services Non-security logs User logs Platform logs VPC flow logs Firewall logs Always enabled No charge 400 day retention Manually enabled Charged based on volume 30 day retention Audit Logs What/what did what Admin activity logs User initiated resource configuration e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -107,7 +67,7 @@
 <p>Overview Debug in real time without stopping/slowing applications Link source code from: Cloud Source Repositories, GitHub, BitBucket, GitLab, locally Code Search—find functions, methods, line numbers Code Share—collaborate on debug sessions IDE integration—IntelliJ, VS Code, Atom Free to use Snapshots Capture application state at line locations Adds &lt;10ms to requests—not noticeable Capture local variables and call stack Conditional snapshots (Java, Python and Go only) Canarying (Java, Python, NodeJS)—test snapshot against a subset of instances Log Points Inject logs into running apps without redeployment Active for 24 hrs Output sent to target&rsquo;s environment Conditional log points (all languages) Canarying (Java, Python, NodeJS)—test log point against a subset of instances </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -117,7 +77,7 @@
 <p>Service Account Uses special service account to execute builds—created when Cloud Build API is enabled Email in form of &lt;PROJECT_ID>@cloudbuild....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -127,7 +87,7 @@
 <p>Overview Provides the hardware and licences for VMware software defined data centres (SDDC) on GCP Use cases: Migrating DCs Scale on demand—reduce CapEx Disaster recovery High performance applications </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -137,7 +97,49 @@
 <p>Overview Transform VM-based workloads to containers running in Kubernetes Engine , optionally on Anthos Modernize legacy applications Fit assessment tool—determine which VMs are suitable for migration Console, API or CRD-based API Option to migrate to Autopilot clusters or Cloud Run </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 24, 2022
+1 minute read. Last updated May 27, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-Data-Migration/>GCP Data Migration</a></h3>
+<p>Best Practices Does the data need to be transformed? ETL— Dataflow Is the data relational? Cloud Spanner , Cloud SQL Database Migration Service Is the migration HBase (Hadoop database) to noSQL?...</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 27, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-Application-Migration/>GCP Application Migration</a></h3>
+<p>Approaches Lift and Shift Quick—change of hosting environment Minimal advantage—not utilizing cloud benefits Improve and Move Modernize during migration—take advantage of cloud capabilities Requires new skills and code changes Rip and Replace Remove technical debt—take full advantage of cloud features Requires most time/skill investment Doesn&rsquo;t work for COTS (unless already cloud native) Strangler Pattern Lift and shift monolith, then break apart into microservices over time Migrate for Compute Engine Migrate VMs to Compute Engine Lift and shift Test-clones—pre-migration validation Replicates instance data to GCP in the background—zero interruptions Source environments: VMware vSphere AWS EC2 Azure VMs Physical servers with supported OSes (e....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 27, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/gsutil/>gsutil</a></h3>
+<p>Versioning Get the current versioning state:
+1 gsutil versioning get gs://&lt;BUCKET_NAME> Enable versioning:
+1 gsutil versioning set on gs://&lt;BUCKET_NAME> Upon deleting a file—version still exists....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 27, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Cloud-Composer/>Cloud Composer</a></h3>
+<p>Overview Apache Airflow — fully managed service Workflow management — author, schedule, monitor Connect data, processing and services Hybrid cloud — GCP, other clouds and on-prem Directed Acyclic Graphs (DAGs) Defines tasks and dependencies Written in Python Monitor with Cloud Monitoring Use cases: ETL pipeline orchestration Automated analytics and ML jobs </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 27, 2022
 </p>
 </div>
 </li></ul>
