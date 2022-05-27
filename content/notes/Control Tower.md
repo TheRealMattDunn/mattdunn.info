@@ -12,7 +12,7 @@ tags:
 - Best practices
 - Managed service
 	- Replaces AWS Landing Zone solution
-- Dashboard for monitoring compliance with guardrails across [OUs](notes/AWS%20Organizational%20Units.md) and accounts enrolled in Control Tower
+- Dashboard for monitoring compliance with guardrails across [OUs](notes/AWS%20Organization%20Hierarchy.md) and accounts enrolled in Control Tower
 - ~1 hour setup:
 	- Create master account
 	- Enable Control Tower in desired region with configuration

@@ -9,7 +9,7 @@ tags:
 ## Overview
 
 - SCPs
-- Applied at the [OU](notes/AWS%20Organizational%20Units.md) level
+- Applied at the [OU](notes/AWS%20Organization%20Hierarchy.md) level
 - Controlled by the organization master account
 - Restrict actions which can be taken in an AWS account
 - Control which AWS APIs are accessible

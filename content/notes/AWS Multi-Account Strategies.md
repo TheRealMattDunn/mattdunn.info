@@ -22,7 +22,7 @@ tags:
 ### Organization Master Account
 
 - No connection to DC
-- Manages [OUs](notes/AWS%20Organizational%20Units.md) and [SCPs](notes/Service%20Control%20Policies.md)
+- Manages [OUs](notes/AWS%20Organization%20Hierarchy.md) and [SCPs](notes/Service%20Control%20Policies.md)
 - Consolodated billing
 - Contains minimal resources—no workloads, as these pose a security risk to the OUs and SCPs
 

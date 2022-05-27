@@ -1,5 +1,5 @@
 ---
-title: "AWS Organizational Units"
+title: "AWS Organization Hierarchy"
 date: "2022-02-23"
 tags:
 - aws
@@ -8,7 +8,10 @@ tags:
 
 ## Overview
 
-- OUs
+![aws_organization_hierarchy](files/aws_organization_hierarchy.svg)
+
+## Organizational Units (OUs)
+
 - Group child accounts together
 - Allow [SCPs](notes/Service%20Control%20Policies.md) to be applied to multiple accounts
 - Best practice:

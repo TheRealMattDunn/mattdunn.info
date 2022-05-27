@@ -20,6 +20,6 @@ tags:
 ## Management and Security
 
 - [Control Tower](notes/Control%20Tower.md)
-- [AWS Organizational Units](notes/AWS%20Organizational%20Units.md)
+- [AWS Organization Hierarchy](notes/AWS%20Organization%20Hierarchy.md)
 - [Service Control Policies](notes/Service%20Control%20Policies.md)
 - [AWS Multi-Account Strategies](notes/AWS%20Multi-Account%20Strategies.md)
