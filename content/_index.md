@@ -9,7 +9,7 @@ Welcome to mattdunn.info! This site serves as a repository for my learning notes
 
 ## What I'm Learning
 
-- 2022-05-27 – [Aviatrix Certified Engineer Associate](notes/Aviatrix%20Certified%20Engineer%20Associate.md)]
+- 2022-05-27 – [Aviatrix Certified Engineer Associate](notes/Aviatrix%20Certified%20Engineer%20Associate.md)
 - 2022-05-20 – [Vault Associate Certification](notes/Vault.md)
 - 2022-05-11 – [Terraform Associate Certification](notes/Terraform.md)
 - 2022-04-27 – [AWS Summit London 2022](notes/AWS%20Summit%20London%202022.md)
