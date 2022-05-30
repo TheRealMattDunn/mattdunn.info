@@ -1,5 +1,5 @@
 ---
-title: "Control Tower"
+title: "AWS Control Tower"
 date: "2022-02-23"
 tags:
 - aws

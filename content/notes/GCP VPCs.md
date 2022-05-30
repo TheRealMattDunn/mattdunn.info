@@ -51,3 +51,19 @@ tags:
 
 - VPC shared with child *service* projects from central VPC *host* project—hub and spoke networking model
 - Compute Shared VPC Admin role (`roles/compute.xpnAdmin`)—user can view all VPC networks/subnets in service project, regardless of whether all subnets have been shared
+
+## Global VPC Pros and Cons
+
+### Pros
+
+- Single VPC for multiple regions
+- No traffic across public internet
+- Global separation of resources without the need to set up routes or peering
+
+### Cons
+
+- Large blast radius—all subnets routable within VPC
+- No policy-based segmentation within VPC—manually create L4 stateful firewall rules
+- GCFW service insertion not possible—next hop for VPC subnet route cannot be modified
+- Encryption within VPC—best effort
+- Not a multi-cloud design—doesn't match the model of other cloud providers

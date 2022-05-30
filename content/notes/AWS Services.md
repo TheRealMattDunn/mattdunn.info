@@ -19,7 +19,7 @@ tags:
 
 ## Management and Security
 
-- [Control Tower](notes/Control%20Tower.md)
+- [AWS Control Tower](notes/AWS%20Control%20Tower.md)
 - [AWS Organization Hierarchy](notes/AWS%20Organization%20Hierarchy.md)
 - [Service Control Policies](notes/Service%20Control%20Policies.md)
 - [AWS Multi-Account Strategies](notes/AWS%20Multi-Account%20Strategies.md)

@@ -13,7 +13,7 @@ tags:
 - Security/compliance controls—resource boundaries
 - Billing separation
 - API limits/throttling
-- [Control Tower](notes/Control%20Tower.md)—orchestration framework for dealing with large numbers of accounts
+- [AWS Control Tower](notes/AWS%20Control%20Tower.md)—orchestration framework for dealing with large numbers of accounts
 
 ## Best Practice Design
 
