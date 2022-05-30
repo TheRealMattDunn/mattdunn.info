@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.156f7bc478214524776a763355dd7a8d.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.394f0372b21c49c11c154e4df299c37f.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.4377ffbe86aa2fd304d553f3257fabd6.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.4bfb6cfba31c9d6e06dc3d1adff14fd3.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,7 +41,7 @@
 <article>
 <h1>EHR Healthcare Case Study</h1>
 <p class=meta>
-Last updated May 27, 2022
+Last updated May 30, 2022
 </p>
 <ul class=tags>
 <li><a href=https://mattdunn.info/tags/gcp/>Gcp</a></li>
@@ -116,10 +116,10 @@ Points in <em>italics</em> represent additional insights and possible solutions.
 <li>Many already <strong>containerized</strong> to run on <strong>Kubernetes</strong>:
 <ul>
 <li><em>
-<a href=/notes/Kubernetes-Engine rel=noopener class=internal-link data-src=/notes/Kubernetes-Engine>Kubernetes Engine
+<a href=/notes/GCP-Kubernetes-Engine rel=noopener class=internal-link data-src=/notes/GCP-Kubernetes-Engine>Kubernetes Engine
 </a></em></li>
 <li><em>
-<a href=/notes/Anthos rel=noopener class=internal-link data-src=/notes/Anthos>Anthos
+<a href=/notes/GCP-Anthos rel=noopener class=internal-link data-src=/notes/GCP-Anthos>Anthos
 </a> for hybrid-cloud use cases, and to manage multiple clusters centrally</em></li>
 <li><em>Google Container Registry</em></li>
 </ul>
@@ -131,7 +131,7 @@ Points in <em>italics</em> represent additional insights and possible solutions.
 <li>MySQL
 <ul>
 <li><em>Lift/shift to
-<a href=/notes/Cloud-SQL rel=noopener class=internal-link data-src=/notes/Cloud-SQL>Cloud SQL
+<a href=/notes/GCP-Cloud-SQL rel=noopener class=internal-link data-src=/notes/GCP-Cloud-SQL>Cloud SQL
 </a></em></li>
 </ul>
 </li>
@@ -139,14 +139,14 @@ Points in <em>italics</em> represent additional insights and possible solutions.
 <ul>
 <li><em>Lift/shift to Cloud SQL</em></li>
 <li><em>Provision specific version in
-<a href=/notes/Compute-Engine rel=noopener class=internal-link data-src=/notes/Compute-Engine>Compute Engine
+<a href=/notes/GCP-Compute-Engine rel=noopener class=internal-link data-src=/notes/GCP-Compute-Engine>Compute Engine
 </a> (if not available in Cloud SQL)</em></li>
 </ul>
 </li>
 <li>Redis
 <ul>
 <li><em>Lift/shift to
-<a href=/notes/Memorystore rel=noopener class=internal-link data-src=/notes/Memorystore>Memorystore
+<a href=/notes/GCP-Memorystore rel=noopener class=internal-link data-src=/notes/GCP-Memorystore>Memorystore
 </a></em></li>
 <li><em>Deploy Redis Enterprise from marketplace</em></li>
 </ul>
@@ -154,7 +154,7 @@ Points in <em>italics</em> represent additional insights and possible solutions.
 <li>MongoDB
 <ul>
 <li><em>ETL to
-<a href=/notes/Cloud-Firestore rel=noopener class=internal-link data-src=/notes/Cloud-Firestore>Cloud Firestore
+<a href=/notes/GCP-Cloud-Firestore rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Firestore>Cloud Firestore
 </a></em></li>
 <li><em>Deploy MongoDB Atlas from marketplace</em></li>
 <li><em>Manual build on GCE/GKE</em></li>
@@ -192,7 +192,7 @@ Points in <em>italics</em> represent additional insights and possible solutions.
 <ul>
 <li><em>Reduce frequency</em></li>
 <li><em>Move from email to SMS, Slack, PagerDuty,
-<a href=/notes/Pub-Sub rel=noopener class=internal-link data-src=/notes/Pub-Sub>Pub/Sub
+<a href=/notes/GCP-Pub-Sub rel=noopener class=internal-link data-src=/notes/GCP-Pub-Sub>Pub/Sub
 </a> etc.</em></li>
 <li><em>Alerting policies</em></li>
 </ul>
@@ -209,9 +209,9 @@ Points in <em>italics</em> represent additional insights and possible solutions.
 <li><em>SaaS admin portal</em>
 <ul>
 <li><em>Deploy to
-<a href=/notes/App-Engine rel=noopener class=internal-link data-src=/notes/App-Engine>App Engine
+<a href=/notes/GCP-App-Engine rel=noopener class=internal-link data-src=/notes/GCP-App-Engine>App Engine
 </a> or
-<a href=/notes/Cloud-Run rel=noopener class=internal-link data-src=/notes/Cloud-Run>Cloud Run
+<a href=/notes/GCP-Cloud-Run rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Run>Cloud Run
 </a> (preferred due to containers) if traffic low</em></li>
 </ul>
 </li>
@@ -231,10 +231,10 @@ Points in <em>italics</em> represent additional insights and possible solutions.
 <li>Gain <strong>insights</strong> into healthcare trends:
 <ul>
 <li><em>
-<a href=/notes/Vertex-AI rel=noopener class=internal-link data-src=/notes/Vertex-AI>Vertex AI
+<a href=/notes/GCP-Vertex-AI rel=noopener class=internal-link data-src=/notes/GCP-Vertex-AI>Vertex AI
 </a></em></li>
 <li><em>
-<a href=/notes/BigQuery rel=noopener class=internal-link data-src=/notes/BigQuery>BigQuery
+<a href=/notes/GCP-BigQuery rel=noopener class=internal-link data-src=/notes/GCP-BigQuery>BigQuery
 </a></em></li>
 <li><em>BigQuery BI</em></li>
 <li><em>Looker</em></li>
@@ -315,10 +315,10 @@ Points in <em>italics</em> represent additional insights and possible solutions.
 <li><em>APIs: Apigee</em></li>
 <li><em>Pub/Sub</em></li>
 <li><em>
-<a href=/notes/Dataproc rel=noopener class=internal-link data-src=/notes/Dataproc>Dataproc
+<a href=/notes/GCP-Dataproc rel=noopener class=internal-link data-src=/notes/GCP-Dataproc>Dataproc
 </a></em></li>
 <li><em>
-<a href=/notes/Dataflow rel=noopener class=internal-link data-src=/notes/Dataflow>Dataflow
+<a href=/notes/GCP-Dataflow rel=noopener class=internal-link data-src=/notes/GCP-Dataflow>Dataflow
 </a></em></li>
 </ul>
 </li>

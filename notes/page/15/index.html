@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.156f7bc478214524776a763355dd7a8d.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.394f0372b21c49c11c154e4df299c37f.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.4377ffbe86aa2fd304d553f3257fabd6.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.4bfb6cfba31c9d6e06dc3d1adff14fd3.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,82 +43,31 @@
 <ul class=section-ul><li class=section-li>
 <div class=section>
 <div class=desc>
-<h3><a href=https://mattdunn.info/notes/GKE-Cluster-Autoscaling/>GKE Cluster Autoscaling</a></h3>
-<p>Scaling Down Clusters can be prevented from scaling down, and deleting nodes due to:
-Pod affinity/anti-affinity rules preventing them from being evicted Pods with local storage Pods not managed by a controller, such as a Deployment, StatefulSet etc....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 27, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/GCP-Annotations/>GCP Annotations</a></h3>
-<p>Security Marks For compliance purposes Adds business context to assets Adds additional layer of security Applied in the Cloud Security Command Center CSCC also works with labels and network tags Organization, project, or resource level Labels Key-value pairs Use cases: Attribute resources to teams or cost-centres Identify environments Cost/billing allocation Group resources to monitoring and analytics by operations Can apply to projects, but not folders Network Tags Applied to VM instances Used in firewall rules and network routes Flow Chart </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 27, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/EHR-Healthcare-Case-Study/>EHR Healthcare Case Study</a></h3>
-<p>Non-italicised points represent notes taken from Google&rsquo;s official case study documentation, with keywords highlighted in bold. Points in italics represent additional insights and possible solutions....</p>
-</div>
-<p class=meta>
-3 minute read. Last updated May 27, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Data-Lifecycle/>Data Lifecycle</a></h3>
-<p>The Data Lifecycle </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 27, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Compliance/>Compliance</a></h3>
-<p>Key Compliance Areas Legislation US healthcare: HIPAA Need Business Associate Addendum from GCP Commercial, e....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 27, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Network-Endpoint-Groups/>Network Endpoint Groups</a></h3>
-<p>Overview Collections of IPs or IP and port combinations in a single subnet </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 27, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
 <h3><a href=https://mattdunn.info/notes/Multi-Cluster-Ingress/>Multi Cluster Ingress</a></h3>
 <p>Overview Google hosted service to load balance requests across Kubernetes Engine clusters and regions. The MultiClusterIngress Kubernetes resource is a controller for External HTTP(S) Load Balancers ....</p>
 </div>
 <p class=meta>
-2 minute read. Last updated May 27, 2022
+2 minute read. Last updated May 30, 2022
 </p>
 </div>
 </li><li class=section-li>
 <div class=section>
 <div class=desc>
-<h3><a href=https://mattdunn.info/notes/Anthos/>Anthos</a></h3>
+<h3><a href=https://mattdunn.info/notes/GCP-Network-Endpoint-Groups/>GCP Network Endpoint Groups</a></h3>
+<p>Overview Collections of IPs or IP and port combinations in a single subnet </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 30, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-Anthos/>GCP Anthos</a></h3>
 <p>Overview &ldquo;Write once, run anywhere&rdquo; Kubernetes on GCP, AWS, Azure and on-prem (VMware and bare metal ) Google managed control plane Supports: Kubernetes Engine clusters Cloud Run Compute Engine VMs Migrate for Anthos—migrate legacy workloads to containers Anthos Config Management Policy enforcement Guardrails Security in depth Anthos Service Mesh Managed, observable, secure communications between microservices Istio Control-plane and data-plane Traffic monitored through a proxy—auto-instrumentation/injection, so no code changes required Canary and blue/green deployments Load balancing between services Telemetry Cloud Run for Anthos Knative Serverless workloads Advanced autoscaling—scale to zero (or minimum availability) Automatic networking A/B tests—traffic splitting, rollbacks Anthos Fleets Groups of clusters Normalisation of resources, e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 27, 2022
+1 minute read. Last updated May 30, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -128,7 +77,7 @@ Pod affinity/anti-affinity rules preventing them from being evicted Pods with lo
 <p>Non-italicised points represent notes taken from Google&rsquo;s official case study documentation, with keywords highlighted in bold. Points in italics represent additional insights and possible solutions....</p>
 </div>
 <p class=meta>
-3 minute read. Last updated May 27, 2022
+3 minute read. Last updated May 30, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -138,7 +87,57 @@ Pod affinity/anti-affinity rules preventing them from being evicted Pods with lo
 <p>Non-italicised points represent notes taken from Google&rsquo;s official case study documentation, with keywords highlighted in bold. Points in italics represent additional insights and possible solutions....</p>
 </div>
 <p class=meta>
-2 minute read. Last updated May 27, 2022
+2 minute read. Last updated May 30, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/TerramEarth-Case-Study/>TerramEarth Case Study</a></h3>
+<p>Non-italicised points represent notes taken from Google&rsquo;s official case study documentation, with keywords highlighted in bold. Points in italics represent additional insights and possible solutions....</p>
+</div>
+<p class=meta>
+2 minute read. Last updated May 30, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-Vertex-AI/>GCP Vertex AI</a></h3>
+<p>Vision API Vision detection Labelling Face / landmark recognition OCR Explicit content tagging Video Intelligence API Annotate videos From GCS, live streams or local videos Contextual info From single frame to entire video Recognise text Track objects Recognise people Translation API 100+ language translation pairs Language detection Basic or advanced versions Advanced—batch requests, Auto ML custom models Text-to-Speech and Speech-to-Text APIs Fast text-to-speech and vice versa Natural Language API Text analysis—insights from documents (e....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 30, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-Pub-Sub/>GCP Pub/Sub</a></h3>
+<p>Overview Global message bus —consistent latency globally Scalable, durable Topic-based At-least-once model Push and pull modes Exactly once processing Messages can be ordered and filtered </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 30, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-ML-Best-Practices/>GCP ML Best Practices</a></h3>
+<p>Environment Setup Use Jupyter notebooks for development One instance per teammate per project Store prepared data and model in the same project Development Prepare a good amount of training data More accurate models Store tabular data in BigQuery Store unstructured data in Cloud Storage Processing Use TensorFlow Extended for TensorFlow projects Process tabular data BigQuery Process unstructured data with: Dataflow —General use cases, Apache Bean Dataproc —Apache Hadoop or Spark use cases Link data to model with managed datasets Production Specify hardware appropriate for model CPUs vs GPUs Plan for additional inputs to model Enable autoscaling References Vertex AI </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 30, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-Kubernetes-Engine/>GCP Kubernetes Engine</a></h3>
+<p>Overview Managed Kubernetes clusters Two modes: Standard—total control Autopilot—fully managed Auto-repair and upgrade Autoscaling Containerize legacy apps and migrate using Migrate for Anthos and GKE Clusters At least one control plane and multiple worker nodes Zonal—one control plane node Regional—multiple control plane nodes Can&rsquo;t switch from regional to zonal (or vice versa) once cluster is created Private clusters—VPC native, internal IPs only For HA use multi-zonal node pools Networking Routing options: Routes-based Custom static routes VPC-native Alias IP ranges Scale better Needed for private clusters Pods routable within cluster&rsquo;s VPC, and other networks connected via VPC peering Also generally routable from on-prem via VPN/Interconnect Pod IP addresses reserved before Pods created in the cluster—prevents conflicts Don&rsquo;t consume custom routes quota Can apply firewall rules to Pod IPs Workload Identity Links Kubernetes Service Accounts with GCP Service Accounts—allows access to other GCP resources from within the cluster Operations Integrated with Cloud Monitoring and Cloud Logging Metrics: System metrics—low-level, e....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 30, 2022
 </p>
 </div>
 </li></ul>
@@ -148,9 +147,6 @@ Pod affinity/anti-affinity rules preventing them from being evicted Pods with lo
 </li>
 <li class=page-item>
 <a href=/notes/page/14/ aria-label=Previous class=page-link role=button><span aria-hidden=true>&#171;</span></a>
-</li>
-<li class=page-item>
-<a href=/notes/page/12/ aria-label="Page 12" class=page-link role=button>12</a>
 </li>
 <li class=page-item>
 <a href=/notes/page/13/ aria-label="Page 13" class=page-link role=button>13</a>
@@ -165,10 +161,13 @@ Pod affinity/anti-affinity rules preventing them from being evicted Pods with lo
 <a href=/notes/page/16/ aria-label="Page 16" class=page-link role=button>16</a>
 </li>
 <li class=page-item>
+<a href=/notes/page/17/ aria-label="Page 17" class=page-link role=button>17</a>
+</li>
+<li class=page-item>
 <a href=/notes/page/16/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a>
 </li>
 <li class=page-item>
-<a href=/notes/page/16/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a>
+<a href=/notes/page/17/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a>
 </li>
 </ul>
 </article>

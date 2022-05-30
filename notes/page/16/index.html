@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.156f7bc478214524776a763355dd7a8d.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.394f0372b21c49c11c154e4df299c37f.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.4377ffbe86aa2fd304d553f3257fabd6.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.4bfb6cfba31c9d6e06dc3d1adff14fd3.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,63 +43,11 @@
 <ul class=section-ul><li class=section-li>
 <div class=section>
 <div class=desc>
-<h3><a href=https://mattdunn.info/notes/Site-Reliability-Engineering/>Site Reliability Engineering</a></h3>
-<p> SRE is what happens when a software engineer is tasked with what used to be called operations.
-SLIs Service level indicators Metrics over time Specific to a user journey Examples: Request latency Failure rate Batch throughput SLOs Service level objectives Target Don&rsquo;t strive for 100% Expensive Complex Not actually needed by users Use remaining time to create new features SLAs Service level agreements Contractual obligations Penalties if not met </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 27, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/OSI-Layers/>OSI Layers</a></h3>
-<p> </p>
-</div>
-<p class=meta>
-0 minute read. Last updated May 27, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/HTTP-Status-Codes/>HTTP Status Codes</a></h3>
-<p>100s - Information 100 Continue 101 Switching protocol 200s - Success 200 OK 201 Created 202 Accepted 204 Not content 206 Partial content 300s - Redirection 301 Moved permanently 304 Not modified 307 Temporary redirect 308 Permanent redirect 400s - Client Errors 400 Bad request 401 Unauthorized 403 Forbidden 404 Not found 408 Request timeout 429 Too many requests 500s - Server Errors 500 Internal server error 501 Not implemented 502 Bad gateway 503 Unavailable 504 Gateway timeout 511 Network authentication required </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 27, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Google-Certified-Professional-Cloud-Architect-Certification/>Google Cloud Certified Professional Cloud Architect Certification</a></h3>
-<p>Key Fundamentals To Know GCP PCA Exam Guide Cloud Architecture GCP Services Data Lifecycle GCP Data Lifecycle Distributed systems OSI Layers TCP/IP How it works IPv4 and IPV6 Public vs private RFC1918 addressing SSL/TLS SSH Common TCP Ports HTTP/S URLs and URIs Verbs Caching CORS HTTP Status Codes Site Reliability Engineering SLIs, SLOs and SLAs Google Cloud Adoption Framework GCP Data Migration GCP Application Migration Compliance AI ML Lifecycle Case Studies EHR Healthcare Helicopter Racing League Mountkirk Games TerramEarth </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 27, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/GCP-PCA-Exam-Guide/>GCP PCA Exam Guide</a></h3>
-<p>PCA&rsquo;s need to:
-Design and plan cloud solution architectures Business focussed Understand technical requirements Networking, storage, compute Migration planning Plan for future improvements Manage and configure solution infrastructure Network topologies Data storage Compute—data processing Design for security and compliance Analysing and optimizing technical and business processes Managing implementation References Professional Cloud Architect Certification Exam Guide </p>
-</div>
-<p class=meta>
-1 minute read. Last updated May 27, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
 <h3><a href=https://mattdunn.info/notes/GCP-Data-Lifecycle/>GCP Data Lifecycle</a></h3>
 <p>Ingest Stream Pub/Sub Batch Cloud Storage Storage Transfer Service—moving large amounts of data from on-prem BigQuery BigQuery Transfer Service—moving from SaaS e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 27, 2022
+1 minute read. Last updated May 30, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -109,7 +57,7 @@ Design and plan cloud solution architectures Business focussed Understand techni
 <p>Common Ports to Remember 80 HTTP 443 HTTPS 22 SSH 25 SMTP 53 DNS 3306 MySQL </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 27, 2022
+1 minute read. Last updated May 30, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -121,7 +69,7 @@ Enable orgs to leverage GCP technologies Design/develop solutions for business r
 Robust Secure Scalable High availability Dynamic Understand software development methodologies:...</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 27, 2022
+1 minute read. Last updated May 30, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -131,7 +79,7 @@ Robust Secure Scalable High availability Dynamic Understand software development
 <p>General Kubernetes Components Pod Lifecycle Kubernetes Primitives Pod DaemonSet ReplicaSet Deployment StatefulSet Job CronJob ReplicationController Service HorizontalPodAutoscaler VerticalPodAutoscaler PodDisruptionBudget ConfigMap Secret PersistentVolmue Ingress Diagram </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 27, 2022
+1 minute read. Last updated May 30, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -141,7 +89,58 @@ Robust Secure Scalable High availability Dynamic Understand software development
 <p>For running batch workloads Each Job spins up one or more Pods to process the work Can be run in serial or parallel Often pulling work items from a queue Parallel Patterns Queue with Pod per work item Use to process all work items at once Set ....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 27, 2022
+1 minute read. Last updated May 30, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GKE-Cluster-Autoscaling/>GKE Cluster Autoscaling</a></h3>
+<p>Scaling Down Clusters can be prevented from scaling down, and deleting nodes due to:
+Pod affinity/anti-affinity rules preventing them from being evicted Pods with local storage Pods not managed by a controller, such as a Deployment, StatefulSet etc....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 30, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-Annotations/>GCP Annotations</a></h3>
+<p>Security Marks For compliance purposes Adds business context to assets Adds additional layer of security Applied in the Cloud Security Command Center CSCC also works with labels and network tags Organization, project, or resource level Labels Key-value pairs Use cases: Attribute resources to teams or cost-centres Identify environments Cost/billing allocation Group resources to monitoring and analytics by operations Can apply to projects, but not folders Network Tags Applied to VM instances Used in firewall rules and network routes Flow Chart </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 30, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/EHR-Healthcare-Case-Study/>EHR Healthcare Case Study</a></h3>
+<p>Non-italicised points represent notes taken from Google&rsquo;s official case study documentation, with keywords highlighted in bold. Points in italics represent additional insights and possible solutions....</p>
+</div>
+<p class=meta>
+3 minute read. Last updated May 30, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Data-Lifecycle/>Data Lifecycle</a></h3>
+<p>The Data Lifecycle </p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 30, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Compliance/>Compliance</a></h3>
+<p>Key Compliance Areas Legislation US healthcare: HIPAA Need Business Associate Addendum from GCP Commercial, e....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated May 30, 2022
 </p>
 </div>
 </li></ul>
@@ -151,9 +150,6 @@ Robust Secure Scalable High availability Dynamic Understand software development
 </li>
 <li class=page-item>
 <a href=/notes/page/15/ aria-label=Previous class=page-link role=button><span aria-hidden=true>&#171;</span></a>
-</li>
-<li class=page-item>
-<a href=/notes/page/12/ aria-label="Page 12" class=page-link role=button>12</a>
 </li>
 <li class=page-item>
 <a href=/notes/page/13/ aria-label="Page 13" class=page-link role=button>13</a>
@@ -167,11 +163,14 @@ Robust Secure Scalable High availability Dynamic Understand software development
 <li class="page-item active">
 <a aria-current=page aria-label="Page 16" class=page-link role=button>16</a>
 </li>
-<li class="page-item disabled">
-<a aria-disabled=true aria-label=Next class=page-link role=button tabindex=-1><span aria-hidden=true>&#187;</span></a>
+<li class=page-item>
+<a href=/notes/page/17/ aria-label="Page 17" class=page-link role=button>17</a>
 </li>
-<li class="page-item disabled">
-<a aria-disabled=true aria-label=Last class=page-link role=button tabindex=-1><span aria-hidden=true>&#187;&#187;</span></a>
+<li class=page-item>
+<a href=/notes/page/17/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a>
+</li>
+<li class=page-item>
+<a href=/notes/page/17/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a>
 </li>
 </ul>
 </article>

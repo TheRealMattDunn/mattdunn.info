@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Key Fundamentals To Know   Microservices   The Twelve Factor App   Message Buses   SQL Joins   GCP Services    Cloud IAM   Cloud Storage   Cloud SQL   Cloud Bigtable    Cloud Bigtable Best Practices     Cloud Firestore   Database Connections   Compute Engine    Operating Applications on Compute Engine     GCP Load Balancing   Kubernetes   Kubernetes Engine   Kubernetes Patterns   Pub Sub   App Engine   Cloud Run   Cloud Functions   Cloud Endpoints   API Gateway   Vertex AI   Cloud Logging   Cloud Monitoring   Cloud Debugger   Cloud Trace   Cloud Security Command Center     Spinnaker   Case Studies   HipLocal Case Study   ">
+<meta name=description content="Key Fundamentals To Know   Microservices   The Twelve Factor App   Message Buses   SQL Joins   GCP Services    Cloud IAM   Cloud Storage   Cloud SQL   Cloud Bigtable    Cloud Bigtable Best Practices     Cloud Firestore   Database Connections   Compute Engine    Operating Applications on Compute Engine     GCP Load Balancing   Kubernetes   Kubernetes Engine   Kubernetes Patterns   Pub/Sub   App Engine   Cloud Run   Cloud Functions   Cloud Endpoints   API Gateway   Vertex AI   Cloud Logging   Cloud Monitoring   Cloud Debugger   Cloud Trace   Cloud Security Command Center     Spinnaker   Case Studies   HipLocal Case Study   ">
 <title>Google Cloud Certified Professional Cloud Developer Certification</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=/icon.png>
@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.156f7bc478214524776a763355dd7a8d.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.394f0372b21c49c11c154e4df299c37f.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.4377ffbe86aa2fd304d553f3257fabd6.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.4bfb6cfba31c9d6e06dc3d1adff14fd3.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,7 +41,7 @@
 <article>
 <h1>Google Cloud Certified Professional Cloud Developer Certification</h1>
 <p class=meta>
-Last updated May 27, 2022
+Last updated May 30, 2022
 </p>
 <ul class=tags>
 <li><a href=https://mattdunn.info/tags/development/>Development</a></li>
@@ -76,31 +76,31 @@ Last updated May 27, 2022
 </a>
 <ul>
 <li>
-<a href=/notes/Cloud-IAM rel=noopener class=internal-link data-src=/notes/Cloud-IAM>Cloud IAM
+<a href=/notes/GCP-Cloud-IAM rel=noopener class=internal-link data-src=/notes/GCP-Cloud-IAM>Cloud IAM
 </a></li>
 <li>
-<a href=/notes/Cloud-Storage rel=noopener class=internal-link data-src=/notes/Cloud-Storage>Cloud Storage
+<a href=/notes/GCP-Cloud-Storage rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Storage>Cloud Storage
 </a></li>
 <li>
-<a href=/notes/Cloud-SQL rel=noopener class=internal-link data-src=/notes/Cloud-SQL>Cloud SQL
+<a href=/notes/GCP-Cloud-SQL rel=noopener class=internal-link data-src=/notes/GCP-Cloud-SQL>Cloud SQL
 </a></li>
 <li>
-<a href=/notes/Cloud-Bigtable rel=noopener class=internal-link data-src=/notes/Cloud-Bigtable>Cloud Bigtable
+<a href=/notes/GCP-Cloud-Bigtable rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Bigtable>Cloud Bigtable
 </a>
 <ul>
 <li>
-<a href=/notes/Cloud-Bigtable rel=noopener class=internal-link data-src=/notes/Cloud-Bigtable>Cloud Bigtable Best Practices
+<a href=/notes/GCP-Cloud-Bigtable rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Bigtable>Cloud Bigtable Best Practices
 </a></li>
 </ul>
 </li>
 <li>
-<a href=/notes/Cloud-Firestore rel=noopener class=internal-link data-src=/notes/Cloud-Firestore>Cloud Firestore
+<a href=/notes/GCP-Cloud-Firestore rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Firestore>Cloud Firestore
 </a></li>
 <li>
 <a href=/notes/GCP-Database-Connections rel=noopener class=internal-link data-src=/notes/GCP-Database-Connections>Database Connections
 </a></li>
 <li>
-<a href=/notes/Compute-Engine rel=noopener class=internal-link data-src=/notes/Compute-Engine>Compute Engine
+<a href=/notes/GCP-Compute-Engine rel=noopener class=internal-link data-src=/notes/GCP-Compute-Engine>Compute Engine
 </a>
 <ul>
 <li>
@@ -115,46 +115,46 @@ Last updated May 27, 2022
 <a href=/notes/Kubernetes rel=noopener class=internal-link data-src=/notes/Kubernetes>Kubernetes
 </a></li>
 <li>
-<a href=/notes/Kubernetes-Engine rel=noopener class=internal-link data-src=/notes/Kubernetes-Engine>Kubernetes Engine
+<a href=/notes/GCP-Kubernetes-Engine rel=noopener class=internal-link data-src=/notes/GCP-Kubernetes-Engine>Kubernetes Engine
 </a></li>
 <li>
 <a href=/notes/Kubernetes-Patterns rel=noopener class=internal-link data-src=/notes/Kubernetes-Patterns>Kubernetes Patterns
 </a></li>
 <li>
-<a href=/notes/Pub-Sub rel=noopener class=internal-link data-src=/notes/Pub-Sub>Pub Sub
+<a href=/notes/GCP-Pub-Sub rel=noopener class=internal-link data-src=/notes/GCP-Pub-Sub>Pub/Sub
 </a></li>
 <li>
-<a href=/notes/App-Engine rel=noopener class=internal-link data-src=/notes/App-Engine>App Engine
+<a href=/notes/GCP-App-Engine rel=noopener class=internal-link data-src=/notes/GCP-App-Engine>App Engine
 </a></li>
 <li>
-<a href=/notes/Cloud-Run rel=noopener class=internal-link data-src=/notes/Cloud-Run>Cloud Run
+<a href=/notes/GCP-Cloud-Run rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Run>Cloud Run
 </a></li>
 <li>
-<a href=/notes/Cloud-Functions rel=noopener class=internal-link data-src=/notes/Cloud-Functions>Cloud Functions
+<a href=/notes/GCP-Cloud-Functions rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Functions>Cloud Functions
 </a></li>
 <li>
-<a href=/notes/Cloud-Endpoints rel=noopener class=internal-link data-src=/notes/Cloud-Endpoints>Cloud Endpoints
+<a href=/notes/GCP-Cloud-Endpoints rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Endpoints>Cloud Endpoints
 </a></li>
 <li>
-<a href=/notes/API-Gateway rel=noopener class=internal-link data-src=/notes/API-Gateway>API Gateway
+<a href=/notes/GCP-API-Gateway rel=noopener class=internal-link data-src=/notes/GCP-API-Gateway>API Gateway
 </a></li>
 <li>
-<a href=/notes/Vertex-AI rel=noopener class=internal-link data-src=/notes/Vertex-AI>Vertex AI
+<a href=/notes/GCP-Vertex-AI rel=noopener class=internal-link data-src=/notes/GCP-Vertex-AI>Vertex AI
 </a></li>
 <li>
-<a href=/notes/Cloud-Logging rel=noopener class=internal-link data-src=/notes/Cloud-Logging>Cloud Logging
+<a href=/notes/GCP-Cloud-Logging rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Logging>Cloud Logging
 </a></li>
 <li>
-<a href=/notes/Cloud-Monitoring rel=noopener class=internal-link data-src=/notes/Cloud-Monitoring>Cloud Monitoring
+<a href=/notes/GCP-Cloud-Monitoring rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Monitoring>Cloud Monitoring
 </a></li>
 <li>
-<a href=/notes/Cloud-Debugger rel=noopener class=internal-link data-src=/notes/Cloud-Debugger>Cloud Debugger
+<a href=/notes/GCP-Cloud-Debugger rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Debugger>Cloud Debugger
 </a></li>
 <li>
-<a href=/notes/Cloud-Trace rel=noopener class=internal-link data-src=/notes/Cloud-Trace>Cloud Trace
+<a href=/notes/GCP-Cloud-Trace rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Trace>Cloud Trace
 </a></li>
 <li>
-<a href=/notes/Cloud-Security-Command-Center rel=noopener class=internal-link data-src=/notes/Cloud-Security-Command-Center>Cloud Security Command Center
+<a href=/notes/GCP-Cloud-Security-Command-Center rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Security-Command-Center>Cloud Security Command Center
 </a></li>
 </ul>
 </li>
