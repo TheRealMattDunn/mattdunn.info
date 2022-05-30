@@ -1,5 +1,5 @@
 ---
-title: "Service Control Policies"
+title: "AWS Service Control Policies (SCPs)"
 date: "2022-02-23"
 tags:
 - aws

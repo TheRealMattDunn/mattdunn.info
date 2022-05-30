@@ -17,9 +17,9 @@ tags:
 
 ## AWS Hybrid Cloud Services
 
-- [Local Zones](notes/Local%20Zones.md)
-- [Outposts](notes/Outposts.md)
-- [Wavelength](notes/Wavelength.md)
+- [Local Zones](notes/AWS%20Local%20Zones.md)
+- [Outposts](notes/AWS%20Outposts.md)
+- [Wavelength](notes/AWS%20Wavelength.md)
 
 ## How to Approach
 

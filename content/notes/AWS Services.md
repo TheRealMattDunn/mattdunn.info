@@ -8,18 +8,19 @@ tags:
 
 ## Compute
 
-- [Elastic Container Service (ECS)](notes/Elastic%20Container%20Service%20(ECS).md)
-- [App2Container (A2C)](notes/App2Container%20(A2C).md)
+- [Elastic Container Service (ECS)](notes/AWS%20Elastic%20Container%20Service%20(ECS).md)
+- [App2Container (A2C)](notes/AWS%20App2Container%20(A2C).md)
 
 ## Hybrid Cloud
 
-- [Local Zones](notes/Local%20Zones.md)
-- [Outposts](notes/Outposts.md)
-- [Wavelength](notes/Wavelength.md)
+- [AWS Edge Computing](notes/AWS%20Edge%20Computing.md)
+- [Local Zones](notes/AWS%20Local%20Zones.md)
+- [Outposts](notes/AWS%20Outposts.md)
+- [Wavelength](notes/AWS%20Wavelength.md)
 
 ## Management and Security
 
 - [Control Tower](notes/AWS%20Control%20Tower.md)
-- [AWS Organization Hierarchy](notes/AWS%20Organization%20Hierarchy.md)
-- [Service Control Policies](notes/Service%20Control%20Policies.md)
-- [AWS Multi-Account Strategies](notes/AWS%20Multi-Account%20Strategies.md)
+- [Organization Hierarchy](notes/AWS%20Organization%20Hierarchy.md)
+- [Service Control Policies](notes/AWS%20Service%20Control%20Policies.md)
+- [Multi-Account Strategies](notes/AWS%20Multi-Account%20Strategies.md)

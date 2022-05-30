@@ -1,5 +1,5 @@
 ---
-title: "Elastic Container Service (ECS)"
+title: "AWS Elastic Container Service (ECS)"
 date: "2022-04-29"
 tags:
 - aws

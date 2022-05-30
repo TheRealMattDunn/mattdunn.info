@@ -1,5 +1,5 @@
 ---
-title: "Outposts"
+title: "AWS Outposts"
 date: "2022-04-29"
 tags:
 - aws
@@ -18,7 +18,7 @@ tags:
 
 ### Compute
 
-- [ECS](notes/Elastic%20Container%20Service%20(ECS).md)
+- [ECS](notes/AWS%20Elastic%20Container%20Service%20(ECS).md)
 - EKS
 - EC2
 

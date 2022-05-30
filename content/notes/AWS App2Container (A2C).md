@@ -1,5 +1,5 @@
 ---
-title: "App2Container (A2C)"
+title: "AWS App2Container (A2C)"
 date: "2022-04-29"
 tags:
 - aws
@@ -27,7 +27,7 @@ tags:
 	- Ports
 - Containerizes with Docker
 - Creates Artefacts
-	- [ECS](notes/Elastic%20Container%20Service%20(ECS).md) task definitions
+	- [ECS](notes/AWS%20Elastic%20Container%20Service%20(ECS).md) task definitions
 	- [Kubernetes](notes/Kubernetes.md) manifests
 	- CI/CD pipeline—AWS Developer Tools, Jenkins
 	- Cloud Formation templates

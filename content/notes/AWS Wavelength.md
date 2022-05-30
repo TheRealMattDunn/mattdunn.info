@@ -1,5 +1,5 @@
 ---
-title: "Wavelength"
+title: "AWS Wavelength"
 date: "2022-04-29"
 tags:
 - aws

@@ -1,5 +1,5 @@
 ---
-title: "Local Zones"
+title: "AWS Local Zones"
 date: "2022-04-29"
 tags:
 - aws
