@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.4377ffbe86aa2fd304d553f3257fabd6.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.4bfb6cfba31c9d6e06dc3d1adff14fd3.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.66592a0a389b96ff4f1f4331dc578cc9.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.bee91271cef98003cd143af48a41602c.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -55,6 +55,12 @@ Last updated May 30, 2022
 <li><a href=#vpc-network-modes>VPC Network Modes</a></li>
 <li><a href=#vpc-peering>VPC Peering</a></li>
 <li><a href=#shared-vpcs>Shared VPCs</a></li>
+<li><a href=#global-vpc-pros-and-cons>Global VPC Pros and Cons</a>
+<ol>
+<li><a href=#pros>Pros</a></li>
+<li><a href=#cons>Cons</a></li>
+</ol>
+</li>
 </ol>
 </nav>
 </aside>
@@ -124,6 +130,21 @@ Last updated May 30, 2022
 <ul>
 <li>VPC shared with child <em>service</em> projects from central VPC <em>host</em> project—hub and spoke networking model</li>
 <li>Compute Shared VPC Admin role (<code>roles/compute.xpnAdmin</code>)—user can view all VPC networks/subnets in service project, regardless of whether all subnets have been shared</li>
+</ul>
+<h2 id=global-vpc-pros-and-cons>Global VPC Pros and Cons</h2>
+<h3 id=pros>Pros</h3>
+<ul>
+<li>Single VPC for multiple regions</li>
+<li>No traffic across public internet</li>
+<li>Global separation of resources without the need to set up routes or peering</li>
+</ul>
+<h3 id=cons>Cons</h3>
+<ul>
+<li>Large blast radius—all subnets routable within VPC</li>
+<li>No policy-based segmentation within VPC—manually create L4 stateful firewall rules</li>
+<li>GCFW service insertion not possible—next hop for VPC subnet route cannot be modified</li>
+<li>Encryption within VPC—best effort</li>
+<li>Not a multi-cloud design—doesn&rsquo;t match the model of other cloud providers</li>
 </ul>
 </article>
 <hr>
