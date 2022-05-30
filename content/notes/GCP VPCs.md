@@ -49,5 +49,5 @@ tags:
 
 ## Shared VPCs
 
-- VPC shared with child *service* projects from central VPC *host* project — hub and spoke networking model
-- Compute Shared VPC Admin role (`roles/compute.xpnAdmin`) — user can view all VPC networks/subnets in service project, regardless of whether all subnets have been shared
+- VPC shared with child *service* projects from central VPC *host* project—hub and spoke networking model
+- Compute Shared VPC Admin role (`roles/compute.xpnAdmin`)—user can view all VPC networks/subnets in service project, regardless of whether all subnets have been shared
