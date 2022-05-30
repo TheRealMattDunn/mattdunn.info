@@ -13,7 +13,7 @@ tags:
 ### Regional
 
 - Can attach to zonal and regional resources, e.g.:
-	- [Compute Engine VMs](notes/Compute%20Engine.md)
+	- [Compute Engine VMs](notes/GCP%20Compute%20Engine.md)
 	- [Network Load Balancers](notes/GCP%20Load%20Balancing.md)
 - Supports IPv4
 

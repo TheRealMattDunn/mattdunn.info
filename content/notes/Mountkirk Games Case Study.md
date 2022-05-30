@@ -24,19 +24,19 @@ tags:
 	- **Multiple platforms** and **locations**
 	- Digital **real-time banner** displaying **global** leaderboard
 - Planned architecture:
-	- Plan to deploy backend to **[GKE](notes/Kubernetes%20Engine.md)**
+	- Plan to deploy backend to **[GKE](notes/GCP%20Kubernetes%20Engine.md)**
 		- *Multiple regional clusters*
-		- *[Anthos](notes/Anthos.md) for common config management and service mesh capabilities*
+		- *[Anthos](notes/GCP%20Anthos.md) for common config management and service mesh capabilities*
 		- *[Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)*
 	- Wish to **scale** rapidly based on **demand**
 	- Usage of **[global load balancers](notes/GCP%20Load%20Balancing.md)** to route players to the closest regional arena
-	- Usage of a **multi-region [Cloud Spanner](notes/Cloud%20Spanner.md)** cluster to keep global leaderboard in sync
+	- Usage of a **multi-region [Cloud Spanner](notes/GCP%20Cloud%20Spanner.md)** cluster to keep global leaderboard in sync
 		- *Streaming data*
 
 ## Existing Environment
 
 - Recently migrated to GCP
-- Five games migrated via **lift-and-shift to [Compute Engine](notes/Compute%20Engine.md) VMs**
+- Five games migrated via **lift-and-shift to [Compute Engine](notes/GCP%20Compute%20Engine.md) VMs**
 	- *Suggests Migrate for Compute Engine*
 - Each new game exists in an **isolated project**, with a **parent folder** maintaining **permissions** and **network policies**
 - Legacy games with lower traffic have been consolidated into a **single project**
@@ -55,15 +55,15 @@ tags:
 	- *Global Load Balancers*
 	- *Premium network tier*
 	- *Cloud CDN*
-	- *Caching with [Memorystore](notes/Memorystore.md)*
+	- *Caching with [Memorystore](notes/GCP%20Memorystore.md)*
 - Optimize for **dynamic scaling**
 	- *GKE node and pod horizontal autoscaling*
 	- *Spanner doesn't autoscale—need to implement custom solution, e.g.*
-		- *Cloud monitoring (CPU), [Pub/Sub](notes/Pub%20Sub.md), [Cloud Functions](notes/Cloud%20Functions.md)*
+		- *Cloud monitoring (CPU), [Pub/Sub](notes/GCP%20Pub%20Sub.md), [Cloud Functions](notes/GCP%20Cloud%20Functions.md)*
 - Use **managed services** and pool resources
 	- *GKE autopilot not an option, as GPUs required*
 	- *Pooled resources: shared project for management and analytics*
-		- *Log buckets, [BigQuery](notes/BigQuery.md), Anthos*
+		- *Log buckets, [BigQuery](notes/GCP%20BigQuery.md), Anthos*
 - Minimize costs
 
 ## Technical Requirements
@@ -74,7 +74,7 @@ tags:
 	- *Streaming data*
 - Game activity **logs** stored in **structured files** for **analysis**
 	- *Import to BigQuery from Logging*
-	- *Store logs in [Cloud Storage](notes/Cloud%20Storage.md)—load as BigQuery external table*
+	- *Store logs in [Cloud Storage](notes/GCP%20Cloud%20Storage.md)—load as BigQuery external table*
 - Render graphics service-side via **GPUs** for multi-platform support
 	- *GPU support in GKE (but no Autopilot)*
 - Eventual migration of legacy games to platform
@@ -83,7 +83,7 @@ tags:
 
 - Build on existing success of GCP
 - Wish to analyse player behaviour and **game telemetry**
-	- *[Cloud Bigtable](notes/Cloud%20Bigtable.md) for telemetry storage*
+	- *[Cloud Bigtable](notes/GCP%20Cloud%20Bigtable.md) for telemetry storage*
 	- *BigQuery, BigQuery ML*
 - Use **cloud-native** design principles
 - **Latency** is a top priority

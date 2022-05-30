@@ -9,12 +9,12 @@ tags:
 ## Best Practices
 
 - Does the data need to be transformed?
-	- ETL—[Dataflow](notes/Dataflow.md)
+	- ETL—[Dataflow](notes/GCP%20Dataflow.md)
 - Is the data relational?
-	- [Cloud Spanner](notes/Cloud%20Spanner.md), [Cloud SQL](notes/Cloud%20SQL.md)
+	- [Cloud Spanner](notes/GCP%20Cloud%20Spanner.md), [Cloud SQL](notes/GCP%20Cloud%20SQL.md)
 	- Database Migration Service
 - Is the migration HBase (Hadoop database) to noSQL?
-	- [Cloud Bigtable](notes/Cloud%20Bigtable.md)
+	- [Cloud Bigtable](notes/GCP%20Cloud%20Bigtable.md)
 - Do VM instances need migration?
 	- Migrate for Compute Engine
 

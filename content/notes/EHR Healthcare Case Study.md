@@ -38,20 +38,20 @@ tags:
 - Lease on DC about to expire
 - **Web-based customer-facing** applications
 	- Many already **containerized** to run on **Kubernetes**:
-		- *[Kubernetes Engine](notes/Kubernetes%20Engine.md)*
-		- *[Anthos](notes/Anthos.md) for hybrid-cloud use cases, and to manage multiple clusters centrally*
+		- *[Kubernetes Engine](notes/GCP%20Kubernetes%20Engine.md)*
+		- *[Anthos](notes/GCP%20Anthos.md) for hybrid-cloud use cases, and to manage multiple clusters centrally*
 		- *Google Container Registry*
 - **SQL** and **noSQL** DBs:
 	- MySQL
-		- *Lift/shift to [Cloud SQL](notes/Cloud%20SQL.md)*
+		- *Lift/shift to [Cloud SQL](notes/GCP%20Cloud%20SQL.md)*
 	- MS SQL Server
 		- *Lift/shift to Cloud SQL*
-		- *Provision specific version in [Compute Engine](notes/Compute%20Engine.md) (if not available in Cloud SQL)*
+		- *Provision specific version in [Compute Engine](notes/GCP%20Compute%20Engine.md) (if not available in Cloud SQL)*
 	- Redis
-		- *Lift/shift to [Memorystore](notes/Memorystore.md)*
+		- *Lift/shift to [Memorystore](notes/GCP%20Memorystore.md)*
 		- *Deploy Redis Enterprise from marketplace*
 	- MongoDB
-		- *ETL to [Cloud Firestore](notes/Cloud%20Firestore.md)*
+		- *ETL to [Cloud Firestore](notes/GCP%20Cloud%20Firestore.md)*
 		- *Deploy MongoDB Atlas from marketplace*
 		- *Manual build on GCE/GKE*
 - **Legacy file and API integrations** with insurance providers **on-prem**:
@@ -66,7 +66,7 @@ tags:
 		- *Move to GCP Operations Suite*
 	- Alerts via **email** often **ignored**
 		- *Reduce frequency*
-		- *Move from email to SMS, Slack, PagerDuty, [Pub/Sub](notes/Pub%20Sub.md) etc.*
+		- *Move from email to SMS, Slack, PagerDuty, [Pub/Sub](notes/GCP%20Pub%20Sub.md) etc.*
 		- *Alerting policies*
 
 ## Business Requirements
@@ -75,15 +75,15 @@ tags:
 	- *Common APIs*
 	- *API management - Apigee*
 	- *SaaS admin portal*
-		- *Deploy to [App Engine](notes/App%20Engine.md) or [Cloud Run](notes/Cloud%20Run.md) (preferred due to containers) if traffic low*
+		- *Deploy to [App Engine](notes/GCP%20App%20Engine.md) or [Cloud Run](notes/GCP%20Cloud%20Run.md) (preferred due to containers) if traffic low*
 - **99.9% availability** for customer-facing applications:
 	- *Multi-zonal / regional resources*
 - **Centralized** visibility of applications, with **proactive monitoring and alerting**:
 	- *GCP Operations*
 	- *Central logging/monitoring project for all subprojects*
 - Gain **insights** into healthcare trends:
-	- *[Vertex AI](notes/Vertex%20AI.md)*
-	- *[BigQuery](notes/BigQuery.md)*
+	- *[Vertex AI](notes/GCP%20Vertex%20AI.md)*
+	- *[BigQuery](notes/GCP%20BigQuery.md)*
 	- *BigQuery BI*
 	- *Looker*
 - **Reduce latency** to end users:
@@ -125,8 +125,8 @@ tags:
 - Create **interfaces** to ingest and **process data** from new providers
 	- *APIs: Apigee*
 	- *Pub/Sub*
-	- *[Dataproc](notes/Dataproc.md)*
-	- *[Dataflow](notes/Dataflow.md)*
+	- *[Dataproc](notes/GCP%20Dataproc.md)*
+	- *[Dataflow](notes/GCP%20Dataflow.md)*
 
 ## Executive Statement
 

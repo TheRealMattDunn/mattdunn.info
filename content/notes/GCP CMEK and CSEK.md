@@ -11,7 +11,7 @@ tags:
 
 ### Customer Managed Encryption Keys (CMEK)
 
-- Key created and managed with [Cloud KMS](notes/Cloud%20KMS.md)
+- Key created and managed with [Cloud KMS](notes/GCP%20Cloud%20KMS.md)
 - Assigned to resource
 - Alternative to Google managed keys
 - Not necessarily more secure:
@@ -22,4 +22,4 @@ tags:
 
 - Customer specifies contents of key material
 - Keys stored on-prem, or in external service
-- Compatibale with [Cloud Storage](notes/Cloud%20Storage.md) and [Compute Engine](notes/Compute%20Engine.md)
+- Compatibale with [Cloud Storage](notes/GCP%20Cloud%20Storage.md) and [Compute Engine](notes/GCP%20Compute%20Engine.md)

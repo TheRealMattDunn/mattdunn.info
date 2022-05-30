@@ -11,7 +11,7 @@ tags:
 - For compliance purposes
 - Adds business context to assets
 - Adds additional layer of security
-- Applied in the [Cloud Security Command Center](notes/Cloud%20Security%20Command%20Center.md)
+- Applied in the [Cloud Security Command Center](notes/GCP%20Cloud%20Security%20Command%20Center.md)
 	- CSCC also works with labels and network tags
 - Organization, project, or resource level
 

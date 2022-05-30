@@ -17,16 +17,16 @@ tags:
 
 - Prepare a good amount of training data
 	- More accurate models
-- Store tabular data in [BigQuery](notes/BigQuery.md)
-- Store unstructured data in [Cloud Storage](notes/Cloud%20Storage.md)
+- Store tabular data in [BigQuery](notes/GCP%20BigQuery.md)
+- Store unstructured data in [Cloud Storage](notes/GCP%20Cloud%20Storage.md)
 
 ## Processing
 
 - Use TensorFlow Extended for TensorFlow projects
-- Process tabular data [BigQuery](notes/BigQuery.md)
+- Process tabular data [BigQuery](notes/GCP%20BigQuery.md)
 - Process unstructured data with:
-	- [Dataflow](notes/Dataflow.md)—General use cases, Apache Bean
-	- [Dataproc](notes/Dataproc.md)—Apache Hadoop or Spark use cases
+	- [Dataflow](notes/GCP%20Dataflow.md)—General use cases, Apache Bean
+	- [Dataproc](notes/GCP%20Dataproc.md)—Apache Hadoop or Spark use cases
 - Link data to model with managed datasets
 
 ## Production
@@ -38,4 +38,4 @@ tags:
 
 # References
 
-- [Vertex AI](notes/Vertex%20AI.md)
+- [Vertex AI](notes/GCP%20Vertex%20AI.md)

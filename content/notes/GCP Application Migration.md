@@ -31,7 +31,7 @@ tags:
 
 ## Migrate for Compute Engine
 
-- Migrate VMs to [Compute Engine](notes/Compute%20Engine.md)
+- Migrate VMs to [Compute Engine](notes/GCP%20Compute%20Engine.md)
 - Lift and shift
 - Test-clones—pre-migration validation
 - Replicates instance data to GCP in the background—zero interruptions

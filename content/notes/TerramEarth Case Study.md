@@ -17,9 +17,9 @@ tags:
 	- *Big data—2.4 million vehicles next year*
 - **Telemetry** from vehicles:
 	- Small subset collected in **real-time** for fleet management
-		- *Steaming via: [Cloud IoT Core](notes/IoT%20Core.md), [Pub/Sub](notes/Pub%20Sub.md)/[Dataflow](notes/Dataflow.md), [BigQuery](notes/BigQuery.md)/[Cloud Bigtable](notes/Cloud%20Bigtable.md)*
+		- *Steaming via: [IoT Core](notes/GCP%20IoT%20Core.md), [Pub/Sub](notes/GCP%20Pub%20Sub.md)/[GCP Dataflow](notes/GCP%20Dataflow.md), [BigQuery](notes/GCP%20BigQuery.md)/[Cloud Bigtable](notes/GCP%20Cloud%20Bigtable.md)*
 	- Remainder uploaded as compressed **batch** files daily upon return to base: **200 to 500 MB/day = 1 PB/day total**
-		- *Batch—[Cloud Storage](notes/Cloud%20Storage.md), BigQuery*
+		- *Batch—[Cloud Storage](notes/GCP%20Cloud%20Storage.md), BigQuery*
 
 ## Existing Technical Environment
 
@@ -33,14 +33,14 @@ tags:
 	- Runs in GCP
 	- Stock management
 	- Analytics
-		- *[App Engine](notes/App%20Engine.md) or [Cloud Run](notes/Cloud%20Run.md)*
+		- *[App Engine](notes/GCP%20App%20Engine.md) or [Cloud Run](notes/GCP%20Cloud%20Run.md)*
 
 ## Business Requirements
 
 - **Predict** vehicle malfunction to ship parts to dealerships for just-in-time repair
-	- *[BigQuery](notes/BigQuery.md) ML (SQL)*
+	- *[BigQuery](notes/GCP%20BigQuery.md) ML (SQL)*
 	- *Auto ML Tables (business users)*
-	- *[Vertex AI](notes/Vertex%20AI.md) (data scientists)*
+	- *[Vertex AI](notes/GCP%20Vertex%20AI.md) (data scientists)*
 - **Decrease** cloud ops costs
 - Adjust to **seasonality**
 	- *[Compute Autoscaling](notes/GCP%20Compute%20Autoscaling.md)*
@@ -64,7 +64,7 @@ tags:
 	- *Cloud Build*
 	- *Container Registry*
 - **Container**-based apps
-	- *Cloud Run / [GKE](notes/Kubernetes%20Engine.md)*
+	- *Cloud Run / [GKE](notes/GCP%20Kubernetes%20Engine.md)*
 	- *Prefer Cloud Run to App Engine*
 - Allow developers to run **experiments**
 	- Security

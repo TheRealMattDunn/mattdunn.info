@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-- Install [Anthos](notes/Anthos.md) clusters directly on your own hardware
+- Install [Anthos](notes/GCP%20Anthos.md) clusters directly on your own hardware
 	- Use of specialized hardware
 - Use existing data centres
 	- Anthos manages app deployment and health

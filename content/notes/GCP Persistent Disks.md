@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-- Disks independent of [Compute Engine](notes/Compute%20Engine.md) instance
+- Disks independent of [Compute Engine](notes/GCP%20Compute%20Engine.md) instance
 - Data available after VM is shutdown
 - Durable—data distributed across physical disks (99.9999%)
 - Secure—encrypted at rest and transit

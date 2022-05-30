@@ -43,7 +43,7 @@ module "vpc" {
 - Mercurial
 - HTTP URLs
 - S3 Buckets
-- [Google Cloud Storage](notes/Cloud%20Storage.md)
+- [Google Cloud Storage](notes/GCP%20Cloud%20Storage.md)
 
 ## Meta-Arguments
 

@@ -11,7 +11,7 @@ tags:
 - Software defined
 	- No hardware—reacts instantly, handles spikes with no warm-up
 - Layer 4 and layer 7
-- Integrates with [Cloud CDN](notes/Cloud%20CDN.md)
+- Integrates with [Cloud CDN](notes/GCP%20Cloud%20CDN.md)
 
 ### Regional Load Balancing
 
@@ -32,10 +32,10 @@ tags:
 
 ### Backends
 
-| Backend Config  | Content Type | Backend Types                                                                                                           |
-| --------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| Backend service | Dynamic      | Unmanaged instance groups<br>Managed instance groups<br>[Network Endpoint Groups](notes/Network%20Endpoint%20Groups.md) |
-| Backend bucket  | Static       | [Cloud Storage buckets](notes/Cloud%20Storage.md)                                                                                                                        |
+| Backend Config  | Content Type | Backend Types                                                                                                                 |
+| --------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| Backend service | Dynamic      | Unmanaged instance groups<br>Managed instance groups<br>[Network Endpoint Groups](notes/GCP%20Network%20Endpoint%20Groups.md) |
+| Backend bucket  | Static       | [Cloud Storage buckets](notes/GCP%20Cloud%20Storage.md)                                                                       |
 
 # References
 

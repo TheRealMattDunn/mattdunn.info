@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-Google hosted service to load balance requests across [Kubernetes Engine](notes/Kubernetes%20Engine.md) clusters and regions. The MultiClusterIngress [Kubernetes](notes/Kubernetes.md) resource is a controller for [External HTTP(S) Load Balancers](notes/GCP%20Load%20Balancing.md).
+Google hosted service to load balance requests across [Kubernetes Engine](notes/GCP%20Kubernetes%20Engine.md) clusters and regions. The MultiClusterIngress [Kubernetes](notes/Kubernetes.md) resource is a controller for [External HTTP(S) Load Balancers](notes/GCP%20Load%20Balancing.md).
 
 ### Multi Cluster Use Cases
 
@@ -57,7 +57,7 @@ Google hosted service to load balance requests across [Kubernetes Engine](notes/
 	- Requests served by GFEs go to the closest cluster via Google backbone
 - Multi Cluster Ingress Controller
 	- Google managed
-	- Programs external HTTP(S) Load Balancer using [Network Endpoint Groups](notes/Network%20Endpoint%20Groups.md)
+	- Programs external HTTP(S) Load Balancer using [Network Endpoint Groups](notes/GCP%20Network%20Endpoint%20Groups.md)
 	- Configures [Pods](notes/Pod.md) across clusters as backends
 	- NEGs track Pod endpoints dynamically
 		- LB has correct set of healthy backends

@@ -44,11 +44,11 @@ tags:
 - Rewrite
 - Containers—GCP container-based cloud
 	- Can move containers *within the cloud*—difficult to do with other vendors, let alone migrate between clouds
-	- Can run containers on: [Cloud Run](notes/Cloud%20Run.md), [Kubernetes Engine](notes/Kubernetes%20Engine.md), [Compute Engine](notes/Compute%20Engine.md), [Cloud Functions](notes/Cloud%20Functions.md) and [App Engine](notes/App%20Engine.md)
+	- Can run containers on: [Cloud Run](notes/GCP%20Cloud%20Run.md), [Kubernetes Engine](notes/GCP%20Kubernetes%20Engine.md), [Compute Engine](notes/GCP%20Compute%20Engine.md), [Cloud Functions](notes/GCP%20Cloud%20Functions.md) and [App Engine](notes/GCP%20App%20Engine.md)
 
 ### Take a Holistic Platform View
 
-- Make use of other platform components, e.g. [Pub Sub](notes/Pub%20Sub.md)
+- Make use of other platform components, e.g. [Pub/Sub](notes/GCP%20Pub%20Sub.md)
 - Otherwise it is just IaaS
 - More value
 
@@ -64,7 +64,7 @@ tags:
 - Embrace e.g. event-driven architecture
 - Cost optimize
 - Utilize Kubernetes Resource Model (KRM) to provision infrastructure
-	- Manage services as through they are [Kubernetes](notes/Kubernetes.md) resources, e.g. [Cloud Spanner](notes/Cloud%20Spanner.md) with ~10 lines of YAML
+	- Manage services as through they are [Kubernetes](notes/Kubernetes.md) resources, e.g. [Cloud Spanner](notes/GCP%20Cloud%20Spanner.md) with ~10 lines of YAML
 
 ### Team Effort
 

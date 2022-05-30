@@ -39,7 +39,7 @@ tags:
 
 - Any service consumed over the network, e.g. DBs, messaging systems
 - No distinction between local and 3rd party resources—all accessed by URLs/credentials stored in config
-- Ability to switch backing services without code changes, e.g. switch from local MySQL to Google [Cloud SQL](notes/Cloud%20SQL.md)
+- Ability to switch backing services without code changes, e.g. switch from local MySQL to Google [Cloud SQL](notes/GCP%20Cloud%20SQL.md)
 
 ## Build, Release, Run
 

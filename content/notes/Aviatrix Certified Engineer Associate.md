@@ -29,4 +29,4 @@ tags:
 ### GCP Networking
 
 - [GCP VPCs](notes/GCP%20VPCs.md)
-- [Cloud Interconnect](notes/Cloud%20Interconnect.md)
+- [GCP Cloud Interconnect](notes/GCP%20Cloud%20Interconnect.md)

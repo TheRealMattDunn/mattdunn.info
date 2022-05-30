@@ -10,13 +10,13 @@ tags:
 
 ### Stream
 
-- [Pub/Sub](notes/Pub%20Sub.md)
+- [Pub/Sub](notes/GCP%20Pub%20Sub.md)
 
 ### Batch
 
-- [Cloud Storage](notes/Cloud%20Storage.md)
+- [Cloud Storage](notes/GCP%20Cloud%20Storage.md)
 	- Storage Transfer Service—moving large amounts of data from on-prem
-- [BigQuery](notes/BigQuery.md)
+- [BigQuery](notes/GCP%20BigQuery.md)
 	- BigQuery Transfer Service—moving from SaaS e.g. YouTube, Google Ads
 - Big Data (e.g. PBs)
 	- Storage Transfer Appliance
@@ -24,49 +24,49 @@ tags:
 ### Application
 
 - Cloud Logging
-- [Pub/Sub](notes/Pub%20Sub.md)
-- [Cloud SQL](notes/Cloud%20SQL.md)
-- [Cloud Firestore](notes/Cloud%20Firestore.md)—noSQL
-- [Cloud Bigtable](notes/Cloud%20Bigtable.md)—large amounts of noSQL
-- [Cloud Spanner](notes/Cloud%20Spanner.md)—large amounts of structured data
+- [Pub/Sub](notes/GCP%20Pub%20Sub.md)
+- [Cloud SQL](notes/GCP%20Cloud%20SQL.md)
+- [Cloud Firestore](notes/GCP%20Cloud%20Firestore.md)—noSQL
+- [Cloud Bigtable](notes/GCP%20Cloud%20Bigtable.md)—large amounts of noSQL
+- [Cloud Spanner](notes/GCP%20Cloud%20Spanner.md)—large amounts of structured data
 
 ## Storage
 
 ### Objects
 
-- [Cloud Storage](notes/Cloud%20Storage.md)
+- [Cloud Storage](notes/GCP%20Cloud%20Storage.md)
 - Cloud Storage for Firebase
 
 ### Databases
 
 - SQL
-	- [Cloud SQL](notes/Cloud%20SQL.md)
-	- [Cloud Spanner](notes/Cloud%20Spanner.md)
+	- [Cloud SQL](notes/GCP%20Cloud%20SQL.md)
+	- [Cloud Spanner](notes/GCP%20Cloud%20Spanner.md)
 - noSQL
-	- [Cloud Bigtable](notes/Cloud%20Bigtable.md)
-	- [Cloud Firestore](notes/Cloud%20Firestore.md)
+	- [Cloud Bigtable](notes/GCP%20Cloud%20Bigtable.md)
+	- [Cloud Firestore](notes/GCP%20Cloud%20Firestore.md)
 
 ### Warehouse
 
-- [BigQuery](notes/BigQuery.md)
+- [BigQuery](notes/GCP%20BigQuery.md)
 
 ## Process / Analyse
 
 ### Compute
 
-- [Compute Engine](notes/Compute%20Engine.md)
-- [Kubernetes Engine](notes/Kubernetes%20Engine.md)
-- [App Engine](notes/App%20Engine.md)
+- [Compute Engine](notes/GCP%20Compute%20Engine.md)
+- [Kubernetes Engine](notes/GCP%20Kubernetes%20Engine.md)
+- [App Engine](notes/GCP%20App%20Engine.md)
 
 ### Large Scale
 
-- [Dataproc](notes/Dataproc.md)—Hadoop, Spark etc.
-- [Dataflow](notes/Dataflow.md)—Apache Beam
-- [Dataprep](notes/Dataprep.md)
+- [Dataproc](notes/GCP%20Dataproc.md)—Hadoop, Spark etc.
+- [Dataflow](notes/GCP%20Dataflow.md)—Apache Beam
+- [Dataprep](notes/GCP%20Dataprep.md)
 
 ### Analyse
 
-- [BigQuery](notes/BigQuery.md)—PBs of data analysis at speed
+- [BigQuery](notes/GCP%20BigQuery.md)—PBs of data analysis at speed
 
 ## Explore / Visualize
 
