@@ -24,3 +24,8 @@ tags:
 	- E2E encryption
 - Cloud Access Layer
 	- Ingress/egress into network
+- Cloud Security
+	- Enforces security across all the layers and clouds
+- Cloud Operations
+	- Full visibility
+	- Troubleshooting, visibility, automation
