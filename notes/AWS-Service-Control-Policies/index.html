@@ -1,8 +1,8 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Overview  Migrate legacy apps into containers  ASP.NET on IIS/Linux .NET Windows services Java on Linux—Tomcat, JBoss   CLI tool—runs locally on instance Portable—on-prem, AWS Automated Scaleable—standard steps for all apps Source code not required—binaries packaged Follows AWS best practices for containerization  Process  Analysis of app:  Dependencies Files Ports   Containerizes with Docker Creates Artefacts   ECS  task definitions  Kubernetes  manifests CI/CD pipeline—AWS Developer Tools, Jenkins Cloud Formation templates   Deploy to AWS  Store image in ECR Deploy to ECS/EKS    ">
-<title>App2Container (A2C)</title>
+<meta name=description content="Overview  SCPs Applied at the OU  level Controlled by the organization master account Restrict actions which can be taken in an AWS account Control which AWS APIs are accessible  Allowlist/denylist   Invisible to users in the child accounts  ">
+<title>AWS Service Control Policies (SCPs)</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=/icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.5bfb29e103a27630fe2dbcb4808c3a09.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.a64e6ef4de9256b71ab91a050c2790d4.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.989d8fa81573bf189a9528f0b1640d41.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.9773627e1f7171821ba21c6f02ffb8c4.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -39,67 +39,36 @@
 </div>
 </header>
 <article>
-<h1>App2Container (A2C)</h1>
+<h1>AWS Service Control Policies (SCPs)</h1>
 <p class=meta>
 Last updated May 30, 2022
 </p>
 <ul class=tags>
 <li><a href=https://mattdunn.info/tags/aws/>Aws</a></li>
-<li><a href=https://mattdunn.info/tags/containers/>Containers</a></li>
+<li><a href=https://mattdunn.info/tags/security/>Security</a></li>
 </ul>
 <aside class=mainTOC>
 <h3>Table of Contents</h3>
 <nav id=TableOfContents>
 <ol>
 <li><a href=#overview>Overview</a></li>
-<li><a href=#process>Process</a></li>
 </ol>
 </nav>
 </aside>
 <h2 id=overview>Overview</h2>
 <ul>
-<li>Migrate legacy apps into containers
+<li>SCPs</li>
+<li>Applied at the
+<a href=/notes/AWS-Organization-Hierarchy rel=noopener class=internal-link data-src=/notes/AWS-Organization-Hierarchy>OU
+</a> level</li>
+<li>Controlled by the organization master account</li>
+<li>Restrict actions which can be taken in an AWS account</li>
+<li>Control which AWS APIs are accessible
 <ul>
-<li>ASP.NET on IIS/Linux</li>
-<li>.NET Windows services</li>
-<li>Java on Linux—Tomcat, JBoss</li>
+<li>Allowlist/denylist</li>
 </ul>
 </li>
-<li>CLI tool—runs locally on instance</li>
-<li>Portable—on-prem, AWS</li>
-<li>Automated</li>
-<li>Scaleable—standard steps for all apps</li>
-<li>Source code not required—binaries packaged</li>
-<li>Follows AWS best practices for containerization</li>
-</ul>
-<h2 id=process>Process</h2>
-<ul>
-<li>Analysis of app:
-<ul>
-<li>Dependencies</li>
-<li>Files</li>
-<li>Ports</li>
-</ul>
-</li>
-<li>Containerizes with Docker</li>
-<li>Creates Artefacts
-<ul>
-<li>
-<a href=/notes/Elastic-Container-Service-ECS rel=noopener class=internal-link data-src=/notes/Elastic-Container-Service-ECS>ECS
-</a> task definitions</li>
-<li>
-<a href=/notes/Kubernetes rel=noopener class=internal-link data-src=/notes/Kubernetes>Kubernetes
-</a> manifests</li>
-<li>CI/CD pipeline—AWS Developer Tools, Jenkins</li>
-<li>Cloud Formation templates</li>
-</ul>
-</li>
-<li>Deploy to AWS
-<ul>
-<li>Store image in ECR</li>
-<li>Deploy to ECS/EKS</li>
-</ul>
-</li>
+<li>Invisible to users in the child accounts</li>
 </ul>
 </article>
 <hr>
@@ -108,7 +77,10 @@ Last updated May 30, 2022
 <h3>Backlinks</h3>
 <ul class=backlinks>
 <li>
-<a href=/notes/AWS-Application-Modernization-with-A2C>AWS Application Modernization with A2C</a>
+<a href=/notes/AWS-Multi-Account-Strategies>AWS Multi-Account Strategies</a>
+</li>
+<li>
+<a href=/notes/AWS-Organization-Hierarchy>AWS Organization Hierarchy</a>
 </li>
 <li>
 <a href=/notes/AWS-Services>AWS Services</a>
@@ -121,7 +93,7 @@ Last updated May 30, 2022
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://mattdunn.info/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://mattdunn.info/notes/App2Container-A2C","https://mattdunn.info",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://mattdunn.info/notes/AWS-Service-Control-Policies","https://mattdunn.info",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>

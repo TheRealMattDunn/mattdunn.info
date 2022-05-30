@@ -1,8 +1,8 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Overview   Extend AWS infrastructure to on-prem Rack Fully-managed by AWS  Available Functionality Compute   ECS  EKS EC2  Block and Object Storage  S3 EBS EBS Local Snapshots  Data  RDS Elasticache EMR  Networking  Application Load Balancer (ALB)  Outposts Server   Use case: when full Outposts rack not required  1U and 2U servers   Small workloads, e.">
-<title>Outposts</title>
+<meta name=description content="Overview   Subset of AWS compute infrastructure in Local Zones closer to metro areas Reduce latency for metros not near region  ">
+<title>AWS Local Zones</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=/icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.5bfb29e103a27630fe2dbcb4808c3a09.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.a64e6ef4de9256b71ab91a050c2790d4.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.989d8fa81573bf189a9528f0b1640d41.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.9773627e1f7171821ba21c6f02ffb8c4.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -39,7 +39,7 @@
 </div>
 </header>
 <article>
-<h1>Outposts</h1>
+<h1>AWS Local Zones</h1>
 <p class=meta>
 Last updated May 30, 2022
 </p>
@@ -52,66 +52,15 @@ Last updated May 30, 2022
 <nav id=TableOfContents>
 <ol>
 <li><a href=#overview>Overview</a></li>
-<li><a href=#available-functionality>Available Functionality</a>
-<ol>
-<li><a href=#compute>Compute</a></li>
-<li><a href=#block-and-object-storage>Block and Object Storage</a></li>
-<li><a href=#data>Data</a></li>
-<li><a href=#networking>Networking</a></li>
-</ol>
-</li>
-<li><a href=#outposts-server>Outposts Server</a></li>
 </ol>
 </nav>
 </aside>
 <h2 id=overview>Overview</h2>
 <p>
-<img src=/files/outposts.svg alt=outposts></p>
+<img src=/files/local_zones.svg alt=local_zones></p>
 <ul>
-<li>Extend AWS infrastructure to on-prem</li>
-<li>Rack</li>
-<li>Fully-managed by AWS</li>
-</ul>
-<h2 id=available-functionality>Available Functionality</h2>
-<h3 id=compute>Compute</h3>
-<ul>
-<li>
-<a href=/notes/Elastic-Container-Service-ECS rel=noopener class=internal-link data-src=/notes/Elastic-Container-Service-ECS>ECS
-</a></li>
-<li>EKS</li>
-<li>EC2</li>
-</ul>
-<h3 id=block-and-object-storage>Block and Object Storage</h3>
-<ul>
-<li>S3</li>
-<li>EBS</li>
-<li>EBS Local Snapshots</li>
-</ul>
-<h3 id=data>Data</h3>
-<ul>
-<li>RDS</li>
-<li>Elasticache</li>
-<li>EMR</li>
-</ul>
-<h3 id=networking>Networking</h3>
-<ul>
-<li>Application Load Balancer (ALB)</li>
-</ul>
-<h2 id=outposts-server>Outposts Server</h2>
-<p>
-<img src=/files/outposts_server.svg alt=outposts_server></p>
-<ul>
-<li>Use case: when full Outposts rack not required
-<ul>
-<li>1U and 2U servers</li>
-</ul>
-</li>
-<li>Small workloads, e.g. shops, kiosks, bank branches</li>
-<li>Use-case: manufacturing
-<ul>
-<li>Facilities often in locations where land is cheap—bad connectivity, low bandwidh, high jitter</li>
-</ul>
-</li>
+<li>Subset of AWS compute infrastructure in Local Zones closer to metro areas</li>
+<li>Reduce latency for metros not near region</li>
 </ul>
 </article>
 <hr>
@@ -133,7 +82,7 @@ Last updated May 30, 2022
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://mattdunn.info/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://mattdunn.info/notes/Outposts","https://mattdunn.info",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://mattdunn.info/notes/AWS-Local-Zones","https://mattdunn.info",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>
