@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Commands  apply—executes the actions proposed in a Terraform plan destroy—destroys all remote objects managed by the config fmt—rewrites config files to canonical Terraform format/style  Also flags syntax errors   force-unlock—manually unlock the state  where automatic unlocking fails import—imports existing remote objects into the state init—initializes a working directory containing Terraform config files.">
+<meta name=description content="Commands  apply—executes the actions proposed in a Terraform plan  Default parallelism of 10 concurrent operations   destroy—destroys all remote objects managed by the config  Convenience alias to terraform apply -destroy   fmt—rewrites config files to canonical Terraform format/style  Also flags syntax errors   force-unlock—manually unlock the state  where automatic unlocking fails graph—produces a representation of the dependency graph is the DOT language  Use e.">
 <title>Terraform Commands</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=/icon.png>
@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.20ac9258c1f60b1d56c28874e8755958.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.8698f80723264f0c5345240ce9efd33f.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.20ac9258c1f60b1d56c28874e8755958.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.603948097aeb23032959bfb551bab1a0.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -57,8 +57,16 @@ Last updated May 31, 2022
 </aside>
 <h2 id=commands>Commands</h2>
 <ul>
-<li><code>apply</code>—executes the actions proposed in a Terraform plan</li>
-<li><code>destroy</code>—destroys all remote objects managed by the config</li>
+<li><code>apply</code>—executes the actions proposed in a Terraform plan
+<ul>
+<li>Default parallelism of 10 concurrent operations</li>
+</ul>
+</li>
+<li><code>destroy</code>—destroys all remote objects managed by the config
+<ul>
+<li>Convenience alias to <code>terraform apply -destroy</code></li>
+</ul>
+</li>
 <li><code>fmt</code>—rewrites config files to canonical Terraform format/style
 <ul>
 <li>Also flags syntax errors</li>
@@ -67,11 +75,22 @@ Last updated May 31, 2022
 <li><code>force-unlock</code>—manually unlock the
 <a href=/notes/Terraform-State rel=noopener class=internal-link data-src=/notes/Terraform-State>state
 </a> where automatic unlocking fails</li>
+<li><code>graph</code>—produces a representation of the dependency graph is the DOT language
+<ul>
+<li>Use e.g. GraphViz to read</li>
+</ul>
+</li>
 <li><code>import</code>—imports existing remote objects into the state</li>
 <li><code>init</code>—initializes a working directory containing Terraform config files.</li>
 <li><code>plan</code>—creates an execution plan
 <ul>
 <li>Preview changes that Terraform plans to make</li>
+</ul>
+</li>
+<li><code>provider</code>—prints tree of modules annotated with provider requirements
+<ul>
+<li><code>provider mirror</code>—saves local copies of all required provider plugins</li>
+<li><code>provider schema</code>—shows detailed provider schemas</li>
 </ul>
 </li>
 <li><code>refresh</code>—reads current settings from all managed remote objects and updates state to match
@@ -112,6 +131,8 @@ Last updated May 31, 2022
 <a href=/notes/Terraform-Backends rel=noopener class=internal-link data-src=/notes/Terraform-Backends>backend
 </a> state is stored in a workspace
 <ul>
+<li>Create a new workspace with <code>workspace new &lt;workspace name></code></li>
+<li>Switch workspace with <code>workspace select &lt;workspace name></code></li>
 <li>Allows multiple states to be associated with a single configuration</li>
 <li>&ldquo;default&rdquo; workspace</li>
 <li>Refer to the workspace name in config with <code>${terraform.workspace}</code></li>
