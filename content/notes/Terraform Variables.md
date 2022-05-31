@@ -51,8 +51,8 @@ variable "my_id" {
 
 ## Setting Variables
 
-- Presedence:
-	- Environment variables
+- Precedence:
+	- Environment variables—in format `TF_VAR_<variable name>`
 	- `terraform.tfvars`
 	- `terraform.tfvars.json`
 	- `*.auto.tfvars` / `*.auto.tfvars.json`

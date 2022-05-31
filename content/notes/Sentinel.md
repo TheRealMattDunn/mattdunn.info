@@ -14,6 +14,7 @@ tags:
 - Policy-as-code framework
 - Guardrails that prevent [Terraform](notes/Terraform.md) from performing dangerous of disallowed actions
 - Integrated with HashiCorp Enterprise products
+- Enforced between `plan` and `apply` phases
 
 ## Policies
 

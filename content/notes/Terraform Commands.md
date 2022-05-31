@@ -9,14 +9,21 @@ tags:
 ## Commands
 
 - `apply`—executes the actions proposed in a Terraform plan
+	- Default parallelism of 10 concurrent operations
 - `destroy`—destroys all remote objects managed by the config
+	- Convenience alias to `terraform apply -destroy`
 - `fmt`—rewrites config files to canonical Terraform format/style
 	- Also flags syntax errors
 - `force-unlock`—manually unlock the [state](notes/Terraform%20State.md) where automatic unlocking fails
+- `graph`—produces a representation of the dependency graph is the DOT language
+	- Use e.g. GraphViz to read
 - `import`—imports existing remote objects into the state
 - `init`—initializes a working directory containing Terraform config files.
 - `plan`—creates an execution plan
 	- Preview changes that Terraform plans to make
+- `provider`—prints tree of modules annotated with provider requirements
+	- `provider mirror`—saves local copies of all required provider plugins
+	- `provider schema`—shows detailed provider schemas
 - `refresh`—reads current settings from all managed remote objects and updates state to match
 	- *Deprecated*
 - `show`—Outputs state or plan file in human-readable format
@@ -37,6 +44,8 @@ tags:
 	- Verifies configuration is syntatically valid and internally consistent
 	- Safe to run automatically, e.g. post-save step
 - `workspace`—[backend](notes/Terraform%20Backends.md) state is stored in a workspace
+	- Create a new workspace with `workspace new <workspace name>`
+	- Switch workspace with `workspace select <workspace name>`
 	- Allows multiple states to be associated with a single configuration
 	- "default" workspace
 	- Refer to the workspace name in config with `${terraform.workspace}`

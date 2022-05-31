@@ -52,3 +52,14 @@ module "vpc" {
 - `providers`—allows provider config to be passed to the child module
 	- Default: module inherits all default (un-aliased) provider configurations from the parent module
 - `depends_on`
+
+## Publishing Modules
+
+### Requirements
+
+- Must be in a public GitHub repo
+- Repo must be named `terraform-<PROVIDER>-<NAME>`
+- Must have a repo description
+- Must adhere to the standard module structure
+- Must have at least one release tag, following semantic versioning, i.e. `x.y.z`
+	- Optionally prefixed with `v`

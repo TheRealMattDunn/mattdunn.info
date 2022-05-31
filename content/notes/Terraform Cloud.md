@@ -61,7 +61,7 @@ tags:
 - Sync public modules/providers
 	- Designate which are recommended in the organization
 - Can use Sentinel policies
-	- e.g. Manfate use of modules from private registry
+	- e.g. Mandate use of modules from private registry
 
 ## Workflows
 

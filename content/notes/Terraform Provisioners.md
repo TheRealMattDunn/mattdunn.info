@@ -12,6 +12,8 @@ tags:
 - Prepare infrastructure for service
 - Should be used as a last resort
 	- For actions not directly represented in Terraform
+- Create-time or destroy-time—cannot be used to perform actions on existing resources
+	- Resource must be destroyed and recreated
 
 ## Anti-Patterns
 
