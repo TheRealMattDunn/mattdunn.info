@@ -8,7 +8,7 @@ tags:
 
 ## Commands
 
--`apply`—executes the actions proposed in a Terraform plan
+- `apply`—executes the actions proposed in a Terraform plan
 - `destroy`—destroys all remote objects managed by the config
 - `fmt`—rewrites config files to canonical Terraform format/style
 	- Also flags syntax errors
