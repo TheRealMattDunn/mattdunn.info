@@ -19,6 +19,8 @@ tags:
 	- Preview changes that Terraform plans to make
 - `refresh`—reads current settings from all managed remote objects and updates state to match
 	- *Deprecated*
+- `show`—Outputs state or plan file in human-readable format
+	- By default, shows the current state
 - `state`—advanced state management. Sub-commands:
 	- `list`
 	- `mv`—bind a remote object to a different Terraform address

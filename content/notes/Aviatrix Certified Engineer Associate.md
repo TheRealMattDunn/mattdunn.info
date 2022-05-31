@@ -31,6 +31,11 @@ tags:
 - [GCP VPCs](notes/GCP%20VPCs.md)
 - [GCP Cloud Interconnect](notes/GCP%20Cloud%20Interconnect.md)
 
+### Oracle Cloud Infrastructure
+
+- [OCI Resource Hierarchy](notes/OCI%20Resource%20Hierarchy.md)
+- [OCI Virtual Cloud Networks (VCNs)](notes/OCI%20Virtual%20Cloud%20Networks%20(VCNs).md)
+
 ## Aviatrix
 
 - [Aviatrix Multi-Cloud Network Architecture (MCNA)](notes/Aviatrix%20Multi-Cloud%20Network%20Architecture%20(MCNA).md)
