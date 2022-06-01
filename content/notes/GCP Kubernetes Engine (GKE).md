@@ -1,5 +1,5 @@
 ---
-title: "GCP Kubernetes Engine"
+title: "GCP Kubernetes Engine (GKE)"
 date: "2022-02-16"
 tags:
 - gcp

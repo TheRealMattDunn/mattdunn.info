@@ -17,7 +17,7 @@ tags:
 ## Compute
 
 - [Compute Engine](notes/GCP%20Compute%20Engine.md)
-- [Kubernetes Engine (GKE)](notes/GCP%20Kubernetes%20Engine.md)
+- [Kubernetes Engine (GKE)](notes/GCP%20Kubernetes%20Engine%20(GKE).md)
 - [Anthos](notes/GCP%20Anthos.md)
 - [App Engine](notes/GCP%20App%20Engine.md)
 - [Cloud Run](notes/GCP%20Cloud%20Run.md)

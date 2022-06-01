@@ -55,7 +55,7 @@ tags:
 ### Compute
 
 - [Compute Engine](notes/GCP%20Compute%20Engine.md)
-- [Kubernetes Engine](notes/GCP%20Kubernetes%20Engine.md)
+- [Kubernetes Engine](notes/GCP%20Kubernetes%20Engine%20(GKE).md)
 - [App Engine](notes/GCP%20App%20Engine.md)
 
 ### Large Scale

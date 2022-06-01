@@ -38,7 +38,7 @@ tags:
 - Lease on DC about to expire
 - **Web-based customer-facing** applications
 	- Many already **containerized** to run on **Kubernetes**:
-		- *[Kubernetes Engine](notes/GCP%20Kubernetes%20Engine.md)*
+		- *[Kubernetes Engine](notes/GCP%20Kubernetes%20Engine%20(GKE).md)*
 		- *[Anthos](notes/GCP%20Anthos.md) for hybrid-cloud use cases, and to manage multiple clusters centrally*
 		- *Google Container Registry*
 - **SQL** and **noSQL** DBs:

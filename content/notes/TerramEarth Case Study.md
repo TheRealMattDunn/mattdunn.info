@@ -64,7 +64,7 @@ tags:
 	- *Cloud Build*
 	- *Container Registry*
 - **Container**-based apps
-	- *Cloud Run / [GKE](notes/GCP%20Kubernetes%20Engine.md)*
+	- *Cloud Run / [GKE](notes/GCP%20Kubernetes%20Engine%20(GKE).md)*
 	- *Prefer Cloud Run to App Engine*
 - Allow developers to run **experiments**
 	- Security

@@ -25,7 +25,7 @@ tags:
 		- [Operating Applications on Compute Engine](notes/Operating%20Applications%20on%20Compute%20Engine.md)
 	- [GCP Load Balancing](notes/GCP%20Load%20Balancing.md)
 	- [Kubernetes](notes/Kubernetes.md)
-	- [Kubernetes Engine](notes/GCP%20Kubernetes%20Engine.md)
+	- [Kubernetes Engine](notes/GCP%20Kubernetes%20Engine%20(GKE).md)
 	- [Kubernetes Patterns](notes/Kubernetes%20Patterns.md)
 	- [Pub/Sub](notes/GCP%20Pub%20Sub.md)
 	- [App Engine](notes/GCP%20App%20Engine.md)

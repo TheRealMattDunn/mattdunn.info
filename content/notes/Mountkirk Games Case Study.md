@@ -24,7 +24,7 @@ tags:
 	- **Multiple platforms** and **locations**
 	- Digital **real-time banner** displaying **global** leaderboard
 - Planned architecture:
-	- Plan to deploy backend to **[GKE](notes/GCP%20Kubernetes%20Engine.md)**
+	- Plan to deploy backend to **[GKE](notes/GCP%20Kubernetes%20Engine%20(GKE).md)**
 		- *Multiple regional clusters*
 		- *[Anthos](notes/GCP%20Anthos.md) for common config management and service mesh capabilities*
 		- *[Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)*

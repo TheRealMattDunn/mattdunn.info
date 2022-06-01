@@ -20,7 +20,7 @@ tags:
 - Enable private access only on control plane API
 - Create a private cluster (no external IP addresses)—use bastion host for access
 - Use Container-Optimized OS for nodes images—hardened OS
-- Use shielded [GKE](notes/GCP%20Kubernetes%20Engine.md) nodes—protects against node impersonation
+- Use shielded [GKE](notes/GCP%20Kubernetes%20Engine%20(GKE).md) nodes—protects against node impersonation
 - Enable GKE sandbox—protects against privilege escalation and unstrusted code from affecting the host kernel
 - Enforce network policies—ensure prod Pods can only communicate with allowed resources
 - Ensure audit logging is enabled—export logs to [BigQuery](notes/GCP%20BigQuery.md)
