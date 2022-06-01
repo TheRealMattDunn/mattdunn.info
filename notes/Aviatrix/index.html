@@ -1,8 +1,8 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Networking   Azure Virtual Networks (VNets)   Azure Virtual Network Gateways   Azure Transit Options   Management   Azure Resource Hierarchy   ">
-<title>Azure Services</title>
+<meta name=description content="Overview  Multi-account, multi-region, multi-cloud networking   AWS , GCP , Azure , OCI    HA—active-active End-to-end encryption—high performance, line speed encryption Multi-cloud repeatable architecture Multi-cloud network segmentation  e.">
+<title>Aviatrix</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=/icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.739d088fee85446f64945ea8d9fd17a4.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.e6b098e24e99d67b376a370aab41cf0f.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.252f8005a9df999b4de986245afc3f18.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.0aeae66052c6cb9e29324a85c4c14343.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -39,41 +39,53 @@
 </div>
 </header>
 <article>
-<h1>Azure Services</h1>
+<h1>Aviatrix</h1>
 <p class=meta>
 Last updated June 1, 2022
 </p>
 <ul class=tags>
 <li><a href=https://mattdunn.info/tags/moc/>Moc</a></li>
-<li><a href=https://mattdunn.info/tags/azure/>Azure</a></li>
+<li><a href=https://mattdunn.info/tags/aviatrix/>Aviatrix</a></li>
 </ul>
 <aside class=mainTOC>
 <h3>Table of Contents</h3>
 <nav id=TableOfContents>
 <ol>
-<li><a href=#networking>Networking</a></li>
-<li><a href=#management>Management</a></li>
+<li><a href=#overview>Overview</a></li>
 </ol>
 </nav>
 </aside>
-<h2 id=networking>Networking</h2>
+<h2 id=overview>Overview</h2>
+<ul>
+<li>Multi-account, multi-region, multi-cloud networking
 <ul>
 <li>
-<a href=/notes/Azure-Virtual-Networks-VNets rel=noopener class=internal-link data-src=/notes/Azure-Virtual-Networks-VNets>Azure Virtual Networks (VNets)
-</a></li>
-<li>
-<a href=/notes/Azure-Virtual-Network-Gateways rel=noopener class=internal-link data-src=/notes/Azure-Virtual-Network-Gateways>Azure Virtual Network Gateways
-</a></li>
-<li>
-<a href=/notes/Azure-Transit-Options rel=noopener class=internal-link data-src=/notes/Azure-Transit-Options>Azure Transit Options
+<a href=/notes/AWS rel=noopener class=internal-link data-src=/notes/AWS>AWS
+</a>,
+<a href=/notes/GCP rel=noopener class=internal-link data-src=/notes/GCP>GCP
+</a>,
+<a href=/notes/Azure rel=noopener class=internal-link data-src=/notes/Azure>Azure
+</a>,
+<a href=/notes/Oracle-Cloud-Infrastructure-OCI rel=noopener class=internal-link data-src=/notes/Oracle-Cloud-Infrastructure-OCI>OCI
 </a></li>
 </ul>
-<h2 id=management>Management</h2>
+</li>
+<li>HA—active-active</li>
+<li>End-to-end encryption—high performance, line speed encryption</li>
+<li>Multi-cloud repeatable architecture</li>
+<li>Multi-cloud network segmentation
 <ul>
-<li>
-<a href=/notes/Azure-Resource-Hierarchy rel=noopener class=internal-link data-src=/notes/Azure-Resource-Hierarchy>Azure Resource Hierarchy
-</a></li>
+<li>e.g. communications restricted between segments</li>
 </ul>
+</li>
+<li>Service insertion and chaining</li>
+<li>Operational visibility</li>
+<li>Secure cloud access</li>
+<li>Secure ingress and egress</li>
+<li>Cloud native</li>
+</ul>
+<p>
+<img src=/files/aviatrix_overview.svg alt=aviatrix_overview></p>
 </article>
 <hr>
 <div class=page-end>
@@ -81,7 +93,7 @@ Last updated June 1, 2022
 <h3>Backlinks</h3>
 <ul class=backlinks>
 <li>
-No backlinks found
+<a href=/notes/Aviatrix-Certified-Engineer-Associate>Aviatrix Certified Engineer Associate</a>
 </li>
 </ul>
 </div>
@@ -91,7 +103,7 @@ No backlinks found
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://mattdunn.info/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://mattdunn.info/notes/Azure-Services","https://mattdunn.info",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://mattdunn.info/notes/Aviatrix","https://mattdunn.info",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>
