@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.20ac9258c1f60b1d56c28874e8755958.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.036c929f7b9dcb9cd2e79afe52d24ea0.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.8af3adb5c3c7d62a19005f9d6ba20296.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.39f74e1db00267f5a9b49b6cbdc817ea.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -57,6 +57,7 @@ Last updated June 1, 2022
 <li><a href=#networking>Networking</a></li>
 <li><a href=#workload-identity>Workload Identity</a></li>
 <li><a href=#operations>Operations</a></li>
+<li><a href=#workload-rightsizing>Workload Rightsizing</a></li>
 </ol>
 </nav>
 </aside>
@@ -135,6 +136,37 @@ Last updated June 1, 2022
 <ul>
 <li>System metrics—low-level, e.g. CPU, memory</li>
 <li>Workload metrics—exposed by the workloads in the cluster</li>
+</ul>
+</li>
+</ul>
+<h2 id=workload-rightsizing>Workload Rightsizing</h2>
+<ul>
+<li>Allows applications running in GCP to be optimally sized for CPU and memory
+<ul>
+<li>Gives recommendations for resource request and limits</li>
+</ul>
+</li>
+<li>Use to reduce cost, and assess optimization opportunities</li>
+<li>Combine with Autopilot—priced on
+<a href=/notes/Pod rel=noopener class=internal-link data-src=/notes/Pod>Pod
+</a> resource requests
+<ul>
+<li>Changes directly reflected in bill</li>
+</ul>
+</li>
+<li>Suggestions based on observed usage patterns</li>
+<li>Recommendations presented in Cloud Console—or option to generate Kubernetes YAML manifest</li>
+<li>Metrics exposed in
+<a href=/notes/GCP-Cloud-Monitoring rel=noopener class=internal-link data-src=/notes/GCP-Cloud-Monitoring>Cloud Monitoring
+</a>—used to create custom reports, dashboards, alerts etc.
+<ul>
+<li><em>Recommended per replica request cores</em>—CPU</li>
+<li><em>Recommended per replica request bytes</em>—memory</li>
+</ul>
+</li>
+<li>Memory recommendations not supported for JVM-based workloads
+<ul>
+<li>Not possible due to JVM heap management</li>
 </ul>
 </li>
 </ul>
