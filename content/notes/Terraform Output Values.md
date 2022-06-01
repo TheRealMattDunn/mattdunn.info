@@ -25,5 +25,5 @@ output "ip_addr" {
 - `description`
 - `sensitive`
 - `depends_on`
-	- Dependencies that cannot be recogncies implicitly
+	- Dependencies that cannot be recognised implicitly
 	- Last resort

@@ -40,14 +40,14 @@ tags:
 | State               | On disk/remote backend               | In workspace    |
 | Credentials/secrets | Shell environment/entered at prompts | In workspace    |
 
-- Workspace stored: state versions, run history
+- Workspace stores: state versions, run history
 	- Audit trail, recovery
 - Best practice: split monolithic config into smaller workspaces
 	- e.g. networking, app tier etc.
 
 ## Remote State Management
 
-- Remove backend
+- Remote backend
 - State tied to workspace
 - Access state in other workspaces with `terraform_remote_state` data sources
 	- Workspace-to-workspace run triggers to update workspaces when dependencies change
@@ -77,7 +77,7 @@ tags:
 
 ### API-Driven Workflow
 
-- Workspaces no directly associated with VCP repo
+- Workspaces not directly associated with VCS repo
 	- No webhooks
 - External orchestration needed to trigger Terraform runs against the Terraform Cloud API—CI/CD pipeline
 - Code uploaded to Terraform Cloud as `tar.gz` file
@@ -89,4 +89,4 @@ tags:
 	- `apply`—only allowed for workspaces not linked to VCS (ensures single source of truth)
 - Integrates with existing CI/CD pipelines
 - Familiar to developers
-- Uses local config with remote workspace state and variables—allows preview of prod changes without need for credentials
+- Uses local config with remote workspace state and variables—allows preview of changes without need for credentials

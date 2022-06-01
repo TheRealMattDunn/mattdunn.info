@@ -28,7 +28,6 @@ tags:
 
 - Grouping of several distinct types
 - Requires schema definition
-
 - `object(<TYPE>)`
 	- Collection of named attributes with their own types
 	- e.g. `object({foo=string, hello=number})`

@@ -28,7 +28,7 @@ tags:
 	- `provider mirror`—saves local copies of all required provider plugins
 	- `provider schema`—shows detailed provider schemas
 - `refresh`—reads current settings from all managed remote objects and updates state to match
-	- *Deprecated*
+	- *Deprecated*—use `apply -refresh-only` instead
 - `show`—Outputs state or plan file in human-readable format
 	- By default, shows the current state
 - `state`—advanced state management. Sub-commands:
@@ -41,7 +41,7 @@ tags:
 	- `show`—display the attributes of a single resource in the state
 - `taint`—marks resources as tainted, i.e. damaged
 	- Terraform recreates on next apply
-	- *Deprecated*—use `terraform apply -replace <resource>` instead
+	- *Deprecated*—use `apply -replace <resource>` instead
 - `validate`—validates config files in the directory
 	- Doesn't access any remote services e.g. remote state, APIs, etc.
 	- Verifies configuration is syntatically valid and internally consistent

@@ -17,7 +17,7 @@ tags:
 
 ## Anti-Patterns
 
-### Pass Data into VMS
+### Pass Data into VMs
 
 - Instead: utilize e.g. `user_data` for AWS EC2, or `metadata` for GCP [Compute Engine](notes/GCP%20Compute%20Engine.md)
 
@@ -28,7 +28,7 @@ tags:
 
 ### Where First-Class Provider Support is Available
 
-- Also, make provisioner user as temporary workaround—support may eventually be available
+- Also, make provisioner use as temporary workaround—support may eventually be available
 	- Raise ticket with provider to support functionality
 
 ## Usage
