@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.8af3adb5c3c7d62a19005f9d6ba20296.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.39f74e1db00267f5a9b49b6cbdc817ea.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.52ee8cdda0a7567b473eacdd354abc6d.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.27fc782c27e34a0095c9753bfad88d72.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -60,7 +60,7 @@ Last updated June 1, 2022
 <h2 id=overview>Overview</h2>
 <ul>
 <li>Transform VM-based workloads to containers running in
-<a href=/notes/GCP-Kubernetes-Engine rel=noopener class=internal-link data-src=/notes/GCP-Kubernetes-Engine>Kubernetes Engine
+<a href=/notes/GCP-Kubernetes-Engine-GKE rel=noopener class=internal-link data-src=/notes/GCP-Kubernetes-Engine-GKE>Kubernetes Engine
 </a>, optionally on
 <a href=/notes/GCP-Anthos rel=noopener class=internal-link data-src=/notes/GCP-Anthos>Anthos
 </a></li>
@@ -79,7 +79,7 @@ Last updated June 1, 2022
 <a href=/notes/GCP-Anthos>GCP Anthos</a>
 </li>
 <li>
-<a href=/notes/GCP-Kubernetes-Engine>GCP Kubernetes Engine</a>
+<a href=/notes/GCP-Kubernetes-Engine-GKE>GCP Kubernetes Engine (GKE)</a>
 </li>
 </ul>
 </div>
