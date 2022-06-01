@@ -53,6 +53,21 @@ tags:
 	- System metrics—low-level, e.g. CPU, memory
 	- Workload metrics—exposed by the workloads in the cluster
 
+## Workload Rightsizing
+
+- Allows applications running in GCP to be optimally sized for CPU and memory
+	- Gives recommendations for resource request and limits
+- Use to reduce cost, and assess optimization opportunities
+- Combine with Autopilot—priced on [Pod](notes/Pod.md) resource requests
+	- Changes directly reflected in bill
+- Suggestions based on observed usage patterns
+- Recommendations presented in Cloud Console—or option to generate Kubernetes YAML manifest
+- Metrics exposed in [Cloud Monitoring](notes/GCP%20Cloud%20Monitoring.md)—used to create custom reports, dashboards, alerts etc.
+	- *Recommended per replica request cores*—CPU
+	- *Recommended per replica request bytes*—memory
+- Memory recommendations not supported for JVM-based workloads
+	- Not possible due to JVM heap management
+
 # References
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
