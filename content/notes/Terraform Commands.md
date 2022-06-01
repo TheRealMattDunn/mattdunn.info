@@ -18,7 +18,10 @@ tags:
 - `graph`—produces a representation of the dependency graph is the DOT language
 	- Use e.g. GraphViz to read
 - `import`—imports existing remote objects into the state
-- `init`—initializes a working directory containing Terraform config files.
+- `init`—initializes a working directory containing Terraform config files
+- `login`—authenticates with Terraform cloud
+	- The only way to authenticate with Terraform cloud
+	- Triggers a browser window, from which a login token can be obtained
 - `plan`—creates an execution plan
 	- Preview changes that Terraform plans to make
 - `provider`—prints tree of modules annotated with provider requirements
@@ -47,7 +50,7 @@ tags:
 	- Create a new workspace with `workspace new <workspace name>`
 	- Switch workspace with `workspace select <workspace name>`
 	- Allows multiple states to be associated with a single configuration
-	- "default" workspace
+	- "default" workspace—can't be deleted
 	- Refer to the workspace name in config with `${terraform.workspace}`
 	- Use cases:
 		- Create temporary test infrastructure aside from production

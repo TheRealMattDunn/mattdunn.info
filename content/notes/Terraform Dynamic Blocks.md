@@ -27,3 +27,22 @@ resource "foo" "example" {
   }
 }
 ```
+
+- Can specify an iterator name—defaults to the name of the dynamic block:
+
+```
+resource "foo" "example" {
+  #...
+
+  dynamic "settings" {
+    for_each = var.settings
+    iterator = "bar"
+
+    content {
+      name = bar.value["name"]
+
+      #...
+    }
+  }
+}
+```
