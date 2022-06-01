@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.20ac9258c1f60b1d56c28874e8755958.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.4be0cdcb928b3fe9ca2fe798f5ff1ce5.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.20ac9258c1f60b1d56c28874e8755958.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.036c929f7b9dcb9cd2e79afe52d24ea0.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -74,9 +74,7 @@
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Terraform-File-and-Workspace-Information/>Terraform File and Workspace Information</a></h3>
-<p>Constants path.module—filesystem path of the containing module
-path.root—filesystem path of the root module
-path.cwd—path of the current working directory....</p>
+<p>Constants path.module—filesystem path of the containing module path.root—filesystem path of the root module path.cwd—path of the current working directory. Generally equal to path....</p>
 </div>
 <p class=meta>
 1 minute read. Last updated June 1, 2022
@@ -96,7 +94,7 @@ path.cwd—path of the current working directory....</p>
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Terraform-Types/>Terraform Types</a></h3>
-<p>Primitive Types string number—represents integers and floating point bool Collections list(&lt;TYPE>) Ordered Elements identified by index starting with 0 map(&lt;TYPE>) Key/value pairs—separate with : or = Delimit with newlines or commas set(&lt;TYPE>) Collection of unique values unordered Structural Types Grouping of several distinct types...</p>
+<p>Primitive Types string number—represents integers and floating point bool Collections list(&lt;TYPE>) Ordered Elements identified by index starting with 0 map(&lt;TYPE>) Key/value pairs—separate with : or = Delimit with newlines or commas set(&lt;TYPE>) Collection of unique values unordered Structural Types Grouping of several distinct types Requires schema definition object(&lt;TYPE>) Collection of named attributes with their own types e....</p>
 </div>
 <p class=meta>
 1 minute read. Last updated June 1, 2022

@@ -1,9 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Constants   path.module—filesystem path of the containing module
-  path.root—filesystem path of the root module
-  path.cwd—path of the current working directory.">
+<meta name=description content="Constants  path.module—filesystem path of the containing module path.root—filesystem path of the root module path.cwd—path of the current working directory. Generally equal to path.">
 <title>Terraform File and Workspace Information</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=/icon.png>
@@ -14,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.20ac9258c1f60b1d56c28874e8755958.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.4be0cdcb928b3fe9ca2fe798f5ff1ce5.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.20ac9258c1f60b1d56c28874e8755958.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.036c929f7b9dcb9cd2e79afe52d24ea0.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -59,20 +57,11 @@ Last updated June 1, 2022
 </aside>
 <h2 id=constants>Constants</h2>
 <ul>
-<li>
-<p><code>path.module</code>—filesystem path of the containing module</p>
-</li>
-<li>
-<p><code>path.root</code>—filesystem path of the root module</p>
-</li>
-<li>
-<p><code>path.cwd</code>—path of the current working directory. Generally equal to <code>path.root</code>, unless Terraform is run from a different directory</p>
-</li>
-<li>
-<p><code>terraform.workspace</code>—name of the current workspace</p>
-</li>
-<li>
-<p>Recommendation: use only <code>path.module</code> within modules, the others only in the rool module</p>
+<li><code>path.module</code>—filesystem path of the containing module</li>
+<li><code>path.root</code>—filesystem path of the root module</li>
+<li><code>path.cwd</code>—path of the current working directory. Generally equal to <code>path.root</code>, unless Terraform is run from a different directory</li>
+<li><code>terraform.workspace</code>—name of the current workspace</li>
+<li>Recommendation: use only <code>path.module</code> within modules, the others only in the rool module
 <ul>
 <li>Aids portability of modules</li>
 </ul>
