@@ -38,4 +38,5 @@ tags:
 
 ## Aviatrix
 
+- [Aviatrix features](notes/Aviatrix.md)
 - [Aviatrix Multi-Cloud Network Architecture (MCNA)](notes/Aviatrix%20Multi-Cloud%20Network%20Architecture%20(MCNA).md)

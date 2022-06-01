@@ -1,5 +1,5 @@
 ---
-title: "Oracle Cloud Infrastructure Services"
+title: "Oracle Cloud Infrastructure (OCI)"
 date: "2022-05-31"
 tags:
 - oci

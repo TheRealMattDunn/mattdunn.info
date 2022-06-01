@@ -1,5 +1,5 @@
 ---
-title: "AWS Services"
+title: "AWS"
 date: "2022-02-23"
 tags:
 - moc

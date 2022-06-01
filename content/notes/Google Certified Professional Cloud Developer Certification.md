@@ -13,7 +13,7 @@ tags:
 - [The Twelve Factor App](notes/The%20Twelve%20Factor%20App.md)
 - [Message Buses](notes/Message%20Buses.md)
 - [SQL Joins](notes/SQL%20Joins.md)
-- [GCP Services](notes/GCP%20Services.md)
+- [GCP services](notes/GCP.md)
 	- [Cloud IAM](notes/GCP%20Cloud%20IAM.md)
 	- [Cloud Storage](notes/GCP%20Cloud%20Storage.md)
 	- [Cloud SQL](notes/GCP%20Cloud%20SQL.md)

@@ -1,5 +1,5 @@
 ---
-title: "Azure Services"
+title: "Azure"
 date: "2022-05-30"
 tags:
 - moc
