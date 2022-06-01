@@ -14,7 +14,7 @@ tags:
 
 - Internet Gateway (IGW)—allows internet access from a VPC
 - NAT Gateway (NATGW)—provides internet access to EC2 instances in private subnets, outbound only
-- [Transit Gateway (TGW)](notes/Transit%20Gateway%20(TGW).md)—Provides hub and spoke connectivity for VPCs
+- [Transit Gateway (TGW)](notes/AWS%20Transit%20Gateway%20(TGW).md)—Provides hub and spoke connectivity for VPCs
 - Virtual Private Gateway (VGW)—Connects site-to-site VPN tunnels to a VPC
 - Direct Connect Gateway (DXGW)—Connect global VPCs to Direct Connect
 - Customer Gateway (CGW)—On-prem router equipment, connects with VGW, TGW or DXGW

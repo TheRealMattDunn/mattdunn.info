@@ -1,5 +1,5 @@
 ---
-title: "Transit Gateway (TGW)"
+title: "AWS Transit Gateway (TGW)"
 date: "2022-05-27"
 tags:
 - aws
