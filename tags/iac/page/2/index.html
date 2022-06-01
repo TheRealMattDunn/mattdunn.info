@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.20ac9258c1f60b1d56c28874e8755958.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.603948097aeb23032959bfb551bab1a0.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.20ac9258c1f60b1d56c28874e8755958.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.4be0cdcb928b3fe9ca2fe798f5ff1ce5.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -47,7 +47,7 @@
 <p>Overview Declared in variable blocks Arguments: default Causes variable to be optional. If omitted, value is set to the default argument type string number bool Complex types: list(&lt;TYPE>), set(&lt;TYPE>), map(&lt;TYPE>), object({&lt;ATTR_NAME> = &lt;TYPE>, ....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 31, 2022
+1 minute read. Last updated June 1, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -57,7 +57,7 @@
 <p>Overview Define where Terraform State snapshots are stored. Options: Local (default)—stored on local filesystem Remote—e.g. AWS S3, GCP Cloud Storage Terraform Cloud Configuration 1 2 3 4 5 terraform { backend "remote" { organisation = "example" } } Not every argument required in backend config—partial configuration Supply remaining arguments by: File—supply configuration file (name: *....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 31, 2022
+1 minute read. Last updated June 1, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -67,7 +67,7 @@
 <p>Commands apply—executes the actions proposed in a Terraform plan Default parallelism of 10 concurrent operations destroy—destroys all remote objects managed by the config Convenience alias to terraform apply -destroy fmt—rewrites config files to canonical Terraform format/style Also flags syntax errors force-unlock—manually unlock the state where automatic unlocking fails graph—produces a representation of the dependency graph is the DOT language Use e....</p>
 </div>
 <p class=meta>
-2 minute read. Last updated May 31, 2022
+2 minute read. Last updated June 1, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +77,7 @@
 <p>Enable Debug Logging Set env var TF_LOG to TRACE, DEBUG, INFO, WARN or ERROR Also TF_LOG_CORE (core Terraform debug logs), TF_LOG_PROVIDER (provider logs) TF_LOG_PATH—append logs to a file </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 31, 2022
+1 minute read. Last updated June 1, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +87,7 @@
 <p>Overview Provisioners model actions on the local or remote machines Prepare infrastructure for service Should be used as a last resort For actions not directly represented in Terraform Create-time or destroy-time—cannot be used to perform actions on existing resources Resource must be destroyed and recreated Anti-Patterns Pass Data into VMS Instead: utilize e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 31, 2022
+1 minute read. Last updated June 1, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -98,7 +98,7 @@
 cloud—configures Terraform Cloud backend—configures the Terraform state backends required_version—constrains the Terraform version Constraints of all child modules must also be satisfied required_providers—specifies providers required by the module Includes address and version constraint </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 31, 2022
+1 minute read. Last updated June 1, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -108,7 +108,7 @@ cloud—configures Terraform Cloud backend—configures the Terraform state back
 <p>Core Infrastructure as Code (IAC) Commands Settings State Backends Providers Vault Provider Modules Variables Output Values Provisioners Debug Logs Types Resources Data Sources File and Workspace Information Dynamic Blocks Terraform Cloud Terraform Cloud Sentinel </p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 31, 2022
+1 minute read. Last updated June 1, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -118,7 +118,7 @@ cloud—configures Terraform Cloud backend—configures the Terraform state back
 <p>Overview Allow Terraform to interact with cloud providers, SaaS providers and other APIs Must declare which providers will be used in the config So Terraform can install Configuration Belong in root module Child modules receive config from root module Can use expressions in config arguments, but values must be known at apply-time (e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated May 31, 2022
+1 minute read. Last updated June 1, 2022
 </p>
 </div>
 </li></ul>
