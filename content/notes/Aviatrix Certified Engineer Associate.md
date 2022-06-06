@@ -36,7 +36,8 @@ tags:
 - [OCI Resource Hierarchy](notes/OCI%20Resource%20Hierarchy.md)
 - [OCI Virtual Cloud Networks (VCNs)](notes/OCI%20Virtual%20Cloud%20Networks%20(VCNs).md)
 
-## Aviatrix
+### Aviatrix
 
 - [Aviatrix features](notes/Aviatrix.md)
 - [Aviatrix Multi-Cloud Network Architecture (MCNA)](notes/Aviatrix%20Multi-Cloud%20Network%20Architecture%20(MCNA).md)
+- [Cloud Transit Solutions](notes/Cloud%20Transit%20Solutions.md)
