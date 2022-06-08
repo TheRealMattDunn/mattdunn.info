@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.8fcd15efbd6322972f9d807bbcd952cb.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.24713af396d4b61f7dc1b4ae78add675.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.b0efb333b39d284767b20aa0cb2dc2de.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.5f89360f472f45353a0239f578dc541f.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -47,7 +47,7 @@
 <p>Overview VCNs regional Subnets—can be regional, or scoped to individual Availability Domains (ADs) Example Firewalls Security Lists Legacy Virtual firewalls for compute instances Set of ingress and egress rules applied to all VNICs in a subnet Network Security Groups (NSGs) More granular configuration than Security Lists Applied to specific VNICs—firewall rules apply only to resources within NSG Gateways Dynamic Routing Gateway Transit hub entity Interconnect VCNs within a region Terminates IPSec VPNs and FastConnect circuits Service Gateway Allows access to supported Oracle services in the same region as the VCN Internet Gateway Provides a path for the network traffic between the VCN and the internet NAT Gateways Allows resources in private subnets to access the internet Dynamic Routing Gateway (DRG) Hub gateway—up to 300 attachments Four attachment types: VCN attachments Remote Peering Connection (RPC) attachments (DRG peering) IPSec attachments FastConnect attachments FastConnect Private circuit connection to on-prem Two types: Private peering—access to VCN resources using private IPs Public peering—access to public OCI services or public IPs in public subnets </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -57,7 +57,7 @@
 <p>VPN Gateway Connect on-prem to VNet via public internet Must be deployed in a Gateway Subnet Express Route Gateway Dedicated connection to VNet—private leased line </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -67,7 +67,7 @@
 <p>Overview Virtual Networks, AKA VNets Network Security Groups—implement firewall capabilities Instances with public IPs can automatically communicate with the internet—no need for e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +77,7 @@
 <p>Overview Hub and spoke connectivity for VPCs Default any-to-any communication Need to manage: VPC route tables TGW route tables VPC attachments Route table associations Route propagation Challenges 20 CIDR limit to advertise to on-prem DC 100 CIDR limit to advertise to on-prem AWS from on-prem Manual route table management No intra-region TGW peering Limited to inter-region peering support Each region—island No overlapping CIDR support Limited visibility No ping, traceroute, telnet etc....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +87,7 @@
 <p>Example VPC Architecture Gateways Internet Gateway (IGW)—allows internet access from a VPC NAT Gateway (NATGW)—provides internet access to EC2 instances in private subnets, outbound only Transit Gateway (TGW) —Provides hub and spoke connectivity for VPCs Virtual Private Gateway (VGW)—Connects site-to-site VPN tunnels to a VPC Direct Connect Gateway (DXGW)—Connect global VPCs to Direct Connect Customer Gateway (CGW)—On-prem router equipment, connects with VGW, TGW or DXGW VPC Peering VPC-to-VPC communication Non-transitive Full mesh required for any-to-any connectivity Downsides: Difficult to manage firewall Unmanageable at high scale—125 peer limit </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -97,7 +97,7 @@
 <p>Overview Managed network address translation service Allows resources without external IP addresses to create outbound connections to the internet VPC and region specific—need a Cloud NAT per VPC and per region </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -107,7 +107,7 @@
 <p>Overview Extend on-prem network to GCP VPC Dedicated Interconnect Partner Interconnect Direct physical connection to GCP Connect via intermediary High bandwidth needs Lower bandwidth needs 10 Gbps or 100 Gbps circuits Depends on partner capabilities 50 Mbps – 50 Gbps capacities 50 Mbps – 50 Gbps capacities Traffic not encrypted (application layer optional) Traffic not encrypted (application layer optional) Cloud VPN not supported Cloud VPN not supported </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -117,7 +117,7 @@
 <p>Overview Dynamic routing Supports: Cloud VPN Dedicated Interconnect Links external network to VPC via BGP Automatically learns subnets in VPC—announces to on-prem network Works with router appliances for high performance </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -127,7 +127,7 @@
 <p>Overview Traffic encrypted between client and GCP by IPsec gateways Static IP required—dynamic &ldquo;dial-in&rdquo; connections not supported Best practices: Keep Cloud VPN in its own project Use dynamic routing and BGP Apply secure firewall rules Use strong pre-shared keys </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -137,7 +137,7 @@
 <p>Overview Serve content closer to users Suitable for frequently accessed data Works with external HTTP(S) load balancers HTTP caching—controlled with cache control header, or automatic caching of static content Sources: Instance groups Zonal NEGs Serverless NEGs (e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li></ul>

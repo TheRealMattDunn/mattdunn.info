@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.8fcd15efbd6322972f9d807bbcd952cb.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.24713af396d4b61f7dc1b4ae78add675.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.b0efb333b39d284767b20aa0cb2dc2de.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.5f89360f472f45353a0239f578dc541f.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,11 +43,21 @@
 <ul class=section-ul><li class=section-li>
 <div class=section>
 <div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-Cloud-Logging/>GCP Cloud Logging</a></h3>
+<p>Overview Store, view and interact with logs Export logs Create metrics from logs Log Categories Security logs Audit logs Access Transparency logs—log Google access to services Non-security logs User logs Platform logs VPC flow logs Firewall logs Always enabled No charge 400 day retention Manually enabled Charged based on volume 30 day retention Audit Logs What/what did what Admin activity logs User initiated resource configuration e....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated June 8, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
 <h3><a href=https://mattdunn.info/notes/GCP-Cloud-Monitoring/>GCP Cloud Monitoring</a></h3>
 <p>Overview Collects and visualizes metrics from GCP resources—how well are resources performing? Track SLOs and SLAs Alerting—identify issues as they happen Metrics Scopes Previously known as workspaces Host for monitored projects—multiple projects can be monitored in a Metric Scope, but a project can only be in one Metric Scope Best practice: create a central Metric Scope project—single pane of glass for all projects Monitoring Agents Required for monitoring of Compute Engine and AWS EC2 instances—most monitoring is baked into the GCP services More detailed and granular metrics Can gather metrics from 3rd party apps, e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -57,7 +67,7 @@
 <p>Overview Managed network address translation service Allows resources without external IP addresses to create outbound connections to the internet VPC and region specific—need a Cloud NAT per VPC and per region </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -67,7 +77,7 @@
 <p>Overview Gather data to make applications more efficient Agent-based—low impact Analyses CPU/memory intensive functions Improve performance and reduce costs 30 day retention of profiles Profiles exportable Available for Compute Engine , App Engine , Kubernetes Engine and Dataproc External apps available via agent </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +87,7 @@
 <p>Overview Customer Managed Encryption Keys (CMEK) Key created and managed with Cloud KMS Assigned to resource Alternative to Google managed keys Not necessarily more secure: Incurs more costs than Google managed Can control lifecycle of keys Customer Supplied Encryption Keys (CSEK) Customer specifies contents of key material Keys stored on-prem, or in external service Compatibale with Cloud Storage and Compute Engine </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +97,7 @@
 <p>Compute Services Decision Tree Storage Databases Load Balancing External Internal Big Data Key Management </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -97,7 +107,7 @@
 <p>Introduction Framework for organizations to migrate to the cloud Agnostic of cloud provider Formed of four themes, and three phases Cloud maturity scale allows for measurement of progress Predefined epics serve as a starting point for adoption of the framework Themes Learn What is the quality and scale of learning programmes?...</p>
 </div>
 <p class=meta>
-2 minute read. Last updated June 6, 2022
+2 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -107,7 +117,7 @@
 <p>Overview DDoS protection WAF Automatically enabled for HTTP(S), SSL Proxy and TCP Proxy load balancers Mitigates OWASP&rsquo;s top 10 list, e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -117,7 +127,7 @@
 <p>Overview Protect sensitive data Inspection, classification, de-idenitifcation of data 150+ data detectors—PII Inputs: Data strams Structured text Cloud Storage files BigQuery Images Export to CSCC , Data Catalog or external SIEMs </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -127,17 +137,7 @@
 <p>Overview Cloud External Key Manager Keys from external key management partners Works only with services which support customer managed encryption keys (CMEKs), e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 6, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/GCP-Cloud-HSM/>GCP Cloud HSM</a></h3>
-<p>Overview Hardware security modules Hosts keys and performs actions in a cluster of FIPS 140-2 level 3 certified devices Compliance with hardware requirements Keys bound to region—support for multi-region Keys non-exportable Tamper resistant, with evidence of tamper Horizontal autoscaling </p>
-</div>
-<p class=meta>
-1 minute read. Last updated June 6, 2022
+1 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li></ul>
