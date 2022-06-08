@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.9ce19034ec7f505206910c1d4b063b40.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.1e86e316efbebaf6d785cf78b030fe50.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.c164ee90c6ca7b6e8da6a7d8709f7489.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.10fa46c7f7cef7df47969cd1e2c4bc11.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,57 +41,6 @@
 <article>
 <h1>All Notes</h1>
 <ul class=section-ul><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/The-Path-to-Cloud-Native/>The Path to Cloud Native</a></h3>
-<p> References Ibryam, B and Huß, R (2019), Kubernetes Patterns, O&rsquo;Reilly </p>
-</div>
-<p class=meta>
-1 minute read. Last updated June 8, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Predictable-Demands-Pattern/>Predictable Demands Pattern</a></h3>
-<p>Introduction Kubernetes containers contain logic written in different languages—each with different resource requirements The developer is best placed to know these requirements—from testing Solution Knowing resource requirements up-front allows: Kubernetes to intelligently make decisions on Pod placement—more efficient hardware utilization Capacity planning—more cost-effective environments Runtime Dependencies File storage Container storage is ephemeral Kubernetes offers Pod-level storage which can survive restarts Kubernetes Volumes: emptyDir—ephemeral to Pod PersistentVolume—long-lived Type of required volume affects Pod placement—Pod might not be scheduled if no node available Configuration e....</p>
-</div>
-<p class=meta>
-2 minute read. Last updated June 8, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Kubernetes-Patterns/>Kubernetes Patterns</a></h3>
-<p>Design Patterns Foundational Predictable Demands Health Probe Predictable Demands Automated Placement Structural Init Container Sidecar Behavioural Batch Job Stateful Service Service Discovery Higher Level Controller Operator References Ibryam, B and Huß, R (2019), Kubernetes Patterns, O&rsquo;Reilly </p>
-</div>
-<p class=meta>
-1 minute read. Last updated June 8, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Benefits-of-Containers/>Benefits of Containers</a></h3>
-<p>Containers Method of packaging applications and all dependencies Portable Lightweight—doesn&rsquo;t contain entire OS Standardized format VM Downsides Generally an application per VM: bleeding over of dependencies—different apps need different versions of same library Complicated rollout Underutilized hardware—resources required for OS Container Upsides Optimize infrastructure—bin-packing of applications Optimize licence costs—multiple applications per VM/OS Scalabilty Portability Agility Customers want to leverage same tech on cloud as on-prem—familiarity Container Candidates Good Candidates Web/logic tiers LAMP, WordPress J2EE middleware—WebSphere, Tomcat, JBoss Low duty-cycle and burst workloads Windows services, console apps Batch jobs Candidates Requiring Investigation Dependency on specialized hardware—e....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated June 8, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/The-Twelve-Factor-App/>The Twelve Factor Appp</a></h3>
-<p>Codebase Single codebase, many deployments
-One-to-one relationship between codebase and app Dependencies Explicitly declare and isolate dependencies...</p>
-</div>
-<p class=meta>
-3 minute read. Last updated June 8, 2022
-</p>
-</div>
-</li><li class=section-li>
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Microservices/>Microservices</a></h3>
@@ -139,6 +88,56 @@ One-to-one relationship between codebase and app Dependencies Explicitly declare
 </div>
 <p class=meta>
 1 minute read. Last updated June 8, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Pod-Lifecycle/>Pod Lifecycle</a></h3>
+<p>Lifecycle Diagram Common Errors ErrImagePull—the container image could not be retrieved from the registry (perhaps incorrect tag?) ImagePullBackOff—unable to pull the image from the registry....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated June 8, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-Cloud-Endpoints/>GCP Cloud Endpoints</a></h3>
+<p>Overview Container-based Extensible Service Proxy (ESP) Deployed as sidecar NGINX or Envoy-based NGINX-based ESP Envoy-based ESP </p>
+</div>
+<p class=meta>
+1 minute read. Last updated June 8, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-API-Gateway/>GCP API Gateway</a></h3>
+<p>Overview Serverless backends only Authorisation and rate limiting part of OpenAPI spec </p>
+</div>
+<p class=meta>
+1 minute read. Last updated June 8, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/HipLocal-Case-Study/>HipLocal Case Study</a></h3>
+<p>Non-italicised points represent notes taken from Google&rsquo;s official case study documentation, with keywords highlighted in bold. Points in italics represent additional insights and possible solutions....</p>
+</div>
+<p class=meta>
+2 minute read. Last updated June 8, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/SQL-Joins/>SQL Joins</a></h3>
+<p>Example Data 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 select * from TableA; id ---- 1 2 3 4 5 6 7 8 (8 rows) select * from TableB; id ---- 1 2 3 4 5 9 10 11 (8 rows) Inner Join Combines columns, keeping values common to both tables only....</p>
+</div>
+<p class=meta>
+3 minute read. Last updated June 8, 2022
 </p>
 </div>
 </li></ul>

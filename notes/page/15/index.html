@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.9ce19034ec7f505206910c1d4b063b40.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.1e86e316efbebaf6d785cf78b030fe50.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.c164ee90c6ca7b6e8da6a7d8709f7489.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.10fa46c7f7cef7df47969cd1e2c4bc11.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,56 +41,6 @@
 <article>
 <h1>All Notes</h1>
 <ul class=section-ul><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/GCP-Kubernetes-Engine-GKE/>GCP Kubernetes Engine (GKE)</a></h3>
-<p>Overview Managed Kubernetes clusters Two modes: Standard—total control Autopilot—fully managed Auto-repair and upgrade Autoscaling Containerize legacy apps and migrate using Migrate for Anthos and GKE Clusters At least one control plane and multiple worker nodes Zonal—one control plane node Regional—multiple control plane nodes Can&rsquo;t switch from regional to zonal (or vice versa) once cluster is created Private clusters—VPC native, internal IPs only For HA use multi-zonal node pools Networking Routing options: Routes-based Custom static routes VPC-native Alias IP ranges Scale better Needed for private clusters Pods routable within cluster&rsquo;s VPC, and other networks connected via VPC peering Also generally routable from on-prem via VPN/Interconnect Pod IP addresses reserved before Pods created in the cluster—prevents conflicts Don&rsquo;t consume custom routes quota Can apply firewall rules to Pod IPs Workload Identity Links Kubernetes Service Accounts with GCP Service Accounts—allows access to other GCP resources from within the cluster Operations Integrated with Cloud Monitoring and Cloud Logging Metrics: System metrics—low-level, e....</p>
-</div>
-<p class=meta>
-2 minute read. Last updated June 8, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/GCP-IoT-Core/>GCP IoT Core</a></h3>
-<p>Overview Fully managed—connect, manage, ingest device data Global Device Manager Identity Authentication Configuration Control Protocol Bridge Incoming telemetry data to Pub/Sub HTTPS or MQTT Two-way comms Updates on and offline </p>
-</div>
-<p class=meta>
-1 minute read. Last updated June 8, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/GCP-Dataproc/>GCP Dataproc</a></h3>
-<p>Overview Map/Reduce—Apache Spark and Hadoop Backed by Zonal VMs Can use preemptible VMs—reduce cost One VM must be non-preemptible References GCP Decision Trees </p>
-</div>
-<p class=meta>
-1 minute read. Last updated June 8, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/GCP-Dataprep/>GCP Dataprep</a></h3>
-<p>Overview Explore, clean, prepare for analysis and ML Can detect schemas—data types, joins, anomalies Prediction of next transformation Transformation functions, e....</p>
-</div>
-<p class=meta>
-1 minute read. Last updated June 8, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/GCP-Dataflow/>GCP Dataflow</a></h3>
-<p>Overview Streaming analytics service Transform and enrich data in stream and batch modes with a single model Serverless—managed service, horizontal scaling Apache Beam-based Open source Beam SDK—Java, Python, Go (not currently supported) Dataflow is the backend for the Beam API References GCP Decision Trees </p>
-</div>
-<p class=meta>
-1 minute read. Last updated June 8, 2022
-</p>
-</div>
-</li><li class=section-li>
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/GCP-Compute-Engine/>GCP Compute Engine</a></h3>
@@ -135,6 +85,56 @@
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/GCP-BigQuery/>GCP BigQuery</a></h3>
 <p>Overview Data warehouse SQL queries Serverless Multi-regional SQL column store Terabytes to petabytes ML and BI Public datasets available Real-time analytics Automatic replication, 7 day storage of changes BigQuery Slots Up-front purchase of processing capacity Flat-rate pricing Useful for CapEx optimization model Cloud Monitoring —e....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated June 8, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-App-Engine/>GCP App Engine</a></h3>
+<p>Overview PaaS serverless Regional No server management/config Comes in two flavours: App Engine Standard—first generation App Engine Flexible—second generation App Engine Standard Instantaneous scale-up Scales down to zero—15 minute scale down period (paid for) Runtimes: Python 3 Java 11 Node....</p>
+</div>
+<p class=meta>
+1 minute read. Last updated June 8, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/AI-ML-Lifecycle/>GCP AI ML Services</a></h3>
+<p>The AI/ML Lifecycle </p>
+</div>
+<p class=meta>
+1 minute read. Last updated June 8, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/GCP-Load-Balancing/>GCP Load Balancing</a></h3>
+<p>Overview Software defined No hardware—reacts instantly, handles spikes with no warm-up Layer 4 and layer 7 Integrates with Cloud CDN Regional Load Balancing IPv4 Health checks Session affinity Backends in one region Compliance use case—traffic stays within region Global Load Balancing IPv4 and IPv6 Multi-region failover Connects clients to closest region for lower latency Backends distributed across regions HTTP(S) Load Balancer Backends Backend Config Content Type Backend Types Backend service Dynamic Unmanaged instance groupsManaged instance groupsNetwork Endpoint Groups Backend bucket Static Cloud Storage buckets References GCP Decision Trees </p>
+</div>
+<p class=meta>
+1 minute read. Last updated June 8, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/StatefulSet/>StatefulSet</a></h3>
+<p>Overview Each Pod receives and unique ID and hostname Stateful data stored in a PVC associated with each instance </p>
+</div>
+<p class=meta>
+1 minute read. Last updated June 8, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Pod/>Pod</a></h3>
+<p>Overview Fundamental Kubernetes workload abstraction Groups of containers Requests and Limits Specify requests and limits for each container in the Pod, e....</p>
 </div>
 <p class=meta>
 1 minute read. Last updated June 8, 2022
