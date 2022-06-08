@@ -7,6 +7,15 @@ date: "2022-02-08"
 
 Welcome to mattdunn.info! This site serves as a repository for my learning notes, which, beginning in January 2022, I am attempting to write using the [Zettelkasten method](https://en.wikipedia.org/wiki/Zettelkasten).
 
+## Key Landing Pages
+
+- [Conferences](notes/Conferences.md)
+- [GCP](notes/GCP.md)
+- [AWS](notes/AWS.md)
+- [Terraform](notes/Terraform.md)
+- [Vault](notes/Vault.md)
+- [Aviatrix](notes/Aviatrix.md)
+
 ## What I'm Learning
 
 - 2022-05-27 – [Aviatrix Certified Engineer Associate](notes/Aviatrix%20Certified%20Engineer%20Associate.md)
