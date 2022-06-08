@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.f630eaae8ed0ed33cecca882bd9acc4b.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.f48066be655f869fb73edfff923ff3c4.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.9ce19034ec7f505206910c1d4b063b40.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.1e86e316efbebaf6d785cf78b030fe50.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -41,16 +41,6 @@
 <article>
 <h1>All Notes</h1>
 <ul class=section-ul><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Azure-Resource-Hierarchy/>Azure Resource Hierarchy</a></h3>
-<p>Overview AD Tenant Top level organization Dedicated instance of Azure AD Subscription Billing container for resources Resources isolated between subscriptions Resource Group Container for related resources Common management Example </p>
-</div>
-<p class=meta>
-1 minute read. Last updated June 8, 2022
-</p>
-</div>
-</li><li class=section-li>
 <div class=section>
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/Azure/>Azure</a></h3>
@@ -125,6 +115,16 @@
 <div class=desc>
 <h3><a href=https://mattdunn.info/notes/IBM-Power-Systems-for-Google-Cloud/>IBM Power Systems for Google Cloud</a></h3>
 <p>Overview IaaS for IBM PowerVM based virtual machines (LPARs) Integrated offering Consume 3rd party service (i.e. IBM Power) as though GCP native 4 areas: Billing—integrated through GCP marketplace User experience—like interacting with Google infrastructure Networking—low latency, HA, secure connection to IBM infrastructure (never over internet, private IP space) Support—tier 1 support from Google, with escalation to IBM (critical workloads) IBM runs infrastructure—customer responsible for OS upwards Monthly subscription T-shirt sizing—can change plans Billing prorated for partial months Access to GCP services from within LPARs Power9-based servers Same infra as used in usual on-prem deployments—by design Management OpenAPI interface—running on GKE in IBM-owned VPC Web console—developed by IBM, similar look/feel to GCP Compute Engine UI CLI tool—pcloud developed by IBM, similiar look/feel to gcloud Networking Customer VPC peered to IBM owned VPC IBM VPC handles Dedicated Interconnect to IBM data center containing Power hardware RFC1918 address space—no connectivity to IBM hardware from internet without going via customer VPC References Official Documentation Introducing IBM Power Systems for Google Cloud (Cloud Next &lsquo;19) </p>
+</div>
+<p class=meta>
+1 minute read. Last updated June 8, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Platform9-Managed-Kubernetes/>Platform9 Managed Kubernetes</a></h3>
+<p>Overview PMK SaaS On-prem, public cloud, edge 99.9% SLA—across all deplopyment targets, including public cloud Deploy &lt; 5 min Scale on demand Remote 24/7 monitoring—troubleshoot and repair Tech Stack Load balancer—MetalLB Monitoring—Prometheus, Fluentd etcd—optional backups Multi-tenancy—implemented via Keystone Knative—self install Istio—self install Multi-cluster ingress—self install (CloudFlare suggested) Deployment Targets BareOS Physical/VMs with supported Linux version Not VMware—pre-built image available Networking not managed by PMK AWS and Azure Native PMK clusters—running on EC2/VMs EKS/AKS cluster import—subset of features Native—can set up VPC, subnets, Security Groups etc....</p>
 </div>
 <p class=meta>
 1 minute read. Last updated June 8, 2022
