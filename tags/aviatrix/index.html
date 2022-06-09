@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.c164ee90c6ca7b6e8da6a7d8709f7489.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.10fa46c7f7cef7df47969cd1e2c4bc11.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.8fce40f4b28361878dbc8778935c3471.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.e37b2db5174525613f675e8df483b798.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -43,11 +43,31 @@
 <ul class=section-ul><li class=section-li>
 <div class=section>
 <div class=desc>
+<h3><a href=https://mattdunn.info/notes/Aviatrix-Integrated-Firewall/>Aviatrix Integrated Firewall</a></h3>
+<p>Problem Statement Intra-VPC traffic—best handled by L4 Security Groups/Firewalls Can be provisioned by automation Inter-VPC traffic—best architecture is centralized L4 transit firewall Or L7 NGFW—only if required: expensive Solution: insert firewalls in transit layer Aviatrix Integrated Firewall Best suited for small scale environments No requirement for NGFWs—use Aviatrix Transit FireNet otherwise Placed in transit layer Rules managed by Aviatrix Controller North+South, East+West, Ingress+Egress traffic Dev team manage L4 Seurity Group/Firewall rules; NetSec manage transit traffic Multicloud No additional components required </p>
+</div>
+<p class=meta>
+1 minute read. Last updated June 9, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
+<h3><a href=https://mattdunn.info/notes/Aviatrix-Transit-FireNet/>Aviatrix Transit FireNet</a></h3>
+<p>Overview NGFW insertion—bring your own NGFW Integrate firewalls into Aviatrix transit gateway Example requirements: L7 security Compliance Deep packet inspection Between internet, clouds and on-prem NGFW insert in transit layer Repeatable across regions and clouds Same architecture as Integrated Firewall North+South, East+West, Ingress+Egress traffic Active/active Route management controlled by Aviatrix Controller </p>
+</div>
+<p class=meta>
+1 minute read. Last updated June 9, 2022
+</p>
+</div>
+</li><li class=section-li>
+<div class=section>
+<div class=desc>
 <h3><a href=https://mattdunn.info/notes/Aviatrix-Controller/>Aviatrix Controller</a></h3>
 <p>Overview Unified control plane for Aviatrix Gateways Automation and management Download from CSP marketplace Not SaaS—deployed as a VM Deep integration with CSP APIs Only 1 need be deployed (not 1 per CSP) Deploy in HA Multi-account/region aware PAYGO or licence models </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 8, 2022
+1 minute read. Last updated June 9, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -57,7 +77,7 @@
 <p>High Performance Encryption (HPE) Data plane encrypted—line rate performance Uses all CPU cores in Aviatrix Gateway for encryption Native solutions usually use 1 core—capped at 1....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 8, 2022
+1 minute read. Last updated June 9, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -67,7 +87,7 @@
 <p>Overview AWS Guard Duty supplies reports to Aviatrix Rules automatically created to block malicious traffic </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 8, 2022
+1 minute read. Last updated June 9, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +97,7 @@
 <p>Overview Policy-based—e.g. blue network can&rsquo;t communicate with green Multicloud aware </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 8, 2022
+1 minute read. Last updated June 9, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +107,7 @@
 <p>Overview Problem Private workloads require internet access e.g. for patching, Git access, CI/CD etc. Unable to determine what domains are being accessed Native Solutions Open up egress to 0....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 8, 2022
+1 minute read. Last updated June 9, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -97,7 +117,7 @@
 <p>Native Solutions CSP Transit Solution Limitations AWS AWS Transit Gateway Lack of visibilityNo peering within regionNo security controlsLimited BGP support Azure Via ExpressRoute Edge Router Lack of visibilityLack of controlNoisy neighbours Azure Azure Firewall Lack of visibilityRequires NAT and load balancer Azure Virtual WAN Lack of visibilityLack of controlLimited to 200 BGP routes to on-premCost GCP None No native transit solutionsSingle global VPC OCI Limited No native east-west and north-south transit solutionPromotes third party appliances Third-Party Solutions Legacy hardware vendors (e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 8, 2022
+1 minute read. Last updated June 9, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -107,7 +127,7 @@
 <p>Overview Multi-account, multi-region, multi-cloud networking AWS , GCP , Azure , OCI HA—active-active End-to-end encryption—high performance, line speed encryption Multi-cloud repeatable architecture Multi-cloud network segmentation e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 8, 2022
+1 minute read. Last updated June 9, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -117,20 +137,30 @@
 <p>Overview Avoid vendor lock-in 75-90% of enterprises—hybrid/multi-cloud Reference Architecture Application Layer Application residence VPCs/VNets, VMs, Kubernetes etc....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 8, 2022
-</p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://mattdunn.info/notes/Aviatrix-Certified-Engineer-Associate/>Aviatrix Certified Engineer Associate</a></h3>
-<p>Exam Content As-A-Service Models AWS Networking AWS Organization Hierarchy AWS VPCs Azure Networking Azure Resource Hierarchy Azure Virtual Networks (VNets) Azure Virtual Network Gateways Azure Transit Options GCP Networking GCP VPCs GCP Cloud Interconnect Oracle Cloud Infrastructure OCI Resource Hierarchy OCI Virtual Cloud Networks (VCNs) Aviatrix Aviatrix features Aviatrix Multi-Cloud Network Architecture (MCNA) Cloud Transit Solutions </p>
-</div>
-<p class=meta>
-1 minute read. Last updated June 8, 2022
+1 minute read. Last updated June 9, 2022
 </p>
 </div>
 </li></ul>
+<ul class="pagination pagination-default">
+<li class="page-item disabled">
+<a aria-disabled=true aria-label=First class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;&#171;</span></a>
+</li>
+<li class="page-item disabled">
+<a aria-disabled=true aria-label=Previous class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;</span></a>
+</li>
+<li class="page-item active">
+<a aria-current=page aria-label="Page 1" class=page-link role=button>1</a>
+</li>
+<li class=page-item>
+<a href=/tags/aviatrix/page/2/ aria-label="Page 2" class=page-link role=button>2</a>
+</li>
+<li class=page-item>
+<a href=/tags/aviatrix/page/2/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a>
+</li>
+<li class=page-item>
+<a href=/tags/aviatrix/page/2/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a>
+</li>
+</ul>
 </article>
 <div id=contact_buttons>
 <footer>
