@@ -39,7 +39,7 @@ tags:
 
 ![ibm_power_gcp](files/ibm_power_gcp.svg)
 
-## References
+# References
 
 - [Official Documentation](https://pforg.ibm.com/docs/Intro_to_IBM_Power_Systems_for_Google_Cloud.html)
 - [Introducing IBM Power Systems for Google Cloud (Cloud Next '19)](https://www.youtube.com/watch?v=_0ml4AwewXo)

@@ -55,6 +55,6 @@ tags:
 - Domain mapped to shared pool of IP addresses
 	- To use a single IP: use [Load Balancing](notes/GCP%20Load%20Balancing.md)
 
-## References
+# References
 
 - [GCP Decision Trees](notes/GCP%20Decision%20Trees.md)
