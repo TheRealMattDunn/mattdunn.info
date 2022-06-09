@@ -33,3 +33,5 @@ tags:
 - [Aviatrix High Performance Encryption (HPE)](notes/Aviatrix%20High%20Performance%20Encryption%20(HPE).md)
 - [Aviatrix FQDN and URL-Based Egress Filtering](notes/Aviatrix%20FQDN%20and%20URL-Based%20Egress%20Filtering.md)
 - [Aviatrix Ingress Security](notes/Aviatrix%20Ingress%20Security.md)
+- [Aviatrix Integrated Firewall](notes/Aviatrix%20Integrated%20Firewall.md)
+- [Aviatrix Transit FireNet](notes/Aviatrix%20Transit%20FireNet.md)
