@@ -50,7 +50,7 @@ tags:
 
 - [GKE](notes/GCP%20Kubernetes%20Engine%20(GKE).md)
 - [Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)
-- [Migrate for Anthos and GKE](notes/Migrate%20for%20Anthos%20and%20GKE.md)]
+- [Migrate for Anthos and GKE](notes/Migrate%20for%20Anthos%20and%20GKE.md)
 
 ## Attached Clusters
 
