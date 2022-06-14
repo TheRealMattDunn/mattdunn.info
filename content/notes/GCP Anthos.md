@@ -66,4 +66,4 @@ tags:
 - Versions indicated by [semver](https://semver.org/) numbering: x.y.z
 - Quarterly major/minor releases
 - Monthly path releases
-- Google support previous an n–2 releases
+- Google support previous n–2 releases
