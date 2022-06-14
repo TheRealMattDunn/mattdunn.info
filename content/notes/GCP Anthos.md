@@ -18,7 +18,7 @@ tags:
 	- [Kubernetes Engine clusters](notes/GCP%20Kubernetes%20Engine%20(GKE).md)
 	- [Cloud Run](notes/GCP%20Cloud%20Run.md)
 	- [Compute Engine](notes/GCP%20Compute%20Engine.md) VMs
-- Migrate for Anthos—migrate legacy workloads to containers
+- [Migrate for Anthos and GKE](notes/Migrate%20for%20Anthos%20and%20GKE.md)—migrate legacy workloads to containers
 - Anthos Config Management
 	- Policy enforcement
 	- Guardrails
