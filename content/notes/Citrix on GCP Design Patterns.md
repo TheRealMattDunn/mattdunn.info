@@ -23,7 +23,7 @@ tags:
 
 ## Cloud Forward Design Pattern
 
-- For customers who are “all-in” on [[GCP]]
+- For customers who are “all-in” on [GCP](notes/GCP.md)
 - Commonly used for new deployments, POCs etc
 - Requires no additional infrastructure
 - [Google Deployment Manager templates available](https://github.com/GoogleCloudPlatform/citrix-on-gcp), but appear to be no longer maintained
