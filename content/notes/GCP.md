@@ -111,3 +111,7 @@ tags:
 ## CI/CD
 
 - [Cloud Build](notes/GCP%20Cloud%20Build.md)
+
+## Integrations
+
+- [Citrix on GCP](notes/Citrix%20on%20GCP.md)
