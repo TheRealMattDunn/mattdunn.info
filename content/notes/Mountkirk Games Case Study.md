@@ -85,7 +85,7 @@ tags:
 - Wish to analyse player behaviour and **game telemetry**
 	- *[Cloud Bigtable](notes/GCP%20Cloud%20Bigtable.md) for telemetry storage*
 	- *BigQuery, BigQuery ML*
-- Use **cloud-native** design principles
+- Use **[cloud native](notes/The%20Path%20to%20Cloud%20Native.md)** design principles
 - **Latency** is a top priority
 - **Cost management** a second priority
 - Expect advanced analytics capabilities to **rapidly iterate bug fixes** and **new functionality**

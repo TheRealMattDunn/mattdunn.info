@@ -23,7 +23,7 @@ tags:
 
 - Remove technical debt—take full advantage of cloud features
 - Requires most time/skill investment
-	- Doesn't work for COTS (unless already cloud native)
+	- Doesn't work for COTS (unless already [cloud native](notes/The%20Path%20to%20Cloud%20Native.md))
 
 ### Strangler Pattern
 

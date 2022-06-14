@@ -31,7 +31,7 @@ tags:
 
 ### Scale
 
-- What is the current extent of cloud-native services?
+- What is the current extent of [cloud native](notes/The%20Path%20to%20Cloud%20Native.md) services?
 - How are updates handled?
 - How is capacity allocated?
 

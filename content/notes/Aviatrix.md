@@ -21,7 +21,7 @@ tags:
 - Operational visibility
 - Secure cloud access
 - Secure ingress and egress
-- Cloud native
+- [cloud native](notes/The%20Path%20to%20Cloud%20Native.md)
 
 ![aviatrix_overview](files/aviatrix_overview.svg)
 

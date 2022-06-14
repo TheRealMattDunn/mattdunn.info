@@ -74,7 +74,7 @@ tags:
 	- **Create new projects**
 	- Request resources for **analytics** jobs
 	- **Centrally** manage access to **API** endpoints
-- Cloud-native solutions for **keys/secret management**
+- [cloud native](notes/The%20Path%20to%20Cloud%20Native.md) solutions for **keys/secret management**
 	- Optimize for **identity**-based access
 		- *KMS, Secret Manager*
 - Improve/standardize tools for apps/network monitoring/troubleshooting
