@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.f79303bba975e79b3845937154e72d5b.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.4ddfd1c221d669fa474720169320082e.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.f79303bba975e79b3845937154e72d5b.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.1aaac8f86f145fff113cb6209e108fde.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -47,7 +47,7 @@
 <p>Connection Options Cloud Spanner Cloud SQL Cloud Firestore Memorystore Cloud Bigtable BigQuery Client libraries Client libraries Client libraries Direct peer Client libraries Client libraries HTTP API Public IP HTTP API Private access HBase BigQuery UI Private IP Cloud SQL Proxy </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 14, 2022
+1 minute read. Last updated June 16, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -57,7 +57,7 @@
 <p>Example Data 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 select * from TableA; id ---- 1 2 3 4 5 6 7 8 (8 rows) select * from TableB; id ---- 1 2 3 4 5 9 10 11 (8 rows) Inner Join Combines columns, keeping values common to both tables only....</p>
 </div>
 <p class=meta>
-3 minute read. Last updated June 14, 2022
+3 minute read. Last updated June 16, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -69,7 +69,7 @@
 1 gsutil versioning set on gs://&lt;BUCKET_NAME> Upon deleting a file—version still exists....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 14, 2022
+1 minute read. Last updated June 16, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -79,7 +79,7 @@
 <p>Overview Wide-column NoSQL database Single key, multiple column rows Large analytical/operational workloads Key-value store High read/write rates, low latency—&lt;10 ms read/write operations Tables stored in instances Zonal resource Regional replication—up to four nodes in different zones, primary-primary replication Use cases: Time-series data Marketing/financial data IoT data General Technical Details Key/value storage—not relational, no joins Transactions supported within single row only Operations atomic at row level Rows sorted by row key in lexicographical big-endian (network) byte order Column families not sorted Columns sorted within column family Storage Model Tables—key/value map Each row contains a single entity—columns store values for each row Single row key—acts as primary key Related columns grouped into column families Columns identified by combination of column family and column qualifier—unique name within column family Each row/column intersection contains multiple cells—timestamped version of data (how the data has changed over time) Sparse—columns can be null No storage used for empty cells Best Practices Tables Store similar datasets in the same table—use a unique row prefix for each dataset Anti-pattern: many small tables—poor performance Column Families Group related columns in the same column family Simplifies filters Reduces redundant data transfers Max ~100 column families—more causes poor performance Use short names—reduces data transferred in requests/responses Garbage collection performed at column family level Store data with different data retention needs in different column families Reduces storage costs Columns Treat column qualifiers as data—save space by naming with value Create many columns—can scale to millions No space penalty for rows with null values Use sparse rows—not every column should have a value for every row Max 100MB per row Rows 100MB max All information for a single entity should be stored in a single row Atomicity only guaranteed at the row level Store related entities in adjacent rows—faster reads Cells 10MB max Row Keys Design based on queries used to retrieve data Only 1 index, so queries on other fields inefficient—table scan required Most efficient reads via: Row key Row key prefix Range of row keys—start, end Other queries—triggers full table scan Use field promotion to move known fields into row key Store multiple delimited values, e....</p>
 </div>
 <p class=meta>
-4 minute read. Last updated June 14, 2022
+4 minute read. Last updated June 16, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -89,7 +89,7 @@
 <p>Overview Document store Strong consistency Live synchronization and offline mode Multi-user, collaborative apps Supports Datastore DBs and APIs (previous generation of Firestore) Mobile SDKs Unlimited capacity Supports transactions for atomic writes Use-case: Live asset/activity tracking Real-time analytics Media/product catalogues Social user profiles Gaming leaderboards References GCP Decision Trees GCP Database Connections </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 14, 2022
+1 minute read. Last updated June 16, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -99,7 +99,7 @@
 <p>Overview Relational—SQL Horizontal scalability, high availability and strong consistency Unlimited scale and capacity 99.999% availability (5 nines)—global replication External consistency For each instance, define: Configuration Compute capacity Auto sharding Backup/restore, point-in-time recovery (PITR) Use query parameters to increase efficiency and reduce cost Use cases: financial sector Implementation Details Primary Keys Avoid hotspots: don&rsquo;t use monotonically increasing integers as keys Results in many writes to the same server Options: Hash Swap column orders UUID Version 4 UUID Version 1 not suitable Bit-reverse sequential values Parent-Child Relationships Foreign Keys Tradition SQL foreign keys relationship Foreign key can be created on any columns Table can have multiple foreign key relationships—as both parent and child Does not imply co-location of tables in storage layer Table Interleaving Child table&rsquo;s primary key includes parent table&rsquo;s primary key columns Data locality relationship between tables—parent and child rows physically stored together Improves performance Use-case: scenarios where the child table is frequently fetched with the parent References GCP Decision Trees GCP Database Connections </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 14, 2022
+1 minute read. Last updated June 16, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -109,7 +109,7 @@
 <p>Overview Relational database Supports: SQL Server MySQL PostreSQL Auto replication (within region), failover, backup, and point-in-time recovery (PITR)—built in HA Auto scales—30 TB max Vertcial scales manually to 96 cores / 624 GB RAM Read replicas available References GCP Decision Trees GCP Database Connections </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 14, 2022
+1 minute read. Last updated June 16, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -119,7 +119,7 @@
 <p>Overview Serverless change data capture (CDC) and replication service Synchronize data across databases and applications </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 14, 2022
+1 minute read. Last updated June 16, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -129,7 +129,7 @@
 <p>Overview NoSQL database Store and synchronize data Collaboration amongst users and devices in real time Mobile apps use-case References GCP Decision Trees </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 14, 2022
+1 minute read. Last updated June 16, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -139,7 +139,7 @@
 <p>Overview In memory database Redis Memcached Low latency, high throughput Use cases: Cached data References GCP Database Connections </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 14, 2022
+1 minute read. Last updated June 16, 2022
 </p>
 </div>
 </li></ul>
