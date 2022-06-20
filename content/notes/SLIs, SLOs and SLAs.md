@@ -1,15 +1,15 @@
 ---
-title: "Site Reliability Engineering"
-date: "2022-02-08"
+title: "SLIs, SLOs and SLAs"
+date: "2022-06-20"
 tags:
 - sre
 ---
 
-> SRE is what happens when a software engineer is tasked with what used to be called operations.
+## Overview
 
 ![sli_slo_sla](files/sli_slo_sla.svg)
 
-## SLIs
+### SLIs
 
 - Service level indicators
 - Metrics over time
@@ -19,7 +19,7 @@ tags:
 	- Failure rate
 	- Batch throughput
 
-## SLOs
+### SLOs
 
 - Service level objectives
 - Target
@@ -29,7 +29,7 @@ tags:
 	- Not actually needed by users
 	- Use remaining time to create new features
 
-## SLAs
+### SLAs
 
 - Service level agreements
 - Contractual obligations

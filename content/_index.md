@@ -18,6 +18,7 @@ Welcome to mattdunn.info! This site serves as a repository for my learning notes
 
 ## What I'm Learning
 
+- 2022-06-20 – [Site Reliability Engineering (SRE)](notes/Site%20Reliability%20Engineering%20(SRE).md)
 - 2022-05-27 – [Aviatrix Certified Engineer Associate](notes/Aviatrix%20Certified%20Engineer%20Associate.md)
 - 2022-05-20 – [Vault Associate Certification](notes/Vault.md)
 - 2022-05-11 – [Terraform Associate Certification](notes/Terraform.md)

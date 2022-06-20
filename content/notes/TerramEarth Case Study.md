@@ -46,7 +46,7 @@ tags:
 	- *[Compute Autoscaling](notes/GCP%20Compute%20Autoscaling.md)*
 	- *Prefer serverless—IoT Core, Pub/Sub, Cloud Storage, Dataflow, BigQuery, AppEngine/Cloud Run*
 - **Increase speed/reliability** of dev workflow
-	- *SRE*
+	- *[SRE](notes/Site%20Reliability%20Engineering%20(SRE).md)*
 	- *CI/CD*
 - **Remote** developers
 	- Productivity

@@ -9,7 +9,7 @@ tags:
 ## Overview
 
 - Collects and visualizes metrics from GCP resources—how well are resources performing?
-- Track [SLOs and SLAs](notes/Site%20Reliability%20Engineering.md)
+- Track [SLOs and SLAs](notes/SLIs,%20SLOs%20and%20SLAs.md)
 - Alerting—identify issues as they happen
 
 ## Metrics Scopes
