@@ -30,7 +30,7 @@ tags:
   - CORS
   - [HTTP Status Codes](notes/HTTP%20Status%20Codes.md)
 - [Site Reliability Engineering (SRE)](notes/Site%20Reliability%20Engineering%20(SRE).md)
-	- SLIs, SLOs and SLAs
+	- [SLIs, SLOs and SLAs](notes/SLIs,%20SLOs%20and%20SLAs.md)
 - [Google Cloud Adoption Framework](notes/Google%20Cloud%20Adoption%20Framework.md)
 - [GCP Data Migration](notes/GCP%20Data%20Migration.md)
 - [GCP Application Migration](notes/GCP%20Application%20Migration.md)
