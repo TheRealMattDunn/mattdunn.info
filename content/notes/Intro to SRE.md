@@ -5,9 +5,9 @@ tags:
 - sre
 ---
 
-> SRE is what happens when a software engineer is tasked with what used to be called operations.
-
 ## Introduction
+
+> SRE is what happens when a software engineer is tasked with what used to be called operations.
 
 - 40–90% of total cost of a system incurred post-delivery
 - Reliability—primary concern
