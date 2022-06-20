@@ -92,7 +92,7 @@ tags:
 - Three pillars:
 	- Logs—record of change of state
 	- Metrics—point-in-time numeric data
-	- Traces—single user's journey accross multiple applications and systems (e.g. microservices)
+	- [Traces](notes/Distributed%20Tracing.md)—single user's journey accross multiple applications and systems (e.g. microservices)
 - Correlate with AWS ServiceLens
 
 ## Respond
