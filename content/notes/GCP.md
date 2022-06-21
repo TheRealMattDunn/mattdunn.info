@@ -18,13 +18,19 @@ tags:
 
 - [Compute Engine](notes/GCP%20Compute%20Engine.md)
 - [Kubernetes Engine (GKE)](notes/GCP%20Kubernetes%20Engine%20(GKE).md)
-- [Anthos](notes/GCP%20Anthos.md)
 - [App Engine](notes/GCP%20App%20Engine.md)
 - [Cloud Run](notes/GCP%20Cloud%20Run.md)
 - [Cloud Functions](notes/GCP%20Cloud%20Functions.md)
 - [VMware Engine](notes/GCP%20VMware%20Engine.md)
 - [Compute Autoscaling](notes/GCP%20Compute%20Autoscaling.md)
 - [IBM Power Systems for Google Cloud](notes/IBM%20Power%20Systems%20for%20Google%20Cloud.md)
+
+## Hybrid Cloud
+
+- [Google Distributed Cloud Edge](notes/Google%20Distributed%20Cloud%20Edge.md)
+- Google Distributed Cloud Hosted
+- Google Distributed Cloud Virtual
+- [Anthos](notes/GCP%20Anthos.md)
 
 ## Storage
 
