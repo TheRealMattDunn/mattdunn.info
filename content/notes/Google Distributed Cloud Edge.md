@@ -4,6 +4,7 @@ date: "2022-06-21"
 tags:
 - hybrid cloud
 - kubernetes
+- edge
 ---
 
 ## Overview

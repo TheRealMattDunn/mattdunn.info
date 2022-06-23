@@ -5,6 +5,7 @@ tags:
 - aws
 - architecure
 - hybrid cloud
+- edge
 ---
 
 ## Why?

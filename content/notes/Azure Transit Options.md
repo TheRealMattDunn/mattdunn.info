@@ -7,7 +7,7 @@ tags:
 
 ## ExpressRoute Edge Router
 
-- Hair-pinning via EpressRoute Edge Router
+- Hair-pinning via ExpressRoute Edge Router
 - Common solution—many limitations
 
 ## Network Virtual Appliance (NVA)
