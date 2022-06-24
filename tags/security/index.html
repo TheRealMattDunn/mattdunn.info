@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.de590ad3d216b09baec5f80e73fd4e83.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.f312005b17edb79095f0fe4d7bbab038.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.de590ad3d216b09baec5f80e73fd4e83.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.674326a9dc3ec66dc1139717ff0746bb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -47,7 +47,7 @@
 <p>Problem Statement Intra-VPC traffic—best handled by L4 Security Groups/Firewalls Can be provisioned by automation Inter-VPC traffic—best architecture is centralized L4 transit firewall Or L7 NGFW—only if required: expensive Solution: insert firewalls in transit layer Aviatrix Integrated Firewall Best suited for small scale environments No requirement for NGFWs—use Aviatrix Transit FireNet otherwise Placed in transit layer Rules managed by Aviatrix Controller North+South, East+West, Ingress+Egress traffic Dev team manage L4 Seurity Group/Firewall rules; NetSec manage transit traffic Multicloud No additional components required </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 21, 2022
+1 minute read. Last updated June 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -57,7 +57,7 @@
 <p>Overview NGFW insertion—bring your own NGFW Integrate firewalls into Aviatrix transit gateway Example requirements: L7 security Compliance Deep packet inspection Between internet, clouds and on-prem NGFW insert in transit layer Repeatable across regions and clouds Same architecture as Integrated Firewall North+South, East+West, Ingress+Egress traffic Active/active Route management controlled by Aviatrix Controller </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 21, 2022
+1 minute read. Last updated June 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -67,7 +67,7 @@
 <p>Overview Policy-as-code framework Guardrails that prevent Terraform from performing dangerous of disallowed actions Integrated with HashiCorp Enterprise products Enforced between plan and apply phases Policies Written in Sentinel language Single rule/policy/guardrail Policy Sets Groups of policies that can be enforced on workspaces Managed at the organisation level Scope to workspaces, or global Policy Enforcement Levels hard-mandatory—requires that the policy passes soft-mandatory—as hard-mandatory, but ca be overridden by users with Manage Policy Overrides permission on a case-by-case basis advisory—informational only Configuration sentinel....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 21, 2022
+1 minute read. Last updated June 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +77,7 @@
 <p>Overview Read, write and configure Vault Best practice: avoid secrets in Terraform config and state Use Cases Configure and Populate Vault with Secrets Initial setup and configuration of Vault Populate with secrets State and plans should be stored with care—will contain the secrets written to Vault in plaintext Use Vault Credentials in Terraform Config Inject 3rd party provider credentials into config Vault manages credentials Only need suitably privileged Vault token—temporary lease of provider credentials Secrets returned from Vault data sources are stored in state, plan and displayed on command line in plaintext Need to ensure adequate protection Vault provider requests Vault token with short TTL by default (20 mins) to reduce attack window </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 21, 2022
+1 minute read. Last updated June 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +87,7 @@
 <p>Automate CIS Benchmarking kube-bench Anthos Config Management with CIS benchmark policies Google Groups for RBAC Run nodes with least privilege SA—avoid Compute Engine default service account roles/monitoring....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 21, 2022
+1 minute read. Last updated June 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -97,7 +97,7 @@
 <p>Overview SCPs Applied at the OU level Controlled by the organization master account Restrict actions which can be taken in an AWS account Control which AWS APIs are accessible Allowlist/denylist Invisible to users in the child accounts </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 21, 2022
+1 minute read. Last updated June 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -107,7 +107,7 @@
 <p>Overview Customer Managed Encryption Keys (CMEK) Key created and managed with Cloud KMS Assigned to resource Alternative to Google managed keys Not necessarily more secure: Incurs more costs than Google managed Can control lifecycle of keys Customer Supplied Encryption Keys (CSEK) Customer specifies contents of key material Keys stored on-prem, or in external service Compatibale with Cloud Storage and Compute Engine </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 21, 2022
+1 minute read. Last updated June 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -117,7 +117,7 @@
 <p>Overview DDoS protection WAF Automatically enabled for HTTP(S), SSL Proxy and TCP Proxy load balancers Mitigates OWASP&rsquo;s top 10 list, e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 21, 2022
+1 minute read. Last updated June 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -127,7 +127,7 @@
 <p>Overview Protect sensitive data Inspection, classification, de-idenitifcation of data 150+ data detectors—PII Inputs: Data strams Structured text Cloud Storage files BigQuery Images Export to CSCC , Data Catalog or external SIEMs </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 21, 2022
+1 minute read. Last updated June 24, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -137,7 +137,7 @@
 <p>Overview Cloud External Key Manager Keys from external key management partners Works only with services which support customer managed encryption keys (CMEKs), e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 21, 2022
+1 minute read. Last updated June 24, 2022
 </p>
 </div>
 </li></ul>
