@@ -44,3 +44,7 @@ tags:
 - Migrate workloads gradually to the cloud
 
 ![citrix_gcp_cloud_migration](files/citrix_gcp_cloud_migration.svg)
+
+# References
+
+- [Reference Architecture - Citrix virtualization on Google Cloud](https://docs.citrix.com/en-us/tech-zone/design/reference-architectures/citrix-google-virtualization.html)
