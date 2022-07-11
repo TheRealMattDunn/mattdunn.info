@@ -23,7 +23,7 @@ tags:
 - [Cloud Functions](notes/GCP%20Cloud%20Functions.md)
 - [VMware Engine](notes/GCP%20VMware%20Engine.md)
 - [Compute Autoscaling](notes/GCP%20Compute%20Autoscaling.md)
-- [IBM Power Systems for Google Cloud](notes/IBM%20Power%20Systems%20for%20Google%20Cloud.md)
+- [Converge IBM Power for Google Cloud (IP4G)](notes/Converge%20IBM%20Power%20for%20Google%20Cloud%20(IP4G).md)
 
 ## Hybrid Cloud
 

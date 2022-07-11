@@ -1,5 +1,5 @@
 ---
-title: "IBM Power Systems for Google Cloud"
+title: "Converge IBM Power for Google Cloud (IP4G)"
 date: "2022-06-07"
 tags:
 - ibm
