@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.de590ad3d216b09baec5f80e73fd4e83.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.674326a9dc3ec66dc1139717ff0746bb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://mattdunn.info/",fetchData=Promise.all([fetch("https://mattdunn.info/indices/linkIndex.8dd09b5dcd7a9db8fa8be85709ded49f.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://mattdunn.info/indices/contentIndex.7372a19118e100337f7a7ddba9963a02.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1H2GQTMBV4"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-1H2GQTMBV4',{anonymize_ip:!1})}</script>
@@ -47,7 +47,7 @@
 <p>Overview AWS Guard Duty supplies reports to Aviatrix Rules automatically created to block malicious traffic </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 24, 2022
+1 minute read. Last updated July 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -57,7 +57,7 @@
 <p>High Performance Encryption (HPE) Data plane encrypted—line rate performance Uses all CPU cores in Aviatrix Gateway for encryption Native solutions usually use 1 core—capped at 1....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 24, 2022
+1 minute read. Last updated July 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -67,7 +67,7 @@
 <p>Overview Unified control plane for Aviatrix Gateways Automation and management Download from CSP marketplace Not SaaS—deployed as a VM Deep integration with CSP APIs Only 1 need be deployed (not 1 per CSP) Deploy in HA Multi-account/region aware PAYGO or licence models </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 24, 2022
+1 minute read. Last updated July 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -77,7 +77,7 @@
 <p>Overview NGFW insertion—bring your own NGFW Integrate firewalls into Aviatrix transit gateway Example requirements: L7 security Compliance Deep packet inspection Between internet, clouds and on-prem NGFW insert in transit layer Repeatable across regions and clouds Same architecture as Integrated Firewall North+South, East+West, Ingress+Egress traffic Active/active Route management controlled by Aviatrix Controller </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 24, 2022
+1 minute read. Last updated July 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -87,7 +87,7 @@
 <p>Problem Statement Intra-VPC traffic—best handled by L4 Security Groups/Firewalls Can be provisioned by automation Inter-VPC traffic—best architecture is centralized L4 transit firewall Or L7 NGFW—only if required: expensive Solution: insert firewalls in transit layer Aviatrix Integrated Firewall Best suited for small scale environments No requirement for NGFWs—use Aviatrix Transit FireNet otherwise Placed in transit layer Rules managed by Aviatrix Controller North+South, East+West, Ingress+Egress traffic Dev team manage L4 Seurity Group/Firewall rules; NetSec manage transit traffic Multicloud No additional components required </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 24, 2022
+1 minute read. Last updated July 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -97,7 +97,7 @@
 <p>Overview SLIs Service level indicators Metrics over time Specific to a user journey Examples: Request latency Failure rate Batch throughput SLOs Service level objectives Target Don&rsquo;t strive for 100% Expensive Complex Not actually needed by users Use remaining time to create new features SLAs Service level agreements Contractual obligations Penalties if not met </p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 24, 2022
+1 minute read. Last updated July 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -107,7 +107,7 @@
 <p>Overview Set of APIs and SDKs to collect and export telemetry Data use to monitor apps: metrics, logs, traces —“three pillars of observability” Led by CNCF Instrument cloud native apps Open source One spec—respected by all vendors Single place to capture telemetry and ship to backend Auto/manual instrumentation Stack References What is OpenTelemetry?...</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 24, 2022
+1 minute read. Last updated July 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -118,7 +118,7 @@
 40–90% of total cost of a system incurred post-delivery Reliability—primary concern Probability the system will perform the required function without failure under stated conditions for a stated period of time Hire software engineers to run products and create systems to accomplish work previously performed manually by sysadmins At Google, SREs: 50–60% software engineers; 40-60% have most software engineer skills, but additional expertise, e....</p>
 </div>
 <p class=meta>
-3 minute read. Last updated June 24, 2022
+3 minute read. Last updated July 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -128,7 +128,7 @@
 <p>Overview Problem Statement—Metrics and Logs Metrics and logs—not enough visibility to diagnose issues Metrics High-level view of system health Show when behaviour changes, e....</p>
 </div>
 <p class=meta>
-1 minute read. Last updated June 24, 2022
+1 minute read. Last updated July 11, 2022
 </p>
 </div>
 </li><li class=section-li>
@@ -138,7 +138,7 @@
 <p>Overview Run Kubernetes clusters on-prem on dedicated hardware provided and maintained by Google Google engineers require physical access Deploy workloads like in GKE Provision new clusters in Cloud Console, CLI and API—similar to GKE Clusters can access VPC via loud VPN Use Cases Stable network connection required between Kubernetes workloads and on-prem Low latency to on-prem required Large data volumes—cost/performance prohibitive on GCP Regulatory/data sovereignty reasons Limitations Limited processing capacity Workload restrictions Anthos Service Mesh and Anthos Config Management not supported Architecture Rack of hardware—Distributed Cloud Edge Zone (GDC Edge Zone) Kubernetes control plane runs in GCP region GDC Edge Zone required constant Internet communication Remotely managed—e....</p>
 </div>
 <p class=meta>
-2 minute read. Last updated June 24, 2022
+2 minute read. Last updated July 11, 2022
 </p>
 </div>
 </li></ul>
