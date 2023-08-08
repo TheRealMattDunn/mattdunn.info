@@ -1,0 +1,37 @@
+---
+title: "Kubernetes Patterns"
+date: "2022-03-29"
+tags:
+- moc
+- kubernetes
+- design patterns
+---
+
+## Design Patterns
+
+### Foundational
+
+- [Predictable Demands](notes/Predictable%20Demands%20Pattern.md)
+- Health Probe
+- Predictable Demands
+- Automated Placement
+
+### Structural
+
+- Init Container
+- Sidecar
+
+### Behavioural
+
+- Batch Job
+- Stateful Service
+- Service Discovery
+
+### Higher Level
+
+- [Controller](notes/Kubernetes%20Controllers.md)
+- [Operator](notes/Kubernetes%20Operator%20Pattern.md)
+
+# References
+
+- [Ibryam, B and Huß, R (2019), *Kubernetes Patterns*, O'Reilly](https://www.oreilly.com/library/view/kubernetes-patterns/9781492050278/)
