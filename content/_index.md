@@ -1,22 +1,21 @@
 ---
-title: "mattdunn.info"
-date: "2022-02-08"
+title: Matt Dunn's Second Brain
+date: 2023-08-08
+last-modified: 2023-08-10
 ---
 
 ## Introduction
 
-Welcome to mattdunn.info! This site serves as a repository for my learning notes, which, beginning in January 2022, I am attempting to write using the [Zettelkasten method](https://en.wikipedia.org/wiki/Zettelkasten).
+Welcome to Matt Dunn's Second Brain! This site serves as a repository for my learning notes, which, since January 2022, I have been writing using the [Zettelkasten method](https://en.wikipedia.org/wiki/Zettelkasten).
 
 ## Key Landing Pages
 
-- [Conferences](notes/moc/Conferences.md)
 - [Google Cloud](notes/moc/Google%20Cloud.md)
 - [AWS](notes/moc/AWS.md)
+- [Conferences](notes/moc/Conferences.md)
 - [Terraform](notes/moc/Terraform.md)
 - [Vault](notes/moc/Vault.md)
-- [Aviatrix](notes/moc/Aviatrix.md)
 - [Site Reliability Engineering (SRE)](notes/moc/Site%20Reliability%20Engineering%20(SRE).md)
-- [Developer Velocity](notes/moc/Developer%20Velocity.md)
 
 ## What I'm Learning
 
