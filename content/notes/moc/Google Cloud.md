@@ -1,9 +1,10 @@
 ---
-title: "GCP"
-date: "2022-02-20"
+title: Google Cloud
+date: 2023-08-08
+last-modified: 2023-08-10
 tags:
-- moc
-- gcp
+  - moc
+  - gcp
 ---
 
 ## Decision Trees

@@ -1,18 +1,19 @@
 ---
-title: "Google Cloud Certified Professional Cloud Architect Certification"
-date: "2022-02-08"
+title: Google Cloud Certified Professional Cloud Architect Certification
+date: 2023-08-08
+last-modified: 2023-08-10
 tags:
-- moc
-- cloud architecture
-- gcp
-- certification
+  - moc
+  - cloud architecture
+  - gcp
+  - certification
 ---
 
 ## Key Fundamentals To Know
 
 - [GCP PCA Exam Guide](notes/GCP%20PCA%20Exam%20Guide.md)
 - [Cloud Architecture](notes/Cloud%20Architecture.md)
-- [GCP services](notes/moc/Google%20Cloud.md)
+- [GCP Services](notes/moc/Google%20Cloud.md)
 - [Data Lifecycle](notes/Data%20Lifecycle.md)
 - [GCP Data Lifecycle](notes/GCP%20Data%20Lifecycle.md)
 - Distributed systems
