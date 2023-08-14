@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates"],
     theme: {
       typography: {
-        header: "Schibsted Grotesk",
+        header: "IBM Plex Mono",
         body: "Source Sans Pro",
         code: "IBM Plex Mono",
       },
