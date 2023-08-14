@@ -7,8 +7,8 @@ function Backlinks({ fileData, allFiles }: QuartzComponentProps) {
   const backlinkFiles = allFiles.filter((file) => file.links?.includes(slug))
   return (
     <div class="backlinks">
-      <h3>Backlinks</h3>
-      <ul class="overflow">
+      <h2>Backlinks</h2>
+      <ul>
         {backlinkFiles.length > 0 ? (
           backlinkFiles.map((f) => (
             <li>
