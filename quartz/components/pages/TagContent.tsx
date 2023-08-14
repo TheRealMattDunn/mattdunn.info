@@ -11,7 +11,7 @@ function TagContent(props: QuartzComponentProps) {
   const { tree, fileData, allFiles } = props
   const slug = fileData.slug
 
-  if (!slug?.startsWith("tags/")) {
+  if (!(slug?.startsWith("tags/") || slug === "tags")) {
     throw new Error(`Component "TagContent" tried to render a non-tag page: ${slug}`)
   }
 
@@ -44,7 +44,7 @@ function TagContent(props: QuartzComponentProps) {
             return (
               <div>
                 <h2>
-                  <a class="internal tag-link" href={`./tags/${tag}`}>
+                  <a class="internal tag-link" href={`./${tag}`}>
                     #{tag}
                   </a>
                 </h2>
