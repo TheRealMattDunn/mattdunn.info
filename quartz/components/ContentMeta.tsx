@@ -1,6 +1,5 @@
 import { formatDate } from "./Date"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import readingTime from "reading-time"
 
 export default (() => {
   function ContentMetadata({ fileData }: QuartzComponentProps) {
