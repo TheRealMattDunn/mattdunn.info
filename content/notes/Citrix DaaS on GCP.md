@@ -1,10 +1,11 @@
 ---
-title: "Citrix on GCP Design Patterns"
-date: "2022-04-26"
+title: Citrix DaaS on GCP
+date: 2022-04-26
+last-modified: 2023-08-16
 tags:
-- architecture
-- citrix
-- gcp
+  - architecture
+  - citrix
+  - gcp
 ---
 
 ## Components

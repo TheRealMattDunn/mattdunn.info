@@ -1,7 +1,7 @@
 ---
 title: Google Cloud
-date: 2023-08-08
-last-modified: 2023-08-10
+date: 2022-02-20
+last-modified: 2023-08-16
 tags:
   - moc
   - gcp
@@ -127,7 +127,7 @@ tags:
 
 ## Integrations
 
-- [Citrix on GCP](notes/moc/Citrix%20on%20GCP.md)
+- [Citrix DaaS on GCP](Citrix%20DaaS%20on%20GCP.md)
 
 ## Development
 
