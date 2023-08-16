@@ -1,10 +1,11 @@
 ---
-title: "GCP AI ML Services"
-date: "2022-02-16"
+title: AI ML Lifecycle
+date: 2022-02-16
+last-modified: 2023-08-16
 tags:
-- ai
-- ml
-- gcp
+  - ai
+  - ml
+  - gcp
 ---
 
 ## The AI/[ML](notes/Machine%20Learning.md) Lifecycle
