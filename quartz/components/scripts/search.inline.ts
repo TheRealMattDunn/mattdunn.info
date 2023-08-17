@@ -1,7 +1,7 @@
 import { Document } from "flexsearch"
 import { ContentDetails } from "../../plugins/emitters/contentIndex"
 import { registerEscapeHandler, removeAllChildren } from "./util"
-import { CanonicalSlug, getClientSlug, resolveRelative } from "../../path"
+import { CanonicalSlug, getClientSlug, resolveRelative } from "../../util/path"
 
 interface Item {
   id: number
@@ -148,7 +148,6 @@ document.addEventListener("nav", async (e: unknown) => {
   async function onType(e: HTMLElementEventMap["input"]) {
     const term = (e.target as HTMLInputElement).value
     const searchResults = (await index?.searchAsync(term, numSearchResults)) ?? []
-    console.log(searchResults)
     const getByField = (field: string): number[] => {
       const results = searchResults.filter((x) => x.field === field)
       return results.length === 0 ? [] : ([...results[0].result] as number[])

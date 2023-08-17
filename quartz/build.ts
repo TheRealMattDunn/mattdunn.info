@@ -1,7 +1,7 @@
 import sourceMapSupport from "source-map-support"
 sourceMapSupport.install(options)
 import path from "path"
-import { PerfTimer } from "./perf"
+import { PerfTimer } from "./util/perf"
 import { rimraf } from "rimraf"
 import { isGitIgnored } from "globby"
 import chalk from "chalk"
@@ -9,13 +9,13 @@ import { parseMarkdown } from "./processors/parse"
 import { filterContent } from "./processors/filter"
 import { emitContent } from "./processors/emit"
 import cfg from "../quartz.config"
-import { FilePath, joinSegments, slugifyFilePath } from "./path"
+import { FilePath, joinSegments, slugifyFilePath } from "./util/path"
 import chokidar from "chokidar"
 import { ProcessedContent } from "./plugins/vfile"
-import { Argv, BuildCtx } from "./ctx"
-import { glob, toPosixPath } from "./glob"
-import { trace } from "./trace"
-import { options } from "./sourcemap"
+import { Argv, BuildCtx } from "./util/ctx"
+import { glob, toPosixPath } from "./util/glob"
+import { trace } from "./util/trace"
+import { options } from "./util/sourcemap"
 
 async function buildQuartz(argv: Argv, clientRefresh: () => void) {
   const ctx: BuildCtx = {
@@ -77,7 +77,7 @@ async function startServing(
   }
 
   const initialSlugs = ctx.allSlugs
-  let timeoutId: ReturnType<typeof setTimeout> | null = null
+  let timeoutIds: Set<ReturnType<typeof setTimeout>> = new Set()
   let toRebuild: Set<FilePath> = new Set()
   let toRemove: Set<FilePath> = new Set()
   let trackedAssets: Set<FilePath> = new Set()
@@ -106,45 +106,45 @@ async function startServing(
       toRemove.add(filePath)
     }
 
-    if (timeoutId) {
-      clearTimeout(timeoutId)
-    }
+    timeoutIds.forEach((id) => clearTimeout(id))
 
     // debounce rebuilds every 250ms
-    timeoutId = setTimeout(async () => {
-      const perf = new PerfTimer()
-      console.log(chalk.yellow("Detected change, rebuilding..."))
-      try {
-        const filesToRebuild = [...toRebuild].filter((fp) => !toRemove.has(fp))
+    timeoutIds.add(
+      setTimeout(async () => {
+        const perf = new PerfTimer()
+        console.log(chalk.yellow("Detected change, rebuilding..."))
+        try {
+          const filesToRebuild = [...toRebuild].filter((fp) => !toRemove.has(fp))
 
-        const trackedSlugs = [...new Set([...contentMap.keys(), ...toRebuild, ...trackedAssets])]
-          .filter((fp) => !toRemove.has(fp))
-          .map((fp) => slugifyFilePath(path.posix.relative(argv.directory, fp) as FilePath))
+          const trackedSlugs = [...new Set([...contentMap.keys(), ...toRebuild, ...trackedAssets])]
+            .filter((fp) => !toRemove.has(fp))
+            .map((fp) => slugifyFilePath(path.posix.relative(argv.directory, fp) as FilePath))
 
-        ctx.allSlugs = [...new Set([...initialSlugs, ...trackedSlugs])]
-        const parsedContent = await parseMarkdown(ctx, filesToRebuild)
-        for (const content of parsedContent) {
-          const [_tree, vfile] = content
-          contentMap.set(vfile.data.filePath!, content)
+          ctx.allSlugs = [...new Set([...initialSlugs, ...trackedSlugs])]
+          const parsedContent = await parseMarkdown(ctx, filesToRebuild)
+          for (const content of parsedContent) {
+            const [_tree, vfile] = content
+            contentMap.set(vfile.data.filePath!, content)
+          }
+
+          for (const fp of toRemove) {
+            contentMap.delete(fp)
+          }
+
+          await rimraf(argv.output)
+          const parsedFiles = [...contentMap.values()]
+          const filteredContent = filterContent(ctx, parsedFiles)
+          await emitContent(ctx, filteredContent)
+          console.log(chalk.green(`Done rebuilding in ${perf.timeSince()}`))
+        } catch {
+          console.log(chalk.yellow(`Rebuild failed. Waiting on a change to fix the error...`))
         }
 
-        for (const fp of toRemove) {
-          contentMap.delete(fp)
-        }
-
-        await rimraf(argv.output)
-        const parsedFiles = [...contentMap.values()]
-        const filteredContent = filterContent(ctx, parsedFiles)
-        await emitContent(ctx, filteredContent)
-        console.log(chalk.green(`Done rebuilding in ${perf.timeSince()}`))
-      } catch {
-        console.log(chalk.yellow(`Rebuild failed. Waiting on a change to fix the error...`))
-      }
-
-      clientRefresh()
-      toRebuild.clear()
-      toRemove.clear()
-    }, 250)
+        clientRefresh()
+        toRebuild.clear()
+        toRemove.clear()
+      }, 250),
+    )
   }
 
   const watcher = chokidar.watch(".", {

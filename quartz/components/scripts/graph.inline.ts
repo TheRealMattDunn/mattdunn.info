@@ -1,7 +1,7 @@
 import type { ContentDetails } from "../../plugins/emitters/contentIndex"
 import * as d3 from "d3"
 import { registerEscapeHandler, removeAllChildren } from "./util"
-import { CanonicalSlug, getCanonicalSlug, getClientSlug, resolveRelative } from "../../path"
+import { CanonicalSlug, getCanonicalSlug, getClientSlug, resolveRelative } from "../../util/path"
 
 type NodeData = {
   id: CanonicalSlug
@@ -179,7 +179,6 @@ async function renderGraph(container: string, slug: CanonicalSlug) {
       const neighbourNodes = d3
         .selectAll<HTMLElement, NodeData>(".node")
         .filter((d) => neighbours.includes(d.id))
-      console.log(neighbourNodes)
       const currentId = d.id
       const linkNodes = d3
         .selectAll(".link")

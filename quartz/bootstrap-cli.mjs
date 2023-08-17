@@ -74,6 +74,10 @@ const BuildArgv = {
     default: false,
     describe: "run a local server to live-preview your Quartz",
   },
+  baseDir: {
+    string: true,
+    describe: "base path to serve your local server on",
+  },
   port: {
     number: true,
     default: 8080,
@@ -351,6 +355,7 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
       ],
     })
 
+    const timeoutIds = new Set()
     const build = async (clientRefresh) => {
       const result = await ctx.rebuild().catch((err) => {
         console.error(`${chalk.red("Couldn't parse Quartz configuration:")} ${fp}`)
@@ -376,6 +381,11 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
       clientRefresh()
     }
 
+    const rebuild = (clientRefresh) => {
+      timeoutIds.forEach((id) => clearTimeout(id))
+      timeoutIds.add(setTimeout(() => build(clientRefresh), 250))
+    }
+
     if (argv.serve) {
       const wss = new WebSocketServer({ port: 3001 })
       const connections = []
@@ -384,19 +394,65 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
 
       await build(clientRefresh)
       const server = http.createServer(async (req, res) => {
-        await serveHandler(req, res, {
-          public: argv.output,
-          directoryListing: false,
-          trailingSlash: true,
-        })
-        const status = res.statusCode
-        const statusString =
-          status >= 200 && status < 300
-            ? chalk.green(`[${status}]`)
-            : status >= 300 && status < 400
-            ? chalk.yellow(`[${status}]`)
-            : chalk.red(`[${status}]`)
-        console.log(statusString + chalk.grey(` ${req.url}`))
+        const serve = async () => {
+          await serveHandler(req, res, {
+            public: argv.output,
+            directoryListing: false,
+          })
+          const status = res.statusCode
+          const statusString =
+            status >= 200 && status < 300 ? chalk.green(`[${status}]`) : chalk.red(`[${status}]`)
+          console.log(statusString + chalk.grey(` ${req.url}`))
+        }
+
+        const redirect = (newFp) => {
+          res.writeHead(302, {
+            Location: newFp,
+          })
+          console.log(chalk.yellow("[302]") + chalk.grey(` ${req.url} -> ${newFp}`))
+          res.end()
+        }
+
+        let fp = req.url?.split("?")[0] ?? "/"
+
+        // handle redirects
+        if (fp.endsWith("/")) {
+          // /trailing/
+          // does /trailing/index.html exist? if so, serve it
+          const indexFp = path.posix.join(fp, "index.html")
+          if (fs.existsSync(path.posix.join(argv.output, indexFp))) {
+            req.url = fp
+            return serve()
+          }
+
+          // does /trailing.html exist? if so, redirect to /trailing
+          let base = fp.slice(0, -1)
+          if (path.extname(base) === "") {
+            base += ".html"
+          }
+          if (fs.existsSync(path.posix.join(argv.output, base))) {
+            return redirect(fp.slice(0, -1))
+          }
+        } else {
+          // /regular
+          // does /regular.html exist? if so, serve it
+          let base = fp
+          if (path.extname(base) === "") {
+            base += ".html"
+          }
+          if (fs.existsSync(path.posix.join(argv.output, base))) {
+            req.url = fp
+            return serve()
+          }
+
+          // does /regular/index.html exist? if so, redirect to /regular/
+          let indexFp = path.posix.join(fp, "index.html")
+          if (fs.existsSync(path.posix.join(argv.output, indexFp))) {
+            return redirect(fp + "/")
+          }
+        }
+
+        return serve()
       })
       server.listen(argv.port)
       console.log(chalk.cyan(`Started a Quartz server listening at http://localhost:${argv.port}`))
@@ -407,7 +463,7 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
         })
         .on("all", async () => {
           console.log(chalk.yellow("Detected a source code change, doing a hard rebuild..."))
-          await build(clientRefresh)
+          rebuild(clientRefresh)
         })
     } else {
       await build(() => {})
