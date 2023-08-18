@@ -1,16 +1,19 @@
 ---
-title: "Apache Beam"
-date: "2022-09-06"
+title: Apache Beam
+date: 2022-09-06
 tags:
-- data
-- big data
-- data processing
+  - data
+  - big data
+  - data processing
+last-modified: 2023-08-18
 ---
 
 ## Overview
 
 - Open source, unified programming model to define and execute data processing pipelines
 - Unified—single model for batch and stream
+	- B(atch)(Str)eam
+	- Avoid [Training-Serving Skew](Training-Serving%20Skew.md)
 - Portable—works in different execution environments, e.g. [Dataflow](notes/GCP%20Dataflow.md), Apache Spark
 - Extensible—write/share connectors and transformation libraries
 - Templates

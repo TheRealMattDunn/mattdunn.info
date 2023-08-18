@@ -1,17 +1,19 @@
 ---
-title: "GCP Dataflow"
-date: "2022-02-16"
+title: GCP Dataflow
+date: 2022-02-16
+last-modified: 2023-08-18
 tags:
-- gcp
-- data
-- big data
-- data processing
+  - gcp
+  - data
+  - big data
+  - data processing
 ---
 
 ## Overview
 
 - Streaming analytics service
 - Transform and enrich data in stream and batch modes with a single model
+	- Avoid [Training-Serving Skew](Training-Serving%20Skew.md)
 - Serverless—managed service, horizontal scaling
 - NoOps—automated maintenance, monitoring and scaling
 - Execution engine for [Apache Beam](notes/Apache%20Beam.md)
@@ -38,6 +40,6 @@ tags:
 	- [Cloud Firestore](notes/GCP%20Cloud%20Firestore.md) bulk delete
 	- File format conversion
 
-# References
+## References
 
 - [GCP Decision Trees](notes/moc/GCP%20Decision%20Trees.md)
