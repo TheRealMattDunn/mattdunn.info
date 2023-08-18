@@ -35,6 +35,7 @@ tags:
 
 - Break problems down into multiple ML models
 	- Avoid trap of building monolithic models/solutions
+- Avoid [Training-Serving Skew](Training-Serving%20Skew.md)
 
 ## Concepts and Definitions
 
