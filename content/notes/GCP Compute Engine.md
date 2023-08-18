@@ -1,9 +1,10 @@
 ---
-title: "GCP Compute Engine"
-date: "2022-02-16"
+title: GCP Compute Engine
+date: 2022-02-16
 tags:
-- gcp
-- compute
+  - gcp
+  - compute
+last-modified: 2023-08-18
 ---
 
 ## Overview

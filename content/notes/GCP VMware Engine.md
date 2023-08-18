@@ -1,10 +1,11 @@
 ---
-title: "GCP VMware Engine"
-date: "2022-02-28"
+title: GCP VMware Engine
+date: 2022-02-28
 tags:
-- gcp
-- compute
-- vmware
+  - gcp
+  - compute
+  - vmware
+last-modified: 2023-08-18
 ---
 
 ## Overview

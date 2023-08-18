@@ -1,10 +1,11 @@
 ---
-title: "GCP ML Best Practices"
-date: "2022-02-16"
+title: GCP ML Best Practices
+date: 2022-02-16
 tags:
-- gcp
-- ai
-- ml
+  - gcp
+  - ai
+  - ml
+last-modified: 2023-08-18
 ---
 
 ## Environment Setup

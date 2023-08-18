@@ -1,7 +1,7 @@
 ---
 title: Google Cloud
 date: 2022-02-20
-last-modified: 2023-08-16
+last-modified: 2023-08-18
 tags:
   - moc
   - gcp

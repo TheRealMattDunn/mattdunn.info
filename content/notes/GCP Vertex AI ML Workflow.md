@@ -1,11 +1,12 @@
 ---
-title: "GCP Vertex AI ML Workflow"
-date: "2023-08-03"
+title: GCP Vertex AI ML Workflow
+date: 2023-08-03
 tags:
-- gcp
-- ai
-- machine learning
-- ml
+  - gcp
+  - ai
+  - machine learning
+  - ml
+last-modified: 2023-08-18
 ---
 
 ## Data Preparation

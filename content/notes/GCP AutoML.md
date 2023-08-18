@@ -1,10 +1,11 @@
 ---
-title: "GCP AutoML"
-date: "2023-08-01"
+title: GCP AutoML
+date: 2023-08-01
 tags:
-- gcp
-- machine learning
-- ml
+  - gcp
+  - machine learning
+  - ml
+last-modified: 2023-08-18
 ---
 
 ## Overview

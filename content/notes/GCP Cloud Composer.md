@@ -1,8 +1,9 @@
 ---
-title: "GCP Cloud Composer"
-date: "2022-03-07"
+title: GCP Cloud Composer
+date: 2022-03-07
 tags:
-- gcp
+  - gcp
+last-modified: 2023-08-18
 ---
 
 ## Overview
@@ -17,4 +18,4 @@ tags:
 - Monitor with [Cloud Monitoring](notes/GCP%20Cloud%20Monitoring.md)
 - Use cases:
 	- ETL pipeline orchestration
-	- Automated analytics and [ML](notes/Machine%20Learning.md) jobs
+	- Automated analytics and [ML](Machine%20Learning.md) jobs

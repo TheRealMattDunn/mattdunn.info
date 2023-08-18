@@ -1,10 +1,11 @@
 ---
-title: "Helicopter Racing League Case Study"
-date: "2022-02-11"
+title: Helicopter Racing League Case Study
+date: 2022-02-11
 tags:
-- gcp
-- cloud architecture
-- case study
+  - gcp
+  - cloud architecture
+  - case study
+last-modified: 2023-08-18
 ---
 
 > Non-italicised points represent notes taken from Google's official case study documentation, with keywords highlighted in **bold**.

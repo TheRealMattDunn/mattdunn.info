@@ -1,7 +1,7 @@
 ---
 title: Citrix DaaS on GCP
 date: 2022-04-26
-last-modified: 2023-08-16
+last-modified: 2023-08-18
 tags:
   - architecture
   - citrix
@@ -20,7 +20,7 @@ tags:
 - Citrix Workspace Service
 	- UI
 - Analytics Service
-	- [ML](notes/Machine%20Learning.md)—security, performance, user behavioural analytics/reporting
+	- [ML](Machine%20Learning.md)—security, performance, user behavioural analytics/reporting
 
 ## Cloud Forward Design Pattern
 

@@ -1,10 +1,11 @@
 ---
-title: "Google Professional Machine Learning Engineer Certification"
-date: "2022-09-06"
+title: Google Professional Machine Learning Engineer Certification
+date: 2022-09-06
 tags:
-- moc
-- gcp
-- certification
+  - moc
+  - gcp
+  - certification
+last-modified: 2023-08-18
 ---
 
 ## Key Fundamentals To Know

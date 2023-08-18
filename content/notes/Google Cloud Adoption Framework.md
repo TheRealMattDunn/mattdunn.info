@@ -1,9 +1,10 @@
 ---
-title: "Google Cloud Adoption Framework"
-date: "2022-02-23"
+title: Google Cloud Adoption Framework
+date: 2022-02-23
 tags:
-- gcp
-- cloud architecture
+  - gcp
+  - cloud architecture
+last-modified: 2023-08-18
 ---
 
 ## Introduction

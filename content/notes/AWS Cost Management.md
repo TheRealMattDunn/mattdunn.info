@@ -1,9 +1,10 @@
 ---
-title: "AWS Cost Management"
-date: "2022-12-12"
+title: AWS Cost Management
+date: 2022-12-12
 tags:
-- aws
-- finops
+  - aws
+  - finops
+last-modified: 2023-08-18
 ---
 
 ## Overview

@@ -1,11 +1,12 @@
 ---
-title: "GCP TPUs"
-date: "2022-09-06"
+title: GCP TPUs
+date: 2022-09-06
 tags:
-- gcp
-- compute
-- ai
-- ml
+  - gcp
+  - compute
+  - ai
+  - ml
+last-modified: 2023-08-18
 ---
 
 ## Overview

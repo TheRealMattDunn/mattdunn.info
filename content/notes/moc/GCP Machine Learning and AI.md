@@ -1,11 +1,12 @@
 ---
-title: "GCP Machine Learning"
-date: "2023-08-01"
+title: GCP Machine Learning
+date: 2023-08-01
 tags:
-- gcp
-- machine learning
-- ml
-- moc
+  - gcp
+  - machine learning
+  - ml
+  - moc
+last-modified: 2023-08-18
 ---
 
 ## AI Portfolio

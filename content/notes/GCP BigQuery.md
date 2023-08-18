@@ -1,12 +1,13 @@
 ---
-title: "GCP BigQuery"
-date: "2022-02-16"
+title: GCP BigQuery
+date: 2022-02-16
 tags:
-- gcp
-- data
-- data warehouse
-- analytics
-- ml
+  - gcp
+  - data
+  - data warehouse
+  - analytics
+  - ml
+last-modified: 2023-08-18
 ---
 
 ## Overview

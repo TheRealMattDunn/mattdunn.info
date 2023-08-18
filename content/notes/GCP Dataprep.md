@@ -1,10 +1,11 @@
 ---
-title: "GCP Dataprep"
-date: "2022-02-16"
+title: GCP Dataprep
+date: 2022-02-16
 tags:
-- gcp
-- data
-- big data
+  - gcp
+  - data
+  - big data
+last-modified: 2023-08-18
 ---
 
 ## Overview

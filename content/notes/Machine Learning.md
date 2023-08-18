@@ -36,6 +36,7 @@ tags:
 - Break problems down into multiple ML models
 	- Avoid trap of building monolithic models/solutions
 - Avoid [Training-Serving Skew](Training-Serving%20Skew.md)
+- Avoid [Common Pitfalls of Machine Learning](Common%20Pitfalls%20of%20Machine%20Learning.md)
 
 ## Concepts and Definitions
 
@@ -66,3 +67,13 @@ tags:
 	- Then move to ML
 - Data collection is the longest/hardest part—most likely to fail
 - If you can't do analytics, you can't do ML
+
+### ML Effort Allocation
+
+![[files/ml_effort_allocation.svg]]
+
+- Expectation:
+	- Optimizing ML algorithm is most significant effort—practitioners focus on latest 'shiny' thing
+- Reality:
+	- Data collection and building infrastructure often overlooked
+	- By spending time collecting data, KPIs often become apparent—rather than relying on intuition
