@@ -112,6 +112,7 @@ function exitIfCancel(val) {
 }
 
 async function stashContentFolder(contentFolder) {
+  await fs.promises.rm(contentCacheFolder, { force: true, recursive: true })
   await fs.promises.cp(contentFolder, contentCacheFolder, {
     force: true,
     recursive: true,
@@ -150,7 +151,7 @@ yargs(hideBin(process.argv))
         message: `Choose how to initialize the content in \`${contentFolder}\``,
         options: [
           { value: "new", label: "Empty Quartz" },
-          { value: "copy", label: "Replace with an existing folder", hint: "overwrites `content`" },
+          { value: "copy", label: "Copy an existing folder", hint: "overwrites `content`" },
           {
             value: "symlink",
             label: "Symlink an existing folder",
@@ -163,12 +164,10 @@ yargs(hideBin(process.argv))
 
     async function rmContentFolder() {
       const contentStat = await fs.promises.lstat(contentFolder)
-      if (contentStat) {
-        if (contentStat.isSymbolicLink()) {
-          await fs.promises.unlink(contentFolder)
-        } else {
-          await rimraf(contentFolder)
-        }
+      if (contentStat.isSymbolicLink()) {
+        await fs.promises.unlink(contentFolder)
+      } else {
+        await rimraf(contentFolder)
       }
     }
 
@@ -193,7 +192,10 @@ yargs(hideBin(process.argv))
 
       await rmContentFolder()
       if (setupStrategy === "copy") {
-        await fs.promises.cp(originalFolder, contentFolder, { recursive: true })
+        await fs.promises.cp(originalFolder, contentFolder, {
+          recursive: true,
+          preserveTimestamps: true,
+        })
       } else if (setupStrategy === "symlink") {
         await fs.promises.symlink(originalFolder, contentFolder, "dir")
       }
@@ -268,17 +270,47 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
     spawnSync("npm", ["i"], { stdio: "inherit" })
     console.log(chalk.green("Done!"))
   })
+  .command(
+    "restore",
+    "Try to restore your content folder from the cache",
+    CommonArgv,
+    async (argv) => {
+      const contentFolder = path.join(cwd, argv.directory)
+      await popContentFolder(contentFolder)
+    },
+  )
   .command("sync", "Sync your Quartz to and from GitHub.", SyncArgv, async (argv) => {
     const contentFolder = path.join(cwd, argv.directory)
     console.log(chalk.bgGreen.black(`\n Quartz v${version} \n`))
     console.log("Backing up your content")
 
     if (argv.commit) {
+      const contentStat = await fs.promises.lstat(contentFolder)
+      if (contentStat.isSymbolicLink()) {
+        const linkTarg = await fs.promises.readlink(contentFolder)
+        console.log(chalk.yellow("Detected symlink, trying to dereference before committing"))
+
+        // stash symlink file
+        await stashContentFolder(contentFolder)
+
+        // follow symlink and copy content
+        await fs.promises.cp(linkTarg, contentFolder, {
+          recursive: true,
+          preserveTimestamps: true,
+        })
+      }
+
       const currentTimestamp = new Date().toLocaleString("en-US", {
         dateStyle: "medium",
         timeStyle: "short",
       })
-      spawnSync("git", ["commit", "-am", `Quartz sync: ${currentTimestamp}`], { stdio: "inherit" })
+      spawnSync("git", ["add", "."], { stdio: "inherit" })
+      spawnSync("git", ["commit", "-m", `Quartz sync: ${currentTimestamp}`], { stdio: "inherit" })
+
+      if (contentStat.isSymbolicLink()) {
+        // put symlink back
+        await popContentFolder(contentFolder)
+      }
     }
 
     await stashContentFolder(contentFolder)
