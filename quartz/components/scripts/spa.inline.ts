@@ -1,5 +1,5 @@
 import micromorph from "micromorph"
-import { CanonicalSlug, RelativeURL, getCanonicalSlug } from "../../util/path"
+import { FullSlug, RelativeURL, getFullSlug } from "../../util/path"
 
 // adapted from `micromorph`
 // https://github.com/natemoo-re/micromorph
@@ -31,7 +31,7 @@ const getOpts = ({ target }: Event): { url: URL; scroll?: boolean } | undefined 
   return { url: new URL(href), scroll: "routerNoscroll" in a.dataset ? false : undefined }
 }
 
-function notifyNav(url: CanonicalSlug) {
+function notifyNav(url: FullSlug) {
   const event: CustomEventMap["nav"] = new CustomEvent("nav", { detail: { url } })
   document.dispatchEvent(event)
 }
@@ -66,7 +66,6 @@ async function navigate(url: URL, isBack: boolean = false) {
 
   // scroll into place and add history
   if (!isBack) {
-    history.pushState({}, "", url)
     if (url.hash) {
       const el = document.getElementById(url.hash.substring(1))
       el?.scrollIntoView()
@@ -81,7 +80,10 @@ async function navigate(url: URL, isBack: boolean = false) {
   const elementsToAdd = html.head.querySelectorAll(":not([spa-preserve])")
   elementsToAdd.forEach((el) => document.head.appendChild(el))
 
-  notifyNav(getCanonicalSlug(window))
+  // delay setting the url until now
+  // at this point everything is loaded so changing the url should resolve to the correct addresses
+  history.pushState({}, "", url)
+  notifyNav(getFullSlug(window))
   delete announcer.dataset.persist
 }
 
@@ -129,7 +131,7 @@ function createRouter() {
 }
 
 createRouter()
-notifyNav(getCanonicalSlug(window))
+notifyNav(getFullSlug(window))
 
 if (!customElements.get("route-announcer")) {
   const attrs = {

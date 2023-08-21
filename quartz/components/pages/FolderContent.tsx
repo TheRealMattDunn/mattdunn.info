@@ -5,13 +5,14 @@ import path from "path"
 
 import style from "../styles/listPage.scss"
 import { PageList } from "../PageList"
-import { canonicalizeServer } from "../../util/path"
+import { _stripSlashes, simplifySlug } from "../../util/path"
+import { Root } from "hast"
 
 function FolderContent(props: QuartzComponentProps) {
   const { tree, fileData, allFiles } = props
-  const folderSlug = canonicalizeServer(fileData.slug!)
+  const folderSlug = _stripSlashes(simplifySlug(fileData.slug!))
   const allPagesInFolder = allFiles.filter((file) => {
-    const fileSlug = canonicalizeServer(file.slug!)
+    const fileSlug = _stripSlashes(simplifySlug(file.slug!))
     const prefixed = fileSlug.startsWith(folderSlug) && fileSlug !== folderSlug
     const folderParts = folderSlug.split(path.posix.sep)
     const fileParts = fileSlug.split(path.posix.sep)
@@ -24,8 +25,12 @@ function FolderContent(props: QuartzComponentProps) {
     allFiles: allPagesInFolder,
   }
 
-  // @ts-ignore
-  const content = toJsxRuntime(tree, { Fragment, jsx, jsxs, elementAttributeNameCase: "html" })
+  const content =
+    (tree as Root).children.length === 0
+      ? fileData.description
+      : // @ts-ignore
+        toJsxRuntime(tree, { Fragment, jsx, jsxs, elementAttributeNameCase: "html" })
+
   return (
     <div class="popover-hint">
       <article>{content}</article>

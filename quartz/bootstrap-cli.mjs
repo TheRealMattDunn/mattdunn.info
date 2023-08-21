@@ -16,10 +16,11 @@ import http from "http"
 import serveHandler from "serve-handler"
 import { WebSocketServer } from "ws"
 import { randomUUID } from "crypto"
+import { Mutex } from "async-mutex"
 
 const ORIGIN_NAME = "origin"
 const UPSTREAM_NAME = "upstream"
-const QUARTZ_SOURCE_BRANCH = "v4-alpha"
+const QUARTZ_SOURCE_BRANCH = "v4"
 const cwd = process.cwd()
 const cacheDir = path.join(cwd, ".quartz-cache")
 const cacheFile = "./.quartz-cache/transpiled-build.mjs"
@@ -76,6 +77,7 @@ const BuildArgv = {
   },
   baseDir: {
     string: true,
+    default: "",
     describe: "base path to serve your local server on",
   },
   port: {
@@ -135,7 +137,10 @@ async function popContentFolder(contentFolder) {
 
 function gitPull(origin, branch) {
   const flags = ["--no-rebase", "--autostash", "-s", "recursive", "-X", "ours", "--no-edit"]
-  spawnSync("git", ["pull", ...flags, origin, branch], { stdio: "inherit" })
+  const out = spawnSync("git", ["pull", ...flags, origin, branch], { stdio: "inherit" })
+  if (out.stderr) {
+    throw new Error(`Error while pulling updates: ${out.stderr}`)
+  }
 }
 
 yargs(hideBin(process.argv))
@@ -257,12 +262,12 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
     const contentFolder = path.join(cwd, argv.directory)
     console.log(chalk.bgGreen.black(`\n Quartz v${version} \n`))
     console.log("Backing up your content")
+    execSync(
+      `git remote show upstream || git remote add upstream https://github.com/jackyzha0/quartz.git`,
+    )
     await stashContentFolder(contentFolder)
     console.log(
       "Pulling updates... you may need to resolve some `git` conflicts if you've made changes to components or plugins.",
-    )
-    execSync(
-      `git remote show upstream || git remote add upstream https://github.com/jackyzha0/quartz.git`,
     )
     gitPull(UPSTREAM_NAME, QUARTZ_SOURCE_BRANCH)
     await popContentFolder(contentFolder)
@@ -387,8 +392,10 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
       ],
     })
 
+    const buildMutex = new Mutex()
     const timeoutIds = new Set()
     const build = async (clientRefresh) => {
+      await buildMutex.acquire()
       const result = await ctx.rebuild().catch((err) => {
         console.error(`${chalk.red("Couldn't parse Quartz configuration:")} ${fp}`)
         console.log(`Reason: ${chalk.grey(err)}`)
@@ -411,6 +418,7 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
       const { default: buildQuartz } = await import(cacheFile + `?update=${randomUUID()}`)
       await buildQuartz(argv, clientRefresh)
       clientRefresh()
+      buildMutex.release()
     }
 
     const rebuild = (clientRefresh) => {
@@ -424,8 +432,26 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
       wss.on("connection", (ws) => connections.push(ws))
       const clientRefresh = () => connections.forEach((conn) => conn.send("rebuild"))
 
+      if (argv.baseDir !== "" && !argv.baseDir.startsWith("/")) {
+        argv.baseDir = "/" + argv.baseDir
+      }
+
       await build(clientRefresh)
       const server = http.createServer(async (req, res) => {
+        if (argv.baseDir && !req.url?.startsWith(argv.baseDir)) {
+          console.log(
+            chalk.red(
+              `[404] ${req.url} (warning: link outside of site, this is likely a Quartz bug)`,
+            ),
+          )
+          res.writeHead(404)
+          res.end()
+          return
+        }
+
+        // strip baseDir prefix
+        req.url = req.url?.slice(argv.baseDir.length)
+
         const serve = async () => {
           await serveHandler(req, res, {
             public: argv.output,
@@ -434,14 +460,15 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
           const status = res.statusCode
           const statusString =
             status >= 200 && status < 300 ? chalk.green(`[${status}]`) : chalk.red(`[${status}]`)
-          console.log(statusString + chalk.grey(` ${req.url}`))
+          console.log(statusString + chalk.grey(` ${argv.baseDir}${req.url}`))
         }
 
         const redirect = (newFp) => {
+          newFp = argv.baseDir + newFp
           res.writeHead(302, {
             Location: newFp,
           })
-          console.log(chalk.yellow("[302]") + chalk.grey(` ${req.url} -> ${newFp}`))
+          console.log(chalk.yellow("[302]") + chalk.grey(` ${argv.baseDir}${req.url} -> ${newFp}`))
           res.end()
         }
 
@@ -487,7 +514,11 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
         return serve()
       })
       server.listen(argv.port)
-      console.log(chalk.cyan(`Started a Quartz server listening at http://localhost:${argv.port}`))
+      console.log(
+        chalk.cyan(
+          `Started a Quartz server listening at http://localhost:${argv.port}${argv.baseDir}`,
+        ),
+      )
       console.log("hint: exit with ctrl+c")
       chokidar
         .watch(["**/*.ts", "**/*.tsx", "**/*.scss", "package.json"], {
