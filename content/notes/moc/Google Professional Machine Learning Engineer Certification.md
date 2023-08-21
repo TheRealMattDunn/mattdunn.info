@@ -5,13 +5,14 @@ tags:
   - moc
   - gcp
   - certification
-last-modified: 2023-08-18
+last-modified: 2023-08-21
 ---
 
 ## Key Fundamentals To Know
 
 - [Big Data](notes/Big%20Data.md)
 - [Machine Learning](notes/Machine%20Learning.md)
+- [The Path to Machine Learning](The%20Path%20to%20Machine%20Learning.md)
 - [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
 - [Message Oriented Architecture](notes/Message%20Oriented%20Architecture.md)
 - Data processing:

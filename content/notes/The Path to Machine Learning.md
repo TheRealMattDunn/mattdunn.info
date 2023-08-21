@@ -7,7 +7,7 @@ tags:
   - ml
 ---
 
-## Steps to Turn Process into ML Model
+## Steps to Turn Process into [Machine Learning](Machine%20Learning.md) Model
 
 ![[path_to_ml.svg]]
 

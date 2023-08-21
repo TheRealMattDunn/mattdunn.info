@@ -1,7 +1,7 @@
 ---
 title: Machine Learning
 date: 2022-09-07
-last-modified: 2023-08-18
+last-modified: 2023-08-21
 tags:
   - ml
 ---
@@ -61,6 +61,7 @@ tags:
 
 ## Strategy
 
+- Follow [The Path to Machine Learning](The%20Path%20to%20Machine%20Learning.md)
 - Starts as data strategy
 - Start with manual data analysis
 	- Fail fast, try new ideas in an agile way
