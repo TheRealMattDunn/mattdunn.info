@@ -1,7 +1,7 @@
 ---
 title: The Path to Machine Learning
 date: 2023-08-18
-last-modified: 2023-08-18
+last-modified: 2023-08-21
 tags:
   - machine learning
   - ml
@@ -10,3 +10,34 @@ tags:
 ## Steps to Turn Process into ML Model
 
 ![[path_to_ml.svg]]
+
+### Individual Contributor
+
+- Prototype
+- Don't skip—leads to incorrect assumptions later
+- Don't linger—knowledge can become concentrated in 1 person
+- Slow to scale
+
+### Delegation
+
+- Increase number of employees—100s to millions
+	- But—tool many stakeholders can result in organizational lock-in—"automation not possible"
+- Formalize process
+- Org buy in
+- Identify humans in ML loop
+
+### Digitization
+
+- Computers perform mundane tasks
+- Automation
+- Lay software and infrastructure foundations—ML extra layer on top
+
+### Big Data and Analytics
+
+- Measure everything about ops and users
+- Use data to reassess definition of success
+- Hand-tuned algorithms—e.g. Google until 2015
+
+### Machine Learning
+
+- Complete feedback loop—automate all steps
