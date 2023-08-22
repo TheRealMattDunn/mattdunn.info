@@ -47,8 +47,8 @@ const defaultOptions: GraphOptions = {
 
 export default ((opts?: GraphOptions) => {
   function Graph() {
-    const localGraph = { ...opts?.localGraph, ...defaultOptions.localGraph }
-    const globalGraph = { ...opts?.globalGraph, ...defaultOptions.globalGraph }
+    const localGraph = { ...defaultOptions.localGraph, ...opts?.localGraph }
+    const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
     return (
       <div class="graph">
         <h2>Graph View</h2>
