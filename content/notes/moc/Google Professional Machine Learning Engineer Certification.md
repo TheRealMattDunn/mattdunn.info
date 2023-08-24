@@ -8,6 +8,9 @@ tags:
 last-modified: 2023-08-21
 ---
 
+> [!warning] 
+> These notes are a work in progress, and are therefore currently incomplete.
+
 ## Key Fundamentals To Know
 
 - [Big Data](notes/Big%20Data.md)
