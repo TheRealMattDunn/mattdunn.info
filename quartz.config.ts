@@ -12,6 +12,7 @@ const config: QuartzConfig = {
     },
     baseUrl: "mattdunn.info",
     ignorePatterns: ["private", "templates"],
+    defaultDateType: "created",
     theme: {
       typography: {
         header: "IBM Plex Mono",

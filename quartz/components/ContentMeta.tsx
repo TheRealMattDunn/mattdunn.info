@@ -1,13 +1,13 @@
-import { formatDate } from "./Date"
+import { formatDate, getDate } from "./Date"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 export default (() => {
-  function ContentMetadata({ fileData }: QuartzComponentProps) {
+  function ContentMetadata({ cfg, fileData }: QuartzComponentProps) {
     const text = fileData.text
     if (text) {
       const segments: string[] = []
-      if (fileData.dates?.modified) {
-        segments.push("Last updated " + formatDate(fileData.dates.modified))
+      if (fileData.dates) {
+        segments.push("Last updated " + formatDate(getDate(cfg, fileData)!))
       }
 
       return <p class="content-meta">{segments.join(", ")}</p>
