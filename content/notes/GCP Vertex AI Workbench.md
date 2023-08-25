@@ -1,10 +1,10 @@
 ---
 title: GCP Vertex AI Workbench
 date: 2023-08-01
+last-modified: 2023-08-25
 tags:
   - gcp
   - ai
-last-modified: 2023-08-18
 ---
 
 ## Overview
