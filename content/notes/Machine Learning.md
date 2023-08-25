@@ -1,7 +1,7 @@
 ---
 title: Machine Learning
 date: 2022-09-07
-last-modified: 2023-08-21
+last-modified: 2023-08-25
 tags:
   - ml
 ---
@@ -58,6 +58,13 @@ tags:
 	- Clustering
 	- Association—identify underlying relationships
 	- Dimensionality reduction—transform data from a high-dimensional space to a low-dimensional space
+
+### Model Architectures
+
+- Convolutional Neural Networks (CNNs)—image classification, object detection, recommendation systems
+- Recurrent Neural Networks (RNNs)—sequence modelling, next word prediction, translation, speech-to-text
+- Sorting/clustering—anomaly detection, pattern recognition
+- Generational Adversarial Networks (GANs)—anomaly detection, cyber security, self-driving cars, reinforced learning
 
 ## Strategy
 
