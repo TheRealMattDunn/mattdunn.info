@@ -11,7 +11,7 @@ const config: QuartzConfig = {
       tagId: "G-1H2GQTMBV4"
     },
     baseUrl: "mattdunn.info",
-    ignorePatterns: ["private", "templates"],
+    ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       typography: {
