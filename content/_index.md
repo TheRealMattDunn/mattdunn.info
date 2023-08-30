@@ -1,7 +1,7 @@
 ---
 title: Matt Dunn's Second Brain
 date: 2023-08-08
-last-modified: 2023-08-21
+last-modified: 2023-08-30
 ---
 
 ## Introduction
@@ -19,9 +19,9 @@ Welcome to Matt Dunn's Second Brain! This site serves as a repository for my lea
 
 ## What I'm Learning
 
+- 2023-07-11 – [Google Professional Machine Learning Engineer Certification](notes/moc/Google%20Professional%20Machine%20Learning%20Engineer%20Certification.md)
 - 2022-10-28 – [Kubernetes Native Storage](notes/moc/Kubernetes%20Native%20Storage.md)
 - 2022-10-17 – [Google Cloud Next '22](notes/moc/Google%20Cloud%20Next%20'22.md)
-- 2022-09-06 – [Google Professional Machine Learning Engineer Certification](notes/moc/Google%20Professional%20Machine%20Learning%20Engineer%20Certification.md)
 - 2022-06-20 – [Site Reliability Engineering (SRE)](notes/moc/Site%20Reliability%20Engineering%20(SRE).md)
 - 2022-05-27 – [Aviatrix Certified Engineer Associate](notes/moc/Aviatrix%20Certified%20Engineer%20Associate.md)
 - 2022-05-20 – [Vault Associate Certification](notes/moc/Vault.md)
