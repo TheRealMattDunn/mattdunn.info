@@ -12,3 +12,4 @@ tags:
 ## Breakout Sessions
 
 - [Optimizing Kubernetes for Reliability and Cost-Efficiency](notes/Optimizing%20Kubernetes%20for%20Reliability%20and%20Cost-Efficiency.md)
+- [Cloud Run Sidecars](notes/GCP%20Cloud%20Run%20Sidecars.md)

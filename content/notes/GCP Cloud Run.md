@@ -1,11 +1,12 @@
 ---
-title: "GCP Cloud Run"
-date: "2022-02-16"
+title: GCP Cloud Run
+date: 2022-02-16
+last-modified: 2023-09-04
 tags:
-- gcp
-- compute
-- serverless
-- containers
+  - gcp
+  - compute
+  - serverless
+  - containers
 ---
 
 ## Overview
@@ -34,8 +35,25 @@ tags:
 ### Use Cases
 
 - Public websites and APIs
+	- Server-side rendered pages
+	- REST/GraphQL APIs
+	- WebSockets
 - Internal services
+	- Internal sites/APIs
+	- HTTP/gRPC microservices
 - Data processing
+	- [Event Driven Architectures](notes/Event%20Driven%20Architecture.md)
+	- Scheduled scripts
+	- Data batch processing
+	- Background processing
+
+## Services and Jobs
+
+| Services                                      | Jobs                               |
+| --------------------------------------------- | ---------------------------------- |
+| Auto-scaled request-driven services           | Containers which run to completion |
+| Triggered by events, WebSockets, HTTP/2, gRPC | Executed manually or on schedule   |
+| Pay per request or per instance lifetime      | Pay while job executing            |
 
 ## Developing
 
@@ -43,6 +61,7 @@ tags:
 - Each change creates a new revision
 - Traffic routing—split traffic between revisions
 	- Canary and blue/green deployements
+- [Sidecar support](notes/GCP%20Cloud%20Run%20Sidecars.md)
 
 ### Container Requirements
 
@@ -51,6 +70,6 @@ tags:
 - Must be stateless
 - Must not spawn background tasks
 
-# References
+## References
 
 - [GCP Decision Trees](notes/moc/GCP%20Decision%20Trees.md)
