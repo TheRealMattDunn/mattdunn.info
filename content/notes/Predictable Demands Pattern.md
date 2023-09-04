@@ -1,9 +1,10 @@
 ---
-title: "Predictable Demands Pattern"
-date: "2022-03-29"
+title: Predictable Demands Pattern
+date: 2022-03-29
+last-modified: 2023-09-04
 tags:
-- kubernetes
-- design pattern
+  - kubernetes
+  - design pattern
 ---
 
 ## Introduction
@@ -64,6 +65,6 @@ tags:
 	- Only `requests` used for Pod placement
 	- High overcommit level increases chance for overcommitting of resources on node—degrades performance, Pods evicted
 
-# References
+## References
 
 - [Ibryam, B and Huß, R (2019), *Kubernetes Patterns*, O'Reilly](https://www.oreilly.com/library/view/kubernetes-patterns/9781492050278/)

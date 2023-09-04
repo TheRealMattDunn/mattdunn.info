@@ -1,7 +1,7 @@
 ---
 title: Matt Dunn's Second Brain
 date: 2023-08-08
-last-modified: 2023-08-30
+last-modified: 2023-09-04
 ---
 
 ## Introduction
@@ -19,6 +19,7 @@ Welcome to Matt Dunn's Second Brain! This site serves as a repository for my lea
 
 ## What I'm Learning
 
+- 2023-08-29 – [Google Cloud Next '23](notes/moc/Google%20Cloud%20Next%20'23.md)
 - 2023-07-11 – [Google Professional Machine Learning Engineer Certification](notes/moc/Google%20Professional%20Machine%20Learning%20Engineer%20Certification.md)
 - 2022-10-28 – [Kubernetes Native Storage](notes/moc/Kubernetes%20Native%20Storage.md)
 - 2022-10-17 – [Google Cloud Next '22](notes/moc/Google%20Cloud%20Next%20'22.md)

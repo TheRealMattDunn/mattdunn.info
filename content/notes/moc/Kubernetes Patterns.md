@@ -1,10 +1,11 @@
 ---
-title: "Kubernetes Patterns"
-date: "2022-03-29"
+title: Kubernetes Patterns
+date: 2022-03-29
 tags:
-- moc
-- kubernetes
-- design patterns
+  - moc
+  - kubernetes
+  - design patterns
+last-modified: 2023-09-04
 ---
 
 ## Design Patterns
@@ -32,6 +33,6 @@ tags:
 - [Controller](notes/Kubernetes%20Controllers.md)
 - [Operator](notes/Kubernetes%20Operator%20Pattern.md)
 
-# References
+## References
 
 - [Ibryam, B and Huß, R (2019), *Kubernetes Patterns*, O'Reilly](https://www.oreilly.com/library/view/kubernetes-patterns/9781492050278/)
