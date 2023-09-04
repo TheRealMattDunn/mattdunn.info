@@ -24,7 +24,7 @@ tags:
 ## General Best Practices
 
 - As a minimum: set resource `requests`
-	- Set for workloads that actually need the reliability that [burstable/guaranteed QOS brings]((notes/Predictable%20Demands%20Pattern.md)
+	- Set for workloads that actually need the reliability that [burstable/guaranteed QOS brings](notes/Predictable%20Demands%20Pattern.md)
 	- Some workloads are fine with best-effort
 	- Controls many critical aspects:
 		- Scheduling
