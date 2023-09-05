@@ -20,6 +20,7 @@ tags:
 	- [The Path to Machine Learning](The%20Path%20to%20Machine%20Learning.md)
 	- [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
 	- [GCP Machine Learning Best Practices](notes/GCP%20Machine%20Learning%20Best%20Practices.md)
+	- [Bias in Machine Learning](notes/Bias%20in%20Machine%20Learning.md)
 - [Message Oriented Architecture](notes/Message%20Oriented%20Architecture.md)
 - Data processing:
 	- Batch

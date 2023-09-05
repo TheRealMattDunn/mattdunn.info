@@ -1,7 +1,7 @@
 ---
 title: Machine Learning
 date: 2022-09-07
-last-modified: 2023-08-25
+last-modified: 2023-09-05
 tags:
   - ml
 ---
@@ -37,6 +37,7 @@ tags:
 	- Avoid trap of building monolithic models/solutions
 - Avoid [Training-Serving Skew](Training-Serving%20Skew.md)
 - Avoid [Common Pitfalls of Machine Learning](Common%20Pitfalls%20of%20Machine%20Learning.md)
+- Avoid [Bias in Machine Learning](notes/Bias%20in%20Machine%20Learning.md)
 
 ## Concepts and Definitions
 

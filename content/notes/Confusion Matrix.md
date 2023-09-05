@@ -1,9 +1,10 @@
 ---
-title: "Confusion Matrix"
-date: "2023-08-03"
+title: Confusion Matrix
+date: 2023-08-03
+last-modified: 2023-09-05
 tags:
-- machine learning
-- classification
+  - machine learning
+  - classification
 ---
 
 ## Introduction
@@ -17,12 +18,12 @@ tags:
 - True Positive (TP):
 	- $Actual = Cat$
 	- $Predicted = Cat$
-- False Positive (FP):
+- False Positive (FP)—Type I error:
 	- $Actual = Dog$
 	- $Predicted = Cat$
 - True Negative (TN):
 	- $Actual = Dog$
 	- $Predicted = !Cat$
-- False Negative (FN):
+- False Negative (FN)—Type II error:
 	- $Actual = Cat$
 	- $Predicted = !Cat$
