@@ -1,13 +1,13 @@
 ---
 title: GCP BigQuery
 date: 2022-02-16
+last-modified: 2023-09-05
 tags:
   - gcp
   - data
   - data warehouse
   - analytics
   - ml
-last-modified: 2023-08-18
 ---
 
 ## Overview
@@ -91,7 +91,7 @@ last-modified: 2023-08-18
 	- Column-level access control
 	- Dynamic data masking, e.g. PII, financial data, customer order history
 
-# References
+## References
 
 - [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
 - [GCP Database Connections](notes/GCP%20Database%20Connections.md)

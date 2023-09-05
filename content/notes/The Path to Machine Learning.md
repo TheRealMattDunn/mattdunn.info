@@ -1,7 +1,7 @@
 ---
 title: The Path to Machine Learning
 date: 2023-08-18
-last-modified: 2023-08-21
+last-modified: 2023-09-05
 tags:
   - machine learning
   - ml
@@ -41,3 +41,19 @@ tags:
 ### Machine Learning
 
 - Complete feedback loop—automate all steps
+
+## Moving from Experimentation to Production
+
+- Frame the problem
+	- Identify the use case
+	- What?
+	- Minimum requirements?
+- Prepare training data
+	- Exploratory data analysis—EDA
+		- Improve data quality
+	- Feature engineering—combine features to create new features
+- Experimentation phase
+	- Experiment with different models
+- Evaluate
+	- [Precision, recall](notes/Precision%20and%20Recall.md), F1 score, cross entropy
+- Package, deploy, monitor

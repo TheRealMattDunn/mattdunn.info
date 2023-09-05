@@ -1,11 +1,11 @@
 ---
 title: Google Professional Machine Learning Engineer Certification
 date: 2022-09-06
+last-modified: 2023-09-05
 tags:
   - moc
   - gcp
   - certification
-last-modified: 2023-08-21
 ---
 
 > [!warning] 
@@ -15,8 +15,11 @@ last-modified: 2023-08-21
 
 - [Big Data](notes/Big%20Data.md)
 - [Machine Learning](notes/Machine%20Learning.md)
-- [The Path to Machine Learning](The%20Path%20to%20Machine%20Learning.md)
-- [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
+	- [Training-Serving Skew](notes/Training-Serving%20Skew.md)]
+	- [Common Pitfalls of Machine Learning](notes/Common%20Pitfalls%20of%20Machine%20Learning.md)
+	- [The Path to Machine Learning](The%20Path%20to%20Machine%20Learning.md)
+	- [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
+	- [GCP Machine Learning Best Practices](notes/GCP%20Machine%20Learning%20Best%20Practices.md)
 - [Message Oriented Architecture](notes/Message%20Oriented%20Architecture.md)
 - Data processing:
 	- Batch
@@ -28,6 +31,7 @@ last-modified: 2023-08-21
 		- e.g. Fraud detection
 - Regression
 - Classification
+	- [Precision and Recall](notes/Precision%20and%20Recall.md)
 	- [Confusion Matrix](notes/Confusion%20Matrix.md)
 	- [GCP Cloud Data Loss Prevention](notes/GCP%20Cloud%20Data%20Loss%20Prevention.md)
 
@@ -42,3 +46,6 @@ last-modified: 2023-08-21
 - [Looker Studio](notes/Google%20Looker%20Studio.md)
 - [BigQuery](notes/GCP%20BigQuery.md)
 	- [BigQuery ML](notes/GCP%20BigQuery%20ML.md)
+- [Vertex AI](notes/moc/GCP%20Vertex%20AI.md)
+	- [AutoML](notes/GCP%20AutoML.md)
+	- [Vertex AI ML Workflow](notes/GCP%20Vertex%20AI%20ML%20Workflow.md)

@@ -1,7 +1,7 @@
 ---
 title: GCP Vertex AI
 date: 2022-02-16
-last-modified: 2023-08-25
+last-modified: 2023-09-05
 tags:
   - ai
   - ml
@@ -45,3 +45,11 @@ tags:
 	- Asynchronous
 - Metadata
 	- Stores pipeline metadata
+
+## Tools
+
+- Connected to [Cloud Logging](notes/GCP%20Cloud%20Logging.md) and [Cloud Monitoring](notes/GCP%20Cloud%20Monitoring.md)
+- Client libraries—native libraries (Python, Node.js, Java), and API libraries for other languages
+- REST API
+- Deep Learning VM Images—[Compute Engine](notes/GCP%20Compute%20Engine.md) images with tools pre-installed e.g. TensorFlow, PyTorch
+- Deep Learning Containers

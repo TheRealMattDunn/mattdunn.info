@@ -1,7 +1,7 @@
 ---
 title: Common Pitfalls of Machine Learning
 date: 2023-08-18
-last-modified: 2023-08-18
+last-modified: 2023-09-05
 tags:
   - machine learning
   - ml
@@ -18,8 +18,8 @@ tags:
 	- For core/critical systems especially
 	- Curate training data, handle edge cases, review data
 1. Product launch focused on ML algorithm
-2. ML optimised for the wrong thing
-	- e.g. search optimised for engagement (clicks)
+2. ML optimized for the wrong thing
+	- e.g. search optimized for engagement (clicks)
 		- Might learn to serve bad results—cause users to click back and try other links
 1. Is your ML improving things in the real world?
 	- Need to show impact to stakeholders
@@ -29,5 +29,5 @@ tags:
 	- Invest in making process seamless
 1. Don't design your own perception or NLP algorithm
 	- Seem much easier than they really are
-	- Optimised from decades of research
+	- Optimized from decades of research
 	- Always use off the shelf models
