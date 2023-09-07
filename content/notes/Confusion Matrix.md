@@ -1,7 +1,7 @@
 ---
 title: Confusion Matrix
 date: 2023-08-03
-last-modified: 2023-09-05
+last-modified: 2023-09-06
 tags:
   - machine learning
   - classification
@@ -16,14 +16,14 @@ tags:
 ## Examples
 
 - True Positive (TP):
-	- $Actual = Cat$
-	- $Predicted = Cat$
+	- `Actual = Cat`
+	- `Predicted = Cat`
 - False Positive (FP)—Type I error:
-	- $Actual = Dog$
-	- $Predicted = Cat$
+	- `Actual = Dog`
+	- `Predicted = Cat`
 - True Negative (TN):
-	- $Actual = Dog$
-	- $Predicted = !Cat$
+	- `Actual = Dog`
+	- `Predicted = !Cat`
 - False Negative (FN)—Type II error:
-	- $Actual = Cat$
-	- $Predicted = !Cat$
+	- `Actual = Cat`
+	- `Predicted = !Cat`
