@@ -7,6 +7,10 @@ export default (() => {
     const description = fileData.description?.trim() ?? "No description provided"
     const { css, js } = externalResources
     const ogImagePath = `https://${cfg.baseUrl}/static/og-image.png`
+    const appleTouchIconPath = `https://${cfg.baseUrl}/static/apple-touch-icon.png`
+    const favicon32Path = `https://${cfg.baseUrl}/static/favicon-32x32.png`
+    const favicon16Path = `https://${cfg.baseUrl}/static/favicon-16x16.png`
+    const manifestPath = `https://${cfg.baseUrl}/static/site.webmanifest`
 
     return (
       <head>
@@ -18,8 +22,10 @@ export default (() => {
         {cfg.baseUrl && <meta property="og:image" content={ogImagePath} />}
         <meta property="og:width" content="1200" />
         <meta property="og:height" content="675" />
-        <link rel="icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🧠</text></svg>" />
-        <link rel="apple-touch-icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🧠</text></svg>" />
+        {cfg.baseUrl && <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIconPath} />}
+        {cfg.baseUrl && <link rel="icon" type="image/png" sizes="32x32" href={favicon32Path} />}
+        {cfg.baseUrl && <link rel="icon" type="image/png" sizes="16x16" href={favicon16Path} />}
+        {cfg.baseUrl && <link rel="manifest" href={manifestPath} />}
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
