@@ -1,7 +1,7 @@
 ---
 title: Google Professional Machine Learning Engineer Certification
 date: 2022-09-06
-last-modified: 2023-09-05
+last-modified: 2023-10-03
 tags:
   - moc
   - gcp
@@ -15,12 +15,12 @@ tags:
 
 - [Big Data](notes/Big%20Data.md)
 - [Machine Learning](notes/Machine%20Learning.md)
-	- [Training-Serving Skew](notes/Training-Serving%20Skew.md)]
-	- [Common Pitfalls of Machine Learning](notes/Common%20Pitfalls%20of%20Machine%20Learning.md)
-	- [The Path to Machine Learning](The%20Path%20to%20Machine%20Learning.md)
 	- [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
+	- [The Path to Machine Learning](The%20Path%20to%20Machine%20Learning.md)
 	- [GCP Machine Learning Best Practices](notes/GCP%20Machine%20Learning%20Best%20Practices.md)
+	- [Common Pitfalls of Machine Learning](notes/Common%20Pitfalls%20of%20Machine%20Learning.md)
 	- [Bias in Machine Learning](notes/Bias%20in%20Machine%20Learning.md)
+	- [Training-Serving Skew](notes/Training-Serving%20Skew.md)
 - [Message Oriented Architecture](notes/Message%20Oriented%20Architecture.md)
 - Data processing:
 	- Batch
