@@ -2,7 +2,7 @@ import { formatDate, getDate } from "./Date"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 export default (() => {
-  function ContentMetadata({ cfg, fileData }: QuartzComponentProps) {
+  function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
     const text = fileData.text
     if (text) {
       const segments: string[] = []
@@ -10,7 +10,7 @@ export default (() => {
         segments.push("Last updated " + formatDate(getDate(cfg, fileData)!))
       }
 
-      return <p class="content-meta">{segments.join(", ")}</p>
+      return <p class={`content-meta ${displayClass ?? ""}`}>{segments.join(", ")}</p>
     } else {
       return null
     }
