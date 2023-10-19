@@ -1,11 +1,12 @@
 ---
-title: "GCP BigQuery ML"
-date: "2022-09-07"
+title: GCP BigQuery ML
+date: 2022-09-07
 tags:
-- gcp
-- data
-- ai
-- ml
+  - gcp
+  - data
+  - ai
+  - ml
+last-modified: 2023-10-19
 ---
 
 ## Supported Model Types
@@ -39,3 +40,8 @@ tags:
 - Require column called `label`, or specify label column in model options
 - Features are columns in select statement
 - Model object—object in [BigQuery](notes/GCP%20BigQuery.md) data set
+
+## Generative AI
+
+- Generate text: `ML.GENERATE_TEXT`
+	- Generates text using `text-bison` LLM using data from BigQuery tables
