@@ -1,7 +1,7 @@
 ---
 title: Matt Dunn's Second Brain
 date: 2023-08-08
-last-modified: 2023-09-04
+last-modified: 2023-10-23
 ---
 
 ## Introduction
@@ -12,7 +12,7 @@ Welcome to Matt Dunn's Second Brain! This site serves as a repository for my lea
 
 - [Google Cloud](notes/moc/Google%20Cloud.md)
 - [AWS](notes/moc/AWS.md)
-- [Conferences](notes/moc/Conferences.md)
+- [Events](notes/moc/Events.md)
 - [Terraform](notes/moc/Terraform.md)
 - [Vault](notes/moc/Vault.md)
 - [Site Reliability Engineering (SRE)](notes/moc/Site%20Reliability%20Engineering%20(SRE).md)

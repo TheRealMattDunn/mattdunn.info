@@ -1,12 +1,12 @@
 ---
 title: Google Cloud Next '23
 date: 2023-09-04
-last-modified: 2023-09-04
+last-modified: 2023-10-23
 tags:
   - moc
   - google cloud
   - gcp
-  - conferences
+  - conference
 ---
 
 ## Breakout Sessions

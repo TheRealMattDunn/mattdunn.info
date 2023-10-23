@@ -1,7 +1,7 @@
 ---
 title: Machine Learning
 date: 2022-09-07
-last-modified: 2023-09-05
+last-modified: 2023-10-19
 tags:
   - ml
 ---
@@ -52,13 +52,13 @@ tags:
 
 ## Model Types
 
-- Supervised learning—task driven, identifies a goal
+- Supervised learning—task driven, identifies a goal, labelled data
 	- Classification—predict a category
 	- Regression—predict a continuous number
-- Unsupervised learning—data-driven, identifies a pattern
+- Unsupervised learning—data-driven, identifies a pattern, unlabelled data
 	- Clustering
 	- Association—identify underlying relationships
-	- Dimensionality reduction—transform data from a high-dimensional space to a low-dimensional space
+	- Dimensionality reduction—transform data from a high-dimensional space to a low-dimensional space, combine features
 
 ### Model Architectures
 
