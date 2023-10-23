@@ -19,6 +19,11 @@ tags:
 
 ## Use Cases
 
+- Proxy
+- Data connections e.g. AlloyDB
+- Logging agents
+- Authentication/authorization
+
 ### APM
 
 ![cloud_run_sidecar_apm](files/cloud_run_sidecar_apm.svg)
