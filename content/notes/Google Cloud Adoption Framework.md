@@ -1,10 +1,10 @@
 ---
 title: Google Cloud Adoption Framework
 date: 2022-02-23
+last-modified: 2023-10-23
 tags:
-  - gcp
+  - google cloud
   - cloud architecture
-last-modified: 2023-08-18
 ---
 
 ## Introduction
@@ -80,6 +80,6 @@ last-modified: 2023-08-18
 
 ![google_cloud_adoption_epics](files/google_cloud_adoption_epics.svg)
 
-# References
+## References
 
 - [Google Cloud Adoption Framework Whitepaper](https://services.google.com/fh/files/misc/google_cloud_adoption_framework_whitepaper.pdf)

@@ -1,10 +1,11 @@
 ---
-title: "Benefits of Containers"
-date: "2022-04-12"
+title: Benefits of Containers
+date: 2022-04-12
 tags:
-- containers
-- docker
-- opinion
+  - containers
+  - docker
+  - opinion
+last-modified: 2023-10-23
 ---
 
 ## Containers
@@ -43,7 +44,7 @@ tags:
 
 ### Candidates Requiring Investigation
 
-- Dependency on specialized hardware—e.g. GPUs, [TPUs](notes/GCP%20TPUs.md)s
+- Dependency on specialized hardware—e.g. GPUs, [TPUs](notes/Google%20Cloud%20TPUs.md)s
 - Requirement for elevated privileges
 - COTS software
 

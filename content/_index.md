@@ -32,4 +32,4 @@ Welcome to Matt Dunn's Second Brain! This site serves as a repository for my lea
 - 2022-03-29 – [Kubernetes Patterns](notes/moc/Kubernetes%20Patterns.md)
 - 2022-02-23 – [AWS Control Tower](notes/moc/AWS%20Control%20Tower.md)
 - 2022-02-07 – [Google Certified Professional Cloud Architect Certification](notes/moc/Google%20Certified%20Professional%20Cloud%20Architect%20Certification.md)
-- 2021-08-01 – [Anthos](notes/GCP%20Anthos.md)
+- 2021-08-01 – [Anthos](notes/Anthos.md)

@@ -1,9 +1,10 @@
 ---
-title: "Google Chronicle Security"
-date: "2023-02-16"
+title: Google Chronicle Security
+date: 2023-02-16
+last-modified: 2023-10-23
 tags:
-- security
-- google cloud
+  - google cloud
+  - security
 ---
 
 ## Overview
@@ -51,7 +52,7 @@ tags:
 
 ### Data Processing
 
-- Ingested by data forwarder (e.g. Chronicle Forwarder) or read from object storage—[Cloud Storage](notes/GCP%20Cloud%20Storage.md), S3
+- Ingested by data forwarder (e.g. Chronicle Forwarder) or read from object storage—[Cloud Storage](notes/Cloud%20Storage.md), S3
 	- Encrypted in transit
 - Encrypted at rest
 - Parsed and indexed

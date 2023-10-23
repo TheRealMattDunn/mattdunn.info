@@ -1,37 +1,39 @@
 ---
-title: "Google Distributed Cloud Edge"
-date: "2022-06-21"
+title: Google Distributed Cloud Edge
+date: 2022-06-21
+last-modified: 2023-10-23
 tags:
-- hybrid cloud
-- kubernetes
-- edge
+  - google cloud
+  - hybrid cloud
+  - kubernetes
+  - edge
 ---
 
 ## Overview
 
 - Run [Kubernetes](notes/moc/Kubernetes.md) clusters on-prem on dedicated hardware provided and maintained by Google
 	- Google engineers require physical access
-- Deploy workloads like in [GKE](notes/GCP%20Kubernetes%20Engine%20(GKE).md)
+- Deploy workloads like in [GKE](notes/Kubernetes%20Engine%20(GKE).md)
 - Provision new clusters in Cloud Console, CLI and API—similar to GKE
-- Clusters can access [VPC](notes/GCP%20VPCs.md) via [loud VPN](notes/GCP%20Cloud%20VPN.md)
+- Clusters can access [VPC](notes/Google%20Cloud%20VPCs.md) via [loud VPN](notes/Cloud%20VPN.md)
 
 ### Use Cases
 
  - Stable network connection required between Kubernetes workloads and on-prem
  - Low latency to on-prem required
- - Large data volumes—cost/performance prohibitive on GCP
+ - Large data volumes—cost/performance prohibitive on Google Cloud
  - Regulatory/data sovereignty reasons
 
 ### Limitations
 
 - Limited processing capacity
 - Workload restrictions
-- [Anthos Service Mesh](notes/GCP%20Anthos.md) and Anthos Config Management not supported
+- [Anthos Service Mesh](notes/Anthos.md) and Anthos Config Management not supported
 
 ## Architecture
 
 - Rack of hardware—Distributed Cloud Edge Zone (GDC Edge Zone)
-- Kubernetes control plane runs in GCP region
+- Kubernetes control plane runs in Google Cloud region
 	- GDC Edge Zone required constant Internet communication
 	- Remotely managed—e.g. software updates, resolve config issues
 - GDC Edge Zone contains Nodes, grouped into Node Pools
@@ -55,7 +57,7 @@ tags:
 
 ![gdce_k8s](files/gdce_k8s.svg)
 
-- Kubernetes control plane resides in GCP
+- Kubernetes control plane resides in Google Cloud
 	- Doesn't use compute capacity of GDC Edge Zone
 - [KubeVirt](notes/KubeVirt.md) VMs
 

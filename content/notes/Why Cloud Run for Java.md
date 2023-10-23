@@ -1,17 +1,18 @@
 ---
-title: "Why Cloud Run for Java"
-date: "2022-10-17"
+title: Why Cloud Run for Java
+date: 2022-10-17
+last-modified: 2023-10-23
 tags:
-- gcp
-- cloud run
-- java
-- development
+  - google cloud
+  - cloud run
+  - java
+  - development
 ---
 
 ## Deploy in Seconds
 
 - Deploy Spring Boot app without additional config
-- Optionally supply [`cloudbuild.yaml`](notes/GCP%20Cloud%20Build.md)
+- Optionally supply [`cloudbuild.yaml`](notes/Cloud%20Build.md)
 	- Custom steps e.g. run tests
 	- Specify builder machine family
 	- Tag images

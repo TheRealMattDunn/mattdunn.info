@@ -1,21 +1,21 @@
 ---
 title: Google Cloud Certified Professional Cloud Architect Certification
 date: 2023-08-08
-last-modified: 2023-08-10
+last-modified: 2023-10-23
 tags:
   - moc
+  - google cloud
   - cloud architecture
-  - gcp
   - certification
 ---
 
 ## Key Fundamentals To Know
 
-- [GCP PCA Exam Guide](notes/GCP%20PCA%20Exam%20Guide.md)
+- [Google Cloud PCA Exam Guide](notes/Google%20Cloud%20PCA%20Exam%20Guide.md)
 - [Cloud Architecture](notes/Cloud%20Architecture.md)
-- [GCP Services](notes/moc/Google%20Cloud.md)
+- [Google Cloud Services](notes/moc/Google%20Cloud.md)
 - [Data Lifecycle](notes/Data%20Lifecycle.md)
-- [GCP Data Lifecycle](notes/GCP%20Data%20Lifecycle.md)
+- [Google Cloud Data Lifecycle](notes/Google%20Cloud%20Data%20Lifecycle.md)
 - Distributed systems
 - [OSI Layers](notes/OSI%20Layers.md)
 - TCP/IP
@@ -34,9 +34,9 @@ tags:
 - [Site Reliability Engineering (SRE)](notes/moc/Site%20Reliability%20Engineering%20(SRE).md)
 	- [SLIs, SLOs and SLAs](notes/SLIs,%20SLOs%20and%20SLAs.md)
 - [Google Cloud Adoption Framework](notes/Google%20Cloud%20Adoption%20Framework.md)
-- [GCP Data Migration](notes/GCP%20Data%20Migration.md)
-- [GCP Application Migration](notes/GCP%20Application%20Migration.md)
-- [Compliance](notes/Compliance.md)
+- [Google Cloud Data Migration](notes/Google%20Cloud%20Data%20Migration.md)
+- [Google Cloud Application Migration](notes/Google%20Cloud%20Application%20Migration.md)
+- [Google Cloud Compliance](notes/Google%20Cloud%20Compliance.md)
 - [AI ML Lifecycle](notes/AI%20ML%20Lifecycle.md)
 
 ## Case Studies

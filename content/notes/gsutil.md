@@ -1,11 +1,12 @@
 ---
-title: "gsutil"
-date: "2022-03-07"
+title: gsutil
+date: 2022-03-07
+last-modified: 2023-10-23
 tags:
-- gcp
-- data
-- storage
-- tools
+  - google cloud
+  - data
+  - storage
+  - tools
 ---
 
 ## Versioning

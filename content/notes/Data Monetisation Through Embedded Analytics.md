@@ -50,7 +50,7 @@ tags:
 4. Inject proof of value
 5. Drive user behaviour—recommendations, peer comparison, benchmarks
 
-## Data Monetisation with [Looker](notes/Google%20Looker.md)
+## Data Monetisation with [Looker](notes/Looker.md)
 
 - Custom reporting
 - Export data—auto generate SQL
@@ -72,3 +72,4 @@ tags:
 - OEM—white labelled Looker UI
 - Iframes—embed in web pages
 - API—custom integration, combine with Apigee to monetise
+

@@ -1,11 +1,11 @@
 ---
 title: EHR Healthcare Case Study
 date: 2022-02-09
+last-modified: 2023-10-23
 tags:
-  - gcp
+  - google cloud
   - cloud architecture
   - case study
-last-modified: 2023-08-18
 ---
 
 > Non-italicised points represent notes taken from Google's official case study documentation, with keywords highlighted in **bold**.
@@ -19,7 +19,7 @@ last-modified: 2023-08-18
 	- *Compliance important*
 - Provide SaaS to **multinational** medical offices, hospitals, and insurance providers:
 	- *Regulations:*
-		- *GCP is HIPAA compliant*
+		- *Google Cloud is HIPAA compliant*
 		- *Need to protect PII data*
 	- *Multi-national:*
 		- *Even more compliance*
@@ -32,27 +32,27 @@ last-modified: 2023-08-18
 - Need to update **continuous deployment** processes:
 	- *Update software faster*
 	- *CI/CD*
-- GCP to replace existing colocation facilities
+- Google Cloud to replace existing colocation facilities
 
 ## Existing Environment
 
 - Lease on DC about to expire
 - **Web-based customer-facing** applications
 	- Many already **containerized** to run on **Kubernetes**:
-		- *[Kubernetes Engine](notes/GCP%20Kubernetes%20Engine%20(GKE).md)*
-		- *[Anthos](notes/GCP%20Anthos.md) for hybrid-cloud use cases, and to manage multiple clusters centrally*
+		- *[Kubernetes Engine](notes/Kubernetes%20Engine%20(GKE).md)*
+		- *[Anthos](notes/Anthos.md) for hybrid-cloud use cases, and to manage multiple clusters centrally*
 		- *Google Container Registry*
 - **SQL** and **noSQL** DBs:
 	- MySQL
-		- *Lift/shift to [Cloud SQL](notes/GCP%20Cloud%20SQL.md)*
+		- *Lift/shift to [Cloud SQL](notes/Cloud%20SQL.md)*
 	- MS SQL Server
 		- *Lift/shift to Cloud SQL*
-		- *Provision specific version in [Compute Engine](notes/GCP%20Compute%20Engine.md) (if not available in Cloud SQL)*
+		- *Provision specific version in [Compute Engine](notes/Compute%20Engine.md) (if not available in Cloud SQL)*
 	- Redis
-		- *Lift/shift to [Memorystore](notes/GCP%20Memorystore.md)*
+		- *Lift/shift to [Memorystore](notes/Memorystore.md)*
 		- *Deploy Redis Enterprise from marketplace*
 	- MongoDB
-		- *ETL to [Cloud Firestore](notes/GCP%20Cloud%20Firestore.md)*
+		- *ETL to [Cloud Firestore](notes/Cloud%20Firestore.md)*
 		- *Deploy MongoDB Atlas from marketplace*
 		- *Manual build on GCE/GKE*
 - **Legacy file and API integrations** with insurance providers **on-prem**:
@@ -64,10 +64,10 @@ last-modified: 2023-08-18
 		- *One-way sync of users and groups*
 - Monitoring:
 	- Currently using **open source** tools
-		- *Move to GCP Operations Suite*
+		- *Move to Google Cloud Operations Suite*
 	- Alerts via **email** often **ignored**
 		- *Reduce frequency*
-		- *Move from email to SMS, Slack, PagerDuty, [Pub/Sub](notes/GCP%20Pub%20Sub.md) etc.*
+		- *Move from email to SMS, Slack, PagerDuty, [Pub/Sub](notes/Pub%20Sub.md) etc.*
 		- *Alerting policies*
 
 ## Business Requirements
@@ -76,22 +76,22 @@ last-modified: 2023-08-18
 	- *Common APIs*
 	- *API management - Apigee*
 	- *SaaS admin portal*
-		- *Deploy to [App Engine](notes/GCP%20App%20Engine.md) or [Cloud Run](notes/GCP%20Cloud%20Run.md) (preferred due to containers) if traffic low*
+		- *Deploy to [App Engine](notes/App%20Engine.md) or [Cloud Run](notes/Cloud%20Run.md) (preferred due to containers) if traffic low*
 - **99.9% availability** for customer-facing applications:
 	- *Multi-zonal / regional resources*
 - **Centralized** visibility of applications, with **proactive monitoring and alerting**:
-	- *GCP Operations*
+	- *Google Cloud Operations*
 	- *Central logging/monitoring project for all subprojects*
 - Gain **insights** into healthcare trends:
-	- *[Vertex AI](notes/moc/GCP%20Vertex%20AI.md)*
-	- *[BigQuery](notes/GCP%20BigQuery.md)*
+	- *[Vertex AI](notes/moc/Vertex%20AI.md)*
+	- *[BigQuery](notes/BigQuery.md)*
 	- *BigQuery BI*
 	- *Looker*
 - **Reduce latency** to end users:
 	- *Premium network tier*
 	- *Multi-zonal / regional resources*
 	- *Anthos to place clusters in multiple-regions—[Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)*
-	- *[Global load balancing](notes/GCP%20Load%20Balancing.md)*
+	- *[Global load balancing](notes/Google%20Cloud%20Load%20Balancing.md)*
 	- *Cloud CDN*
 - Ensure **compliance**:
 	- *HIPAA*
@@ -101,9 +101,9 @@ last-modified: 2023-08-18
 	- *Automate using IaC*
 - **Predictions** and reports on industry trends:
 	- *AI/[ML](notes/Machine%20Learning.md)*
-	- *[BigQuery ML](notes/GCP%20BigQuery%20ML.md)*
+	- *[BigQuery ML](notes/BigQuery%20ML.md)*
 	- *Reports with [Looker Studio](notes/Google%20Looker%20Studio.md)*
-	- *AI Platform / [Vertex AI](notes/moc/GCP%20Vertex%20AI.md)*
+	- *AI Platform / [Vertex AI](notes/moc/Vertex%20AI.md)*
 
 ## Technical Requirements
 
@@ -113,7 +113,7 @@ last-modified: 2023-08-18
 	- *Anthos*
 	- *Cloud Run and Cloud Run for Anthos*
 	- *Google Container Registry*
-- **Secure** and **high performance** interface **between GCP and on-prem**
+- **Secure** and **high performance** interface **between Google Cloud and on-prem**
 	- *VPN or Partner/Dedicated interconnect*
 - Logging, log retention, monitoring, alerting
 	- *Cloud Operations*
@@ -126,8 +126,8 @@ last-modified: 2023-08-18
 - Create **interfaces** to ingest and **process data** from new providers
 	- *APIs: Apigee*
 	- *Pub/Sub*
-	- *[Dataproc](notes/GCP%20Dataproc.md)*
-	- *[Dataflow](notes/GCP%20Dataflow.md)*
+	- *[Dataproc](notes/Dataproc.md)*
+	- *[Dataflow](notes/Dataflow.md)*
 
 ## Executive Statement
 
@@ -144,14 +144,14 @@ last-modified: 2023-08-18
 		- *[Kubernetes](notes/moc/Kubernetes.md)—roll-back unstable releases*
 		- *Anthos Config Management for guardrails and best practice policies across all clusters*
 	- Inadequate capacity
-		- *[Autoscaling](notes/GCP%20Compute%20Autoscaling.md)*
+		- *[Autoscaling](notes/Google%20Cloud%20Compute%20Autoscaling.md)*
 	- Inconsistent monitoring
-		- *Consolidate onto GCP Operations*
+		- *Consolidate onto Google Cloud Operations*
 
 ## Potential Solution Design
 
 ![EHR Healthcare design](files/ehr_healthcare_design.svg)
 
-# References
+## References
 
 - [EHR Healthcare case study overview](https://services.google.com/fh/files/blogs/master_case_study_ehr_healthcare.pdf)

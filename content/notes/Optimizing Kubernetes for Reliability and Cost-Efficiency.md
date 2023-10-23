@@ -1,7 +1,7 @@
 ---
 title: Optimizing Kubernetes for Reliability and Cost-Efficiency
 date: 2023-09-04
-last-modified: 2023-09-04
+last-modified: 2023-10-23
 tags:
   - kubernetes
 ---
@@ -43,7 +43,7 @@ tags:
 
 ## GKE Best Practices
 
-- Use [GKE](notes/GCP%20Kubernetes%20Engine%20(GKE).md) Cost Optimization tab
+- Use [GKE](notes/Kubernetes%20Engine%20(GKE).md) Cost Optimization tab
 - Dashboards available at organizational level
 - If using Autopilot—default min `requests` set by Autopilot if none set
 	- Need to check before deployment—could under/over provision with default

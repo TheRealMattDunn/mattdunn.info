@@ -1,10 +1,11 @@
 ---
-title: "GKE Cluster Autoscaling"
-date: "2022-02-09"
+title: GKE Cluster Autoscaling
+date: 2022-02-09
+last-modified: 2023-10-23
 tags:
-- gke
-- gcp
-- kubernetes
+  - google cloud
+  - gke
+  - kubernetes
 ---
 
 ## Scaling Down
@@ -15,6 +16,6 @@ Clusters can be prevented from scaling down, and deleting nodes due to:
 - Pods not managed by a controller, such as a Deployment, StatefulSet etc.
 - An application's PodDisruptionBudget
 
-# References
+## References
 
 - [Cluster autoscaler documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-autoscaler)

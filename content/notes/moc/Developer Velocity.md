@@ -1,8 +1,9 @@
 ---
-title: "Developer Velocity"
-date: "2022-09-06"
+title: Developer Velocity
+date: 2022-09-06
+last-modified: 2023-10-23
 tags:
-- moc
+  - moc
 ---
 
 ## Source Control
@@ -12,4 +13,4 @@ tags:
 ## Container-Native Application Platforms
 
 - [Kubernetes](notes/moc/Kubernetes.md)
-- [Anthos](notes/GCP%20Anthos.md)
+- [Anthos](notes/Anthos.md)

@@ -5,7 +5,7 @@ tags:
   - data
   - big data
   - data processing
-last-modified: 2023-08-18
+last-modified: 2023-10-23
 ---
 
 ## Overview
@@ -14,7 +14,7 @@ last-modified: 2023-08-18
 - Unified—single model for batch and stream
 	- B(atch)(Str)eam
 	- Avoid [Training-Serving Skew](Training-Serving%20Skew.md)
-- Portable—works in different execution environments, e.g. [Dataflow](notes/GCP%20Dataflow.md), Apache Spark
+- Portable—works in different execution environments, e.g. [Dataflow](notes/Dataflow.md), Apache Spark
 - Extensible—write/share connectors and transformation libraries
 - Templates
 - Java, Python, Go

@@ -1,10 +1,11 @@
 ---
-title: "Event Driven Architecture"
-date: "2022-04-29"
+title: Event Driven Architecture
+date: 2022-04-29
+last-modified: 2023-10-23
 tags:
-- architecture
-- development
-- applications
+  - architecture
+  - development
+  - applications
 ---
 
 ## Considerations
@@ -54,6 +55,6 @@ tags:
 	- e.g. in AWS, create a custom bus in Event Bridge, trigger a Lambda function for every event, and store in DynamoDB
 - Use Dead Letter Queues in the event bus
 
-# References
+## References
 
 - [Building Event-Driven Applications in AWS](https://blog.marcia.dev/event-driven-applications)

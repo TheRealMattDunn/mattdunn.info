@@ -1,9 +1,10 @@
 ---
-title: "Platform9 Managed Kubernetes"
-date: "2022-06-08"
+title: Platform9 Managed Kubernetes
+date: 2022-06-08
+last-modified: 2023-10-23
 tags:
-- kubernetes
-- cloud
+  - kubernetes
+  - cloud
 ---
 
 ## Overview
@@ -34,7 +35,7 @@ tags:
 	- Not VMware—pre-built image available
 - Networking not managed by PMK
 
-### [AWS](notes/moc/AWS.md) and [Azure](notes/moc/Azure.md)
+### [AWS](notes/moc/AWS.md) And [Azure](notes/moc/Azure.md)
 
 - Native PMK clusters—running on EC2/VMs
 - EKS/AKS cluster import—subset of features
@@ -53,7 +54,7 @@ tags:
 
 ## Profile Engine
 
-- Similar to [Anthos](notes/GCP%20Anthos.md) Config Management
+- Similar to [Anthos](notes/Anthos.md) Config Management
 - Cluster governance/policy management—RBAC only
 - Drift detection
 

@@ -1,14 +1,15 @@
 ---
-title: "Aviatrix Certified Engineer Associate"
-date: "2022-05-27"
+title: Aviatrix Certified Engineer Associate
+date: 2022-05-27
+last-modified: 2023-10-23
 tags:
-- moc
-- aviatrix
-- multi-cloud
-- gcp
-- aws
-- azure
-- certification
+  - moc
+  - aviatrix
+  - multi-cloud
+  - google cloud
+  - aws
+  - azure
+  - certification
 ---
 
 ## Exam Content
@@ -27,10 +28,10 @@ tags:
 - [Azure Virtual Network Gateways](notes/Azure%20Virtual%20Network%20Gateways.md)
 - [Azure Transit Options](notes/Azure%20Transit%20Options.md)
 
-### GCP Networking
+### Google Cloud Networking
 
-- [GCP VPCs](notes/GCP%20VPCs.md)
-- [GCP Cloud Interconnect](notes/GCP%20Cloud%20Interconnect.md)
+- [Google Cloud VPCs](notes/Google%20Cloud%20VPCs.md)
+- [Cloud Interconnect](notes/Cloud%20Interconnect.md)
 
 ### Oracle Cloud Infrastructure
 

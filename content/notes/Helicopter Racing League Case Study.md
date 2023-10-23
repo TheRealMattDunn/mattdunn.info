@@ -1,11 +1,11 @@
 ---
 title: Helicopter Racing League Case Study
 date: 2022-02-11
+last-modified: 2023-10-23
 tags:
-  - gcp
+  - google cloud
   - cloud architecture
   - case study
-last-modified: 2023-08-18
 ---
 
 > Non-italicised points represent notes taken from Google's official case study documentation, with keywords highlighted in **bold**.
@@ -47,17 +47,17 @@ last-modified: 2023-08-18
 	- *Transcoder API—managed service*
 - Race predictions via **TensorFlow** models running on **VMs**
 	- *Lift/shift with Migrate for Compute Engine*
-	- *[TPUs](notes/GCP%20TPUs.md)s—Tensor Processing Unit, built for TensorFlow*
-	- *[Vertex AI](notes/moc/GCP%20Vertex%20AI.md)*
+	- *[TPUs](notes/Google%20Cloud%20TPUs.md)s—Tensor Processing Unit, built for TensorFlow*
+	- *[Vertex AI](notes/moc/Vertex%20AI.md)*
 
 ## Business Requirements
 
 - Expand predictive capabilities
 - **Reduce latency** in emerging markets
 	- *Cloud CDN*
-	- *[Global Load Balancing](notes/GCP%20Load%20Balancing.md)*
+	- *[Global Load Balancing](notes/Google%20Cloud%20Load%20Balancing.md)*
 	- *Regional Managed Instance Groups (MIGs)*
-	- *Regional [Cloud Storage](notes/GCP%20Cloud%20Storage.md) buckets*
+	- *Regional [Cloud Storage](notes/Cloud%20Storage.md) buckets*
 - **Expose models** to partners
 	- *Private connectivity – VPN*
 	- *API Gateway / Apigee*
@@ -65,26 +65,26 @@ last-modified: 2023-08-18
 	- *Previous race results—batch data analysis*
 	- *Sentiment analysis:*
 		- *Natural Language API—predefined categories inc. sentiment analysis*
-		- *[AutoML](notes/GCP%20AutoML.md) Natural Language—custom categories*
+		- *[AutoML](notes/AutoML.md) Natural Language—custom categories*
 		- *Vertex AI—Video Intelligence API*
 - Increase **telemetry** and **insights**
-	- *[IoT Core](notes/GCP%20IoT%20Core.md)*
-	- *[Cloud Bigtable](notes/GCP%20Cloud%20Bigtable.md), [Dataflow](notes/GCP%20Dataflow.md), [BigQuery](notes/GCP%20BigQuery.md), Looker*
+	- *[Cloud IoT Core](notes/Cloud%20IoT%20Core.md)*
+	- *[Cloud Bigtable](notes/Cloud%20Bigtable.md), [Dataflow](notes/Dataflow.md), [BigQuery](notes/BigQuery.md), Looker*
 - **Measure engagement** with new predictions
-	- *[Cloud Firestore](notes/GCP%20Cloud%20Firestore.md)*
+	- *[Cloud Firestore](notes/Cloud%20Firestore.md)*
 	- *AI/ML models—Vertex AI*
 - Enhance global availability and **quality of broadcasts**
 	- *Higher quality video encoding—high spec VMs (Tau, GPUs)*
 - Increase number of **concurrent viewers**
 	- *Increase capacity*
-	- *Dynamic horizontal scaling—[Autoscaling Groups](notes/GCP%20Compute%20Autoscaling.md)*
+	- *Dynamic horizontal scaling—[Autoscaling Groups](notes/Google%20Cloud%20Compute%20Autoscaling.md)*
 - Minimize operational **complexity**
 	- *Managed services where possible*
 	- *Reduce number of platforms*
 - Ensure regulatory **compliance**
 - New revenue streams e.g. merchandise
 	- *Online store—SaaS*
-	- *[Cloud Run](notes/GCP%20Cloud%20Run.md), [App Engine](notes/GCP%20App%20Engine.md), [Cloud Firestore](notes/GCP%20Cloud%20Firestore.md)*
+	- *[Cloud Run](notes/Cloud%20Run.md), [App Engine](notes/App%20Engine.md), [Cloud Firestore](notes/Cloud%20Firestore.md)*
 
 ## Technical Requirements
 
@@ -109,6 +109,6 @@ last-modified: 2023-08-18
 
  ![Helicopter racing league design](files/helicopter_racing_league_design.svg)
 
-# References
+## References
 
 - [Helicopter Racing League case study overview](https://services.google.com/fh/files/blogs/master_case_study_helicopter_racing_league.pdf)

@@ -1,9 +1,10 @@
 ---
-title: "NetApp Cloud Volumes ONTAP"
-date: "2023-01-30"
+title: NetApp Cloud Volumes ONTAP
+date: 2023-01-30
+last-modified: 2023-10-23
 tags:
-- storage
-- cloud
+  - storage
+  - cloud
 ---
 
 ## Overview
@@ -62,9 +63,9 @@ tags:
 - Azure:
 	- Azure Managed Disks—user data
 	- Azure Blob Storage—cold tier
-- GCP:
-	- [Persistent Disks](notes/GCP%20Persistent%20Disks.md)—user data
-	- [Cloud Storage](notes/GCP%20Cloud%20Storage.md)—cold tier
+- Google Cloud:
+	- [Persistent Disks](notes/Compute%20Engine%20Persistent%20Disks.md)—user data
+	- [Cloud Storage](notes/Cloud%20Storage.md)—cold tier
 
 ### Tiering Policies
 
@@ -106,7 +107,7 @@ tags:
 	- NetApp encryption—NetApp Volume Encryption (NVE), NetApp Aggregate Encryption (NAE)
 	- AWS KMS
 	- Azure SSE
-	- GCP default encryption
+	- Google Cloud default encryption
 - Can use NetApp encryption alongside native
 	- Doubly encypted—sensitive data
 - Virus scanning—Vscan

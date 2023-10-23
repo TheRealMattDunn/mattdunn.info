@@ -1,17 +1,18 @@
 ---
-title: "Migrate for Anthos and GKE"
-date: "2022-02-28"
+title: Migrate for Anthos and GKE
+date: 2022-02-28
+last-modified: 2023-10-23
 tags:
-- gcp
-- anthos
-- gke
-- containers
+  - google cloud
+  - anthos
+  - gke
+  - containers
 ---
 
 ## Overview
 
 - Migrate for Anthos (M4A)
-- Transform VM-based workloads to containers running in [Kubernetes Engine](notes/GCP%20Kubernetes%20Engine%20(GKE).md), optionally on [Anthos](notes/GCP%20Anthos.md)
+- Transform VM-based workloads to containers running in [Kubernetes Engine](notes/Kubernetes%20Engine%20(GKE).md), optionally on [Anthos](notes/Anthos.md)
 - Modernize legacy applications
 - Fit assessment tool—determine which VMs are suitable for migration
 - Console, API or CRD-based API

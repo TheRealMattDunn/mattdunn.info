@@ -1,9 +1,10 @@
 ---
-title: "Terraform Modules"
-date: "2022-05-16"
+title: Terraform Modules
+date: 2022-05-16
+last-modified: 2023-10-23
 tags:
-- terraform
-- iac
+  - terraform
+  - iac
 ---
 
 ## Using Modules
@@ -43,7 +44,7 @@ module "vpc" {
 - Mercurial
 - HTTP URLs
 - S3 Buckets
-- [Google Cloud Storage](notes/GCP%20Cloud%20Storage.md)
+- [Google Cloud Storage](notes/Cloud%20Storage.md)
 
 ## Meta-Arguments
 

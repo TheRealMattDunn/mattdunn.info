@@ -1,9 +1,10 @@
 ---
-title: "Terraform Provisioners"
-date: "2022-05-13"
+title: Terraform Provisioners
+date: 2022-05-13
+last-modified: 2023-10-23
 tags:
-- terraform
-- iac
+  - terraform
+  - iac
 ---
 
 ## Overview
@@ -19,7 +20,7 @@ tags:
 
 ### Pass Data into VMs
 
-- Instead: utilize e.g. `user_data` for AWS EC2, or `metadata` for GCP [Compute Engine](notes/GCP%20Compute%20Engine.md)
+- Instead: utilize e.g. `user_data` for AWS EC2, or `metadata` for Google Cloud [Compute Engine](notes/Compute%20Engine.md)
 
 ### Running Configuration Management Software
 

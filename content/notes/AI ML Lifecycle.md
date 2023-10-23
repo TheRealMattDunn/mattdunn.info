@@ -1,11 +1,11 @@
 ---
 title: AI ML Lifecycle
 date: 2022-02-16
-last-modified: 2023-08-21
+last-modified: 2023-10-23
 tags:
+  - google cloud
   - ai
   - ml
-  - gcp
 ---
 
 ## The AI/[ML](Machine%20Learning.md) Lifecycle

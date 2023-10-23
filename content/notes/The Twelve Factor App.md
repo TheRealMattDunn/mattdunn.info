@@ -1,10 +1,11 @@
 ---
-title: "The Twelve Factor Appp"
-date: "2022-04-14"
+title: The Twelve Factor Appp
+date: 2022-04-14
+last-modified: 2023-10-23
 tags:
-- archtecture
-- software
-- development
+  - archtecture
+  - software
+  - development
 ---
 
 ## Codebase
@@ -39,7 +40,7 @@ tags:
 
 - Any service consumed over the network, e.g. DBs, messaging systems
 - No distinction between local and 3rd party resources—all accessed by URLs/credentials stored in config
-- Ability to switch backing services without code changes, e.g. switch from local MySQL to Google [Cloud SQL](notes/GCP%20Cloud%20SQL.md)
+- Ability to switch backing services without code changes, e.g. switch from local MySQL to Google [Cloud SQL](notes/Cloud%20SQL.md)
 
 ## Build, Release, Run
 
@@ -123,6 +124,6 @@ tags:
 - Ship with application code
 	- Prevent drift/synchronization issues
 
-# References
+## References
 
 - [The Twelve Factor App](https://12factor.net/)

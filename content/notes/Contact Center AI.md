@@ -1,9 +1,9 @@
 ---
 title: Contact Center AI
 date: 2023-09-28
-last-modified: 2023-09-28
+last-modified: 2023-10-23
 tags:
-  - gcp
+  - google cloud
   - ai
   - ml
 ---

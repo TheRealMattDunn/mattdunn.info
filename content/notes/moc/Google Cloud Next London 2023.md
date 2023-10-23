@@ -5,10 +5,10 @@ last-modified: 2023-10-23
 tags:
   - moc
   - google cloud
-  - gcp
   - conference
 ---
 
 ## Breakout Sessions
 
 - [Data Monetisation Through Embedded Analytics](notes/Data%20Monetisation%20Through%20Embedded%20Analytics.md)
+- [What's Next for Data and AI - October 2023](notes/What's%20Next%20for%20Data%20and%20AI%20-%20October%202023.md)

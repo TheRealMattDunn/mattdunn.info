@@ -1,10 +1,11 @@
 ---
-title: "Scaling Stateful Apps on GKE"
-date: "2022-10-17"
+title: Scaling Stateful Apps on GKE
+date: 2022-10-17
+last-modified: 2023-10-23
 tags:
-- gcp
-- gke
-- kubernetes
+  - google cloud
+  - gke
+  - kubernetes
 ---
 
 ## Examples

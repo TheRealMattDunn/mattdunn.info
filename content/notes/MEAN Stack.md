@@ -1,9 +1,10 @@
 ---
-title: "MEAN Stack"
-date: "2022-10-17"
+title: MEAN Stack
+date: 2022-10-17
+last-modified: 2023-10-23
 tags:
-- development
-- software architecture
+  - development
+  - software architecture
 ---
 
 ## Components
@@ -17,7 +18,7 @@ tags:
 
 ## Tools
 
-- [Cloud Build](notes/GCP%20Cloud%20Build.md)
-- [Cloud Run](notes/GCP%20Cloud%20Run.md)
+- [Cloud Build](notes/Cloud%20Build.md)
+- [Cloud Run](notes/Cloud%20Run.md)
 - MongoDB Atlas
 - Monorepository—one repo for all source code

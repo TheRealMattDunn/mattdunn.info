@@ -1,10 +1,11 @@
 ---
-title: "Google Cloud Next '22"
-date: "2022-10-17"
+title: Google Cloud Next '22
+date: 2022-10-17
+last-modified: 2023-10-23
 tags:
-- moc
-- gcp
-- conference
+  - moc
+  - google cloud
+  - conference
 ---
 
 ## Breakout Sessions

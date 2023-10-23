@@ -1,15 +1,16 @@
 ---
-title: "Anthos on Bare Metal"
-date: "2022-02-18"
+title: Anthos on Bare Metal
+date: 2022-02-18
+last-modified: 2023-10-23
 tags:
-- gcp
-- anthos
-- kubernetes
+  - google cloud
+  - anthos
+  - kubernetes
 ---
 
 ## Overview
 
-- Install [Anthos](notes/GCP%20Anthos.md) clusters directly on your own hardware
+- Install [Anthos](notes/Anthos.md) clusters directly on your own hardware
 	- Use of specialized hardware
 - Use existing data centres
 	- Anthos manages app deployment and health
@@ -46,5 +47,5 @@ tags:
 
 ## Operating
 
-- Connect—component which associates Anthos on Bare Metal clusters with GCP
+- Connect—component which associates Anthos on Bare Metal clusters with Google Cloud
 	- Allows health of clusters to be visiable in Cloud Console
