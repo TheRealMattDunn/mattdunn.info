@@ -69,7 +69,7 @@ tags:
 
 ### Integration Routes
 
-- OEM—white labelled Looker UI
+- OEM—white labeled Looker UI
 - Iframes—embed in web pages
 - API—custom integration, combine with Apigee to monetise
 
