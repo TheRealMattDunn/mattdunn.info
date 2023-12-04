@@ -27,7 +27,7 @@ function TagContent(props: QuartzComponentProps) {
       ? fileData.description
       : htmlToJsx(fileData.filePath!, tree)
 
-  if (tag === "") {
+  if (tag === "/") {
     const tags = [...new Set(allFiles.flatMap((data) => data.frontmatter?.tags ?? []))]
     const tagItemMap: Map<string, QuartzPluginData[]> = new Map()
     for (const tag of tags) {
@@ -53,7 +53,7 @@ function TagContent(props: QuartzComponentProps) {
             return (
               <div>
                 <h2>
-                  <a class="internal tag-link" href={`./${tag}`}>
+                  <a class="internal tag-link" href={`../tags/${tag}`}>
                     #{tag}
                   </a>
                 </h2>
