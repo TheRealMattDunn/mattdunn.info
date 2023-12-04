@@ -1,7 +1,7 @@
 ---
 title: Cloud Run
 date: 2022-02-16
-last-modified: 2023-10-23
+last-modified: 2023-11-29
 tags:
   - google cloud
   - compute
@@ -17,6 +17,7 @@ tags:
 - Regional
 - Fully managed PaaS
 - Autoscaling from zero
+	- Can also have minimum instances always running—1 instance good for most workloads
 - Priced down to 100ms
 - Available in all and future regions
 - Jobs:
@@ -62,6 +63,7 @@ tags:
 - Traffic routing—split traffic between revisions
 	- Canary and blue/green deployements
 - [Sidecar support](notes/Cloud%20Run%20Sidecars.md)
+- Concurrent requests—80 per container good default for most workloads
 
 ### Container Requirements
 
