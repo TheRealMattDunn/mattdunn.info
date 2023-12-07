@@ -1,7 +1,7 @@
 ---
 title: Vertex AI
 date: 2022-02-16
-last-modified: 2023-10-23
+last-modified: 2023-12-07
 tags:
   - ai
   - ml
@@ -45,6 +45,10 @@ tags:
 	- Asynchronous
 - Metadata
 	- Stores pipeline metadata
+
+### Generative AI
+
+- [Gemini](notes/Gemini.md)
 
 ## Tools
 
