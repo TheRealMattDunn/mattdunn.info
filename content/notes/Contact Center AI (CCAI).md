@@ -1,7 +1,7 @@
 ---
 title: Contact Center AI (CCAI)
 date: 2023-09-28
-last-modified: 2023-12-07
+last-modified: 2023-12-08
 tags:
   - google cloud
   - ai
@@ -12,8 +12,20 @@ tags:
 
 - Solution to build software-based customer service systems
 	- Understands, interacts, talks and actions caller requests
-- Virtual Agent—virtual call centre agents
-	- Hand-off
+	- Captures what customers say
+		- Speech-to-text (STT)
+	- Understands
+		- Natural language understanding (NLU)
+	- Talks back
+		- Text-to-speech (TTS)
+- Personalise brand or region
+	- Voice generation
+- Combine with other best-in-class technology
+	- Integrates with top telephony providers
+
+### Three Pillars
+
+- Dialogflow—virtual agent and NLU for chat and voice
 - Agent Assist—real time step-by-step guidance to agents
 - Insights—real time visibility into key call drivers and sentiment
 
