@@ -1,7 +1,7 @@
 ---
 title: Matt Dunn's Second Brain
 date: 2023-08-08
-last-modified: 2023-10-23
+last-modified: 2023-12-11
 ---
 
 ## Introduction
@@ -19,6 +19,7 @@ Welcome to Matt Dunn's Second Brain! This site serves as a repository for my lea
 
 ## What I'm Doing
 
+- 2023-11-01 – [Contact Center AI (CCAI)](notes/Contact%20Center%20AI%20(CCAI).md)
 - 2023-10-11 – [Google Cloud Next London 2023](notes/moc/Google%20Cloud%20Next%20London%202023.md)
 - 2023-08-29 – [Google Cloud Next '23](notes/moc/Google%20Cloud%20Next%20'23.md)
 - 2023-07-11 – [Google Professional Machine Learning Engineer Certification](notes/moc/Google%20Professional%20Machine%20Learning%20Engineer%20Certification.md)
