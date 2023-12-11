@@ -1,7 +1,7 @@
 ---
 title: Contact Center AI (CCAI)
 date: 2023-09-28
-last-modified: 2023-12-08
+last-modified: 2023-12-11
 tags:
   - google cloud
   - ai
@@ -25,7 +25,7 @@ tags:
 
 ### Three Pillars
 
-- Dialogflow—virtual agent and NLU for chat and voice
+- [Dialogflow](notes/Dialogflow.md)—virtual agent and NLU for chat and voice
 - Agent Assist—real time step-by-step guidance to agents
 - Insights—real time visibility into key call drivers and sentiment
 
