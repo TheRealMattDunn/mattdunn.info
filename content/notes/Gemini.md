@@ -1,9 +1,9 @@
 ---
 title: Gemini
 date: 2023-12-06
-last-modified: 2023-12-21
+last-modified: 2023-12-07
 tags:
-  - google-cloud
+  - google cloud
   - ai
   - generative ai
   - genai

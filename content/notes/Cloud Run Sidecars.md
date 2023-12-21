@@ -1,9 +1,9 @@
 ---
 title: Cloud Run Sidecars
 date: 2023-09-04
-last-modified: 2023-12-21
+last-modified: 2023-10-23
 tags:
-  - google-cloud
+  - google cloud
   - compute
   - serverless
   - containers

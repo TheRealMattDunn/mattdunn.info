@@ -1,10 +1,10 @@
 ---
 title: Google Cloud Compliance
 date: 2022-02-09
-last-modified: 2023-12-21
+last-modified: 2023-10-23
 tags:
   - compliance
-  - google-cloud
+  - google cloud
 ---
 
 ## Key Compliance Areas

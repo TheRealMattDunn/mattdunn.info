@@ -1,10 +1,10 @@
 ---
 title: Google Cloud Certified Professional Cloud Architect Certification
 date: 2023-08-08
-last-modified: 2023-12-21
+last-modified: 2023-10-23
 tags:
   - moc
-  - google-cloud
+  - google cloud
   - cloud architecture
   - certification
 ---

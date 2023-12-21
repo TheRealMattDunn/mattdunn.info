@@ -1,11 +1,10 @@
 ---
-title: Google Chronicle
-date: 2023-02-16
+title: "Google Chronicle"
+date: "2023-02-16"
 tags:
-  - moc
-  - security
-  - google-cloud
-last-modified: 2023-12-21
+- moc
+- security
+- google cloud
 ---
 
 ## Products

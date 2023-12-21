@@ -1,9 +1,9 @@
 ---
 title: Operating Applications on Compute Engine
 date: 2022-04-20
-last-modified: 2023-12-21
+last-modified: 2023-10-23
 tags:
-  - google-cloud
+  - google cloud
   - compute engine
   - development
 ---

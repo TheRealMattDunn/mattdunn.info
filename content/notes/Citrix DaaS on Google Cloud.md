@@ -1,11 +1,11 @@
 ---
 title: Citrix DaaS on Google Cloud
 date: 2022-04-26
-last-modified: 2023-12-21
+last-modified: 2023-10-23
 tags:
   - architecture
   - citrix
-  - google-cloud
+  - google Cloud
 ---
 
 ## Components

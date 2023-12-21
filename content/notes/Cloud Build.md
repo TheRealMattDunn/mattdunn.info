@@ -1,9 +1,9 @@
 ---
 title: Cloud Build
 date: 2022-02-25
-last-modified: 2023-12-21
+last-modified: 2023-10-23
 tags:
-  - google-cloud
+  - google cloud
   - ci/cd
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: Contact Center AI (CCAI)
 date: 2023-11-01
-last-modified: 2023-12-21
+last-modified: 2023-12-11
 tags:
-  - google-cloud
+  - google cloud
   - ai
   - ml
 ---

@@ -1,10 +1,9 @@
 ---
-title: Google Chronicle SOAR
-date: 2023-06-19
+title: "Google Chronicle SOAR"
+date: "2023-06-19"
 tags:
-  - security
-  - google-cloud
-last-modified: 2023-12-21
+- security
+- google cloud
 ---
 
 ## Overview

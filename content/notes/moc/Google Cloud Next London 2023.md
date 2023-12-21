@@ -1,10 +1,10 @@
 ---
 title: Google Cloud Next London 2023
 date: 2023-10-23
-last-modified: 2023-12-21
+last-modified: 2023-10-23
 tags:
   - moc
-  - google-cloud
+  - google cloud
   - conference
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: Google Distributed Cloud Edge
 date: 2022-06-21
-last-modified: 2023-12-21
+last-modified: 2023-10-23
 tags:
-  - google-cloud
+  - google cloud
   - hybrid cloud
   - kubernetes
   - edge
