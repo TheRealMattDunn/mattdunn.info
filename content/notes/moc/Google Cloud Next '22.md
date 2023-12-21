@@ -4,7 +4,7 @@ date: 2022-10-17
 last-modified: 2023-10-23
 tags:
   - moc
-  - google cloud
+  - google-cloud
   - conference
 ---
 

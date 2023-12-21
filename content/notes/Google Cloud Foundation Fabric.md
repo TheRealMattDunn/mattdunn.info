@@ -3,7 +3,7 @@ title: Cloud Foundation Fabric
 date: 2023-07-26
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - terraform
   - foundations
 ---

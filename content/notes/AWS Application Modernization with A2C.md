@@ -3,7 +3,7 @@ title: "AWS Application Modernization with A2C"
 date: "2022-05-03"
 tags:
 - aws
-- application modernization
+- application-modernization
 - containers
 ---
 

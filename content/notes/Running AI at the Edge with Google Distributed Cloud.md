@@ -3,7 +3,7 @@ title: Running AI at the Edge
 date: 2023-10-23
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - ai
 ---
 

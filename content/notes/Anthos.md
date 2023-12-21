@@ -6,7 +6,7 @@ tags:
   - kubernetes
   - gke
   - anthos
-  - google cloud
+  - google-cloud
   - cloud
 ---
 

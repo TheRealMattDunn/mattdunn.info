@@ -3,8 +3,8 @@ title: Data Migration
 date: 2022-02-28
 last-modified: 2023-10-23
 tags:
-  - google cloud
-  - cloud architecture
+  - google-cloud
+  - cloud-architecture
 ---
 
 ## Best Practices

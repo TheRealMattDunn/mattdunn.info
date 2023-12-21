@@ -4,7 +4,7 @@ date: "2023-02-16"
 tags:
 - moc
 - security
-- google cloud
+- google-cloud
 ---
 
 ## Products

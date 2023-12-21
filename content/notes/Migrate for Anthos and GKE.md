@@ -3,7 +3,7 @@ title: Migrate for Anthos and GKE
 date: 2022-02-28
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - anthos
   - gke
   - containers

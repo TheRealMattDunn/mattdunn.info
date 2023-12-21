@@ -3,7 +3,7 @@ title: Cloud Monitoring
 date: 2022-02-25
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - operations
 ---
 

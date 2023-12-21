@@ -3,7 +3,7 @@ title: Google Cloud CMEK and CSEK
 date: 2022-02-23
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - security
   - encryption
 ---

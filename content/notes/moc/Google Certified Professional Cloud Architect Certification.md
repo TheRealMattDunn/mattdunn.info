@@ -4,8 +4,8 @@ date: 2023-08-08
 last-modified: 2023-10-23
 tags:
   - moc
-  - google cloud
-  - cloud architecture
+  - google-cloud
+  - cloud-architecture
   - certification
 ---
 

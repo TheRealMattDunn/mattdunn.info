@@ -1,10 +1,9 @@
 ---
-title: "Precision and Recall"
-date: "2023-08-03"
+title: Precision and Recall
+date: 2023-08-03
 tags:
-- machine learning
-- ml
-- classification
+  - machine-learning
+  - classification
 ---
 
 ## Definition

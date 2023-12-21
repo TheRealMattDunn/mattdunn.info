@@ -3,8 +3,7 @@ title: Common Pitfalls of Machine Learning
 date: 2023-08-18
 last-modified: 2023-09-05
 tags:
-  - machine learning
-  - ml
+  - machine-learning
 ---
 
 1. Expecting [Machine Learning](Machine%20Learning.md) model training to be faster than writing software

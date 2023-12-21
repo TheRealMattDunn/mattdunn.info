@@ -3,11 +3,11 @@ title: BigLake
 date: 2023-06-19
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - data
   - analytics
-  - data warehouse
-  - data lake
+  - data-warehouse
+  - data-lake
 ---
 
 ## Overview

@@ -3,7 +3,7 @@ title: "AWS Multi-Account Strategies"
 date: "2022-02-23"
 tags:
 - aws
-- cloud architecture
+- cloud-architecture
 ---
 
 ## Why?

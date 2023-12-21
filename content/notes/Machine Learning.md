@@ -3,7 +3,7 @@ title: Machine Learning
 date: 2022-09-07
 last-modified: 2023-10-19
 tags:
-  - ml
+  - machine-learning
 ---
 
 ## Introduction

@@ -3,9 +3,8 @@ title: AutoML
 date: 2023-08-01
 last-modified: 2023-10-23
 tags:
-  - google cloud
-  - machine learning
-  - ml
+  - google-cloud
+  - machine-learning
 ---
 
 ## Overview

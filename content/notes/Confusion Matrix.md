@@ -3,7 +3,7 @@ title: Confusion Matrix
 date: 2023-08-03
 last-modified: 2023-09-06
 tags:
-  - machine learning
+  - machine-learning
   - classification
 ---
 

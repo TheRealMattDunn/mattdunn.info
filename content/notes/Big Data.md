@@ -2,7 +2,7 @@
 title: "Big Data"
 date: "2022-09-06"
 tags:
-- big data
+- big-data
 ---
 
 ## Challenges

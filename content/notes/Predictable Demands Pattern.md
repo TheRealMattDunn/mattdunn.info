@@ -4,7 +4,7 @@ date: 2022-03-29
 last-modified: 2023-09-04
 tags:
   - kubernetes
-  - design pattern
+  - design-patterns
 ---
 
 ## Introduction

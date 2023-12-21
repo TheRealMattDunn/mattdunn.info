@@ -3,7 +3,7 @@ title: What's Next for Operations and Platform Builders - October 2023
 date: 2023-10-23
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - conference
 ---
 

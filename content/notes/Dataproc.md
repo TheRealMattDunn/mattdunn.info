@@ -3,9 +3,9 @@ title: Dataproc
 date: 2022-02-16
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - data
-  - big data
+  - big-data
 ---
 
 ## Overview

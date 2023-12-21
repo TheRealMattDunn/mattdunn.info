@@ -2,7 +2,7 @@
 title: "Spinnaker"
 date: "2022-04-22"
 tags:
-- ci/cd
+- ci-cd
 ---
 
 ## Overview

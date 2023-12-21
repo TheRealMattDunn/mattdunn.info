@@ -3,10 +3,9 @@ title: Vertex AI ML Workflow
 date: 2023-08-03
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - ai
-  - machine learning
-  - ml
+  - machine-learning
 ---
 
 ## Data Preparation

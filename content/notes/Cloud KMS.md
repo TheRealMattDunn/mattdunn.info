@@ -3,7 +3,7 @@ title: Cloud KMS
 date: 2022-02-22
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - security
   - encryption
 ---

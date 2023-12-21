@@ -3,7 +3,7 @@ title: Multi Cluster Ingress
 date: 2022-02-10
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - anthos
   - gke
   - kubernetes

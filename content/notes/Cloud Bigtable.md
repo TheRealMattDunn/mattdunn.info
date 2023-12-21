@@ -3,7 +3,7 @@ title: Cloud Bigtable
 date: 2022-02-20
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - data
   - database
 ---

@@ -3,8 +3,8 @@ title: Google Cloud PCA Exam Guide
 date: 2022-02-08
 last-modified: 2023-10-23
 tags:
-  - google cloud
-  - cloud architecture
+  - google-cloud
+  - cloud-architecture
 ---
 
 PCA's need to:

@@ -4,7 +4,7 @@ date: 2022-04-19
 last-modified: 2023-10-23
 tags:
   - moc
-  - google cloud
+  - google-cloud
   - development
   - certification
 ---

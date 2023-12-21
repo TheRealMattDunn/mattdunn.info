@@ -3,9 +3,9 @@ title: TerramEarth Case Study
 date: 2022-02-14
 last-modified: 2023-10-23
 tags:
-  - google cloud
-  - cloud architecture
-  - case study
+  - google-cloud
+  - cloud-architecture
+  - case-study
 ---
 
 > Non-italicised points represent notes taken from Google's official case study documentation, with keywords highlighted in **bold**.

@@ -3,8 +3,8 @@ title: Cloud Build
 date: 2022-02-25
 last-modified: 2023-10-23
 tags:
-  - google cloud
-  - ci/cd
+  - google-cloud
+  - ci-cd
 ---
 
 ## Service Account

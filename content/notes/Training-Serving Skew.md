@@ -3,8 +3,7 @@ title: Training-Serving Skew
 date: 2023-08-18
 last-modified: 2023-10-23
 tags:
-  - machine learning
-  - ML
+  - machine-learning
 ---
 
 ## Overview

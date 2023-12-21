@@ -3,8 +3,8 @@ title: Google Cloud Application Modernization
 date: 2022-03-28
 last-modified: 2023-10-23
 tags:
-  - google cloud
-  - application modernisation
+  - google-cloud
+  - application-modernization
   - cloud
   - architecture
 ---

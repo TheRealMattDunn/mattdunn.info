@@ -2,7 +2,7 @@
 title: "Data Lifecycle"
 date: "2022-02-09"
 tags:
-- cloud architecture
+- cloud-architecture
 ---
 
 ## The Data Lifecycle

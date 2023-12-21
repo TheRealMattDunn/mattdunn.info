@@ -3,7 +3,7 @@ title: Cloud Run
 date: 2022-02-16
 last-modified: 2023-11-29
 tags:
-  - google cloud
+  - google-cloud
   - compute
   - serverless
   - containers

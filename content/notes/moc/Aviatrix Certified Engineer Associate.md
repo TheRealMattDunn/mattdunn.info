@@ -6,7 +6,7 @@ tags:
   - moc
   - aviatrix
   - multi-cloud
-  - google cloud
+  - google-cloud
   - aws
   - azure
   - certification

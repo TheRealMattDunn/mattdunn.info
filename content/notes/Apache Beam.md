@@ -3,8 +3,8 @@ title: Apache Beam
 date: 2022-09-06
 tags:
   - data
-  - big data
-  - data processing
+  - big-data
+  - data-processing
 last-modified: 2023-10-23
 ---
 

@@ -3,7 +3,7 @@ title: Compute Engine Local SSDs
 date: 2022-02-18
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - data
   - storage
 ---

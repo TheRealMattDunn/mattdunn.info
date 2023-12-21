@@ -3,8 +3,8 @@ title: Google Cloud Annotations
 date: 2022-02-09
 last-modified: 2023-10-23
 tags:
-  - cloud architecture
-  - google cloud
+  - cloud-architecture
+  - google-cloud
 ---
 
 ## Security Marks

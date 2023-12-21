@@ -5,7 +5,7 @@ last-modified: 2023-10-23
 tags:
   - architecture
   - citrix
-  - google Cloud
+  - google-cloud
 ---
 
 ## Components

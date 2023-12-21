@@ -1,11 +1,11 @@
 ---
 title: Kubernetes Patterns
 date: 2022-03-29
+last-modified: 2023-09-04
 tags:
   - moc
   - kubernetes
-  - design patterns
-last-modified: 2023-09-04
+  - design-patterns
 ---
 
 ## Design Patterns

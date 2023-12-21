@@ -3,9 +3,9 @@ title: Bias in Machine Learning
 date: 2023-09-05
 last-modified: 2023-09-05
 tags:
-  - ml
+  - machine-learning
   - ai
-  - responsible ai
+  - responsible-ai
 ---
 
 ## Types of Bias

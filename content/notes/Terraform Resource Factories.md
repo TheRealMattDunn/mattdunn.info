@@ -4,7 +4,7 @@ date: "2023-07-26"
 tags:
 - terraform
 - architecture
-- best practices
+- best-practices
 ---
 
 ## Overview

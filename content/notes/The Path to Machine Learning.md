@@ -3,8 +3,7 @@ title: The Path to Machine Learning
 date: 2023-08-18
 last-modified: 2023-09-05
 tags:
-  - machine learning
-  - ml
+  - machine-learning
 ---
 
 ## Steps to Turn Process into [Machine Learning](Machine%20Learning.md) Model

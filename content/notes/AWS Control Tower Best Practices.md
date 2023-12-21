@@ -4,7 +4,7 @@ date: "2023-01-17"
 tags:
 - aws
 - management
-- best practices
+- best-practices
 ---
 
 ## Best Practices

@@ -3,7 +3,7 @@ title: Anthos on Bare Metal
 date: 2022-02-18
 last-modified: 2023-10-23
 tags:
-  - google cloud
+  - google-cloud
   - anthos
   - kubernetes
 ---

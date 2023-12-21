@@ -2,7 +2,7 @@
 title: "Analyzing the Economic Benefits of Google Chronicle Security Analytics Platform"
 date: "2023-06-19"
 tags:
-- google cloud
+- google-cloud
 - security
 ---
 

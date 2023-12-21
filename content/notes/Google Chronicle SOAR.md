@@ -3,7 +3,7 @@ title: "Google Chronicle SOAR"
 date: "2023-06-19"
 tags:
 - security
-- google cloud
+- google-cloud
 ---
 
 ## Overview

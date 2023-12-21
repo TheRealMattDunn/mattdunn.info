@@ -2,9 +2,9 @@
 title: "The Path to Cloud Native"
 date: "2022-03-29"
 tags:
-- cloud native
+- cloud-native
 - architecture
-- design patterns
+- design-patterns
 ---
 
 ![cloud_native_path](files/path_to_cloud_native.svg)
