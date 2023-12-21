@@ -1,9 +1,9 @@
 ---
 title: VMware Engine
 date: 2022-02-28
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - compute
   - vmware
 ---

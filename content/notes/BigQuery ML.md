@@ -1,9 +1,9 @@
 ---
 title: BigQuery ML
 date: 2022-09-07
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - data
   - ai
   - ml

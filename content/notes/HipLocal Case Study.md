@@ -1,9 +1,9 @@
 ---
 title: HipLocal Case Study
 date: 2022-04-25
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - development
   - case study
 ---

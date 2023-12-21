@@ -1,10 +1,10 @@
 ---
 title: Google Cloud Next '22
 date: 2022-10-17
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
   - moc
-  - google cloud
+  - google-cloud
   - conference
 ---
 

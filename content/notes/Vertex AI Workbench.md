@@ -1,9 +1,9 @@
 ---
 title: Vertex AI Workbench
 date: 2023-08-01
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - ai
 ---
 

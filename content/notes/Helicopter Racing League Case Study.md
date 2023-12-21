@@ -1,9 +1,9 @@
 ---
 title: Helicopter Racing League Case Study
 date: 2022-02-11
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - cloud architecture
   - case study
 ---

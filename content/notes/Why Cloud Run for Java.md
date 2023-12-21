@@ -1,9 +1,9 @@
 ---
 title: Why Cloud Run for Java
 date: 2022-10-17
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - cloud run
   - java
   - development

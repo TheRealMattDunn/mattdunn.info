@@ -1,12 +1,12 @@
 ---
 title: Aviatrix Certified Engineer Associate
 date: 2022-05-27
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
   - moc
   - aviatrix
   - multi-cloud
-  - google cloud
+  - google-cloud
   - aws
   - azure
   - certification

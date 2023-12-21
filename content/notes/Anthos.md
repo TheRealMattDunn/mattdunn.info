@@ -1,12 +1,12 @@
 ---
 title: Anthos
 date: 2022-02-10
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
   - kubernetes
   - gke
   - anthos
-  - google cloud
+  - google-cloud
   - cloud
 ---
 

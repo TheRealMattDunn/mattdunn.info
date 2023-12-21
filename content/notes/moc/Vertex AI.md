@@ -1,11 +1,11 @@
 ---
 title: Vertex AI
 date: 2022-02-16
-last-modified: 2023-12-07
+last-modified: 2023-12-21
 tags:
   - ai
   - ml
-  - google cloud
+  - google-cloud
   - moc
 ---
 

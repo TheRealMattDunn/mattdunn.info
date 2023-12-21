@@ -1,9 +1,9 @@
 ---
 title: Google Cloud Load Balancing
 date: 2022-02-17
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - networking
 ---
 

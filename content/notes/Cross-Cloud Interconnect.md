@@ -1,9 +1,9 @@
 ---
 title: Cross-Cloud Interconnect
 date: 2023-07-26
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - multi-cloud
   - networking
 ---

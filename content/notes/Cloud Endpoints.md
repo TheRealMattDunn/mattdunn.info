@@ -1,9 +1,9 @@
 ---
 title: Cloud Endpoints
 date: 2022-04-22
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - api
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: GKE Cluster Autoscaling
 date: 2022-02-09
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - gke
   - kubernetes
 ---

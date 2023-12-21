@@ -1,9 +1,9 @@
 ---
 title: What's Next for Data and AI - October 2023
 date: 2023-10-23
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - conference
   - data
   - ai

@@ -1,9 +1,10 @@
 ---
-title: "Analyzing the Economic Benefits of Google Chronicle Security Analytics Platform"
-date: "2023-06-19"
+title: Analyzing the Economic Benefits of Google Chronicle Security Analytics Platform
+date: 2023-06-19
 tags:
-- google cloud
-- security
+  - google-cloud
+  - security
+last-modified: 2023-12-21
 ---
 
 ## Overview

@@ -1,9 +1,9 @@
 ---
 title: Google Chronicle Security
 date: 2023-02-16
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - security
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: Compute Engine Persistent Disks
 date: 2022-02-18
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - storage
   - data
 ---

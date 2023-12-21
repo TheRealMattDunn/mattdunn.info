@@ -1,9 +1,9 @@
 ---
 title: Converge IBM Power for Google Cloud (IP4G)
 date: 2022-06-07
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - ibm
   - power
 ---

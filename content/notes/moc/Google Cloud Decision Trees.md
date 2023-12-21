@@ -1,10 +1,10 @@
 ---
 title: Google Cloud Decision Trees
 date: 2022-02-23
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
   - moc
-  - google cloud
+  - google-cloud
 ---
 
 ## Compute

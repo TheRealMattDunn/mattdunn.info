@@ -1,10 +1,10 @@
 ---
 title: Google Professional Machine Learning Engineer Certification
 date: 2022-09-06
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
   - moc
-  - google cloud
+  - google-cloud
   - certification
 ---
 

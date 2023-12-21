@@ -1,9 +1,9 @@
 ---
 title: GKE Security Best Practices
 date: 2022-03-28
-last-modified: 2023-10-23
+last-modified: 2023-12-21
 tags:
-  - google cloud
+  - google-cloud
   - gke
   - security
   - kubernetes
