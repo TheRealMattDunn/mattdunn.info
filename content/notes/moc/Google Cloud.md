@@ -1,7 +1,7 @@
 ---
 title: Google Cloud
 date: 2022-02-20
-last-modified: 2023-10-23
+last-modified: 2023-12-22
 tags:
   - moc
   - google-cloud
@@ -90,6 +90,10 @@ tags:
 
 - [Vertex AI](notes/moc/Vertex%20AI.md)
 - [TPUs](notes/Google%20Cloud%20TPUs.md)
+
+## Retail
+
+- [Retail API](notes/Retail%20API.md)
 
 ## Healthcare
 
