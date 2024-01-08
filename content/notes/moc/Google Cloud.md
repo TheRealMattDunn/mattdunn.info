@@ -1,7 +1,7 @@
 ---
 title: Google Cloud
 date: 2022-02-20
-last-modified: 2023-12-22
+last-modified: 2024-01-05
 tags:
   - moc
   - google-cloud
@@ -93,7 +93,7 @@ tags:
 
 ## Retail
 
-- [Retail API](notes/Retail%20API.md)
+- [Discovery AI](notes/Discovery%20AI.md)
 
 ## Healthcare
 

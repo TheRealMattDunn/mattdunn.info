@@ -1,7 +1,7 @@
 ---
-title: Retail API
+title: Discovery AI
 date: 2023-12-22
-last-modified: 2023-12-22
+last-modified: 2024-01-05
 tags:
   - google-cloud
   - ai
