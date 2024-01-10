@@ -1,7 +1,7 @@
 ---
 title: Discovery AI
 date: 2023-12-22
-last-modified: 2024-01-05
+last-modified: 2024-01-10
 tags:
   - google-cloud
   - ai
@@ -73,4 +73,4 @@ tags:
 
 ## Reference Architecture
 
-![[files/retail_api_reference_arch.svg]]
+![[files/discovery_ai_reference_arch.svg]]
