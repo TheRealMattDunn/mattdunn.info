@@ -1,10 +1,11 @@
 ---
-title: "Untitled"
-date: "2023-01-17"
+title: AWS Control Tower Controls
+date: 2023-01-17
 tags:
-- aws
-- management
-- guardrails
+  - aws
+  - management
+  - guardrails
+last-modified: 2024-01-12
 ---
 
 ## Overview
