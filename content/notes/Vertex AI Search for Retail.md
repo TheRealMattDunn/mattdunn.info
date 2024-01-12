@@ -1,7 +1,7 @@
 ---
-title: Discovery AI
+title: Vertex AI Search for Retail
 date: 2023-12-22
-last-modified: 2024-01-10
+last-modified: 2024-01-12
 tags:
   - google-cloud
   - ai
@@ -14,6 +14,7 @@ tags:
 
 ## Overview
 
+- (Formerly: Discovery AI)
 - Goal: significantly enhance shopping experience of individual buyers on e-commerce sites
 - Highly relevant and personalised product recommendations and search results
 - Multi-modal:

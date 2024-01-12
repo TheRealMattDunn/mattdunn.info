@@ -1,7 +1,7 @@
 ---
 title: Google Cloud
 date: 2022-02-20
-last-modified: 2024-01-05
+last-modified: 2024-01-12
 tags:
   - moc
   - google-cloud
@@ -93,7 +93,7 @@ tags:
 
 ## Retail
 
-- [Discovery AI](notes/Discovery%20AI.md)
+- [Vertex AI Search for Retail](notes/Vertex%20AI%20Search%20for%20Retail.md)
 
 ## Healthcare
 
