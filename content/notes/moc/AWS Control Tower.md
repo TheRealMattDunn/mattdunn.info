@@ -1,10 +1,11 @@
 ---
-title: "AWS Control Tower"
-date: "2022-02-23"
+title: AWS Control Tower
+date: 2022-02-23
 tags:
-- aws
-- management
-- moc
+  - aws
+  - management
+  - moc
+last-modified: 2024-01-12
 ---
 
 ## Topics
@@ -15,6 +16,7 @@ tags:
 - [Service Catalog](notes/AWS%20Service%20Catalog.md)
 - [Control Tower SNS Topics](notes/AWS%20Control%20Tower%20SNS%20Topics.md)
 - [AWS Control Tower Account Management](notes/AWS%20Control%20Tower%20Account%20Management.md)
+- [AWS Control Tower Account Factory for Terraform (AFT)](notes/AWS%20Control%20Tower%20Account%20Factory%20for%20Terraform%20(AFT).md)
 
 ## Overview
 
