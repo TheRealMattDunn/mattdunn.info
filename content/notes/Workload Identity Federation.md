@@ -13,7 +13,7 @@ tags:
 - Grant on-premises/multi-cloud workloads access to [Google Cloud](notes/moc/Google%20Cloud.md) resources
 	- Grant external resources [Cloud IAM](notes/Cloud%20IAM.md) roles
 - Removes need to Service Account keys
-	- Power creds
+	- Powerful creds
 	- Security risk
 - Workload Identity Pools
 	- Entity to manage external identities
