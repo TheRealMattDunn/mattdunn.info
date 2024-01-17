@@ -1,7 +1,7 @@
 ---
 title: Cloud IAM
 date: 2022-02-22
-last-modified: 2023-10-23
+last-modified: 2024-01-17
 tags:
   - google-cloud
   - security
@@ -32,7 +32,7 @@ tags:
 ### Which
 
 - Which resources a principal can access
-- e.g, VM instances, GKE clusters
+- e.g, [Compute Engine](notes/Compute%20Engine.md) instances, [Kubernetes Engine (GKE)](notes/Kubernetes%20Engine%20(GKE).md) clusters
 - Organizations, folders and projects are also resources
 
 ## Roles
@@ -61,3 +61,4 @@ tags:
 ## See Also
 
 - [Delegated Role Grants](notes/Google%20Cloud%20Delegated%20Role%20Grants.md)
+- [Workload Identity Federation](notes/Workload%20Identity%20Federation.md)
