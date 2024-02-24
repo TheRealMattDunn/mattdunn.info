@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Engine (GKE)
 date: 2022-02-16
-last-modified: 2023-10-23
+last-modified: 2024-02-23
 tags:
   - google-cloud
   - gke
@@ -88,6 +88,11 @@ tags:
 	- *Recommended per replica request bytes*—memory
 - Memory recommendations not supported for JVM-based workloads
 	- Not possible due to JVM heap management
+
+## Autopilot
+
+- Price cutoff—if average node utilisation >~53%
+	- GKE standard cheaper
 
 ## References
 

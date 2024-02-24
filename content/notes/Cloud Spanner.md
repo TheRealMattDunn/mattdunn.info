@@ -1,7 +1,7 @@
 ---
 title: Cloud Spanner
 date: 2022-02-20
-last-modified: 2023-10-23
+last-modified: 2024-02-23
 tags:
   - google-cloud
   - data
@@ -21,7 +21,9 @@ tags:
 - Auto sharding
 - Backup/restore, point-in-time recovery (PITR)
 - Use query parameters to increase efficiency and reduce cost
-- Use cases: financial sector
+- Use cases:
+	- Financial sector—global ledgers
+	- Gaming
 
 ## Implementation Details
 
