@@ -1,7 +1,7 @@
 ---
 title: Vertex AI
 date: 2022-02-16
-last-modified: 2023-12-07
+last-modified: 2024-03-04
 tags:
   - moc
   - ai
@@ -48,6 +48,7 @@ tags:
 
 ### Generative AI
 
+- [Google Cloud for GenAI](notes/Google%20Cloud%20for%20GenAI.md)
 - [Gemini](notes/Gemini.md)
 
 ## Tools
