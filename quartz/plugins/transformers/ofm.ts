@@ -103,9 +103,9 @@ export const arrowRegex = new RegExp(/(-{1,2}>|={1,2}>|<-{1,2}|<={1,2})/, "g")
 // \[\[              -> open brace
 // ([^\[\]\|\#]+)    -> one or more non-special characters ([,],|, or #) (name)
 // (#[^\[\]\|\#]+)?  -> # then one or more non-special characters (heading link)
-// (\|[^\[\]\#]+)? -> | then one or more non-special characters (alias)
+// (\|[^\[\]\#]+)? -> \| then one or more non-special characters (alias)
 export const wikilinkRegex = new RegExp(
-  /!?\[\[([^\[\]\|\#]+)?(#+[^\[\]\|\#]+)?(\|[^\[\]\#]+)?\]\]/,
+  /!?\[\[([^\[\]\|\#\\]+)?(#+[^\[\]\|\#\\]+)?(\\?\|[^\[\]\#]+)?\]\]/,
   "g",
 )
 const highlightRegex = new RegExp(/==([^=]+)==/, "g")
@@ -123,6 +123,7 @@ const tagRegex = new RegExp(
 )
 const blockReferenceRegex = new RegExp(/\^([-_A-Za-z0-9]+)$/, "g")
 const ytLinkRegex = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
+const ytPlaylistLinkRegex = /[?&]list=([^#?&]*)/
 const videoExtensionRegex = new RegExp(/\.(mp4|webm|ogg|avi|mov|flv|wmv|mkv|mpg|mpeg|3gp|m4v)$/)
 const wikilinkImageEmbedRegex = new RegExp(
   /^(?<alt>(?!^\d*x?\d*$).*?)?(\|?\s*?(?<width>\d+)(x(?<height>\d+))?)?$/,
@@ -175,11 +176,16 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
           const anchor = rawHeader?.trim().replace(/^#+/, "")
           const blockRef = Boolean(anchor?.startsWith("^")) ? "^" : ""
           const displayAnchor = anchor ? `#${blockRef}${slugAnchor(anchor)}` : ""
-          const displayAlias = rawAlias ?? rawHeader?.replace("#", "|") ?? ""
+          let displayAlias = rawAlias ?? rawHeader?.replace("#", "|") ?? ""
           const embedDisplay = value.startsWith("!") ? "!" : ""
 
           if (rawFp?.match(externalLinkRegex)) {
             return `${embedDisplay}[${displayAlias.replace(/^\|/, "")}](${rawFp})`
+          }
+
+          //transform `[[note#^block_ref|^block_ref]]` to `[[note#^block_ref\|^block_ref]]`, display correctly in table.
+          if (displayAlias && displayAlias.startsWith("|")) {
+            displayAlias = `\\${displayAlias}`
           }
 
           return `${embedDisplay}[[${fp}${displayAnchor}${displayAlias}]]`
@@ -327,7 +333,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                   children: [
                     {
                       type: "text",
-                      value: `#${tag}`,
+                      value: tag,
                     },
                   ],
                 }
@@ -574,7 +580,9 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
               if (node.tagName === "img" && typeof node.properties.src === "string") {
                 const match = node.properties.src.match(ytLinkRegex)
                 const videoId = match && match[2].length == 11 ? match[2] : null
+                const playlistId = node.properties.src.match(ytPlaylistLinkRegex)?.[1]
                 if (videoId) {
+                  // YouTube video (with optional playlist)
                   node.tagName = "iframe"
                   node.properties = {
                     class: "external-embed",
@@ -582,7 +590,20 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                     frameborder: 0,
                     width: "600px",
                     height: "350px",
-                    src: `https://www.youtube.com/embed/${videoId}`,
+                    src: playlistId
+                      ? `https://www.youtube.com/embed/${videoId}?list=${playlistId}`
+                      : `https://www.youtube.com/embed/${videoId}`,
+                  }
+                } else if (playlistId) {
+                  // YouTube playlist only.
+                  node.tagName = "iframe"
+                  node.properties = {
+                    class: "external-embed",
+                    allow: "fullscreen",
+                    frameborder: 0,
+                    width: "600px",
+                    height: "350px",
+                    src: `https://www.youtube.com/embed/videoseries?list=${playlistId}`,
                   }
                 }
               }
