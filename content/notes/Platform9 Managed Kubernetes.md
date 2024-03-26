@@ -1,7 +1,7 @@
 ---
 title: Platform9 Managed Kubernetes
 date: 2022-06-08
-last-modified: 2023-10-23
+last-modified: 2024-03-25
 tags:
   - kubernetes
   - cloud
@@ -54,7 +54,7 @@ tags:
 
 ## Profile Engine
 
-- Similar to [Anthos](notes/Anthos.md) Config Management
+- Similar to [GKE Enterprise](notes/GKE%20Enterprise.md) Config Management
 - Cluster governance/policy management—RBAC only
 - Drift detection
 

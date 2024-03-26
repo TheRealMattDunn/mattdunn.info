@@ -26,6 +26,9 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList()
   ],
   afterBody: [
+    Component.RecentNotes({
+      limit: 15
+    }),
     Component.Graph(),
     Component.Backlinks()
   ],

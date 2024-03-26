@@ -1,7 +1,7 @@
 ---
-title: Anthos
+title: GKE Enterprise
 date: 2022-02-10
-last-modified: 2023-10-23
+last-modified: 2024-03-25
 tags:
   - kubernetes
   - gke

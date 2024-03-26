@@ -1,7 +1,7 @@
 ---
 title: EHR Healthcare Case Study
 date: 2022-02-09
-last-modified: 2023-10-23
+last-modified: 2024-03-25
 tags:
   - google-cloud
   - cloud-architecture
@@ -40,7 +40,7 @@ tags:
 - **Web-based customer-facing** applications
 	- Many already **containerized** to run on **Kubernetes**:
 		- *[Kubernetes Engine](notes/Kubernetes%20Engine%20(GKE).md)*
-		- *[Anthos](notes/Anthos.md) for hybrid-cloud use cases, and to manage multiple clusters centrally*
+		- *[GKE Enterprise](notes/GKE%20Enterprise.md) for hybrid-cloud use cases, and to manage multiple clusters centrally*
 		- *Google Container Registry*
 - **SQL** and **noSQL** DBs:
 	- MySQL

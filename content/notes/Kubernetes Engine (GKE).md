@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Engine (GKE)
 date: 2022-02-16
-last-modified: 2024-02-23
+last-modified: 2024-03-25
 tags:
   - google-cloud
   - gke
@@ -17,7 +17,8 @@ tags:
 	- Autopilot—fully managed
 - Auto-repair and upgrade
 - [Autoscaling](notes/GKE%20Cluster%20Autoscaling.md)
-- Containerize legacy apps and migrate using [Migrate for Anthos and GKE](notes/Migrate%20for%20Anthos%20and%20GKE.md)
+- Containerise legacy apps and migrate using [Migrate for Anthos and GKE](notes/Migrate%20for%20Anthos%20and%20GKE.md)
+- [GKE Multi-Tenancy](notes/GKE%20Multi-Tenancy.md)
 
 ## Clusters
 
@@ -46,7 +47,7 @@ tags:
 ### GKE Dataplane V2
 
 - Optimized for Kubernetes networking
-- Consistent user experience—GKE and [Anthos](notes/Anthos.md)
+- Consistent user experience—GKE and [GKE Enterprise](notes/GKE%20Enterprise.md)
 - Real-time visibility of network activity
 - Simpler architecture
 - Based on eBPF and [Cilium](notes/Cilium.md)—process network packets in-kernel
@@ -60,8 +61,8 @@ tags:
 #### Architecture
 
 - eBPF
-- Kernel programs route/process packets—no need for nernal code change or kernel modules
-- No need for iptables—can proces packets based on Kubernetes-specific metadata
+- Kernel programs route/process packets—no need for kernel code change or kernel modules
+- No need for iptables—can process packets based on Kubernetes-specific metadata
 
 ## Workload Identity
 

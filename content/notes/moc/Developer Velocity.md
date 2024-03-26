@@ -1,7 +1,7 @@
 ---
 title: Developer Velocity
 date: 2022-09-06
-last-modified: 2023-10-23
+last-modified: 2024-03-25
 tags:
   - moc
 ---
@@ -13,4 +13,4 @@ tags:
 ## Container-Native Application Platforms
 
 - [Kubernetes](notes/moc/Kubernetes.md)
-- [Anthos](notes/Anthos.md)
+- [GKE Enterprise](notes/GKE%20Enterprise.md)

@@ -1,7 +1,7 @@
 ---
 title: Google Distributed Cloud Edge
 date: 2022-06-21
-last-modified: 2023-10-23
+last-modified: 2024-03-25
 tags:
   - google-cloud
   - hybrid-cloud
@@ -28,7 +28,7 @@ tags:
 
 - Limited processing capacity
 - Workload restrictions
-- [Anthos Service Mesh](notes/Anthos.md) and Anthos Config Management not supported
+- [Anthos Service Mesh](notes/GKE%20Enterprise.md) and Anthos Config Management not supported
 
 ## Architecture
 

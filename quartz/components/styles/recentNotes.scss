@@ -5,12 +5,10 @@
   }
 
   & > ul.recent-ul {
-    list-style: none;
+    list-style: disc outside;
     margin-top: 1rem;
-    padding-left: 0;
 
     & > li {
-      margin: 1rem 0;
       .section > .desc > h3 > a {
         background-color: transparent;
       }

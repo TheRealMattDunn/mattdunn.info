@@ -1,7 +1,7 @@
 ---
 title: GKE Security Best Practices
 date: 2022-03-28
-last-modified: 2023-10-23
+last-modified: 2024-03-25
 tags:
   - google-cloud
   - gke
@@ -11,7 +11,7 @@ tags:
 
 - Automate CIS Benchmarking
 	- kube-bench
-	- [Anthos](notes/Anthos.md) Config Management with CIS benchmark policies
+	- [GKE Enterprise](notes/GKE%20Enterprise.md) Config Management with CIS benchmark policies
 - Google Groups for RBAC
 - Run nodes with least privilege SA—avoid [Compute Engine](notes/Compute%20Engine.md) default service account
 	- `roles/monitoring.viewer`

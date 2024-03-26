@@ -1,7 +1,7 @@
 ---
 title: Mountkirk Games Case Study
 date: 2022-02-13
-last-modified: 2023-10-23
+last-modified: 2024-03-25
 tags:
   - google-cloud
   - cloud-architecture
@@ -27,7 +27,7 @@ tags:
 - Planned architecture:
 	- Plan to deploy backend to **[GKE](notes/Kubernetes%20Engine%20(GKE).md)**
 		- *Multiple regional clusters*
-		- *[Anthos](notes/Anthos.md) for common config management and service mesh capabilities*
+		- *[GKE Enterprise](notes/GKE%20Enterprise.md) for common config management and service mesh capabilities*
 		- *[Multi Cluster Ingress](notes/Multi%20Cluster%20Ingress.md)*
 	- Wish to **scale** rapidly based on **demand**
 	- Usage of **[global load balancers](notes/Google%20Cloud%20Load%20Balancing.md)** to route players to the closest regional arena

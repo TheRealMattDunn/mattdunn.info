@@ -1,7 +1,7 @@
 ---
 title: Google Cloud
 date: 2022-02-20
-last-modified: 2024-01-12
+last-modified: 2024-03-25
 tags:
   - moc
   - google-cloud
@@ -31,7 +31,7 @@ tags:
 - [Google Distributed Cloud Edge](notes/Google%20Distributed%20Cloud%20Edge.md)
 - Google Distributed Cloud Hosted
 - Google Distributed Cloud Virtual
-- [Anthos](notes/Anthos.md)
+- [GKE Enterprise](notes/GKE%20Enterprise.md)
 
 ## Storage
 

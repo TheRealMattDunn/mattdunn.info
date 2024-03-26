@@ -1,7 +1,7 @@
 ---
 title: Anthos on Bare Metal
 date: 2022-02-18
-last-modified: 2023-10-23
+last-modified: 2024-03-25
 tags:
   - google-cloud
   - anthos
@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-- Install [Anthos](notes/Anthos.md) clusters directly on your own hardware
+- Install [GKE Enterprise](notes/GKE%20Enterprise.md) clusters directly on your own hardware
 	- Use of specialized hardware
 - Use existing data centres
 	- Anthos manages app deployment and health
