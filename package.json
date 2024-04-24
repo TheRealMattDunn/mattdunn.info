@@ -12,6 +12,7 @@
     "url": "https://github.com/jackyzha0/quartz.git"
   },
   "scripts": {
+    "quartz": "./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
@@ -58,7 +59,7 @@
     "mdast-util-to-string": "^4.0.0",
     "micromorph": "^0.4.5",
     "preact": "^10.20.2",
-    "preact-render-to-string": "^6.4.1",
+    "preact-render-to-string": "^6.4.2",
     "pretty-bytes": "^6.1.1",
     "pretty-time": "^1.1.0",
     "reading-time": "^1.5.0",
@@ -96,7 +97,7 @@
     "@types/d3": "^7.4.3",
     "@types/hast": "^3.0.4",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^20.12.5",
+    "@types/node": "^20.12.7",
     "@types/pretty-time": "^1.1.5",
     "@types/source-map-support": "^0.5.10",
     "@types/ws": "^8.5.10",
@@ -104,6 +105,6 @@
     "esbuild": "^0.20.1",
     "prettier": "^3.2.5",
     "tsx": "^4.7.1",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.5"
   }
 }
