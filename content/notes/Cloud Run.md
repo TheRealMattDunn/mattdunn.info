@@ -1,7 +1,7 @@
 ---
 title: Cloud Run
 date: 2022-02-16
-last-modified: 2023-11-29
+last-modified: 2024-04-24
 tags:
   - google-cloud
   - compute
@@ -20,9 +20,16 @@ tags:
 	- Can also have minimum instances always running—1 instance good for most workloads
 - Priced down to 100ms
 - Available in all and future regions
+- Revisions:
+	- 1+ containers, plus environment settings (e.g. environment variables, memory limits etc.)
+	- Requests routed to latest healthy revision
+	- Immutable—each change creates a new revision
+	- Deploy container from tag—resolves to image digest, i.e. doesn't update revision tag moves between image digests
 - Jobs:
 	- Execute containers to completion
 	- e.g. Scheduled jobs, batch data processing
+	- 1+ tasks
+	- Can configure task timeouts and retries
 - Health checks
 	- Startup probes—customize when container ready to serve traffic (TCP by default)
 	- Liveness probes—restart if container unhealthy
@@ -32,6 +39,10 @@ tags:
 - Software delivery shield
 	- Vulnerabilities and build provenance in Cloud Run
 	- Security recommendations
+- Supported container registries:
+	- Artifact Registry
+	- Container Registry (deprecated)
+	- DockerHub
 
 ### Use Cases
 
@@ -64,13 +75,22 @@ tags:
 	- Canary and blue/green deployements
 - [Sidecar support](notes/Cloud%20Run%20Sidecars.md)
 - Concurrent requests—80 per container good default for most workloads
+	- Experiment to determine best value
+	- Need to adjust memory accordingly
+- Session affinity—best effort
 
-### Container Requirements
+### Container Runtime Contract
 
-- Must listen for request on specified port
+- Linux x86_64 ABI format container images
+- 1 ingress container, 0+ sidecars
+- Ingress container must listen for request on 0.0.0.0:8080 (port configurable)
 	- HTTPS, gRPC, [Pub/Sub](notes/Pub%20Sub.md), Cloud Tasks, Cloud Scheduler
 - Must be stateless
 - Must not spawn background tasks
+- Jobs must exit 0 for success, or >0 for failure
+- TLS must not be implemented in the container—terminated by Cloud Run
+- The container filesystem is in-memory, and not persisted between instances
+- The metadata server (http://metadata.google.internal) is available for information e.g. generate service account tokens
 
 ## References
 
