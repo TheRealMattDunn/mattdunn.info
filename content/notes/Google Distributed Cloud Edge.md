@@ -1,7 +1,7 @@
 ---
 title: Google Distributed Cloud Edge
 date: 2022-06-21
-last-modified: 2024-03-25
+last-modified: 2024-06-14
 tags:
   - google-cloud
   - hybrid-cloud
@@ -15,7 +15,7 @@ tags:
 	- Google engineers require physical access
 - Deploy workloads like in [GKE](notes/Kubernetes%20Engine%20(GKE).md)
 - Provision new clusters in Cloud Console, CLI and API—similar to GKE
-- Clusters can access [VPC](notes/Google%20Cloud%20VPCs.md) via [loud VPN](notes/Cloud%20VPN.md)
+- Clusters can access [VPC](notes/Google%20Cloud%20VPCs.md) via [Cloud VPN](notes/Cloud%20VPN.md)
 
 ### Use Cases
 
