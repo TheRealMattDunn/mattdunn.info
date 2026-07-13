@@ -12,9 +12,9 @@ Welcome to Matt Dunn's Second Brain! This site serves as a repository for my lea
 
 ## Key Landing Pages
 
-- [Google Cloud](notes/moc/Google%20Cloud.md)
-- [AWS](notes/moc/AWS.md)
-- [Events](notes/moc/Events.md)
-- [Terraform](notes/moc/Terraform.md)
-- [Vault](notes/moc/Vault.md)
-- [Site Reliability Engineering (SRE)](notes/moc/Site%20Reliability%20Engineering%20(SRE).md)
+- [Google Cloud](moc/Google%20Cloud.md)
+- [AWS](moc/AWS.md)
+- [Events](moc/Events.md)
+- [Terraform](moc/Terraform.md)
+- [Vault](moc/Vault.md)
+- [Site Reliability Engineering (SRE)](moc/Site%20Reliability%20Engineering%20(SRE).md)
